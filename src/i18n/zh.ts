@@ -1,0 +1,64 @@
+export default {
+  translation: {
+    site: {
+      name: '双语科学实验室',
+      tagline: '面向初高中学生的中英双语科学学习平台',
+      intro:
+        '每个知识点都配有交互仿真、双语讲解、随堂小测，并同时标注人教版教材章节与 Cambridge IGCSE 考纲 topic，方便两种课程体系对照学习。',
+    },
+    nav: {
+      home: '首页',
+    },
+    lang: {
+      switch: 'English',
+    },
+    subjects: {
+      physics: { name: '物理', desc: '运动、力、能量、电与磁、波' },
+      chemistry: { name: '化学', desc: '物质结构、化学反应、酸碱盐' },
+      biology: { name: '生物', desc: '细胞、遗传、生理、生态' },
+    },
+    gradeTier: {
+      all: '全部',
+      middle: '初中',
+      senior: '高中',
+      both: '初中 / 高中',
+    },
+    home: {
+      subjectsTitle: '选择学科',
+      searchPlaceholder: '搜索知识点（标题 / 摘要 / 关键词）…',
+      filterIgcse: 'IGCSE 考纲',
+      filterPep: '人教版教材',
+      filterAll: '全部',
+      resultCount: '共 {{count}} 个知识点',
+      empty: '没有匹配的知识点，请调整筛选条件。',
+      knowledgePointsTitle: '知识点',
+    },
+    kp: {
+      theory: '理论学习',
+      formulas: '公式代入',
+      simulation: '交互仿真',
+      params: '参数调节',
+      presets: '生活场景',
+      quiz: '随堂小测',
+      syllabusTags: '考纲与教材',
+    },
+    quiz: {
+      submit: '提交答案',
+      retry: '重新作答',
+      correct: '回答正确',
+      wrong: '回答错误',
+      explanation: '解析',
+      score: '得分：{{score}} / {{total}}',
+      unanswered: '请回答所有题目后再提交。',
+    },
+    progress: {
+      completed: '已完成',
+      bestScore: '最好成绩 {{score}} / {{total}}',
+    },
+    notFound: {
+      title: '页面不存在',
+      message: '你访问的页面不存在或已被移动。',
+      backHome: '返回首页',
+    },
+  },
+} as const;
