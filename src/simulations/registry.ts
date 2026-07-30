@@ -13,6 +13,16 @@ export interface SimulationProps {
 const registry: Record<string, LazyExoticComponent<ComponentType<SimulationProps>>> = {
   'motion-graphs': lazy(() => import('./physics/MotionGraphsSim')),
   'ph-indicator': lazy(() => import('./chemistry/PhIndicatorSim')),
+  'projectile-motion': lazy(() => import('./physics/ProjectileMotionSim')),
+  'newton-second-law': lazy(() => import('./physics/NewtonSecondLawSim')),
+  buoyancy: lazy(() => import('./physics/BuoyancySim')),
+  'lever-balance': lazy(() => import('./physics/LeverBalanceSim')),
+  'inclined-plane': lazy(() => import('./physics/InclinedPlaneSim')),
+  'ohm-circuit': lazy(() => import('./physics/OhmCircuitSim')),
+  'series-parallel': lazy(() => import('./physics/SeriesParallelSim')),
+  'convex-lens': lazy(() => import('./physics/ConvexLensSim')),
+  refraction: lazy(() => import('./physics/RefractionSim')),
+  'gas-law': lazy(() => import('./physics/GasLawSim')),
 };
 
 export function getSimulationRenderer(
