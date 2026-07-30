@@ -291,4 +291,56 @@ export const bioPlant001: KnowledgePoint = {
       },
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '一棵小树苗长成参天大树，多出来的几百公斤是从哪来的？不是土里“吃”出来的，主要是叶子从空气里“抓”来的。这一节我们就聊聊这个神奇的过程——光合作用，以及什么条件能让它跑得更快。',
+          en: 'A tiny sapling grows into a massive tree — where did all those extra kilograms come from? Not from the soil, mostly; the leaves pulled it out of thin air. In this lesson we’ll look at that remarkable process, photosynthesis, and what conditions make it run faster.',
+        },
+      },
+      {
+        id: 'concept-equation',
+        kind: 'concept',
+        text: {
+          zh: '先把光合作用的“配方”记住：二氧化碳加水，在光照下、叶绿体里，变成葡萄糖和氧气。叶绿体是车间，叶绿素是吸收光能的“天线”，光是动力来源。两个经典实验可以作证：绿叶照光后用碘液一测变蓝，说明造出了淀粉；金鱼藻在光下冒的气泡能让带火星的卫生香复燃，那就是氧气。',
+          en: 'First, memorise the recipe: carbon dioxide plus water, with light energy inside the chloroplast, becomes glucose and oxygen. The chloroplast is the workshop, chlorophyll is the antenna that captures light, and light is the power source. Two classic experiments back this up: a leaf that has been in the light turns blue-black with iodine, showing starch was made; and the bubbles streaming off pondweed in the light relight a glowing splint — that’s oxygen.',
+        },
+      },
+      {
+        id: 'concept-limiting-factors',
+        kind: 'concept',
+        text: {
+          zh: '那光合速率由谁说了算？主要看三个因素：光照强度、二氧化碳浓度和温度。光照和 CO₂ 是“越多越快”，但都有天花板，加到一定程度就饱和了；温度则是通过影响酶的活性起作用，大约 25 到 30 度最合适，太高了酶失活，速率直接跳水。记住一个原则：某一时刻的速率由最短缺的那个因素决定，这就叫限制因素原理。',
+          en: 'So what controls the rate? Three main factors: light intensity, carbon dioxide concentration, and temperature. More light or more CO₂ means a faster rate, but both have a ceiling — beyond a point the rate saturates and levels off. Temperature works through enzyme activity: the sweet spot is around 25 to 30 degrees, and if it gets too hot the enzymes denature and the rate falls off a cliff. Keep one principle in mind: at any moment the rate is set by whichever factor is in shortest supply — that’s the law of limiting factors.',
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '来动手验证一下吧！在下面的仿真里，固定其他条件，慢慢拉高光照强度，看曲线怎么先升后平——平了说明光照饱和，该轮到 CO₂ 当家了。再把温度拉到 40 度以上，看看酶失活后速率掉得多狠。想省事就直接试三个预设：“阴天弱光”“适宜条件”和“高温胁迫”，对比一下速率差多少。',
+          en: 'Time to test it yourself! In the simulation below, hold everything else steady and slowly raise the light intensity — watch the curve climb and then flatten out. Flat means light is saturated and CO₂ is now calling the shots. Then push the temperature above 40 degrees and see how hard the rate crashes when the enzymes give up. If you’d rather skip the sliders, just run the three presets — “Overcast, dim light”, “Suitable conditions” and “High-temperature stress” — and compare how much the rate changes.',
+        },
+      },
+      {
+        id: 'concept-applications',
+        kind: 'concept',
+        text: {
+          zh: '这套原理在农业上可是真金白银：合理密植、间作套种，是为了让每片叶子都不浪费阳光；温室大棚里增施二氧化碳当“气肥”，就是盯着限制因素下手的；控制昼夜温差，白天高光合、晚上低呼吸，有机物就攒下来了。你看，每一条措施背后都是刚才讲的原理。',
+          en: 'Farmers turn this science into real money. Planting at the right density and intercropping make sure no leaf wastes its sunlight; pumping extra CO₂ into a greenhouse as an “aerial fertiliser” is a direct attack on the limiting factor; and managing the day–night temperature gap — strong photosynthesis by day, low respiration at night — banks more organic matter. Every one of these tricks is just the principles we’ve covered, put to work.',
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '收个尾：光合作用是植物利用光能，把二氧化碳和水在叶绿体里合成有机物、释放氧气的过程。光照、CO₂、温度三大因素各有影响规律，而速率永远被最短缺的那个因素卡住。抓住“限制因素”这个关键词，无论是分析曲线还是解答农业应用题，都不会跑偏。',
+          en: 'Let’s wrap up: photosynthesis is how plants use light energy to turn carbon dioxide and water into organic matter inside chloroplasts, releasing oxygen along the way. Light, CO₂ and temperature each shape the rate in their own way, and the rate is always throttled by whichever factor is scarcest. Hold on to that “limiting factor” idea, and you’ll handle both the graphs and the agriculture questions with confidence.',
+        },
+      },
+    ],
+  },
 };

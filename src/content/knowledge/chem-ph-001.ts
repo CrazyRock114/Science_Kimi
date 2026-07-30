@@ -190,4 +190,56 @@ export const chemPh001: KnowledgePoint = {
       expected: { hConcentration: 1e-14 },
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '柠檬汁酸得倒牙，肥皂水滑溜溜的，纯水喝起来什么味道都没有。这些差别，其实用一个数字就能说清楚——那就是 pH。接下来几分钟，我们就来认识这把衡量酸碱强弱的"尺子"。',
+          en: "Lemon juice makes your mouth pucker, soapy water feels slippery, and pure water tastes like nothing at all. It turns out a single number can describe all of these differences — the pH. Over the next few minutes, let's get to know this scale for measuring acids and alkalis.",
+        },
+      },
+      {
+        id: 'concept-ph-scale',
+        kind: 'concept',
+        text: {
+          zh: 'pH 的取值通常在 0 到 14 之间。正好等于 7 的是中性，比如纯水；小于 7 是酸性，数值越小酸得越厉害；大于 7 是碱性，数值越大碱性越强。所以记住一个 7，你就抓住了整把尺子的中心。',
+          en: "The pH scale usually runs from 0 to 14. A value of exactly 7 means neutral, like pure water. Below 7 is acidic, and the lower the number, the stronger the acid. Above 7 is alkaline, and the higher the number, the stronger the alkali. So just remember the number 7 — that's the centre of the whole scale.",
+        },
+      },
+      {
+        id: 'concept-log-scale',
+        kind: 'concept',
+        text: {
+          zh: '有一点特别要小心：pH 不是普通的刻度，它是按十倍十倍跳的。pH 每减小 1，溶液里的氢离子浓度就增大 10 倍。所以 pH 等于 3 的溶液，可比 pH 等于 5 的溶液酸性强整整 100 倍，而不是只强一点点。',
+          en: "Now here's the part that trips people up: the pH scale doesn't move in even steps — it jumps in powers of ten. Every time the pH drops by 1, the hydrogen ion concentration becomes ten times greater. So a solution at pH 3 isn't just a bit more acidic than one at pH 5 — it's a hundred times more acidic.",
+        },
+      },
+      {
+        id: 'concept-indicator',
+        kind: 'concept',
+        text: {
+          zh: '那我们怎么知道一杯溶液的 pH 大概是多少呢？可以请通用指示剂帮忙。它在强酸里显红色，弱酸里显橙黄色，中性时是绿色，弱碱显蓝色，强碱里会变成紫色。看一眼颜色，酸碱强弱心里就有数了。',
+          en: "So how do we actually find the pH of a solution? That's where universal indicator comes in. It turns red in strong acids, orange-yellow in weak acids, green when neutral, blue in weak alkalis and purple in strong alkalis. One look at the colour gives you a rough idea of the pH.",
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '现在轮到你了。拖动下面的 pH 滑块，从 0 慢慢拉到 14，盯着指示剂的颜色看它是怎么从红色一路变到紫色的。再点几个预设：胃酸、柠檬汁、纯水、肥皂水，看看它们各自落在尺子的什么位置，顺便留意下方氢离子浓度的数量级变化有多大。',
+          en: "Now it's your turn. Drag the pH slider below slowly from 0 all the way to 14, and watch the indicator colour sweep from red through to purple. Then tap the presets — gastric acid, lemon juice, pure water, soap solution — and see where each one sits on the scale. Keep an eye on the hydrogen ion concentration too, and notice how dramatically it changes.",
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '来总结一下：pH 是衡量酸碱性强弱的标度，7 是中性，越小越酸，越大越碱。它每差 1，氢离子浓度就差 10 倍，而通用指示剂的颜色能帮我们快速判断 pH 的大小。掌握了这把尺子，生活里那些酸的碱的就都骗不了你了。',
+          en: "Let's wrap up. pH measures how acidic or alkaline a solution is: 7 is neutral, lower means more acidic, higher means more alkaline. Each step of 1 on the scale means a tenfold change in hydrogen ion concentration, and universal indicator gives us a quick colour-based readout. With this scale in hand, the acids and alkalis around you can't fool you anymore.",
+        },
+      },
+    ],
+  },
 };

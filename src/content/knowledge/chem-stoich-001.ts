@@ -139,4 +139,56 @@ export const chemStoich001: KnowledgePoint = {
       },
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '先考你一个问题：镁条在空气里烧完，剩下的白色粉末居然比原来的镁条还重——东西烧掉了，质量不减反增，这不是怪事吗？其实一点都不怪，这背后正是化学里最基本的一条铁律：质量守恒定律。',
+          en: "Let me start with a puzzle. When you burn a strip of magnesium in air, the white powder left behind actually weighs more than the magnesium you started with. Stuff burns away, yet the mass goes up — sounds like magic, right? It's not magic at all. It's one of the most fundamental rules in chemistry: the law of conservation of mass.",
+        },
+      },
+      {
+        id: 'concept-law',
+        kind: 'concept',
+        text: {
+          zh: '这条定律说：参加化学反应的各物质的质量总和，等于反应后生成的各物质的质量总和。注意"参加"这两个字特别关键——只有真正参与反应的那部分才算数，过量没反应的部分可不能混进来。',
+          en: "Here's what the law says: the total mass of all the reactants that take part in a chemical reaction equals the total mass of all the products formed. Pay close attention to the words 'take part' — only the portion that actually reacts counts. Any leftover excess that didn't react must not be lumped in.",
+        },
+      },
+      {
+        id: 'concept-atoms',
+        kind: 'concept',
+        text: {
+          zh: '为什么质量一定守恒呢？到原子层面看一眼就明白了。化学反应不过是原子重新排队：分子拆开，原子再组合成新分子。整个过程中，原子的种类没变，数目没多没少，每个原子的质量也没变。既然原子这笔账分毫不差，总质量自然不会变。会变的是分子的种类，分子的数目也可能变，但那不影响总账。',
+          en: "So why must mass be conserved? Zoom in to the atomic level and it becomes obvious. A chemical reaction is just atoms rearranging: molecules split apart, and the atoms regroup into new molecules. Throughout the whole process, the types of atoms stay the same, no atoms appear or disappear, and each atom keeps its own mass. With the atomic books balancing perfectly, the total mass can't budge. What does change is the types of molecules — and possibly their number — but that doesn't affect the grand total.",
+        },
+      },
+      {
+        id: 'concept-pitfalls',
+        kind: 'concept',
+        text: {
+          zh: '那开头的怪事怎么解释？很简单：镁燃烧时有氧气悄悄参加了反应，多出来的质量正是氧的。反过来，碳酸钠和盐酸在敞口杯子里反应，称起来变轻了，是因为生成的二氧化碳跑掉了。所以做验证实验要用密闭容器，比如红磷在密闭瓶里燃烧，天平就纹丝不动。把气体都算上，质量从来都守恒。',
+          en: "So how do we explain the opening puzzle? Easy: when magnesium burns, oxygen from the air quietly joins the reaction, and the extra mass is exactly the oxygen's. Conversely, when sodium carbonate reacts with hydrochloric acid in an open beaker, the scale reads less because the carbon dioxide escapes. That's why verification experiments use closed containers — red phosphorus burning in a sealed flask keeps the balance perfectly still. Count every gas involved, and mass is always conserved.",
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '来，亲手算一笔账。12 克碳和 32 克氧气恰好完全反应生成二氧化碳，生成的二氧化碳是多少克？别急着看答案，先自己加一加。算好之后翻到下面的小测，把三道题都做了，尤其想想镁条燃烧那道题该怎么解释，再对照解析检查你的思路。',
+          en: "Now let's do the bookkeeping yourself. Twelve grams of carbon react completely with exactly 32 grams of oxygen to form carbon dioxide — how many grams of carbon dioxide do you get? Don't peek at the answer; add it up yourself first. Then scroll down to the quiz and try all three questions. Think especially hard about how to explain the burning magnesium one, and check your reasoning against the explanations.",
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '总结一下：质量守恒定律说的是，参加反应的物质总质量等于生成物的总质量。它的微观根源是原子种类、数目和质量都不变。遇到看似"不守恒"的现象，多半是气体参与了或跑掉了，把气体算进账，定律永远成立。',
+          en: "To sum up: the law of conservation of mass says the total mass of the reactants that take part equals the total mass of the products. Its microscopic root is that the types, numbers and masses of atoms never change. Whenever a reaction seems to break the law, a gas has usually joined in or slipped away — count the gases, and the law always holds.",
+        },
+      },
+    ],
+  },
 };

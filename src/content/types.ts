@@ -87,6 +87,22 @@ export interface Probe {
   tolerance?: number;
 }
 
+/** 讲解剧本段落类型：引入 / 概念讲解 / 互动引导 / 总结 */
+export type NarrationSectionKind = 'intro' | 'concept' | 'interaction' | 'summary';
+
+/** 讲解剧本的一个段落（台词双语） */
+export interface NarrationSection {
+  id: string;
+  kind: NarrationSectionKind;
+  /** 朗读台词（双语） */
+  text: Localized<string>;
+}
+
+/** TTS 讲解剧本：音频由 tools/generate-narration-audio.md 描述的流程预生成 */
+export interface NarrationScript {
+  sections: NarrationSection[];
+}
+
 /** 知识点 */
 export interface KnowledgePoint {
   id: string;
@@ -108,4 +124,6 @@ export interface KnowledgePoint {
   /** 仿真/计算内核纯函数表（探针测试与仿真共用） */
   kernels?: Record<string, KernelFn>;
   expectedResults?: Probe[];
+  /** TTS 讲解剧本（可选；缺省时知识点页不显示讲解播放器） */
+  narration?: NarrationScript;
 }

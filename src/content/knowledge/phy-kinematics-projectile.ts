@@ -250,4 +250,56 @@ export const phyKinematicsProjectile: KnowledgePoint = {
       expected: { range: 3.9868204056, maxHeight: 0.0872003973, flightTime: 0.2668032941 },
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '篮球划过一道弧线空心入网，烟花冲上夜空再炸开——这些看似不同的运动，其实是同一道题。它们都叫抛体运动，而破解它的钥匙只有四个字：化曲为直。',
+          en: 'A basketball arcs cleanly into the hoop; a firework streaks up and bursts overhead. Different as they look, they\'re the same physics problem — projectile motion. And the key to cracking it is a single idea: split the curve into straight lines.',
+        },
+      },
+      {
+        id: 'concept-components',
+        kind: 'concept',
+        text: {
+          zh: '抛出去的物体只受重力。我们把初速度拆成水平分量和竖直分量，奇迹就发生了：水平方向不受力，就一直匀速走；竖直方向只受重力，做加速度为 g 的匀变速运动。两个方向各走各的，互不干扰，合起来的轨迹就是一条抛物线。',
+          en: 'Once launched, the object feels gravity alone. Split the launch velocity into a horizontal part and a vertical part, and the problem falls apart — in a good way. Horizontally there\'s no force, so it cruises at constant speed; vertically it accelerates at g, just like free fall. Each direction minds its own business, and together they trace a parabola.',
+        },
+      },
+      {
+        id: 'concept-quantities',
+        kind: 'concept',
+        text: {
+          zh: '有了分解，三个量都好算：飞行时间只看竖直分运动，角度越大飞得越久；最高点出现在竖直分速度减到零的瞬间；射程等于水平速度乘以飞行时间，初速率一定时，45 度抛得最远。还有个巧事：30 度和 60 度这对互余的角度，射程一模一样。',
+          en: 'With the motion split, three quantities come easily. Flight time depends only on the vertical part — the steeper the angle, the longer it stays up. The peak is the instant the vertical speed hits zero. Range is horizontal speed times flight time, and for a given launch speed, 45 degrees throws farthest. A nice bonus: complementary angles like 30 and 60 degrees give exactly the same range.',
+        },
+      },
+      {
+        id: 'concept-horizontal',
+        kind: 'concept',
+        text: {
+          zh: '把抛射角收到零，就是平抛运动。它在竖直方向没有初速度，就是纯粹的自由落体，下落时间只由高度决定。所以有个反直觉的结论：不管你水平扔得多快，它和同时松手落下的球，永远同时落地。',
+          en: 'Shrink the launch angle to zero and you get horizontal projection. Vertically it starts from rest — pure free fall — so the fall time depends only on the height. That leads to a counter-intuitive fact: however fast you throw a ball horizontally, it hits the ground at the very same instant as one simply dropped at the same moment.',
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '来亲手验证一下。先点“篮球投篮”预设，看看 1.3 秒多的飞行时间是怎么来的。然后把抛射角滑块从 30 度拖到 60 度，对比射程是不是真的相同。再把角度调到接近 0 度，体验一把平抛。最后试试调小重力加速度 g——把这记投篮搬到月球上，球会飞出多远？',
+          en: 'Time to check it yourself. Start with the "basketball shot" preset and see where its 1.3-second flight comes from. Then drag the angle slider from 30 to 60 degrees and compare the ranges — are they really equal? Push the angle near zero to feel a horizontal throw. And for fun, shrink g: how far does that basketball shot travel on the Moon?',
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '一句话总结：抛体运动就是水平方向的匀速直线运动，叠加竖直方向的自由落体。记住最高点速度不为零、加速度永远是 g，再记住 45 度射程最大，这一节你就拿稳了。接下来去小测里检验一下吧。',
+          en: 'In one line: projectile motion is uniform horizontal motion stacked on top of vertical free fall. Keep in mind that at the peak the speed isn\'t zero, the acceleration is always g, and 45 degrees gives the longest range — then this topic is yours. Head to the quiz and put it to the test.',
+        },
+      },
+    ],
+  },
 };

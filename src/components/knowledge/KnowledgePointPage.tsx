@@ -10,6 +10,9 @@ import { ParamPanel } from './ParamPanel';
 import { PresetBar } from './PresetBar';
 import { SimulationCanvas } from './SimulationCanvas';
 import { QuizSection } from './QuizSection';
+import { NarrationPlayer } from './NarrationPlayer';
+import { TutorPanel } from '../ai/TutorPanel';
+import { theoryBlocksToText } from '../../lib/ai';
 
 interface KnowledgePointPageProps {
   kp: KnowledgePoint;
@@ -88,6 +91,13 @@ export function KnowledgePointPage({ kp, lang }: KnowledgePointPageProps) {
         )}
       </header>
 
+      {/* TTS 讲解播放器（仅有剧本数据时显示） */}
+      {kp.narration && (
+        <section className="mb-10">
+          <NarrationPlayer kpId={kp.id} narration={kp.narration} lang={lang} />
+        </section>
+      )}
+
       {/* 理论区 */}
       <section className="mb-10">
         <h2 className="mb-4 border-b border-slate-200 pb-2 text-xl font-semibold text-slate-900">
@@ -146,6 +156,20 @@ export function KnowledgePointPage({ kp, lang }: KnowledgePointPageProps) {
           {t('kp.quiz')}
         </h2>
         <QuizSection kpId={kp.id} items={kp.quiz} lang={lang} />
+      </section>
+
+      {/* AI 助教（可折叠；携带当前仿真参数作为上下文） */}
+      <section className="mb-10">
+        <TutorPanel
+          context={{
+            kpTitle: kp.title[lang],
+            kpSummary: kp.summary[lang],
+            kpTheory: theoryBlocksToText(kp.theory[lang]),
+            gradeTier: kp.gradeTier,
+            params,
+          }}
+          lang={lang}
+        />
       </section>
     </article>
   );

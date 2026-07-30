@@ -250,4 +250,56 @@ export const phyElectric002: KnowledgePoint = {
       expected: { current: 12, power: 288 },
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '手电筒里那节小小的电池，是怎么决定灯泡有多亮的？答案藏在三个物理量的关系里：电压、电流和电阻。这节课我们用一个虚拟电路，把欧姆定律亲手“玩”出来。',
+          en: 'How does a tiny battery in a torch decide how brightly the bulb glows? The answer lies in a relationship between three quantities: voltage, current and resistance. In this lesson we\'ll bring Ohm\'s law to life with a virtual circuit.',
+        },
+      },
+      {
+        id: 'concept-law',
+        kind: 'concept',
+        text: {
+          zh: '实验告诉我们两件事：电阻不变时，电压越大，电流越大，而且是严格的正比；电压不变时，电阻越大，电流反而越小。把这两条合起来，就是欧姆定律：I 等于 U 除以 R。记住一个小细节：这三个量必须说的是同一段导体、同一个时刻。',
+          en: 'Experiments tell us two things. Keep the resistance fixed, and the current grows in exact proportion to the voltage. Keep the voltage fixed, and a bigger resistance means a smaller current. Put those together and you get Ohm\'s law: I equals V over R. One detail worth remembering: all three quantities must describe the same conductor at the same moment.',
+        },
+      },
+      {
+        id: 'concept-resistance',
+        kind: 'concept',
+        text: {
+          zh: '这里有个特别容易踩的坑：R 等于 U 除以 I，只是测量电阻的方法，不是电阻的“决定式”。电阻是导体自己的脾气——由材料、长度、粗细和温度决定。可不能说“电压大了电阻就变大”，那是把因果关系弄反了。',
+          en: 'Here\'s a classic trap. R equals V over I is only a way to measure resistance, not a formula that creates it. Resistance is the conductor\'s own property, set by its material, length, thickness and temperature. So never say "more voltage means more resistance" — that gets cause and effect backwards.',
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '轮到你了。先把电阻固定在 10 欧，慢慢拖动电压滑块，看电流表的读数是不是跟着成倍变化。再反过来，固定电压 6 伏，把电阻调大，观察电流怎么往下掉。最后点一下“高压危险”预设：24 伏接 2 欧，12 安的电流会告诉你短路为什么可怕。',
+          en: 'Now it\'s your turn. Fix the resistance at 10 ohms and drag the voltage slider — watch the current reading grow in step. Then hold the voltage at 6 volts and raise the resistance, and see the current fall away. Finally, tap the "high-voltage danger" preset: 24 volts across just 2 ohms drives 12 amps, which shows exactly why a short circuit is scary.',
+        },
+      },
+      {
+        id: 'concept-scope',
+        kind: 'concept',
+        text: {
+          zh: '欧姆定律也不是万能的。对温度恒定的金属导体，电流-电压图像是一条过原点的直线，这样的元件叫线性元件。但灯丝一热，电阻就变大；二极管更是根本不听话。所以用公式之前，先想想你的元件是不是“守规矩”的那一类。',
+          en: 'Ohm\'s law doesn\'t rule everything. For a metal conductor at constant temperature, the current–voltage graph is a straight line through the origin — a linear component. But a lamp filament\'s resistance climbs as it heats up, and a diode simply refuses to obey. So before you reach for the formula, ask whether your component actually plays by the rules.',
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '来回顾一下：欧姆定律 I 等于 U 除以 R，把电压、电流、电阻串在了一起；它的两个变形式可以帮你算电压、测电阻。但电阻是导体本身的性质，跟加不加电压无关。接下来的小测里，看看你能不能避开那些常见的坑。',
+          en: 'Let\'s wrap up. Ohm\'s law, I equals V over R, ties voltage, current and resistance together, and its two rearrangements let you find voltages and measure resistances. But resistance belongs to the conductor itself, with or without an applied voltage. Try the quiz next and see if you can dodge the classic traps.',
+        },
+      },
+    ],
+  },
 };

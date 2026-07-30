@@ -11,6 +11,7 @@ import {
   SOLUTION_COLORS,
   PRECIPITATE_COLORS,
 } from '../../chem-engine/reagents';
+import { TutorPanel } from '../ai/TutorPanel';
 
 /** 无色液体的默认颜色（近似水的浅蓝） */
 const WATER_COLOR = '#dbeafe';
@@ -290,6 +291,23 @@ export default function LabBench({ experiment, lang }: LabBenchProps) {
             {t('lab.reset')}
           </button>
         </div>
+      </div>
+
+      {/* AI 助教（上下文：实验标题/描述/目标 + 已加入试剂） */}
+      <div className="mt-6 border-t border-slate-100 pt-4">
+        <TutorPanel
+          context={{
+            kpTitle: experiment.title[lang],
+            kpSummary: experiment.description[lang],
+            kpTheory: experiment.objectives[lang].map((o) => `- ${o}`).join('\n'),
+            gradeTier: 'both',
+            params:
+              added.length > 0
+                ? { addedReagents: added.map((i) => experiment.reagents[lang][i]).join(' + ') }
+                : undefined,
+          }}
+          lang={lang}
+        />
       </div>
     </div>
   );

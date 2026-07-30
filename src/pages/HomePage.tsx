@@ -6,6 +6,7 @@ import { igcseSyllabuses } from '../content/syllabus/igcse';
 import { pepBooks } from '../content/syllabus/pep';
 import type { KnowledgePoint, Lang, Subject } from '../content/types';
 import { KnowledgePointCard } from '../components/KnowledgePointCard';
+import { ReportCard } from '../components/ai/ReportCard';
 
 type GradeTab = 'all' | 'middle' | 'senior';
 
@@ -97,6 +98,11 @@ export function HomePage() {
             );
           })}
         </div>
+      </section>
+
+      {/* 我的学习报告 */}
+      <section className="mb-10">
+        <ReportCard lang={lang} />
       </section>
 
       {/* 筛选区 */}

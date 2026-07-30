@@ -273,6 +273,58 @@ export const bioGenetics002: KnowledgePoint = {
       },
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '为什么高茎豌豆和矮茎豌豆杂交，后代全是高茎，到了下一代矮茎又冒出来了？一百多年前，孟德尔就靠种豌豆、数豌豆，把这背后的规律给算了出来。今天我们一起看看他是怎么做的。',
+          en: 'Why does crossing a tall pea plant with a dwarf one give all tall offspring — and then, one generation later, the dwarf plants pop up again? Over a century ago, Mendel worked this out simply by growing peas and counting them. Let’s see how he did it.',
+        },
+      },
+      {
+        id: 'concept-experiment',
+        kind: 'concept',
+        text: {
+          zh: '先看实验本身：纯种高茎和纯种矮茎杂交，F₁ 全部是高茎，说明高茎是显性性状，矮茎被“藏”了起来。但让 F₁ 自交后，F₂ 里矮茎又出现了，高茎和矮茎大约是 3 比 1。这个“失踪又回归”的现象，就是孟德尔要解释的谜题。',
+          en: 'Start with the experiment itself: pure-breeding tall crossed with pure-breeding dwarf gives an F₁ that is all tall — so tall is dominant, and dwarf gets hidden. But self-pollinate the F₁, and dwarf plants reappear in the F₂, at about three tall to one dwarf. That “vanish and return” pattern is exactly the puzzle Mendel set out to explain.',
+        },
+      },
+      {
+        id: 'concept-segregation',
+        kind: 'concept',
+        text: {
+          zh: '孟德尔的解释很巧妙：控制性状的遗传因子在体细胞里成对存在，形成配子时这对因子会分开，每个配子只带走一个。所以 F₁（Aa）能产生 A 和 a 两种配子，各占一半，随机结合后就是 1/4 AA、1/2 Aa、1/4 aa——显性的占三份，隐性的占一份。再让 F₁ 和隐性纯合子测交，后代正好是 1 比 1，实验一验证，果然如此，这就是分离定律。',
+          en: 'Mendel’s explanation is elegant: the factors controlling a trait come in pairs in body cells, and the pair splits apart when gametes form, so each gamete carries just one. An F₁ plant, Aa, therefore makes equal numbers of A and a gametes; random fertilisation gives 1/4 AA, 1/2 Aa, 1/4 aa — three parts dominant to one part recessive. Cross the F₁ with a homozygous recessive in a test cross and you get exactly 1:1, which the experiments confirmed. That is the law of segregation.',
+        },
+      },
+      {
+        id: 'concept-statistics',
+        kind: 'concept',
+        text: {
+          zh: '有一点特别重要：3 比 1 是大量统计出来的理论比例，不是每一窝都精确兑现。只数 4 株就全是高茎，这太正常了——概率上完全可能发生。样本越大，实际比例才会越贴近理论值，这也是孟德尔当年要数成千上万颗种子的原因。',
+          en: 'One thing really matters here: 3:1 is a theoretical ratio from large-scale statistics, not a promise for every single batch. Count only four plants and get all tall? Perfectly normal — the probability of that is quite reasonable. The bigger the sample, the closer reality hugs the theory, which is exactly why Mendel counted thousands upon thousands of seeds.',
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '现在轮到你了！打开下方的仿真，先把“杂交方式”滑块拨到 0 做自交，再把取样数从 10 慢慢拉到 1000，盯着显性和隐性的比例怎么一点点逼近 3 比 1。然后把杂交方式拨到 1 试试测交，看看比例是不是变成了 1 比 1；懒得调的话，直接点“杂合子自交 3:1”或“大样本趋近理论比”预设也行。',
+          en: 'Now it’s your turn! In the simulation below, set the cross-type slider to 0 for a self-cross, then drag the sample size from 10 up to 1000 and watch the dominant-to-recessive ratio creep towards 3:1. Then switch the cross type to 1 for a test cross and check whether the ratio becomes 1:1 — or just hit the “Self-cross 3:1” or “Large sample” presets if you’d rather skip the slider work.',
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '总结一下：杂合子形成配子时，成对的遗传因子彼此分离，这就是分离定律的核心；自交 3 比 1、测交 1 比 1 是它的两个标志性比例。记住，这些比例都是统计规律，样本小了会有波动。理解了这一点，后面的遗传题就有底气了。',
+          en: 'To wrap up: when a heterozygote forms gametes, the paired factors separate — that’s the heart of the law of segregation. Self-crosses give 3:1, test crosses give 1:1, and both are statistical rules, so small samples will wobble around them. Get comfortable with that, and the genetics problems ahead will feel a lot friendlier.',
+        },
+      },
+    ],
+  },
 };
 
 export default bioGenetics002;

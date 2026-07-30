@@ -237,4 +237,56 @@ export const phyPressure003: KnowledgePoint = {
       expected: { weight: 9.8, buoyantForce: 9.8, submergedFraction: 1 },
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '一块铁丢进水里，扑通一声就沉底了；可几万吨的钢铁巨轮，却能安安稳稳地漂在海上。同样是铁，差别到底在哪？听完这段讲解，你就能用一条两千多年前的原理把这件事说清楚。',
+          en: 'Drop a lump of iron in water and it sinks straight to the bottom. Yet a steel ship weighing tens of thousands of tonnes floats quite happily. Same metal — so what\'s going on? By the end of this lesson, a principle discovered over two thousand years ago will explain it.',
+        },
+      },
+      {
+        id: 'concept-buoyancy',
+        kind: 'concept',
+        text: {
+          zh: '液体里的物体，下表面比上表面深，受到的压力也更大，这一上一下的压力差就把物体往上托，这就是浮力。想称一称浮力有多大？用弹簧测力计：空气中的读数减去浸在液体里的读数，差值就是浮力。',
+          en: 'Inside a liquid, an object\'s bottom face sits deeper than its top face, so it feels a bigger push from below. That pressure difference is the upward force we call buoyancy. Want to weigh it? Use a spring balance: the reading in air minus the reading in the liquid gives you exactly the upthrust.',
+        },
+      },
+      {
+        id: 'concept-archimedes',
+        kind: 'concept',
+        text: {
+          zh: '阿基米德原理一句话就能说完：浮力等于物体排开的那部分液体所受的重力，写成公式就是 F浮 等于 ρ液 g V排。注意，浮力只看液体密度和排开的体积；跟物体自己是轻是重、是什么形状，统统没关系。',
+          en: 'Archimedes\' principle fits in one sentence: the upthrust equals the weight of the fluid the object pushes aside — F equals rho times g times the displaced volume. Notice what matters: only the fluid density and the displaced volume. The object\'s own density and shape are irrelevant.',
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '打开仿真，先点“木块在水中”这个预设：木块密度只有水的一半，漂着，正好一半体积浸在水里。再切换到“铁块在水中”，全浸了还是往下沉。最有意思的是“悬浮”预设——密度调得和水一模一样，物体就那么停在水中不上不下。你还可以拖一拖液体密度的滑块，想想盐水和淡水会有什么不同。',
+          en: 'Open the simulation and tap the "wood block in water" preset first: the wood is half as dense as water, so it floats with exactly half its volume submerged. Switch to "iron block in water" and it sinks, even fully immersed. The neatest one is the "neutrally buoyant" preset — match the densities and the object just hangs there. Then drag the liquid-density slider and imagine the difference between fresh water and salt water.',
+        },
+      },
+      {
+        id: 'concept-depth',
+        kind: 'concept',
+        text: {
+          zh: '还有一个考试常考的错觉：物体全浸之后，再往深处压，浮力会不会变大？不会。因为全浸以后，排开液体的体积就是物体自身的体积，不再变了，所以浮力和深度无关。',
+          en: 'Here\'s an exam favourite that trips people up: once an object is fully submerged, push it deeper — does the upthrust grow? No. Once fully under, the displaced volume is just the object\'s own volume, and it can\'t change any more. So the upthrust simply doesn\'t care about depth.',
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '总结一下：浮力来自液体对物体上下表面的压力差，大小等于排开液体的重力，只由液体密度和排开体积决定。物体密度小于液体就漂浮，相等就悬浮，大于就下沉。去做做后面的题，看看你能不能把轮船为什么能浮起来讲明白。',
+          en: 'To sum up: buoyancy comes from the pressure difference between the top and bottom of an object, and it equals the weight of fluid displaced — set by the fluid\'s density and the displaced volume alone. Less dense than the liquid, it floats; equally dense, it hovers; denser, it sinks. Now try the questions and explain for yourself why a ship floats.',
+        },
+      },
+    ],
+  },
 };

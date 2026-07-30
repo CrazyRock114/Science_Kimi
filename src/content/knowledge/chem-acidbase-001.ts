@@ -163,4 +163,56 @@ export const chemAcidbase001: KnowledgePoint = {
       },
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '胃胀反酸的时候，吃一片抗酸药很快就舒服了；农民往酸性土壤里撒熟石灰，庄稼就长得更好。这些生活里的妙招，背后其实都是同一个化学反应——中和反应。这一讲我们就把它彻底搞明白。',
+          en: "An antacid tablet can settle an uncomfortable stomach in minutes, and farmers spread slaked lime on acidic soil to help their crops grow. Behind both of these everyday tricks lies the very same chemical reaction — neutralisation. In this session, we'll get to the bottom of it.",
+        },
+      },
+      {
+        id: 'concept-what',
+        kind: 'concept',
+        text: {
+          zh: '所谓中和反应，就是酸和碱作用，生成盐和水的反应。最经典的例子是盐酸遇上氢氧化钠，生成氯化钠——也就是食盐——和水，还会放出热量。抓住"酸加碱，变盐加水"这句话，你就记住了中和反应的定义。',
+          en: "A neutralisation reaction is what happens when an acid reacts with a base to produce a salt and water. The classic example is hydrochloric acid meeting sodium hydroxide, giving sodium chloride — that's common table salt — plus water, with heat released along the way. Hold on to the phrase 'acid plus base makes salt plus water', and you've got the definition.",
+        },
+      },
+      {
+        id: 'concept-essence',
+        kind: 'concept',
+        text: {
+          zh: '再往深看一层：中和反应的本质，其实是酸里的氢离子和碱里的氢氧根离子结合，变成了水分子。所以不管什么强酸强碱，离子方程式都是同一个：氢离子加氢氧根离子生成水。不过这个反应常常悄无声息，得请酚酞这样的指示剂帮忙，红色刚好褪去的那一刻，就是酸碱恰好完全中和的时刻。',
+          en: "Let's look one level deeper. The real heart of neutralisation is that hydrogen ions from the acid join up with hydroxide ions from the base to form water molecules. That's why every strong-acid-strong-alkali reaction shares the same ionic equation: H⁺ plus OH⁻ gives water. The reaction itself is often invisible, though, so we call in an indicator like phenolphthalein — the instant the pink colour just fades away marks the exact point of complete neutralisation.",
+        },
+      },
+      {
+        id: 'concept-applications',
+        kind: 'concept',
+        text: {
+          zh: '中和反应的用武之地可多了：撒熟石灰改良酸性土壤，吃含氢氧化镁的药片对付胃酸过多，用石灰处理工厂的酸性废水，连蚊虫叮咬后涂点肥皂水止痒，用的也是它。但要记住，用量必须"适量"——碱加过头，土壤和废水就变成碱性了，反而添了新麻烦。',
+          en: "Neutralisation has plenty of uses: spreading slaked lime to treat acidic soil, taking magnesium hydroxide tablets for excess stomach acid, liming acidic factory waste water — even dabbing soapy water on an insect sting works the same way. But remember, the dose matters: add too much alkali and the soil or waste water turns alkaline instead, which just creates a new problem.",
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '好，现在动动手也动动脑。先拿张纸，试着自己写出氢氧化镁和盐酸反应的化学方程式，记得配平。写完后翻到下面的小测，特别是酚酞变色的那道题，想一想"恰好变无色"到底意味着什么，然后选出你的答案，看看解析和你想的是不是一样。',
+          en: "Alright, time to put this into practice. Grab a piece of paper and try writing the equation for magnesium hydroxide reacting with hydrochloric acid — don't forget to balance it. Then head down to the quiz, especially the question about phenolphthalein changing colour. Think carefully about what 'just turning colourless' really tells you, pick your answers, and check whether the explanations match your reasoning.",
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '总结一下今天的内容：中和反应就是酸加碱生成盐和水，本质是氢离子和氢氧根离子结合成水。它在改良土壤、治疗胃酸、处理废水等方面大显身手，但用量一定要控制得当。理解了它，你就掌握了酸碱世界里最实用的一招。',
+          en: "Let's recap. Neutralisation is acid plus base giving salt and water, and at its core it's hydrogen ions pairing with hydroxide ions to make water. It earns its keep in treating soil, calming stomachs and cleaning up waste water — as long as the amount is carefully controlled. Understand this, and you've mastered one of the most practical moves in the world of acids and bases.",
+        },
+      },
+    ],
+  },
 };
