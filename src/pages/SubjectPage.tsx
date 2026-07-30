@@ -40,6 +40,21 @@ export function SubjectPage() {
         </Link>
       )}
 
+      {subject === 'biology' && (
+        <Link
+          to={`/${lang}/biology/cells`}
+          className="mb-8 block rounded-lg border border-slate-200 border-l-4 border-l-biology bg-white p-5 transition hover:shadow-md"
+        >
+          <div className="mb-1 flex items-center justify-between gap-2">
+            <h2 className="text-lg font-semibold text-slate-900">🔬 {t('cells.title')}</h2>
+            <span className="rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-700">
+              {t('cells.badge')}
+            </span>
+          </div>
+          <p className="text-sm leading-6 text-slate-600">{t('cells.entryDesc')}</p>
+        </Link>
+      )}
+
       <p className="mb-3 text-sm text-slate-500">{t('home.resultCount', { count: points.length })}</p>
       {points.length === 0 ? (
         <p className="rounded-lg border border-dashed border-slate-300 py-10 text-center text-sm text-slate-400">

@@ -91,6 +91,18 @@ export default {
         COORDINATION: 'Complexation & Colour Reactions',
       },
     },
+    cells: {
+      title: '3D Cell Workshop',
+      entryDesc: 'Rotate and zoom cell models in 3D, and click an organelle to learn about its structure and function',
+      badge: 'Interactive 3D',
+      backToBiology: 'Back to Biology',
+      organelleList: 'Organelles',
+      structure: 'Structure',
+      function: 'Function',
+      funFact: 'Did you know',
+      selectHint: 'Click an organelle in the 3D model, or pick one from the list on the left, to see its details.',
+      controlsHint: 'Drag to rotate · Scroll / pinch to zoom',
+    },
     notFound: {
       title: 'Page Not Found',
       message: 'The page you are looking for does not exist or has been moved.',

@@ -188,6 +188,46 @@ export const pepBooks: PepBook[] = [
       ['第6章 生物的进化', 'Chapter 6 Biological Evolution'],
     ]),
   },
+  {
+    id: 'pep-bio-j7a',
+    subject: 'biology',
+    gradeTier: 'middle',
+    title: { zh: '生物·七年级上册', en: 'Biology Grade 7, Vol. 1' },
+    chapters: chapters([
+      ['第一单元 生物和生物圈', 'Unit 1 Organisms and the Biosphere'],
+      ['第二单元 生物体的结构层次', 'Unit 2 Structural Levels of Organisms'],
+      ['第三单元 生物圈中的绿色植物', 'Unit 3 Green Plants in the Biosphere'],
+    ]),
+  },
+  {
+    id: 'pep-bio-j7b',
+    subject: 'biology',
+    gradeTier: 'middle',
+    title: { zh: '生物·七年级下册', en: 'Biology Grade 7, Vol. 2' },
+    chapters: chapters([
+      ['第四单元 生物圈中的人', 'Unit 4 Humans in the Biosphere'],
+    ]),
+  },
+  {
+    id: 'pep-bio-j8a',
+    subject: 'biology',
+    gradeTier: 'middle',
+    title: { zh: '生物·八年级上册', en: 'Biology Grade 8, Vol. 1' },
+    chapters: chapters([
+      ['第五单元 生物圈中的其他生物', 'Unit 5 Other Organisms in the Biosphere'],
+      ['第六单元 生物的多样性及其保护', 'Unit 6 Biodiversity and Its Conservation'],
+    ]),
+  },
+  {
+    id: 'pep-bio-j8b',
+    subject: 'biology',
+    gradeTier: 'middle',
+    title: { zh: '生物·八年级下册', en: 'Biology Grade 8, Vol. 2' },
+    chapters: chapters([
+      ['第七单元 生物圈中生命的延续和发展', 'Unit 7 Continuity and Development of Life in the Biosphere'],
+      ['第八单元 健康地生活', 'Unit 8 Healthy Living'],
+    ]),
+  },
 ];
 
 /** 按学科取教材册列表 */

@@ -49,6 +49,26 @@ import { phyOptics001 } from './phy-optics-001';
 import { phyOptics002 } from './phy-optics-002';
 import { phyThermal001 } from './phy-thermal-001';
 import { phyThermal002 } from './phy-thermal-002';
+import { bioCell001 } from './bio-cell-001';
+import { bioCell002 } from './bio-cell-002';
+import { bioCell003 } from './bio-cell-003';
+import { bioCell004 } from './bio-cell-004';
+import { bioGenetics001 } from './bio-genetics-001';
+import { bioGenetics002 } from './bio-genetics-002';
+import { bioGenetics003 } from './bio-genetics-003';
+import { bioGenetics004 } from './bio-genetics-004';
+import { bioPlant001 } from './bio-plant-001';
+import { bioPlant002 } from './bio-plant-002';
+import { bioPlant003 } from './bio-plant-003';
+import { bioPlant004 } from './bio-plant-004';
+import { bioHuman001 } from './bio-human-001';
+import { bioHuman002 } from './bio-human-002';
+import { bioHuman003 } from './bio-human-003';
+import { bioHuman004 } from './bio-human-004';
+import { bioEco001 } from './bio-eco-001';
+import { bioEco002 } from './bio-eco-002';
+import { bioEco003 } from './bio-eco-003';
+import { bioEco004 } from './bio-eco-004';
 
 /** 全部知识点（按加入顺序） */
 export const knowledgePoints: KnowledgePoint[] = [
@@ -102,6 +122,26 @@ export const knowledgePoints: KnowledgePoint[] = [
   phyOptics002,
   phyThermal001,
   phyThermal002,
+  bioCell001,
+  bioCell002,
+  bioCell003,
+  bioCell004,
+  bioGenetics001,
+  bioGenetics002,
+  bioGenetics003,
+  bioGenetics004,
+  bioPlant001,
+  bioPlant002,
+  bioPlant003,
+  bioPlant004,
+  bioHuman001,
+  bioHuman002,
+  bioHuman003,
+  bioHuman004,
+  bioEco001,
+  bioEco002,
+  bioEco003,
+  bioEco004,
 ];
 
 export function getKnowledgePointsBySubject(subject: Subject): KnowledgePoint[] {

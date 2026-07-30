@@ -23,6 +23,12 @@ const registry: Record<string, LazyExoticComponent<ComponentType<SimulationProps
   'convex-lens': lazy(() => import('./physics/ConvexLensSim')),
   refraction: lazy(() => import('./physics/RefractionSim')),
   'gas-law': lazy(() => import('./physics/GasLawSim')),
+  'mendel-genetics': lazy(() => import('./biology/MendelGeneticsSim')),
+  osmosis: lazy(() => import('./biology/OsmosisSim')),
+  'photosynthesis-rate': lazy(() => import('./biology/PhotosynthesisRateSim')),
+  'enzyme-activity': lazy(() => import('./biology/EnzymeActivitySim')),
+  diffusion: lazy(() => import('./biology/DiffusionSim')),
+  'population-growth': lazy(() => import('./biology/PopulationGrowthSim')),
 };
 
 export function getSimulationRenderer(

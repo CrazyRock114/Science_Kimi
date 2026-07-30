@@ -91,6 +91,18 @@ export default {
         COORDINATION: '配位与显色',
       },
     },
+    cells: {
+      title: '3D 细胞工坊',
+      entryDesc: '在 3D 场景中旋转、缩放细胞模型，点击细胞器了解它的结构与功能',
+      badge: '3D 交互',
+      backToBiology: '返回生物学科',
+      organelleList: '细胞器',
+      structure: '结构',
+      function: '功能',
+      funFact: '你知道吗',
+      selectHint: '点击 3D 模型中的细胞器，或从左侧列表中选择，查看详细介绍。',
+      controlsHint: '拖动旋转 · 滚轮 / 双指缩放',
+    },
     notFound: {
       title: '页面不存在',
       message: '你访问的页面不存在或已被移动。',
