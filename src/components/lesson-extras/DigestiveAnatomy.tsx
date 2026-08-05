@@ -2,7 +2,7 @@
 // import 路径由 scripts/port-mmx-extras.mjs 改写，勿手改 import 区块以外的差异
 import { useEffect, useMemo, useState } from 'react'
 import type { AnatomyOrgan, DigestiveAnatomyExtra } from './types'
-import { T } from '../../simulations/mmx/T'
+import { T, useBilingualText, useMmxLang } from '../../simulations/mmx/T'
 import { DIGESTIVE_ANATOMY } from './lessonExtrasStrings'
 
 /**
@@ -244,6 +244,8 @@ function FigureWithHotspots({
   orderedForFollow: AnatomyOrgan[]
 }) {
   // Compute the follow-dot's position for the current step.
+  const lang = useMmxLang()
+  const figureAlt = useBilingualText(DIGESTIVE_ANATOMY.figureAlt)
   const followTarget = orderedForFollow[Math.min(followStep, Math.max(0, orderedForFollow.length - 1))]
   const followHotspot = followTarget ? HOTSPOTS[followTarget.id] : null
 
@@ -252,12 +254,12 @@ function FigureWithHotspots({
       {/* The base image — the textbook figure. */}
       <img
         src="/figures/g8/7-1-nutrition/figure-b5-08.png"
-        alt="The human digestive system"
+        alt={figureAlt}
         className="block w-full"
         draggable={false}
       />
       <figcaption className="border-t border-line bg-canvas px-3 py-1.5 text-[11px] text-muted">
-        G8 Science · p.14, Figure B5.08 · click an organ to read about it
+        <T value={DIGESTIVE_ANATOMY.figureCaption} />
       </figcaption>
 
       {/* Overlay: transparent SVG with click/hover hit areas. */}
@@ -279,7 +281,7 @@ function FigureWithHotspots({
               h={h}
               isSelected={isSelected}
               isHovered={isHovered}
-              label={o.name.en}
+              label={lang === 'zh' ? (o.name.zh ?? o.name.en) : o.name.en}
               onSelect={() => onSelect(o.id)}
               onHover={(v) => onHover(v ? o.id : null)}
             />

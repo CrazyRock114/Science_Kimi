@@ -1,7 +1,7 @@
 // 移植自 IGCSE_miniMax（作者 CrazyRock114，non-commercial）：src/components/lesson-extras/BloodVesselsCompare.tsx
 // import 路径由 scripts/port-mmx-extras.mjs 改写，勿手改 import 区块以外的差异
 import type { BloodVesselsCompareExtra } from './types'
-import { T } from '../../simulations/mmx/T'
+import { T, useMmxLang } from '../../simulations/mmx/T'
 import { BLOOD_VESSELS_COMPARE } from './lessonExtrasStrings'
 
 /**
@@ -33,12 +33,14 @@ export function BloodVesselsCompare({ extra }: { extra: BloodVesselsCompareExtra
 // ---------------------------------------------------------------------------
 
 function VesselCard({ vessel }: { vessel: BloodVesselsCompareExtra['vessels'][number] }) {
+  const lang = useMmxLang()
+  const name = typeof vessel.name === 'string' ? vessel.name : lang === 'zh' ? (vessel.name.zh ?? vessel.name.en) : vessel.name.en
   return (
     <article className="overflow-hidden rounded-lg border border-line bg-surface">
       <figure className="m-0 bg-canvas">
         <img
           src={vessel.image}
-          alt={`Cross-section of a ${typeof vessel.name === 'string' ? vessel.name : vessel.name.en}`}
+          alt={lang === 'zh' ? `${name}的横切面` : `Cross-section of a ${name}`}
           className="h-40 w-full object-contain"
           loading="lazy"
         />

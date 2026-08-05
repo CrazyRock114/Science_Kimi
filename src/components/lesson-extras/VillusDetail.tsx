@@ -2,7 +2,8 @@
 // import 路径由 scripts/port-mmx-extras.mjs 改写，勿手改 import 区块以外的差异
 import { useState } from 'react'
 import type { VillusDetailExtra } from './types'
-import { T } from '../../simulations/mmx/T'
+import { T, useBilingualText } from '../../simulations/mmx/T'
+import { VILLUS_DETAIL } from './lessonExtrasStrings'
 
 /**
  * A cross-section of a single villus, with the named structures and where each
@@ -14,6 +15,8 @@ import { T } from '../../simulations/mmx/T'
  * stays clean and unaltered.
  */
 export function VillusDetail({ extra }: { extra: VillusDetailExtra }) {
+  const figureAlt = useBilingualText(VILLUS_DETAIL.figureAlt)
+  const microvilliAlt = useBilingualText(VILLUS_DETAIL.microvilliAlt)
   const [selectedId, setSelectedId] = useState<string | null>(null)
 
   return (
@@ -21,12 +24,12 @@ export function VillusDetail({ extra }: { extra: VillusDetailExtra }) {
       <figure className="m-0 overflow-hidden rounded-lg border border-line bg-canvas">
         <img
           src="/figures/g8/7-1-nutrition/figure-b5-09.png"
-          alt="Longitudinal section through a villus"
+          alt={figureAlt}
           className="h-auto w-full"
           loading="lazy"
         />
         <figcaption className="border-t border-line bg-canvas px-3 py-1.5 text-[11px] text-muted">
-          G8 Science · p.16, Figure B5.09 · labelled cross-section of a single villus
+          <T value={VILLUS_DETAIL.figureCaption} />
         </figcaption>
       </figure>
 
@@ -66,12 +69,12 @@ export function VillusDetail({ extra }: { extra: VillusDetailExtra }) {
         <figure className="m-0 overflow-hidden rounded-lg border border-line bg-canvas">
           <img
             src="/figures/g8/7-1-nutrition/figure-b5-10.png"
-            alt="Detail of the surface of a villus — microvilli on each epithelial cell"
+            alt={microvilliAlt}
             className="h-auto w-full"
             loading="lazy"
           />
           <figcaption className="border-t border-line bg-canvas px-3 py-1.5 text-[11px] text-muted">
-            G8 Science · p.17, Figure B5.10 · microvilli on the surface of a single epithelial cell
+            <T value={VILLUS_DETAIL.microvilliCaption} />
           </figcaption>
         </figure>
       )}
@@ -83,7 +86,7 @@ function TransportTable({ transport }: { transport: VillusDetailExtra['transport
   return (
     <div>
       <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">
-        Where each nutrient goes
+        <T value={VILLUS_DETAIL.transportTitle} />
       </h4>
       <div className="overflow-x-auto rounded-lg border border-line">
         <table className="w-full text-sm">

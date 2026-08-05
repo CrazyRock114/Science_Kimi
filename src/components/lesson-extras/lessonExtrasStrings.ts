@@ -19,6 +19,11 @@ import type { Bilingual } from './types'
 export const DIGESTIVE_ANATOMY = {
   modeExplore: { en: 'Explore', zh: '探索' } satisfies Bilingual,
   modeFollow: { en: 'Follow the food', zh: '跟着食物走一遍' } satisfies Bilingual,
+  figureAlt: { en: 'The human digestive system', zh: '人体消化系统' } satisfies Bilingual,
+  figureCaption: {
+    en: 'G8 Science · p.14, Figure B5.08 · click an organ to read about it',
+    zh: 'G8 科学 · 第 14 页，图 B5.08 · 点击器官查看讲解',
+  } satisfies Bilingual,
   followPrompt: {
     en: 'A ball of food is travelling mouth → anus. The right-hand panel follows along.',
     zh: '一团食物正从口腔走向肛门。右侧面板同步讲解。',
@@ -44,6 +49,16 @@ export const TEETH_ANATOMY = {
   } satisfies Bilingual,
   gumLabel: { en: 'gum', zh: '牙龈' } satisfies Bilingual,
   nerveLabel: { en: 'nerve & blood vessels', zh: '神经与血管' } satisfies Bilingual,
+  kindsHeading: { en: 'The four types of teeth in an adult', zh: '成人的四类牙齿' } satisfies Bilingual,
+  countsNote: {
+    en: 'Counts: 8 incisors + 4 canines + 8 premolars + 12 molars = 32 teeth in an adult.',
+    zh: '数量：8 颗切牙 + 4 颗尖牙 + 8 颗前磨牙 + 12 颗磨牙 = 成人共 32 颗牙。',
+  } satisfies Bilingual,
+  figureAlt: { en: 'Longitudinal section of an incisor tooth', zh: '切牙纵切面' } satisfies Bilingual,
+  figureCaption: {
+    en: 'G8 Science · p.13, Figure B5.04 · labelled longitudinal section of an incisor',
+    zh: 'G8 科学 · 第 13 页，图 B5.04 · 带标注的切牙纵切面',
+  } satisfies Bilingual,
 } as const
 
 export const VILLI_SURFACE_AREA = {
@@ -59,6 +74,7 @@ export const VILLI_SURFACE_AREA = {
   withMicrovilli: { en: 'With microvilli', zh: '有微绒毛' } satisfies Bilingual,
   withMicrovilliNote: { en: '≈ a tennis court', zh: '≈ 一个网球场' } satisfies Bilingual,
   bareCaption: { en: 'Surface area = circumference × length', zh: '表面积 = 周长 × 长度' } satisfies Bilingual,
+  fingersInView: { en: 'fingers in this view', zh: '根绒毛（本视图）' } satisfies Bilingual,
 } as const
 
 export const BILE_EMULSIFICATION = {
@@ -78,6 +94,8 @@ export const BILE_EMULSIFICATION = {
     en: 'Click "Add bile" to see what emulsification looks like.',
     zh: '点"+ 加入胆汁"看看乳化的样子。',
   } satisfies Bilingual,
+  oneDrop: { en: '1 drop', zh: '1 滴' } satisfies Bilingual,
+  manyDrops: { en: 'many drops', zh: '许多小滴' } satisfies Bilingual,
 } as const
 
 export const BALANCED_PLATE = {
@@ -89,6 +107,7 @@ export const BALANCED_PLATE = {
   empty: { en: 'Your plate is empty.', zh: '餐盘是空的。' } satisfies Bilingual,
   balanced: { en: 'Balanced — all groups covered.', zh: '均衡——各组都有。' } satisfies Bilingual,
   reset: { en: 'Clear plate', zh: '清空餐盘' } satisfies Bilingual,
+  plateAriaLabel: { en: 'A plate divided into six sectors', zh: '一个分成六个扇区的餐盘' } satisfies Bilingual,
   groupLabel: {
     veg: { en: 'Vegetables', zh: '蔬菜' } satisfies Bilingual,
     fruit: { en: 'Fruit', zh: '水果' } satisfies Bilingual,
@@ -102,6 +121,15 @@ export const BALANCED_PLATE = {
 export const DIGESTION_FLOW = {
   reveal: { en: 'Show definition', zh: '查看释义' } satisfies Bilingual,
   collapse: { en: 'Hide', zh: '收起' } satisfies Bilingual,
+  sixTermsHeading: { en: 'The six terms the syllabus uses', zh: '考纲要求的六个术语' } satisfies Bilingual,
+  figureAlt: {
+    en: "How an animal deals with food — a mammal's four-stage food journey",
+    zh: '动物如何处理食物——哺乳动物的四阶段食物之旅',
+  } satisfies Bilingual,
+  figureCaption: {
+    en: 'G8 Science · p.11, Figure B5.02 · ingestion → digestion → absorption → egestion',
+    zh: 'G8 科学 · 第 11 页，图 B5.02 · 摄食 → 消化 → 吸收 → 排遗',
+  } satisfies Bilingual,
 } as const
 
 export const VILLUS_DETAIL = {
@@ -120,6 +148,19 @@ export const VILLUS_DETAIL = {
   lumenLabel: { en: 'lumen of the small intestine', zh: '小肠肠腔' } satisfies Bilingual,
   lactealTag: { en: 'lacteal', zh: '乳糜管' } satisfies Bilingual,
   wallLabel: { en: 'gut wall (one cell thick)', zh: '肠壁（单层细胞）' } satisfies Bilingual,
+  figureAlt: { en: 'Longitudinal section through a villus', zh: '小肠绒毛纵切面' } satisfies Bilingual,
+  figureCaption: {
+    en: 'G8 Science · p.16, Figure B5.09 · labelled cross-section of a single villus',
+    zh: 'G8 科学 · 第 16 页，图 B5.09 · 带标注的单根绒毛横切面',
+  } satisfies Bilingual,
+  microvilliAlt: {
+    en: 'Detail of the surface of a villus — microvilli on each epithelial cell',
+    zh: '绒毛表面细节——每个上皮细胞上的微绒毛',
+  } satisfies Bilingual,
+  microvilliCaption: {
+    en: 'G8 Science · p.17, Figure B5.10 · microvilli on the surface of a single epithelial cell',
+    zh: 'G8 科学 · 第 17 页，图 B5.10 · 单个上皮细胞表面的微绒毛',
+  } satisfies Bilingual,
 } as const
 
 export const FOOD_ENERGY = {
@@ -152,6 +193,12 @@ export const FOOD_ENERGY = {
 export const HEART_ANATOMY = {
   modeExplore: { en: 'Explore', zh: '探索' } satisfies Bilingual,
   modeFollow: { en: 'Follow the blood', zh: '跟着血液走一遍' } satisfies Bilingual,
+  figureAlt: { en: 'Vertical section through a human heart', zh: '人心脏纵切面' } satisfies Bilingual,
+  figureCaption: {
+    en: 'G8 Science · p.23, Figure B7.03 · click a part to read about it',
+    zh: 'G8 科学 · 第 23 页，图 B7.03 · 点击结构查看讲解',
+  } satisfies Bilingual,
+  loading3d: { en: 'Loading 3D viewer…', zh: '正在加载 3D 查看器…' } satisfies Bilingual,
   followPrompt: {
     en: 'A red blood cell is travelling body → right heart → lungs → left heart → body. The right-hand panel follows along.',
     zh: '一个红细胞正从全身→右心→肺→左心→全身。右侧面板同步讲解。',
@@ -186,6 +233,7 @@ export const DOUBLE_CIRCULATION = {
     en: 'The terms the syllabus uses',
     zh: '考纲里的术语',
   } satisfies Bilingual,
+  figureAlt: { en: 'The double circulation of a human', zh: '人体双循环示意图' } satisfies Bilingual,
   connector: {
     en: 'the heart pumps again',
     zh: '心脏再次泵血',
@@ -203,6 +251,14 @@ export const DOUBLE_CIRCULATION = {
 export const AIRWAY_PATHWAY = {
   modeExplore: { en: 'Explore', zh: '探索' } satisfies Bilingual,
   modeFollow: { en: 'Follow the air', zh: '跟着空气走一遍' } satisfies Bilingual,
+  figureAlt: {
+    en: 'Front view of the human thorax showing the gas-exchange system',
+    zh: '人体胸腔正面图（气体交换系统）',
+  } satisfies Bilingual,
+  figureCaption: {
+    en: 'G8 Science · p.36, Figure B8.01 · click a part to read about it',
+    zh: 'G8 科学 · 第 36 页，图 B8.01 · 点击结构查看讲解',
+  } satisfies Bilingual,
   followPrompt: {
     en: 'A breath is travelling larynx → trachea → bronchus → bronchiole → alveoli. The right-hand panel follows along.',
     zh: '一缕空气正从喉→气管→支气管→细支气管→肺泡。右侧面板同步讲解。',
@@ -263,4 +319,26 @@ export const ANATOMY_3D = {
     en: 'Drag to rotate · scroll to zoom · click a pin to read',
     zh: '拖动旋转·滚轮缩放·点击标记查看',
   } satisfies Bilingual,
+} as const
+
+// ---------------------------------------------------------------------------
+// 补丁新增（scripts/port-mmx-extras.mjs PATCH 步骤）：源组件中硬编码的英文
+// UI 文案抽到此处，以便两个语言都经 <T> 渲染。
+// ---------------------------------------------------------------------------
+
+export const ENERGY_NEEDS = {
+  colWho: { en: 'Who', zh: '人群' } satisfies Bilingual,
+  colActivity: { en: 'Activity', zh: '活动' } satisfies Bilingual,
+  colEnergy: { en: 'kJ / day', zh: 'kJ / 天' } satisfies Bilingual,
+  colRelative: { en: 'Relative', zh: '相对量' } satisfies Bilingual,
+} as const
+
+export const BLOOD_COMPONENTS = {
+  functionLabel: { en: 'Function', zh: '功能' } satisfies Bilingual,
+  appearanceLabel: { en: 'Appearance / location', zh: '外观 / 位置' } satisfies Bilingual,
+} as const
+
+export const DISEASE_CARDS = {
+  mechanismLabel: { en: 'How / why', zh: '原因 / 机理' } satisfies Bilingual,
+  clinicalLabel: { en: 'What it looks like', zh: '临床表现' } satisfies Bilingual,
 } as const

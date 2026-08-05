@@ -26,7 +26,7 @@
  * 与 server/ 一致，直接用 node 运行 TS（需 Node >= 22.18 的类型剥离）。
  */
 import * as esbuild from 'esbuild';
-import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative, resolve, sep } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { igcseStatements } from '../src/content/syllabus/igcse-statements.ts';
@@ -252,10 +252,17 @@ function copyNarration(subject: string, slug: string, counters: Counters) {
   }
   const destAbs = join(SRC_ROOT, subject, slug, 'narration.ts');
   mkdirSync(dirname(destAbs), { recursive: true });
-  const text = readFileSync(srcAbs, 'utf8').replace(
-    /from '@\/content\/types'/g,
-    `from '${relImport(destAbs, join(SRC_ROOT, 'types'))}'`,
-  );
+  const text = readFileSync(srcAbs, 'utf8')
+    .replace(
+      /from '@\/content\/types'/g,
+      `from '${relImport(destAbs, join(SRC_ROOT, 'types'))}'`,
+    )
+    // 源项目个别剧本头注释中的音频路径已过期：本项目实际布局（见 NarrationPlayer）
+    // 为 public/audio/narrations/{kpId}/{lang}/{lineId}.mp3，kpId 形如 igcse-0625-1-2-motion。
+    .replace(
+      /public\/audio\/\{en,zh\}\/[\w-]+\/<lineId>\.mp3/g,
+      `public/audio/narrations/igcse-${subject}-${slug}/{en,zh}/<lineId>.mp3`,
+    );
   if (/'@\//.test(text)) {
     throw new Error(`${slug}/narration.ts 含未处理的 @/ import`);
   }

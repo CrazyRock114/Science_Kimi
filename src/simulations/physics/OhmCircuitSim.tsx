@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import type { SimulationProps } from '../registry';
 import { current, power } from '../kernels/circuits';
 
@@ -30,6 +31,10 @@ export default function OhmCircuitSim({ params }: SimulationProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const paramsRef = useRef(params);
   paramsRef.current = params;
+  // 画面内文字标注走 i18n：rAF 循环每帧经 ref 取最新语言
+  const { t } = useTranslation();
+  const tRef = useRef(t);
+  tRef.current = t;
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -96,8 +101,9 @@ export default function OhmCircuitSim({ params }: SimulationProps) {
       ctx.textAlign = 'center';
       ctx.fillText('+', x0 - 20, midY - 3);
       ctx.fillText('−', x0 - 20, midY + 11);
-      ctx.textAlign = 'right';
-      ctx.fillText(`U = ${U.toFixed(1)} V`, x0 - 26, midY + 4);
+      // 电压标注画在回路内侧，避免被画布左边缘裁切
+      ctx.textAlign = 'left';
+      ctx.fillText(`U = ${U.toFixed(1)} V`, x0 + 26, midY + 4);
 
       // 电阻（右边中点，方盒画法）
       const rw = 14;
@@ -142,7 +148,7 @@ export default function OhmCircuitSim({ params }: SimulationProps) {
       ctx.fillText(`I = U/R = ${I.toFixed(2)} A`, midX, y1 + 32);
       ctx.fillText(`P = UI = ${P.toFixed(2)} W`, midX, y1 + 50);
       ctx.fillStyle = '#64748b';
-      ctx.fillText('conventional current', midX, y0 - 22);
+      ctx.fillText(tRef.current('sim.ohm.conventionalCurrent'), midX, y0 - 22);
 
       rafId = requestAnimationFrame(draw);
     };
@@ -156,7 +162,7 @@ export default function OhmCircuitSim({ params }: SimulationProps) {
       ref={canvasRef}
       data-testid="ohm-circuit-canvas"
       className="h-72 w-full rounded-lg bg-white"
-      aria-label="Ohm's law circuit with battery, resistor and ammeter"
+      aria-label={t('sim.ohm.ariaLabel')}
     />
   );
 }

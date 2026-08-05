@@ -122,5 +122,31 @@ export const phyPressure002: KnowledgePoint = {
         en: 'From p = ρgh, at the same depth in the same liquid the pressure is equal in all directions. B is wrong because pressure is independent of the amount of liquid; C should read “greater depth, greater pressure”; D should read “greater density, greater pressure”.',
       },
     },
+    {
+      id: 'q3',
+      question: {
+        zh: '用 p = ρgh 计算液体内部某点的压强时，h 指的是（　）。',
+        en: 'When calculating the pressure at a point inside a liquid with p = ρgh, what does h refer to?',
+      },
+      options: {
+        zh: [
+          '该点到液体自由表面的竖直距离',
+          '该点到容器底部的竖直距离',
+          '容器的总高度',
+          '该点正上方液柱的质量',
+        ],
+        en: [
+          'The vertical distance from the point to the free surface of the liquid',
+          'The vertical distance from the point to the bottom of the container',
+          'The total height of the container',
+          'The mass of the liquid column directly above the point',
+        ],
+      },
+      answerIndex: 0,
+      explanation: {
+        zh: 'h 是该点到自由液面的竖直深度。B 错：到底部的距离与压强无关（同深度不同底深的点压强可以相同）；C 错：液体压强与容器形状、高度无关；D 错：p = ρgh 中根本没有质量，压强只由密度和深度决定。',
+        en: 'h is the vertical depth below the free surface. B is wrong: the distance to the bottom is irrelevant — points at the same depth have the same pressure regardless of what lies beneath; C is wrong: pressure does not depend on the shape or height of the container; D is wrong: mass does not appear in p = ρgh — pressure depends only on density and depth.',
+      },
+    },
   ],
 };

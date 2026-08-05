@@ -22,10 +22,13 @@ function matchesGradeTab(kp: KnowledgePointMeta, tab: GradeTab): boolean {
   return kp.gradeTier === tab || kp.gradeTier === 'both';
 }
 
-function matchesSearch(kp: KnowledgePointMeta, lang: Lang, query: string): boolean {
+/** 搜索对两种语言同时生效：zh 页面也能用英文关键词搜到（反之亦然） */
+function matchesSearch(kp: KnowledgePointMeta, query: string): boolean {
   const q = query.trim().toLowerCase();
   if (!q) return true;
-  const haystack = [kp.title[lang], kp.summary[lang], ...kp.keywords[lang]]
+  const langs: Lang[] = ['zh', 'en'];
+  const haystack = langs
+    .flatMap((l) => [kp.title[l], kp.summary[l], ...kp.keywords[l]])
     .join(' ')
     .toLowerCase();
   return haystack.includes(q);
@@ -57,7 +60,7 @@ export function HomePage() {
       knowledgePointMetas.filter(
         (kp) =>
           matchesGradeTab(kp, gradeTab) &&
-          matchesSearch(kp, lang, query) &&
+          matchesSearch(kp, query) &&
           matchesIgcse(kp, igcseRef) &&
           matchesPep(kp, pepBookId),
       ),

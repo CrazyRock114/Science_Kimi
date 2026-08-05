@@ -5,7 +5,7 @@ import { describe, it, expect } from "vitest";
 import { conductivity } from "./conductivity";
 import type { Substance } from "./engine";
 
-const sub = (formula: string, category: any, name: string): Substance => ({
+const sub = (formula: string, category: Substance["category"], name: string): Substance => ({
   formula,
   category,
   name,

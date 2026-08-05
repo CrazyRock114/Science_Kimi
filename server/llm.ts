@@ -80,12 +80,13 @@ export async function createChatCompletion(options: ChatCompletionOptions): Prom
   return res;
 }
 
-/** 非流式便捷封装：返回助手消息文本 */
+/** 非流式便捷封装：返回助手消息文本；signal 用于客户端断连时取消上游请求 */
 export async function chatCompletionText(
   messages: ChatMessage[],
   config?: LlmConfig,
+  signal?: AbortSignal,
 ): Promise<string> {
-  const res = await createChatCompletion({ messages, stream: false, config });
+  const res = await createChatCompletion({ messages, stream: false, config, signal });
   const data: unknown = await res.json();
   const content = (data as { choices?: { message?: { content?: unknown } }[] })?.choices?.[0]
     ?.message?.content;

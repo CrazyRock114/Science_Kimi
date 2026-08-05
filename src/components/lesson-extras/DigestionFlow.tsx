@@ -2,7 +2,7 @@
 // import 路径由 scripts/port-mmx-extras.mjs 改写，勿手改 import 区块以外的差异
 import { useState } from 'react'
 import type { DigestionFlowExtra } from './types'
-import { T } from '../../simulations/mmx/T'
+import { T, useBilingualText } from '../../simulations/mmx/T'
 import { DIGESTION_FLOW } from './lessonExtrasStrings'
 
 /**
@@ -14,18 +14,19 @@ import { DIGESTION_FLOW } from './lessonExtrasStrings'
  * grid of the six definition terms the syllabus wants remembered.
  */
 export function DigestionFlow({ extra }: { extra: DigestionFlowExtra }) {
+  const figureAlt = useBilingualText(DIGESTION_FLOW.figureAlt)
   const [openId, setOpenId] = useState<string | null>(null)
   return (
     <div className="space-y-4">
       <figure className="m-0 overflow-hidden rounded-lg border border-line bg-canvas">
         <img
           src="/figures/g8/7-1-nutrition/figure-b5-02.png"
-          alt="How an animal deals with food — a mammal's four-stage food journey"
+          alt={figureAlt}
           className="h-auto w-full"
           loading="lazy"
         />
         <figcaption className="border-t border-line bg-canvas px-3 py-1.5 text-[11px] text-muted">
-          G8 Science · p.11, Figure B5.02 · ingestion → digestion → absorption → egestion
+          <T value={DIGESTION_FLOW.figureCaption} />
         </figcaption>
       </figure>
 
@@ -33,7 +34,7 @@ export function DigestionFlow({ extra }: { extra: DigestionFlowExtra }) {
 
       <div>
         <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">
-          The six terms the syllabus uses
+          <T value={DIGESTION_FLOW.sixTermsHeading} />
         </h4>
         <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {extra.definitions.map((d) => (

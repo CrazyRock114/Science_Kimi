@@ -8,7 +8,7 @@ import { Html, OrbitControls, useGLTF } from '@react-three/drei'
 import { Suspense, useEffect, useMemo, useRef } from 'react'
 import * as THREE from 'three'
 import type { AnatomyOrgan } from './types'
-import { T } from '../../simulations/mmx/T'
+import { T, useMmxLang } from '../../simulations/mmx/T'
 import { ANATOMY_3D } from './lessonExtrasStrings'
 
 /**
@@ -109,6 +109,7 @@ function ModelWithHotspots({
   followStep: number
   orderedForFollow: AnatomyOrgan[]
 }) {
+  const lang = useMmxLang()
   const gltf = useGLTF(modelUrl)
   const scene = useMemo(() => gltf.scene.clone(true), [gltf])
 
@@ -185,7 +186,7 @@ function ModelWithHotspots({
                 cursor: 'pointer',
                 padding: 0,
               }}
-              aria-label={p.name.en}
+              aria-label={lang === 'zh' ? (p.name.zh ?? p.name.en) : p.name.en}
             />
           </Html>
         )

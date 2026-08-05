@@ -1,6 +1,6 @@
 // 移植自 IGCSE_miniMax（作者 CrazyRock114，non-commercial）：src/components/lesson-extras/SmokingEffects.tsx
 // import 路径由 scripts/port-mmx-extras.mjs 改写，勿手改 import 区块以外的差异
-import { T } from '../../simulations/mmx/T'
+import { T, useBilingualText, useMmxLang } from '../../simulations/mmx/T'
 import type { SmokingEffectsExtra, SmokingEffectEntry } from './types'
 import { SMOKING_EFFECTS } from './lessonExtrasStrings'
 
@@ -19,13 +19,14 @@ import { SMOKING_EFFECTS } from './lessonExtrasStrings'
  * the clinical picture (what the disease actually looks like).
  */
 export function SmokingEffects({ extra }: { extra: SmokingEffectsExtra }) {
+  const heroAlt = useBilingualText(SMOKING_EFFECTS.heroAlt)
   return (
     <div className="space-y-6">
       {extra.heroImage && (
         <figure className="overflow-hidden rounded-lg border border-line bg-surface">
           <img
             src={extra.heroImage}
-            alt={SMOKING_EFFECTS.heroAlt.en}
+            alt={heroAlt}
             className="block w-full bg-canvas"
             loading="lazy"
           />
@@ -69,6 +70,7 @@ export function SmokingEffects({ extra }: { extra: SmokingEffectsExtra }) {
 }
 
 function EffectCard({ entry }: { entry: SmokingEffectEntry }) {
+  const lang = useMmxLang()
   return (
     <article
       className="overflow-hidden rounded-lg border border-line bg-surface"
@@ -77,7 +79,7 @@ function EffectCard({ entry }: { entry: SmokingEffectEntry }) {
       <figure className="m-0">
         <img
           src={entry.image}
-          alt={entry.term.en}
+          alt={lang === 'zh' ? (entry.term.zh ?? entry.term.en) : entry.term.en}
           className="h-40 w-full bg-canvas object-contain"
           loading="lazy"
         />

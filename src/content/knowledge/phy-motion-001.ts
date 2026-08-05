@@ -163,6 +163,22 @@ export const phyMotion001: KnowledgePoint = {
         en: 'Using s = ut + ½at² with u = 0: s = ½ × 4 × 2² = 8 m.',
       },
     },
+    {
+      id: 'q3',
+      question: {
+        zh: '在 v-t 图像中，图线与时间轴围成的面积表示什么？',
+        en: 'In a velocity–time graph, what does the area between the graph line and the time axis represent?',
+      },
+      options: {
+        zh: ['位移', '速度', '加速度', '速度变化的快慢'],
+        en: ['Displacement', 'Velocity', 'Acceleration', 'Rate of change of velocity'],
+      },
+      answerIndex: 0,
+      explanation: {
+        zh: '面积 = 速度 × 时间，对应位移。B 速度由图线的纵坐标直接读出；C 加速度看的是图线的斜率，而不是面积；D 与加速度同义，同样由斜率给出。',
+        en: 'Area = velocity × time, which gives displacement. B is read directly from the vertical coordinate of the line; C acceleration comes from the gradient of the line, not the area; D means the same as acceleration and is likewise given by the gradient.',
+      },
+    },
   ],
   kernels: {
     kinematics: kinematicsKernel,

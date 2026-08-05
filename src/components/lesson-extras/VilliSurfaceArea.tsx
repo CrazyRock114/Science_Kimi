@@ -143,7 +143,11 @@ function VillusDiagram({
 
       <Figure
         label={<T value={VILLI_SURFACE_AREA.withVilli} />}
-        caption={`${fingerCount} fingers in this view — ×${density.toFixed(1)}`}
+        caption={
+          <span>
+            {fingerCount} <T value={VILLI_SURFACE_AREA.fingersInView} /> — ×{density.toFixed(1)}
+          </span>
+        }
       >
         <svg viewBox="0 0 200 200" className="h-44 w-full">
           <circle cx="100" cy="100" r="80" fill="#f1f5f9" stroke="#94a3b8" strokeWidth="2" />

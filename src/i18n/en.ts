@@ -175,6 +175,19 @@ export default {
       subtopicCovered: '{{covered}} / {{total}}',
       backToSubject: 'Back to subject',
     },
+    sim: {
+      ohm: {
+        conventionalCurrent: 'conventional current',
+        ariaLabel: "Ohm's law circuit with battery, resistor and ammeter",
+      },
+    },
+    kpLoad: {
+      loading: 'Loading…',
+      errorTitle: 'Failed to load',
+      errorMessage:
+        'The lesson content could not be loaded — this may be a network problem. Check your connection and try again.',
+      retry: 'Retry',
+    },
     notFound: {
       title: 'Page Not Found',
       message: 'The page you are looking for does not exist or has been moved.',

@@ -2,7 +2,7 @@
 // import 路径由 scripts/port-mmx-extras.mjs 改写，勿手改 import 区块以外的差异
 import { useMemo, useState } from 'react'
 import type { BalancedPlateExtra } from './types'
-import { T } from '../../simulations/mmx/T'
+import { T, useBilingualText } from '../../simulations/mmx/T'
 import { BALANCED_PLATE } from './lessonExtrasStrings'
 
 /**
@@ -135,8 +135,8 @@ export function BalancedPlate({ extra }: { extra: BalancedPlateExtra }) {
                   }
                   aria-hidden="true"
                 />
-                <span className="capitalize">
-                  {g} <span className="text-muted">{got} / {target}</span>
+                <span>
+                  <T value={BALANCED_PLATE.groupLabel[g]} /> <span className="text-muted">{got} / {target}</span>
                 </span>
               </li>
             )
@@ -153,6 +153,7 @@ export function BalancedPlate({ extra }: { extra: BalancedPlateExtra }) {
  * least one serving, with a darker tone for hitting the target.
  */
 function PlateDiagram({ counts }: { counts: Record<string, number> }) {
+  const plateAriaLabel = useBilingualText(BALANCED_PLATE.plateAriaLabel)
   // Six groups, arranged clockwise from 12 o'clock. The order is the order the
   // checklist uses, so the eye can match sector to row.
   const groups: Array<{ id: string; label: string; color: string; angle: number }> = [
@@ -166,7 +167,7 @@ function PlateDiagram({ counts }: { counts: Record<string, number> }) {
   const targets: Record<string, number> = { veg: 2, fruit: 1, protein: 1, carb: 1, dairy: 1, fat: 1 }
   const r = 80
   return (
-    <svg viewBox="-100 -100 200 200" className="h-44 w-44" role="img" aria-label="A plate divided into six sectors">
+    <svg viewBox="-100 -100 200 200" className="h-44 w-44" role="img" aria-label={plateAriaLabel}>
       {/* Plate base */}
       <circle r={r + 6} fill="#fff" stroke="#cbd5e1" strokeWidth="2" />
       {groups.map((g) => {

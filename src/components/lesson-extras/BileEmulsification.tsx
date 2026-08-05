@@ -62,7 +62,7 @@ function Pipette({
           <T value={label} />
         </span>
         <span className="text-[11px] text-muted">
-          {withFat ? '1 drop' : added ? 'many drops' : '—'}
+          {withFat ? <T value={BILE_EMULSIFICATION.oneDrop} /> : added ? <T value={BILE_EMULSIFICATION.manyDrops} /> : '—'}
         </span>
       </div>
       <svg viewBox="0 0 220 130" className="h-32 w-full">

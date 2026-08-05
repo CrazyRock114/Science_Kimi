@@ -56,6 +56,10 @@ async function bridge(req: IncomingMessage, res: ServerResponse): Promise<void> 
     for (const [key, value] of Object.entries(req.headers)) {
       if (typeof value === 'string') headers.set(key, value);
     }
+    // 补上客户端 IP，让 handler 的按 IP 限流在本地也生效（不覆盖已有代理头）
+    if (!headers.has('x-forwarded-for') && req.socket.remoteAddress) {
+      headers.set('x-forwarded-for', req.socket.remoteAddress);
+    }
     const hasBody = method !== 'GET' && method !== 'HEAD';
     const request = new Request(url, {
       method,

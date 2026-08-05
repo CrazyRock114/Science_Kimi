@@ -1,7 +1,8 @@
 // 移植自 IGCSE_miniMax（作者 CrazyRock114，non-commercial）：src/components/lesson-extras/BloodComponents.tsx
 // import 路径由 scripts/port-mmx-extras.mjs 改写，勿手改 import 区块以外的差异
-import { T } from '../../simulations/mmx/T'
+import { T, useMmxLang } from '../../simulations/mmx/T'
 import type { BloodComponentsExtra } from './types'
+import { BLOOD_COMPONENTS } from './lessonExtrasStrings'
 
 /**
  * The four components of blood as a 2×2 grid of real-figure cards.
@@ -16,6 +17,7 @@ import type { BloodComponentsExtra } from './types'
  * severe than each other, so the default neutral border is correct.
  */
 export function BloodComponents({ extra }: { extra: BloodComponentsExtra }) {
+  const lang = useMmxLang()
   return (
     <div className="grid gap-4 sm:grid-cols-2">
       {extra.cards.map((c) => (
@@ -27,7 +29,7 @@ export function BloodComponents({ extra }: { extra: BloodComponentsExtra }) {
           <figure className="m-0">
             <img
               src={c.image}
-              alt={c.term.en}
+              alt={lang === 'zh' ? (c.term.zh ?? c.term.en) : c.term.en}
               className="h-44 w-full bg-canvas object-contain"
               loading="lazy"
             />
@@ -44,7 +46,7 @@ export function BloodComponents({ extra }: { extra: BloodComponentsExtra }) {
             <div className="mt-2 space-y-2">
               <div>
                 <h4 className="text-[10px] font-semibold uppercase tracking-wide text-muted">
-                  Function
+                  <T value={BLOOD_COMPONENTS.functionLabel} />
                 </h4>
                 <p className="text-sm leading-relaxed text-ink-soft">
                   <T value={c.mechanism} />
@@ -52,7 +54,7 @@ export function BloodComponents({ extra }: { extra: BloodComponentsExtra }) {
               </div>
               <div>
                 <h4 className="text-[10px] font-semibold uppercase tracking-wide text-muted">
-                  Appearance / location
+                  <T value={BLOOD_COMPONENTS.appearanceLabel} />
                 </h4>
                 <p className="text-sm leading-relaxed text-ink-soft">
                   <T value={c.clinical} />

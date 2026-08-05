@@ -1,6 +1,6 @@
 // 移植自 IGCSE_miniMax（作者 CrazyRock114，non-commercial）：src/components/lesson-extras/GasExchangeFeatures.tsx
 // import 路径由 scripts/port-mmx-extras.mjs 改写，勿手改 import 区块以外的差异
-import { T } from '../../simulations/mmx/T'
+import { T, useMmxLang } from '../../simulations/mmx/T'
 import type { GasExchangeFeaturesExtra } from './types'
 import { GAS_EXCHANGE_FEATURES } from './lessonExtrasStrings'
 
@@ -14,6 +14,7 @@ import { GAS_EXCHANGE_FEATURES } from './lessonExtrasStrings'
  * this matters" rather than "appearance").
  */
 export function GasExchangeFeatures({ extra }: { extra: GasExchangeFeaturesExtra }) {
+  const lang = useMmxLang()
   return (
     <div className="grid gap-4 sm:grid-cols-2">
       {extra.features.map((f) => (
@@ -25,7 +26,7 @@ export function GasExchangeFeatures({ extra }: { extra: GasExchangeFeaturesExtra
           <figure className="m-0">
             <img
               src={f.image}
-              alt={f.term.en}
+              alt={lang === 'zh' ? (f.term.zh ?? f.term.en) : f.term.en}
               className="h-44 w-full bg-canvas object-contain"
               loading="lazy"
             />

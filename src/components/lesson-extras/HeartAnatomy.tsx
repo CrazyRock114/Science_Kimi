@@ -2,7 +2,7 @@
 // import 路径由 scripts/port-mmx-extras.mjs 改写，勿手改 import 区块以外的差异
 import { Suspense, lazy, useEffect, useMemo, useState } from 'react'
 import type { AnatomyOrgan, HeartAnatomyExtra } from './types'
-import { T } from '../../simulations/mmx/T'
+import { T, useBilingualText, useMmxLang } from '../../simulations/mmx/T'
 import { HEART_ANATOMY } from './lessonExtrasStrings'
 
 // The 3D viewer pulls in three.js + @react-three/fiber + drei (~+275 KB
@@ -243,7 +243,7 @@ function ViewTab({
 function ThreeDFallback() {
   return (
     <div className="flex h-[460px] w-full items-center justify-center rounded-lg border border-line bg-canvas text-xs text-muted">
-      Loading 3D viewer…
+      <T value={HEART_ANATOMY.loading3d} />
     </div>
   )
 }
@@ -302,6 +302,8 @@ function FigureWithHotspots({
   followStep: number
   orderedForFollow: AnatomyOrgan[]
 }) {
+  const lang = useMmxLang()
+  const figureAlt = useBilingualText(HEART_ANATOMY.figureAlt)
   const followTarget = orderedForFollow[Math.min(followStep, Math.max(0, orderedForFollow.length - 1))]
   const followHotspot = followTarget ? HOTSPOTS[followTarget.id] : null
 
@@ -309,12 +311,12 @@ function FigureWithHotspots({
     <figure className="relative m-0 overflow-hidden rounded-lg border border-line bg-canvas">
       <img
         src="/figures/g8/9-1-transport-animals/figure-b7-03.png"
-        alt="Vertical section through a human heart"
+        alt={figureAlt}
         className="block w-full"
         draggable={false}
       />
       <figcaption className="border-t border-line bg-canvas px-3 py-1.5 text-[11px] text-muted">
-        G8 Science · p.23, Figure B7.03 · click a part to read about it
+        <T value={HEART_ANATOMY.figureCaption} />
       </figcaption>
 
       <svg
@@ -334,7 +336,7 @@ function FigureWithHotspots({
               h={h}
               isSelected={isSelected}
               isHovered={isHovered}
-              label={p.name.en}
+              label={lang === 'zh' ? (p.name.zh ?? p.name.en) : p.name.en}
               onSelect={() => onSelect(p.id)}
               onHover={(v) => onHover(v ? p.id : null)}
             />

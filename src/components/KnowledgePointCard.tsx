@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import type { KnowledgePointMeta, Lang } from '../content/types';
-import { isCompleted } from '../lib/progress';
+import { getKnowledgePointProgress } from '../lib/progress';
 
 const subjectColor: Record<KnowledgePointMeta['subject'], string> = {
   physics: 'border-l-physics',
@@ -17,7 +17,11 @@ interface KnowledgePointCardProps {
 /** 知识点卡片：双语标题、摘要、考纲标签、完成状态 */
 export function KnowledgePointCard({ kp, lang }: KnowledgePointCardProps) {
   const { t } = useTranslation();
-  const completed = isCompleted(kp.id);
+  const progress = getKnowledgePointProgress(kp.id);
+  const hasScore = progress.bestScore !== undefined && progress.total !== undefined;
+  // 考纲标签去重：同一知识点可能多次引用同一 IGCSE ref / 同一本人教教材
+  const igcseRefs = [...new Set(kp.syllabus.igcse ?? [])];
+  const pepBookIds = [...new Set((kp.syllabus.pep ?? []).map((ref) => ref.split('/')[0]))];
   return (
     <Link
       to={`/${lang}/${kp.subject}/${kp.id}`}
@@ -25,10 +29,22 @@ export function KnowledgePointCard({ kp, lang }: KnowledgePointCardProps) {
     >
       <div className="mb-1 flex items-center justify-between gap-2">
         <h3 className="font-semibold text-slate-900">{kp.title[lang]}</h3>
-        {completed && (
-          <span className="shrink-0 rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-700">
-            ✓ {t('progress.completed')}
+        {progress.completed ? (
+          <span
+            className="shrink-0 rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-700"
+            data-testid="kp-card-progress"
+          >
+            ✓ {hasScore ? `${progress.bestScore}/${progress.total}` : t('progress.completed')}
           </span>
+        ) : (
+          hasScore && (
+            <span
+              className="shrink-0 rounded-full bg-amber-50 px-2 py-0.5 text-xs font-medium text-amber-700"
+              data-testid="kp-card-progress"
+            >
+              {progress.bestScore}/{progress.total}
+            </span>
+          )
         )}
       </div>
       <p className="mb-2 line-clamp-2 text-sm leading-6 text-slate-600">{kp.summary[lang]}</p>
@@ -44,15 +60,15 @@ export function KnowledgePointCard({ kp, lang }: KnowledgePointCardProps) {
             </span>
           </>
         ) : (
-          (kp.syllabus.igcse ?? []).map((ref) => (
+          igcseRefs.map((ref) => (
             <span key={ref} className="rounded bg-slate-100 px-1.5 py-0.5 text-xs text-slate-500">
               IGCSE {ref}
             </span>
           ))
         )}
-        {(kp.syllabus.pep ?? []).map((ref) => (
-          <span key={ref} className="rounded bg-slate-100 px-1.5 py-0.5 text-xs text-slate-500">
-            {ref.split('/')[0]}
+        {pepBookIds.map((bookId) => (
+          <span key={bookId} className="rounded bg-slate-100 px-1.5 py-0.5 text-xs text-slate-500">
+            {bookId}
           </span>
         ))}
       </div>

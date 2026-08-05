@@ -7,7 +7,7 @@
  * stay in step — when the narrator says "watch what happens when it decelerates",
  * the sliders actually move. (Pattern adapted from mathviz's narration model.)
  *
- * Audio is pre-generated per language into public/audio/{en,zh}/1-2-motion/<lineId>.mp3
+ * Audio is pre-generated per language into public/audio/narrations/igcse-0625-1-2-motion/{en,zh}/<lineId>.mp3
  * and falls back to the browser's speech synthesis when a file is missing.
  */
 

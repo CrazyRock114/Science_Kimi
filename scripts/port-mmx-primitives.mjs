@@ -14,7 +14,7 @@
  * 不移植：plot2d/guides.test.ts（断言的是 0620 化学课的 guide 位置，与本项目无关）、
  * lib/fieldLines.*（仅内核使用，已由 convert-igcse-lessons.ts 复制到 igcse-kernels/lib）。
  */
-import { copyFileSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative, resolve, sep } from 'node:path';
 
 const REF_SIM = resolve(import.meta.dirname, '../.reference/IGCSE_miniMax/src/sim');

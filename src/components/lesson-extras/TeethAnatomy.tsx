@@ -2,7 +2,8 @@
 // import 路径由 scripts/port-mmx-extras.mjs 改写，勿手改 import 区块以外的差异
 import { useState } from 'react'
 import type { TeethAnatomyExtra } from './types'
-import { T } from '../../simulations/mmx/T'
+import { T, useBilingualText } from '../../simulations/mmx/T'
+import { TEETH_ANATOMY } from './lessonExtrasStrings'
 
 /**
  * Two-part dental view: a labelled tooth diagram and a row of the four tooth
@@ -16,6 +17,7 @@ import { T } from '../../simulations/mmx/T'
  * before, just visualised with simple emoji.
  */
 export function TeethAnatomy({ extra }: { extra: TeethAnatomyExtra }) {
+  const figureAlt = useBilingualText(TEETH_ANATOMY.figureAlt)
   const [selectedLayer, setSelectedLayer] = useState<string>(extra.layers[0]?.id ?? '')
   const [selectedKind, setSelectedKind] = useState<string>(extra.kinds[0]?.id ?? '')
   const kind = extra.kinds.find((k) => k.id === selectedKind)
@@ -25,18 +27,18 @@ export function TeethAnatomy({ extra }: { extra: TeethAnatomyExtra }) {
       <figure className="m-0 overflow-hidden rounded-lg border border-line bg-canvas">
         <img
           src="/figures/g8/7-1-nutrition/figure-b5-04.png"
-          alt="Longitudinal section of an incisor tooth"
+          alt={figureAlt}
           className="h-auto w-full"
           loading="lazy"
         />
         <figcaption className="border-t border-line bg-canvas px-3 py-1.5 text-[11px] text-muted">
-          G8 Science · p.13, Figure B5.04 · labelled longitudinal section of an incisor
+          <T value={TEETH_ANATOMY.figureCaption} />
         </figcaption>
       </figure>
 
       <div>
         <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">
-          Click a layer to read what it does
+          <T value={TEETH_ANATOMY.layerHint} />
         </h4>
         <div className="grid gap-2 sm:grid-cols-2">
           {extra.layers.map((l) => {
@@ -71,7 +73,7 @@ export function TeethAnatomy({ extra }: { extra: TeethAnatomyExtra }) {
 
       <div>
         <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">
-          The four types of teeth in an adult
+          <T value={TEETH_ANATOMY.kindsHeading} />
         </h4>
         <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
           {extra.kinds.map((k) => {
@@ -105,7 +107,7 @@ export function TeethAnatomy({ extra }: { extra: TeethAnatomyExtra }) {
         </div>
         {kind && (
           <p className="mt-2 text-[11px] text-muted">
-            Counts: 8 incisors + 4 canines + 8 premolars + 12 molars = 32 teeth in an adult.
+            <T value={TEETH_ANATOMY.countsNote} />
           </p>
         )}
       </div>

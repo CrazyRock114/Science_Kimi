@@ -2,6 +2,7 @@
 // import 路径由 scripts/port-mmx-extras.mjs 改写，勿手改 import 区块以外的差异
 import { T } from '../../simulations/mmx/T'
 import type { EnergyNeedsExtra } from './types'
+import { ENERGY_NEEDS } from './lessonExtrasStrings'
 
 /**
  * The "how much energy do you need" table. The data is a re-presentation of
@@ -18,10 +19,10 @@ export function EnergyNeeds({ extra }: { extra: EnergyNeedsExtra }) {
         <table className="w-full text-sm">
           <thead className="bg-canvas text-xs uppercase tracking-wide text-muted">
             <tr>
-              <th className="px-3 py-2 text-left">Who</th>
-              <th className="px-3 py-2 text-left">Activity</th>
-              <th className="px-3 py-2 text-right">kJ / day</th>
-              <th className="px-3 py-2 text-left">Relative</th>
+              <th className="px-3 py-2 text-left"><T value={ENERGY_NEEDS.colWho} /></th>
+              <th className="px-3 py-2 text-left"><T value={ENERGY_NEEDS.colActivity} /></th>
+              <th className="px-3 py-2 text-right"><T value={ENERGY_NEEDS.colEnergy} /></th>
+              <th className="px-3 py-2 text-left"><T value={ENERGY_NEEDS.colRelative} /></th>
             </tr>
           </thead>
           <tbody>

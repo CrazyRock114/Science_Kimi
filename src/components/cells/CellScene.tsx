@@ -2,6 +2,10 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import type { CellModel } from '../../content/cells';
 import { OrganelleMesh } from './OrganelleMesh';
+import { suppressThreeClockDeprecation } from '../../lib/threeClockDeprecation';
+
+// fiber v8 内部 store 构造 THREE.Clock 会触发 r183 弃用告警，挂载 Canvas 前过滤掉
+suppressThreeClockDeprecation();
 
 export interface CellSceneProps {
   model: CellModel;

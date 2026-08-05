@@ -85,6 +85,8 @@ export function getKnowledgePoint(
   let pending = loadCache.get(id);
   if (!pending) {
     pending = loadLesson(id);
+    // 加载失败（如 chunk 网络错误）不缓存拒绝态，否则界面重试永远拿到同一个失败 Promise
+    pending.catch(() => loadCache.delete(id));
     loadCache.set(id, pending);
   }
   return pending;

@@ -28,7 +28,7 @@ export const gasExperiments: LabExperiment[] = [
     },
     objectives: {
       zh: ["掌握 CO₂ 制取原理", "学会向上排空气法收集", "检验 CO₂"],
-      en: ["Master the principle of CO2 preparation", "Learn to collect gas by upward displacement of air", "Test for CO2"],
+      en: ["Master the principle of CO₂ preparation", "Learn to collect gas by upward displacement of air", "Test for CO₂"],
     },
     estimatedMinutes: 35,
     probe: { reagentKeys: ["碳酸钙", "盐酸"], expect: { reacted: true, gas: true } },
@@ -124,7 +124,7 @@ export const gasExperiments: LabExperiment[] = [
     },
     objectives: {
       zh: ["掌握 SO₂ 制取", "验证漂白性", "认识其污染性"],
-      en: ["Master the preparation of SO2", "Demonstrate its bleaching action", "Recognise it as an air pollutant"],
+      en: ["Master the preparation of SO₂", "Demonstrate its bleaching action", "Recognise it as an air pollutant"],
     },
     estimatedMinutes: 40,
     probe: { reagentKeys: ["亚硫酸钠", "硫酸"], expect: { reacted: true, gas: true } },
@@ -172,7 +172,7 @@ export const gasExperiments: LabExperiment[] = [
     },
     objectives: {
       zh: ["观察产气现象", "联系生活应用", "检验 CO₂"],
-      en: ["Observe gas production", "Relate the reaction to everyday applications", "Test for CO2"],
+      en: ["Observe gas production", "Relate the reaction to everyday applications", "Test for CO₂"],
     },
     estimatedMinutes: 25,
     probe: { reagentKeys: ["碳酸氢钠", "盐酸"], expect: { reacted: true, gas: true } },
@@ -220,7 +220,7 @@ export const gasExperiments: LabExperiment[] = [
     },
     objectives: {
       zh: ["观察分解产气", "检验氨气与 CO₂", "认识铵盐不稳定性"],
-      en: ["Observe the gases released on decomposition", "Test for ammonia and CO2", "Recognise the instability of ammonium salts"],
+      en: ["Observe the gases released on decomposition", "Test for ammonia and CO₂", "Recognise the instability of ammonium salts"],
     },
     estimatedMinutes: 25,
     probe: { reagentKeys: ["碳酸铵", "氢氧化钙"], expect: { reacted: true, precipitate: true } },
@@ -244,7 +244,7 @@ export const gasExperiments: LabExperiment[] = [
     },
     objectives: {
       zh: ["认识 CO₂ 性质", "验证与水反应", "联系灭火应用"],
-      en: ["Recognise the properties of CO2", "Demonstrate its reaction with water", "Relate it to fire extinguishing"],
+      en: ["Recognise the properties of CO₂", "Demonstrate its reaction with water", "Relate it to fire extinguishing"],
     },
     estimatedMinutes: 30,
   },

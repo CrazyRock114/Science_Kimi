@@ -154,6 +154,22 @@ export const chemPh001: KnowledgePoint = {
         en: 'Each decrease of 1 in pH multiplies [H⁺] by 10. A drop from pH 5 to pH 3 is 2 units, so [H⁺] increases by 10² = 100 times.',
       },
     },
+    {
+      id: 'q3',
+      question: {
+        zh: '将 pH = 2 的盐酸加水稀释，溶液的 pH 与氢离子浓度分别如何变化？',
+        en: 'When hydrochloric acid of pH 2 is diluted with water, how do the pH and the hydrogen ion concentration change?',
+      },
+      options: {
+        zh: ['pH 增大，[H⁺] 减小', 'pH 减小，[H⁺] 增大', 'pH 不变，[H⁺] 不变', 'pH 增大，[H⁺] 增大'],
+        en: ['pH increases, [H⁺] decreases', 'pH decreases, [H⁺] increases', 'Both stay unchanged', 'pH increases, [H⁺] increases'],
+      },
+      answerIndex: 0,
+      explanation: {
+        zh: '加水稀释使氢离子浓度减小；由 pH = −lg[H⁺]，[H⁺] 越小 pH 越大（稀释后仍小于 7，不会变成碱性）。B 是浓缩时才发生的变化；C 忽略了稀释会改变浓度；D 中 pH 与 [H⁺] 的变化方向必然相反，不可能同时增大。',
+        en: 'Dilution lowers the hydrogen ion concentration; from pH = −log₁₀[H⁺], a smaller [H⁺] means a larger pH (it stays below 7 — dilution never makes an acid alkaline). B describes concentrating, not diluting; C ignores that dilution changes the concentration; D is impossible because pH and [H⁺] always move in opposite directions.',
+      },
+    },
   ],
   kernels: {
     ph: phKernel,
@@ -172,8 +188,8 @@ export const chemPh001: KnowledgePoint = {
     {
       id: 'probe-strong-acid',
       description: {
-        zh: 'pH = 0：[H⁺] = 1 mol/L；pH = 2：[H⁺] = 0.01 mol/L',
-        en: 'pH = 0: [H⁺] = 1 mol/L; pH = 2: [H⁺] = 0.01 mol/L',
+        zh: '强酸（pH = 2）：[H⁺] = 0.01 mol/L',
+        en: 'Strong acid (pH = 2): [H⁺] = 0.01 mol/L',
       },
       kernel: 'ph',
       input: { pH: 2 },

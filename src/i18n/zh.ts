@@ -175,6 +175,18 @@ export default {
       subtopicCovered: '{{covered}} / {{total}}',
       backToSubject: '返回学科',
     },
+    sim: {
+      ohm: {
+        conventionalCurrent: '常规电流方向',
+        ariaLabel: '欧姆定律电路：电池、电阻与电流表',
+      },
+    },
+    kpLoad: {
+      loading: '加载中…',
+      errorTitle: '加载失败',
+      errorMessage: '课程内容加载出错，可能是网络问题。请检查网络连接后重试。',
+      retry: '重试',
+    },
     notFound: {
       title: '页面不存在',
       message: '你访问的页面不存在或已被移动。',

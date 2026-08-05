@@ -136,17 +136,19 @@ export default function LabBench({ experiment, lang }: LabBenchProps) {
               </clipPath>
             </defs>
 
-            {/* 液体 */}
+            {/* 液体（空烧杯不渲染，与 emptyBeaker 文案一致） */}
             <g clipPath="url(#lab-beaker-clip)">
-              <rect
-                x={INNER.x}
-                y={liquidTop}
-                width={INNER.width}
-                height={INNER.bottom - liquidTop}
-                fill={liquidColor}
-                opacity={0.85}
-                style={{ transition: 'fill 0.9s ease, y 0.5s ease, height 0.5s ease' }}
-              />
+              {added.length > 0 && (
+                <rect
+                  x={INNER.x}
+                  y={liquidTop}
+                  width={INNER.width}
+                  height={INNER.bottom - liquidTop}
+                  fill={liquidColor}
+                  opacity={0.85}
+                  style={{ transition: 'fill 0.9s ease, y 0.5s ease, height 0.5s ease' }}
+                />
+              )}
               {/* 气泡（产气时） */}
               {result?.producesGas &&
                 Array.from({ length: 9 }, (_, i) => (
@@ -276,7 +278,10 @@ export default function LabBench({ experiment, lang }: LabBenchProps) {
                   <p className="rounded-lg bg-slate-50 px-3 py-2 text-sm leading-6 text-slate-700">
                     {result.description}
                   </p>
-                  <p className="mt-1 text-xs italic text-slate-400">{t('lab.engineNote')}</p>
+                  {/* 引擎现象描述目前只有中文——只在英文界面提示 */}
+                  {lang === 'en' && (
+                    <p className="mt-1 text-xs italic text-slate-400">{t('lab.engineNote')}</p>
+                  )}
                 </div>
               )}
             </div>

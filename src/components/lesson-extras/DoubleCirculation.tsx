@@ -2,7 +2,7 @@
 // import 路径由 scripts/port-mmx-extras.mjs 改写，勿手改 import 区块以外的差异
 import { useState } from 'react'
 import type { Bilingual, DoubleCirculationExtra } from './types'
-import { T } from '../../simulations/mmx/T'
+import { T, useBilingualText } from '../../simulations/mmx/T'
 import { DOUBLE_CIRCULATION } from './lessonExtrasStrings'
 
 /**
@@ -19,6 +19,7 @@ import { DOUBLE_CIRCULATION } from './lessonExtrasStrings'
  * artery, pulmonary vein, systemic, oxygenated blood, etc.
  */
 export function DoubleCirculation({ extra }: { extra: DoubleCirculationExtra }) {
+  const figureAlt = useBilingualText(DOUBLE_CIRCULATION.figureAlt)
   const [openId, setOpenId] = useState<string | null>(null)
   // The two loops, in the order they were authored.
   const pulmonary = extra.stations.filter((s) => s.loop === 'pulmonary')
@@ -26,7 +27,7 @@ export function DoubleCirculation({ extra }: { extra: DoubleCirculationExtra }) 
   return (
     <div className="space-y-4">
       <figure className="m-0 overflow-hidden rounded-lg border border-line bg-canvas">
-        <img src={extra.image} alt="The double circulation of a human" className="h-auto w-full" loading="lazy" />
+        <img src={extra.image} alt={figureAlt} className="h-auto w-full" loading="lazy" />
         <figcaption className="border-t border-line bg-canvas px-3 py-1.5 text-[11px] text-muted">
           <T value={extra.imageSource} />
         </figcaption>
@@ -72,9 +73,8 @@ function LoopRow({
     <div className="rounded-lg border border-line bg-canvas p-3">
       <div className="mb-2 flex items-baseline gap-2">
         <span className="text-[10px] font-semibold uppercase tracking-wide text-ink">
-          {rowLabel.en}
+          <T value={rowLabel} />
         </span>
-        {rowLabel.zh && <span className="text-[10px] text-muted">{rowLabel.zh}</span>}
       </div>
       <div className="overflow-x-auto">
         <div className="flex min-w-fit items-stretch gap-0">

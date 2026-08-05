@@ -2,7 +2,7 @@
 // import 路径由 scripts/port-mmx-extras.mjs 改写，勿手改 import 区块以外的差异
 import { useEffect, useMemo, useState } from 'react'
 import type { AirwayPathwayExtra, AnatomyOrgan } from './types'
-import { T } from '../../simulations/mmx/T'
+import { T, useBilingualText, useMmxLang } from '../../simulations/mmx/T'
 import { AIRWAY_PATHWAY } from './lessonExtrasStrings'
 
 /**
@@ -236,6 +236,8 @@ function FigureWithHotspots({
   followStep: number
   orderedForFollow: AnatomyOrgan[]
 }) {
+  const lang = useMmxLang()
+  const figureAlt = useBilingualText(AIRWAY_PATHWAY.figureAlt)
   const followTarget = orderedForFollow[Math.min(followStep, Math.max(0, orderedForFollow.length - 1))]
   const followHotspot = followTarget ? HOTSPOTS[followTarget.id] : null
 
@@ -243,12 +245,12 @@ function FigureWithHotspots({
     <figure className="relative m-0 overflow-hidden rounded-lg border border-line bg-canvas">
       <img
         src="/figures/g8/11-1-gas-exchange/figure-b8-01.png"
-        alt="Front view of the human thorax showing the gas-exchange system"
+        alt={figureAlt}
         className="block w-full"
         draggable={false}
       />
       <figcaption className="border-t border-line bg-canvas px-3 py-1.5 text-[11px] text-muted">
-        G8 Science · p.36, Figure B8.01 · click a part to read about it
+        <T value={AIRWAY_PATHWAY.figureCaption} />
       </figcaption>
 
       <svg
@@ -268,7 +270,7 @@ function FigureWithHotspots({
               h={h}
               isSelected={isSelected}
               isHovered={isHovered}
-              label={p.name.en}
+              label={lang === 'zh' ? (p.name.zh ?? p.name.en) : p.name.en}
               onSelect={() => onSelect(p.id)}
               onHover={(v) => onHover(v ? p.id : null)}
             />

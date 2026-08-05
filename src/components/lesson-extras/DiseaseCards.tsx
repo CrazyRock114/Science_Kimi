@@ -1,7 +1,8 @@
 // 移植自 IGCSE_miniMax（作者 CrazyRock114，non-commercial）：src/components/lesson-extras/DiseaseCards.tsx
 // import 路径由 scripts/port-mmx-extras.mjs 改写，勿手改 import 区块以外的差异
-import { T } from '../../simulations/mmx/T'
+import { T, useMmxLang } from '../../simulations/mmx/T'
 import type { DiseaseCardsExtra } from './types'
+import { DISEASE_CARDS } from './lessonExtrasStrings'
 
 /**
  * A grid of disease / deficiency cards. Each card is a small clinical
@@ -12,6 +13,7 @@ import type { DiseaseCardsExtra } from './types'
  * cropped to a 4:3 aspect so the cards line up regardless of source.
  */
 export function DiseaseCards({ extra }: { extra: DiseaseCardsExtra }) {
+  const lang = useMmxLang()
   return (
     <div className="grid gap-4 sm:grid-cols-2">
       {extra.cards.map((c) => (
@@ -30,7 +32,7 @@ export function DiseaseCards({ extra }: { extra: DiseaseCardsExtra }) {
           <figure className="m-0">
             <img
               src={c.image}
-              alt={c.term.en}
+              alt={lang === 'zh' ? (c.term.zh ?? c.term.en) : c.term.en}
               className="h-44 w-full bg-canvas object-cover"
               loading="lazy"
             />
@@ -47,7 +49,7 @@ export function DiseaseCards({ extra }: { extra: DiseaseCardsExtra }) {
             <div className="mt-2 space-y-2">
               <div>
                 <h4 className="text-[10px] font-semibold uppercase tracking-wide text-muted">
-                  How / why
+                  <T value={DISEASE_CARDS.mechanismLabel} />
                 </h4>
                 <p className="text-sm leading-relaxed text-ink-soft">
                   <T value={c.mechanism} />
@@ -55,7 +57,7 @@ export function DiseaseCards({ extra }: { extra: DiseaseCardsExtra }) {
               </div>
               <div>
                 <h4 className="text-[10px] font-semibold uppercase tracking-wide text-muted">
-                  What it looks like
+                  <T value={DISEASE_CARDS.clinicalLabel} />
                 </h4>
                 <p className="text-sm leading-relaxed text-ink-soft">
                   <T value={c.clinical} />

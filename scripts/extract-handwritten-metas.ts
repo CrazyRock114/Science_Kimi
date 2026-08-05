@@ -16,13 +16,14 @@ import * as esbuild from 'esbuild';
 import { mkdirSync, readdirSync, writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
+import type { KnowledgePoint } from '../src/content/types.ts';
 
 const KP_ROOT = resolve(import.meta.dirname, '../src/content/knowledge');
 const BUNDLE_CACHE = resolve(import.meta.dirname, '../node_modules/.cache/extract-metas');
 const OUT_FILE = join(KP_ROOT, 'metas.ts');
 
 /** 与 src/content/knowledge/index.ts 的 toMeta 保持一致（测试负责校验漂移） */
-function toMeta(kp: Record<string, any>): Record<string, unknown> {
+function toMeta(kp: KnowledgePoint): Record<string, unknown> {
   return {
     id: kp.id,
     subject: kp.subject,
@@ -39,7 +40,7 @@ function toMeta(kp: Record<string, any>): Record<string, unknown> {
   };
 }
 
-async function loadKnowledgePoint(file: string): Promise<Record<string, any>> {
+async function loadKnowledgePoint(file: string): Promise<KnowledgePoint> {
   mkdirSync(BUNDLE_CACHE, { recursive: true });
   const outfile = join(BUNDLE_CACHE, `${file.replace(/\.ts$/, '')}.mjs`);
   await esbuild.build({
@@ -52,8 +53,8 @@ async function loadKnowledgePoint(file: string): Promise<Record<string, any>> {
   });
   const mod = await import(pathToFileURL(outfile).href);
   for (const value of Object.values(mod)) {
-    if (value && typeof value === 'object' && typeof (value as any).id === 'string') {
-      return value as Record<string, any>;
+    if (value && typeof value === 'object' && typeof (value as KnowledgePoint).id === 'string') {
+      return value as KnowledgePoint;
     }
   }
   throw new Error(`${file} 中找不到知识点导出`);
