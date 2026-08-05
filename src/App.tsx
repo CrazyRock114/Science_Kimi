@@ -10,6 +10,8 @@ import { NotFoundPage } from './pages/NotFoundPage';
 
 // 3D 细胞查看器整页懒加载，首屏 bundle 不引入 three
 const CellExplorerPage = lazy(() => import('./pages/CellExplorerPage'));
+// IGCSE 考纲地图整页懒加载（statement 数据量大，独立分包）
+const SyllabusMapPage = lazy(() => import('./pages/SyllabusMapPage'));
 
 export const router = createBrowserRouter([
   { path: '/', element: <Navigate to="/zh" replace /> },
@@ -18,6 +20,15 @@ export const router = createBrowserRouter([
     element: <LangLayout />,
     children: [
       { index: true, element: <HomePage /> },
+      // IGCSE 考纲地图（静态段优先于 :subject/:kpId 动态段匹配）
+      {
+        path: 'syllabus/:code',
+        element: (
+          <Suspense fallback={<div className="py-20 text-center text-sm text-slate-400">Loading…</div>}>
+            <SyllabusMapPage />
+          </Suspense>
+        ),
+      },
       // 化学虚拟实验室（静态段优先于 :subject/:kpId 动态段匹配）
       { path: 'chemistry/lab', element: <LabListPage /> },
       { path: 'chemistry/lab/:slug', element: <LabBenchPage /> },

@@ -1,11 +1,18 @@
 import { Navigate, useParams, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { getKnowledgePointsBySubject } from '../content/knowledge';
+import { getKnowledgePointMetasBySubject } from '../content/knowledge';
 import { allLabExperiments } from '../content/lab';
+import { getIgcseSyllabusBySubject } from '../content/syllabus/igcse';
 import type { Lang, Subject } from '../content/types';
 import { KnowledgePointCard } from '../components/KnowledgePointCard';
 
 const validSubjects: Subject[] = ['physics', 'chemistry', 'biology'];
+
+const subjectBorder: Record<Subject, string> = {
+  physics: 'border-l-physics',
+  chemistry: 'border-l-chemistry',
+  biology: 'border-l-biology',
+};
 
 /** 学科列表页 */
 export function SubjectPage() {
@@ -18,12 +25,25 @@ export function SubjectPage() {
     return <Navigate to={`/${lang}`} replace />;
   }
 
-  const points = getKnowledgePointsBySubject(subject);
+  const points = getKnowledgePointMetasBySubject(subject);
+  const igcseSyllabus = getIgcseSyllabusBySubject(subject);
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
       <h1 className="mb-2 text-3xl font-bold text-slate-900">{t(`subjects.${subject}.name`)}</h1>
       <p className="mb-6 text-slate-600">{t(`subjects.${subject}.desc`)}</p>
+
+      {igcseSyllabus && (
+        <Link
+          to={`/${lang}/syllabus/${igcseSyllabus.syllabusCode}`}
+          className={`mb-8 block rounded-lg border border-slate-200 border-l-4 ${subjectBorder[subject]} bg-white p-5 transition hover:shadow-md`}
+        >
+          <h2 className="mb-1 text-lg font-semibold text-slate-900">
+            🗺️ {t('syllabus.mapLink')} · {igcseSyllabus.title[lang]}
+          </h2>
+          <p className="text-sm leading-6 text-slate-600">{t('syllabus.mapEntryDesc')}</p>
+        </Link>
+      )}
 
       {subject === 'chemistry' && (
         <Link

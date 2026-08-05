@@ -1,153 +1,102 @@
-import type { KnowledgePoint, Subject } from '../types';
-import { phyMotion001 } from './phy-motion-001';
-import { chemPh001 } from './chem-ph-001';
-import { chemAtomic001 } from './chem-atomic-001';
-import { chemAtomic002 } from './chem-atomic-002';
-import { chemAtomic003 } from './chem-atomic-003';
-import { chemAtomic004 } from './chem-atomic-004';
-import { chemBonding001 } from './chem-bonding-001';
-import { chemBonding002 } from './chem-bonding-002';
-import { chemBonding003 } from './chem-bonding-003';
-import { chemBonding004 } from './chem-bonding-004';
-import { chemStoich001 } from './chem-stoich-001';
-import { chemStoich002 } from './chem-stoich-002';
-import { chemStoich003 } from './chem-stoich-003';
-import { chemStoich004 } from './chem-stoich-004';
-import { chemAcidbase001 } from './chem-acidbase-001';
-import { chemAcidbase002 } from './chem-acidbase-002';
-import { chemAcidbase003 } from './chem-acidbase-003';
-import { chemAcidbase004 } from './chem-acidbase-004';
-import { chemEnergetics001 } from './chem-energetics-001';
-import { chemEnergetics002 } from './chem-energetics-002';
-import { chemEnergetics003 } from './chem-energetics-003';
-import { chemEnergetics004 } from './chem-energetics-004';
-import { chemMetal001 } from './chem-metal-001';
-import { chemMetal002 } from './chem-metal-002';
-import { chemGas001 } from './chem-gas-001';
-import { chemGas002 } from './chem-gas-002';
-import { phyKinematicsVelocity } from './phy-kinematics-velocity';
-import { phyKinematicsFreefall } from './phy-kinematics-freefall';
-import { phyKinematicsProjectile } from './phy-kinematics-projectile';
-import { phyKinematicsReferenceFrame } from './phy-kinematics-reference-frame';
-import { phyForce001 } from './phy-force-001';
-import { phyForce002 } from './phy-force-002';
-import { phyForce003 } from './phy-force-003';
-import { phyForce004 } from './phy-force-004';
-import { phyPressure001 } from './phy-pressure-001';
-import { phyPressure002 } from './phy-pressure-002';
-import { phyPressure003 } from './phy-pressure-003';
-import { phyPressure004 } from './phy-pressure-004';
-import { phyMachine001 } from './phy-machine-001';
-import { phyMachine002 } from './phy-machine-002';
-import { phyMachine003 } from './phy-machine-003';
-import { phyMachine004 } from './phy-machine-004';
-import { phyElectric001 } from './phy-electric-001';
-import { phyElectric002 } from './phy-electric-002';
-import { phyElectric003 } from './phy-electric-003';
-import { phyElectric004 } from './phy-electric-004';
-import { phyOptics001 } from './phy-optics-001';
-import { phyOptics002 } from './phy-optics-002';
-import { phyThermal001 } from './phy-thermal-001';
-import { phyThermal002 } from './phy-thermal-002';
-import { bioCell001 } from './bio-cell-001';
-import { bioCell002 } from './bio-cell-002';
-import { bioCell003 } from './bio-cell-003';
-import { bioCell004 } from './bio-cell-004';
-import { bioGenetics001 } from './bio-genetics-001';
-import { bioGenetics002 } from './bio-genetics-002';
-import { bioGenetics003 } from './bio-genetics-003';
-import { bioGenetics004 } from './bio-genetics-004';
-import { bioPlant001 } from './bio-plant-001';
-import { bioPlant002 } from './bio-plant-002';
-import { bioPlant003 } from './bio-plant-003';
-import { bioPlant004 } from './bio-plant-004';
-import { bioHuman001 } from './bio-human-001';
-import { bioHuman002 } from './bio-human-002';
-import { bioHuman003 } from './bio-human-003';
-import { bioHuman004 } from './bio-human-004';
-import { bioEco001 } from './bio-eco-001';
-import { bioEco002 } from './bio-eco-002';
-import { bioEco003 } from './bio-eco-003';
-import { bioEco004 } from './bio-eco-004';
+import type { KnowledgePoint, KnowledgePointMeta, Subject } from '../types';
+import { handwrittenMetas } from './metas';
+import { igcseMetas } from './igcse/metas';
 
-/** 全部知识点（按加入顺序） */
-export const knowledgePoints: KnowledgePoint[] = [
-  phyMotion001,
-  chemPh001,
-  chemAtomic001,
-  chemAtomic002,
-  chemAtomic003,
-  chemAtomic004,
-  chemBonding001,
-  chemBonding002,
-  chemBonding003,
-  chemBonding004,
-  chemStoich001,
-  chemStoich002,
-  chemStoich003,
-  chemStoich004,
-  chemAcidbase001,
-  chemAcidbase002,
-  chemAcidbase003,
-  chemAcidbase004,
-  chemEnergetics001,
-  chemEnergetics002,
-  chemEnergetics003,
-  chemEnergetics004,
-  chemMetal001,
-  chemMetal002,
-  chemGas001,
-  chemGas002,
-  phyKinematicsVelocity,
-  phyKinematicsFreefall,
-  phyKinematicsProjectile,
-  phyKinematicsReferenceFrame,
-  phyForce001,
-  phyForce002,
-  phyForce003,
-  phyForce004,
-  phyPressure001,
-  phyPressure002,
-  phyPressure003,
-  phyPressure004,
-  phyMachine001,
-  phyMachine002,
-  phyMachine003,
-  phyMachine004,
-  phyElectric001,
-  phyElectric002,
-  phyElectric003,
-  phyElectric004,
-  phyOptics001,
-  phyOptics002,
-  phyThermal001,
-  phyThermal002,
-  bioCell001,
-  bioCell002,
-  bioCell003,
-  bioCell004,
-  bioGenetics001,
-  bioGenetics002,
-  bioGenetics003,
-  bioGenetics004,
-  bioPlant001,
-  bioPlant002,
-  bioPlant003,
-  bioPlant004,
-  bioHuman001,
-  bioHuman002,
-  bioHuman003,
-  bioHuman004,
-  bioEco001,
-  bioEco002,
-  bioEco003,
-  bioEco004,
+/**
+ * 知识点内容层的入口。
+ *
+ * 首屏性能设计：所有知识点正文（手写 + IGCSE_miniMax 转换课程）都不进主 chunk，
+ * 经 getKnowledgePoint 按课动态 import（每课一个 chunk，点进课程页才下载）。
+ * 首页/学科列表页只消费下方的轻量元数据 knowledgePointMetas：
+ * - 手写知识点的 meta 由 scripts/extract-handwritten-metas.ts 生成（./metas.ts，勿手改）；
+ * - IGCSE 课程的 meta 由 scripts/convert-igcse-lessons.ts 生成（igcse/<subject>/meta.ts）。
+ */
+
+/** 全部知识点的轻量元数据（按加入顺序）：首页/学科列表页渲染与搜索筛选用 */
+export const knowledgePointMetas: KnowledgePointMeta[] = [
+  ...handwrittenMetas,
+  // IGCSE_miniMax 转换课程（按学科排在既有知识点之后）
+  ...igcseMetas,
 ];
 
-export function getKnowledgePointsBySubject(subject: Subject): KnowledgePoint[] {
-  return knowledgePoints.filter((kp) => kp.subject === subject);
+export function getKnowledgePointMetasBySubject(subject: Subject): KnowledgePointMeta[] {
+  return knowledgePointMetas.filter((meta) => meta.subject === subject);
 }
 
-export function getKnowledgePoint(subject: Subject, id: string): KnowledgePoint | undefined {
-  return knowledgePoints.find((kp) => kp.subject === subject && kp.id === id);
+/** 从完整知识点提取元数据（extract-handwritten-metas.ts 用同一套字段；测试校验两者一致） */
+export function toMeta(kp: KnowledgePoint): KnowledgePointMeta {
+  return {
+    id: kp.id,
+    subject: kp.subject,
+    title: kp.title,
+    summary: kp.summary,
+    gradeTier: kp.gradeTier,
+    syllabus: kp.syllabus,
+    keywords: kp.keywords,
+    ...(kp.tier ? { tier: kp.tier } : {}),
+    hasSimulation: kp.simulation !== undefined,
+    hasExamPractice: (kp.examPractice?.length ?? 0) > 0,
+    hasNarration: kp.narration !== undefined,
+    hasExtras: (kp.extras?.length ?? 0) > 0,
+  };
+}
+
+// 全部知识点正文按课懒加载：每课一个 chunk。
+// （排除本文件、生成的 meta 文件与 IGCSE 学科聚合 index.ts。）
+const lessonModules = import.meta.glob<Record<string, unknown>>([
+  './*.ts',
+  './igcse/*/*.ts',
+  '!./index.ts',
+  '!./metas.ts',
+  '!./igcse/*/index.ts',
+  '!./igcse/*/meta.ts',
+]);
+
+const metaByKey = new Map(knowledgePointMetas.map((meta) => [`${meta.subject}/${meta.id}`, meta]));
+
+const loadCache = new Map<string, Promise<KnowledgePoint | undefined>>();
+
+/** 按 id 动态 import 对应课程模块并取出其中的知识点导出 */
+async function loadLesson(id: string): Promise<KnowledgePoint | undefined> {
+  // 手写知识点：文件名与 id 一致（如 phy-motion-001 → ./phy-motion-001.ts）；
+  // IGCSE 转换课程：id 形如 igcse-0625-1-2-motion → ./igcse/0625/1-2-motion.ts
+  const igcseMatch = /^igcse-(\d{4})-(.+)$/.exec(id);
+  const key = igcseMatch ? `./igcse/${igcseMatch[1]}/${igcseMatch[2]}.ts` : `./${id}.ts`;
+  const loader = lessonModules[key];
+  if (!loader) return undefined;
+  const mod = await loader();
+  for (const value of Object.values(mod)) {
+    if (value && typeof value === 'object' && (value as KnowledgePoint).id === id) {
+      return value as KnowledgePoint;
+    }
+  }
+  return undefined;
+}
+
+/**
+ * 加载知识点正文：动态 import 对应课程模块（带缓存）。
+ * 首页/列表页不需要正文，请使用 knowledgePointMetas。
+ */
+export function getKnowledgePoint(
+  subject: Subject,
+  id: string,
+): Promise<KnowledgePoint | undefined> {
+  if (!metaByKey.has(`${subject}/${id}`)) return Promise.resolve(undefined);
+  let pending = loadCache.get(id);
+  if (!pending) {
+    pending = loadLesson(id);
+    loadCache.set(id, pending);
+  }
+  return pending;
+}
+
+/**
+ * 全量加载所有知识点正文。
+ * 仅供测试/审计等打包外场景使用；应用代码一律走 knowledgePointMetas + getKnowledgePoint。
+ */
+export async function getAllKnowledgePoints(): Promise<KnowledgePoint[]> {
+  const loaded = await Promise.all(
+    knowledgePointMetas.map((meta) => getKnowledgePoint(meta.subject, meta.id)),
+  );
+  return loaded.filter((kp): kp is KnowledgePoint => kp !== undefined);
 }

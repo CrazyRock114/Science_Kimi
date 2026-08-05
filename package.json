@@ -9,7 +9,10 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "ai:dev": "node server/dev.ts"
+    "ai:dev": "node server/dev.ts",
+    "check:coverage": "node scripts/check-igcse-coverage.ts",
+    "convert:igcse": "node scripts/convert-igcse-lessons.ts",
+    "extract:metas": "node scripts/extract-handwritten-metas.ts"
   },
   "dependencies": {
     "@react-three/drei": "^9.122.0",

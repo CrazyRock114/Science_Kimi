@@ -1,16 +1,16 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import type { KnowledgePoint, Lang } from '../content/types';
+import type { KnowledgePointMeta, Lang } from '../content/types';
 import { isCompleted } from '../lib/progress';
 
-const subjectColor: Record<KnowledgePoint['subject'], string> = {
+const subjectColor: Record<KnowledgePointMeta['subject'], string> = {
   physics: 'border-l-physics',
   chemistry: 'border-l-chemistry',
   biology: 'border-l-biology',
 };
 
 interface KnowledgePointCardProps {
-  kp: KnowledgePoint;
+  kp: KnowledgePointMeta;
   lang: Lang;
 }
 
@@ -33,11 +33,23 @@ export function KnowledgePointCard({ kp, lang }: KnowledgePointCardProps) {
       </div>
       <p className="mb-2 line-clamp-2 text-sm leading-6 text-slate-600">{kp.summary[lang]}</p>
       <div className="flex flex-wrap gap-1.5">
-        {(kp.syllabus.igcse ?? []).map((ref) => (
-          <span key={ref} className="rounded bg-slate-100 px-1.5 py-0.5 text-xs text-slate-500">
-            IGCSE {ref}
-          </span>
-        ))}
+        {kp.tier ? (
+          <>
+            {/* 转换的 IGCSE 课程：statement 级引用较多，折叠为学科徽章 + 层级徽章 */}
+            <span className="rounded bg-indigo-50 px-1.5 py-0.5 text-xs font-medium text-indigo-700">
+              IGCSE {kp.syllabus.igcse?.[0]?.split('/')[0]}
+            </span>
+            <span className="rounded bg-slate-100 px-1.5 py-0.5 text-xs text-slate-500">
+              {t(`exam.lessonTier.${kp.tier}`)}
+            </span>
+          </>
+        ) : (
+          (kp.syllabus.igcse ?? []).map((ref) => (
+            <span key={ref} className="rounded bg-slate-100 px-1.5 py-0.5 text-xs text-slate-500">
+              IGCSE {ref}
+            </span>
+          ))
+        )}
         {(kp.syllabus.pep ?? []).map((ref) => (
           <span key={ref} className="rounded bg-slate-100 px-1.5 py-0.5 text-xs text-slate-500">
             {ref.split('/')[0]}

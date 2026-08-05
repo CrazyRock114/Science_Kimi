@@ -1,10 +1,13 @@
 import { describe, expect, it } from 'vitest';
-import { knowledgePoints } from '../content/knowledge';
+import { getAllKnowledgePoints } from '../content/knowledge';
 
 /**
  * 探针机制：遍历所有知识点的 expectedResults，执行内核纯函数并断言预期数值。
  * 内容正确性的自动化保障（新增知识点时探针随数据一起入库）。
  */
+// IGCSE 转换课程正文按课懒加载，测试统一异步收集全量知识点（测试不在 bundle 内）
+const knowledgePoints = await getAllKnowledgePoints();
+
 describe('内容探针（expectedResults）', () => {
   const cases = knowledgePoints.flatMap((kp) =>
     (kp.expectedResults ?? []).map((probe) => ({ kp, probe })),

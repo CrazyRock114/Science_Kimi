@@ -1,10 +1,10 @@
 import { useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { knowledgePoints } from '../content/knowledge';
-import { igcseSyllabuses } from '../content/syllabus/igcse';
+import { knowledgePointMetas } from '../content/knowledge';
+import { igcseSyllabuses, getIgcseSyllabusBySubject } from '../content/syllabus/igcse';
 import { pepBooks } from '../content/syllabus/pep';
-import type { KnowledgePoint, Lang, Subject } from '../content/types';
+import type { KnowledgePointMeta, Lang, Subject } from '../content/types';
 import { KnowledgePointCard } from '../components/KnowledgePointCard';
 import { ReportCard } from '../components/ai/ReportCard';
 
@@ -17,12 +17,12 @@ const subjectTheme: Record<Subject, { card: string; icon: string }> = {
   biology: { card: 'bg-biology-light text-biology', icon: '🧬' },
 };
 
-function matchesGradeTab(kp: KnowledgePoint, tab: GradeTab): boolean {
+function matchesGradeTab(kp: KnowledgePointMeta, tab: GradeTab): boolean {
   if (tab === 'all') return true;
   return kp.gradeTier === tab || kp.gradeTier === 'both';
 }
 
-function matchesSearch(kp: KnowledgePoint, lang: Lang, query: string): boolean {
+function matchesSearch(kp: KnowledgePointMeta, lang: Lang, query: string): boolean {
   const q = query.trim().toLowerCase();
   if (!q) return true;
   const haystack = [kp.title[lang], kp.summary[lang], ...kp.keywords[lang]]
@@ -31,12 +31,12 @@ function matchesSearch(kp: KnowledgePoint, lang: Lang, query: string): boolean {
   return haystack.includes(q);
 }
 
-function matchesIgcse(kp: KnowledgePoint, ref: string): boolean {
+function matchesIgcse(kp: KnowledgePointMeta, ref: string): boolean {
   if (!ref) return true;
   return (kp.syllabus.igcse ?? []).some((r) => r === ref || r.startsWith(`${ref}.`));
 }
 
-function matchesPep(kp: KnowledgePoint, bookId: string): boolean {
+function matchesPep(kp: KnowledgePointMeta, bookId: string): boolean {
   if (!bookId) return true;
   return (kp.syllabus.pep ?? []).some((r) => r.startsWith(`${bookId}/`));
 }
@@ -54,7 +54,7 @@ export function HomePage() {
 
   const filtered = useMemo(
     () =>
-      knowledgePoints.filter(
+      knowledgePointMetas.filter(
         (kp) =>
           matchesGradeTab(kp, gradeTab) &&
           matchesSearch(kp, lang, query) &&
@@ -81,20 +81,30 @@ export function HomePage() {
         <div className="grid gap-4 sm:grid-cols-3">
           {subjectOrder.map((subject) => {
             const theme = subjectTheme[subject];
-            const count = knowledgePoints.filter((kp) => kp.subject === subject).length;
+            const count = knowledgePointMetas.filter((kp) => kp.subject === subject).length;
+            const syllabusCode = getIgcseSyllabusBySubject(subject)?.syllabusCode;
             return (
-              <Link
+              <div
                 key={subject}
-                to={`/${lang}/${subject}`}
                 className={`rounded-xl p-5 transition hover:shadow-md ${theme.card}`}
               >
-                <div className="mb-2 text-3xl" aria-hidden>
-                  {theme.icon}
-                </div>
-                <h3 className="mb-1 text-lg font-bold">{t(`subjects.${subject}.name`)}</h3>
-                <p className="mb-2 text-sm opacity-80">{t(`subjects.${subject}.desc`)}</p>
-                <p className="text-xs opacity-60">{t('home.resultCount', { count })}</p>
-              </Link>
+                <Link to={`/${lang}/${subject}`} className="block">
+                  <div className="mb-2 text-3xl" aria-hidden>
+                    {theme.icon}
+                  </div>
+                  <h3 className="mb-1 text-lg font-bold">{t(`subjects.${subject}.name`)}</h3>
+                  <p className="mb-2 text-sm opacity-80">{t(`subjects.${subject}.desc`)}</p>
+                  <p className="text-xs opacity-60">{t('home.resultCount', { count })}</p>
+                </Link>
+                {syllabusCode && (
+                  <Link
+                    to={`/${lang}/syllabus/${syllabusCode}`}
+                    className="mt-3 inline-block border-t border-current pt-2 text-xs font-medium opacity-80 transition hover:opacity-100"
+                  >
+                    🗺️ {t('syllabus.mapLink')} →
+                  </Link>
+                )}
+              </div>
             );
           })}
         </div>

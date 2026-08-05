@@ -22,10 +22,13 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          # 22.18+ 原生支持 node 直接运行 TS（scripts/check-igcse-coverage.ts，同 server/）
+          node-version: 22
           cache: npm
       - run: npm ci
       - run: npm run test
+      # IGCSE 考纲 statement 覆盖度报告（暂不设 --min 阈值，不卡构建）
+      - run: npm run check:coverage
       # Pages 站点位于 /Science_Kimi/ 子路径，需设置 base
       - run: npm run build
         env:

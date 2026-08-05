@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { Lang } from '../../content/types';
-import { knowledgePoints } from '../../content/knowledge';
+import { knowledgePointMetas } from '../../content/knowledge';
 import { getProgress } from '../../lib/progress';
 import { generateReport, isAiConfigured, type ReportRecord } from '../../lib/ai';
 
@@ -72,7 +72,7 @@ export function ReportCard({ lang }: ReportCardProps) {
   // 学习记录：知识点标题（当前语言）+ 最好成绩 + 完成度
   const records = useMemo<ReportRecord[]>(() => {
     const progress = getProgress();
-    return knowledgePoints
+    return knowledgePointMetas
       .filter((kp) => progress[kp.id]?.bestScore !== undefined || progress[kp.id]?.completed)
       .map((kp) => ({
         title: kp.title[lang],

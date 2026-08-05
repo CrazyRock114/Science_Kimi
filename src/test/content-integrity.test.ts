@@ -1,9 +1,12 @@
 import { describe, expect, it } from 'vitest';
-import { knowledgePoints } from '../content/knowledge';
+import { getAllKnowledgePoints, knowledgePointMetas, toMeta } from '../content/knowledge';
 import { resolveIgcseRef } from '../content/syllabus/igcse';
 import { resolvePepRef } from '../content/syllabus/pep';
 import { hasSimulationRenderer } from '../simulations/registry';
 import type { Localized } from '../content/types';
+
+// IGCSE 转换课程正文按课懒加载，测试统一异步收集全量知识点（测试不在 bundle 内）
+const knowledgePoints = await getAllKnowledgePoints();
 
 function expectLocalizedNonEmpty(value: Localized<string>, what: string) {
   expect(value.zh.trim(), `${what} 缺少中文`).not.toBe('');
@@ -14,6 +17,16 @@ describe('内容数据完整性', () => {
   it('知识点 id 全局唯一', () => {
     const ids = knowledgePoints.map((kp) => kp.id);
     expect(new Set(ids).size).toBe(ids.length);
+  });
+
+  it('元数据与正文一致（改动手写知识点后需重跑 npm run extract:metas）', () => {
+    const metaByKey = new Map(knowledgePointMetas.map((m) => [`${m.subject}/${m.id}`, m]));
+    expect(metaByKey.size, '元数据数量与知识点数量不一致').toBe(knowledgePoints.length);
+    for (const kp of knowledgePoints) {
+      const meta = metaByKey.get(`${kp.subject}/${kp.id}`);
+      expect(meta, `缺少元数据: ${kp.id}`).toBeDefined();
+      expect(toMeta(kp), `元数据与正文漂移: ${kp.id}`).toEqual(meta);
+    }
   });
 
   for (const kp of knowledgePoints) {
@@ -47,7 +60,14 @@ describe('内容数据完整性', () => {
       });
 
       it('小测：双语题干/选项/解析齐全，答案索引合法', () => {
-        expect(kp.quiz.length).toBeGreaterThan(0);
+        // 转换的 IGCSE 课程以 examPractice（英文真题）代替小测，quiz 可为空
+        if (kp.quiz.length === 0) {
+          expect(
+            kp.examPractice?.length ?? 0,
+            'quiz 为空时必须提供 examPractice',
+          ).toBeGreaterThan(0);
+          return;
+        }
         for (const item of kp.quiz) {
           expectLocalizedNonEmpty(item.question, `quiz ${item.id} question`);
           expectLocalizedNonEmpty(item.explanation, `quiz ${item.id} explanation`);
@@ -70,6 +90,31 @@ describe('内容数据完整性', () => {
         }
         for (const ref of kp.syllabus.pep ?? []) {
           expect(resolvePepRef(ref), `人教版引用无法解析: ${ref}`).toBeDefined();
+        }
+      });
+
+      it('考试真题：考纲引用可解析、答案索引合法、mark scheme 分值求和等于总分', () => {
+        for (const q of kp.examPractice ?? []) {
+          expect(q.stem.trim(), `exam ${q.id} stem 为空`).not.toBe('');
+          expect(q.commandWord.trim(), `exam ${q.id} commandWord 为空`).not.toBe('');
+          expect(q.marks, `exam ${q.id} marks`).toBeGreaterThan(0);
+          for (const ref of q.syllabus) {
+            expect(resolveIgcseRef(ref), `exam ${q.id} IGCSE 引用无法解析: ${ref}`).toBeDefined();
+          }
+          if (q.options !== undefined) {
+            expect(q.options.length, `exam ${q.id} options`).toBeGreaterThanOrEqual(2);
+            for (const option of q.options) expect(option.trim()).not.toBe('');
+            expect(q.answerIndex, `exam ${q.id} 缺少 answerIndex`).toBeDefined();
+            expect(q.answerIndex!).toBeGreaterThanOrEqual(0);
+            expect(q.answerIndex!).toBeLessThan(q.options.length);
+          }
+          expect(q.markScheme.length, `exam ${q.id} markScheme 为空`).toBeGreaterThan(0);
+          const sum = q.markScheme.reduce((s, mp) => s + mp.marks, 0);
+          expect(sum, `exam ${q.id} markScheme 分值求和 ${sum} ≠ marks ${q.marks}`).toBe(q.marks);
+          for (const mp of q.markScheme) expect(mp.text.trim()).not.toBe('');
+          if (q.examinerNote) {
+            expectLocalizedNonEmpty(q.examinerNote, `exam ${q.id} examinerNote`);
+          }
         }
       });
 

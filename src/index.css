@@ -5,3 +5,18 @@
 body {
   @apply bg-slate-50 text-slate-900 antialiased;
 }
+
+/* 讲解 action 的 highlight：目标元素短暂闪烁（约 1.6s 后由页面移除 class） */
+.narration-highlight {
+  animation: narration-flash 0.8s ease-in-out 2;
+}
+
+@keyframes narration-flash {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgb(59 130 246 / 0);
+  }
+  50% {
+    box-shadow: 0 0 0 4px rgb(59 130 246 / 0.55);
+  }
+}

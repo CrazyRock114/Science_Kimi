@@ -29,6 +29,10 @@ const registry: Record<string, LazyExoticComponent<ComponentType<SimulationProps
   'enzyme-activity': lazy(() => import('./biology/EnzymeActivitySim')),
   diffusion: lazy(() => import('./biology/DiffusionSim')),
   'population-growth': lazy(() => import('./biology/PopulationGrowthSim')),
+  // IGCSE_miniMax 通用基元舞台。实际渲染由 KnowledgePointPage 的 mmx 分支负责
+  // （除 params 外还需完整 SimSpec + kernel，经可选 props 传入）；此条目保证
+  // renderer id 可注册校验、且 mmx 组件保持懒加载分包。
+  mmx: lazy(() => import('./mmx/MmxStage')),
 };
 
 export function getSimulationRenderer(
