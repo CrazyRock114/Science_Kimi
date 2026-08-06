@@ -9,7 +9,7 @@ export const phyThermal002: KnowledgePoint = {
     zh: '从分子动理论理解气体压强的来源，探究一定质量的气体在温度不变时压强与体积的反比关系（玻意耳定律），以及温度对压强的影响。',
     en: 'Understand the origin of gas pressure through the kinetic particle model, explore how pressure varies inversely with volume at constant temperature (Boyle’s law), and see the effect of temperature on pressure.',
   },
-  gradeTier: 'both',
+  gradeTier: 'senior',
   syllabus: {
     pep: ['pep-phy-j8b/ch3'],
     igcse: ['0625/1.8', '0625/2.1'],

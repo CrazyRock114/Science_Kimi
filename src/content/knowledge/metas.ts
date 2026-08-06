@@ -2,8 +2,111 @@
 // 改动手写知识点后重跑 npm run extract:metas（content-integrity 测试会校验一致性）。
 import type { KnowledgePointMeta } from '../types';
 
-/** 手写知识点轻量元数据（70 个；正文经 getKnowledgePoint 按课懒加载） */
+/** 手写知识点轻量元数据（97 个；正文经 getKnowledgePoint 按课懒加载） */
 export const handwrittenMetas: KnowledgePointMeta[] = [
+  {
+    "id": "bio-animal-001",
+    "subject": "biology",
+    "title": {
+      "zh": "无脊椎动物的主要类群",
+      "en": "Major Groups of Invertebrates"
+    },
+    "summary": {
+      "zh": "按体内有无脊柱区分无脊椎动物与脊椎动物，掌握腔肠、扁形、线形、环节、软体和节肢动物的主要特征及代表动物。",
+      "en": "Distinguish invertebrates from vertebrates by the presence of a backbone, and master the key features and representative animals of coelenterates (cnidarians), flatworms, nematodes, annelids, molluscs and arthropods."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-bio-j8a/ch1"
+      ],
+      "igcse": [
+        "0610/1"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "无脊椎动物",
+        "腔肠动物",
+        "扁形动物",
+        "线形动物",
+        "环节动物",
+        "软体动物",
+        "节肢动物",
+        "外骨骼",
+        "体节",
+        "外套膜"
+      ],
+      "en": [
+        "invertebrate",
+        "cnidarian",
+        "flatworm",
+        "nematode",
+        "annelid",
+        "mollusc",
+        "arthropod",
+        "exoskeleton",
+        "segmentation",
+        "mantle"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
+    "hasExtras": false
+  },
+  {
+    "id": "bio-animal-002",
+    "subject": "biology",
+    "title": {
+      "zh": "脊椎动物与动物的运动",
+      "en": "Vertebrates and Animal Movement"
+    },
+    "summary": {
+      "zh": "比较鱼、两栖动物、爬行动物、鸟和哺乳动物的主要特征，理解运动系统由骨、关节和肌肉组成，骨、关节、肌肉协调配合完成运动。",
+      "en": "Compare the main features of fish, amphibians, reptiles, birds and mammals, and understand how bones, joints and muscles form the locomotor system and work together to produce movement."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-bio-j8a/ch1"
+      ],
+      "igcse": [
+        "0610/1",
+        "0610/14"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "脊椎动物",
+        "鱼",
+        "两栖动物",
+        "爬行动物",
+        "鸟",
+        "哺乳动物",
+        "骨",
+        "关节",
+        "骨骼肌",
+        "肱二头肌"
+      ],
+      "en": [
+        "vertebrate",
+        "fish",
+        "amphibian",
+        "reptile",
+        "bird",
+        "mammal",
+        "bone",
+        "joint",
+        "skeletal muscle",
+        "biceps"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": false,
+    "hasNarration": false,
+    "hasExtras": false
+  },
   {
     "id": "bio-cell-001",
     "subject": "biology",
@@ -187,6 +290,54 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     "hasExtras": false
   },
   {
+    "id": "bio-diversity-001",
+    "subject": "biology",
+    "title": {
+      "zh": "生物的多样性及其保护",
+      "en": "Biodiversity and Its Conservation"
+    },
+    "summary": {
+      "zh": "了解生物分类的单位和意义，理解生物多样性三个层次的内涵，分析生物多样性面临的威胁及原因，掌握就地保护和迁地保护等措施。",
+      "en": "Learn the ranks and purpose of biological classification, understand the three levels of biodiversity, analyse the threats to biodiversity and their causes, and master conservation measures such as in-situ and ex-situ protection."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-bio-j8a/ch2"
+      ],
+      "igcse": [
+        "0610/1",
+        "0610/20"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "生物分类",
+        "界门纲目科属种",
+        "物种",
+        "生物多样性",
+        "基因的多样性",
+        "就地保护",
+        "迁地保护",
+        "自然保护区"
+      ],
+      "en": [
+        "classification",
+        "taxonomic ranks",
+        "species",
+        "biodiversity",
+        "genetic diversity",
+        "in-situ conservation",
+        "ex-situ conservation",
+        "nature reserve"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
+    "hasExtras": false
+  },
+  {
     "id": "bio-eco-001",
     "subject": "biology",
     "title": {
@@ -244,7 +395,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
       "zh": "比较理想条件下的 J 型（指数）增长和资源有限条件下的 S 型（逻辑斯谛）增长，理解内禀增长率 r 与环境容纳量 K 的含义。",
       "en": "Compare exponential (J-shaped) growth under ideal conditions with logistic (S-shaped) growth under limited resources, and understand the intrinsic growth rate r and the carrying capacity K."
     },
-    "gradeTier": "both",
+    "gradeTier": "senior",
     "syllabus": {
       "pep": [
         "pep-bio-j7a/ch1"
@@ -570,6 +721,147 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     "hasExtras": false
   },
   {
+    "id": "bio-health-001",
+    "subject": "biology",
+    "title": {
+      "zh": "传染病及其预防",
+      "en": "Infectious Diseases and Their Prevention"
+    },
+    "summary": {
+      "zh": "认识由病原体引起的传染病及其传染性、流行性的特点，掌握传染病流行的三个基本环节，学会从控制传染源、切断传播途径、保护易感人群三方面预防传染病。",
+      "en": "Learn what infectious (transmissible) diseases are and how pathogens cause them, understand the three links needed for a disease to spread, and see how breaking each link — source, transmission route, susceptible host — prevents epidemics."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-bio-j8b/ch2"
+      ],
+      "igcse": [
+        "0610/10.1"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "传染病",
+        "病原体",
+        "传染源",
+        "传播途径",
+        "易感人群",
+        "控制传染源",
+        "切断传播途径",
+        "保护易感人群"
+      ],
+      "en": [
+        "infectious disease",
+        "pathogen",
+        "source of infection",
+        "transmission route",
+        "susceptible host",
+        "vector",
+        "hygiene",
+        "epidemic"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
+    "hasExtras": false
+  },
+  {
+    "id": "bio-health-002",
+    "subject": "biology",
+    "title": {
+      "zh": "免疫与计划免疫",
+      "en": "Immunity and Planned Immunisation"
+    },
+    "summary": {
+      "zh": "认识人体的三道防线，区分非特异性免疫与特异性免疫，理解抗原与抗体的关系，了解免疫的功能、疫苗的原理和计划免疫的意义。",
+      "en": "Explore the body’s three lines of defence, distinguish non-specific from specific immunity, understand antigens and antibodies, and see how vaccines and planned immunisation programmes protect whole populations."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-bio-j8b/ch2"
+      ],
+      "igcse": [
+        "0610/10.1"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "免疫",
+        "三道防线",
+        "非特异性免疫",
+        "特异性免疫",
+        "抗原",
+        "抗体",
+        "疫苗",
+        "计划免疫"
+      ],
+      "en": [
+        "immunity",
+        "lines of defence",
+        "non-specific immunity",
+        "specific immunity",
+        "antigen",
+        "antibody",
+        "vaccine",
+        "immunisation"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
+    "hasExtras": false
+  },
+  {
+    "id": "bio-health-003",
+    "subject": "biology",
+    "title": {
+      "zh": "用药、急救与健康的生活方式",
+      "en": "Safe Medication, First Aid and a Healthy Lifestyle"
+    },
+    "summary": {
+      "zh": "学会区分处方药与非处方药、按说明书安全用药，掌握拨打急救电话、心肺复苏和出血止血等急救常识，理解健康的含义并养成健康的生活方式。",
+      "en": "Learn the difference between prescription and over-the-counter medicines and how to use them safely, master first-aid basics such as calling emergency services, CPR and stopping bleeding, and understand what health really means and how a healthy lifestyle supports it."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-bio-j8b/ch2"
+      ],
+      "igcse": [
+        "0610/15.1"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "安全用药",
+        "处方药",
+        "非处方药",
+        "急救",
+        "心肺复苏",
+        "止血",
+        "健康的生活方式",
+        "拒绝毒品"
+      ],
+      "en": [
+        "safe use of medicines",
+        "prescription drug",
+        "over-the-counter drug",
+        "first aid",
+        "CPR",
+        "antibiotics",
+        "healthy lifestyle",
+        "drug abuse"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
+    "hasExtras": false
+  },
+  {
     "id": "bio-human-001",
     "subject": "biology",
     "title": {
@@ -785,6 +1077,108 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     },
     "hasSimulation": false,
     "hasExamPractice": false,
+    "hasNarration": false,
+    "hasExtras": false
+  },
+  {
+    "id": "bio-micro-001",
+    "subject": "biology",
+    "title": {
+      "zh": "细菌与真菌",
+      "en": "Bacteria and Fungi"
+    },
+    "summary": {
+      "zh": "认识细菌和真菌的形态结构、生殖方式及其区别，理解它们作为分解者参与物质循环以及与人类生活的密切关系。",
+      "en": "Learn the shapes, structures and reproduction of bacteria and fungi and the differences between them, and understand their role as decomposers in nutrient cycling and their close relationship with human life."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-bio-j8a/ch1"
+      ],
+      "igcse": [
+        "0610/1",
+        "0610/2"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "细菌",
+        "真菌",
+        "原核生物",
+        "真核生物",
+        "分裂生殖",
+        "孢子",
+        "芽孢",
+        "分解者",
+        "菌落"
+      ],
+      "en": [
+        "bacteria",
+        "fungi",
+        "prokaryote",
+        "eukaryote",
+        "binary fission",
+        "spore",
+        "endospore",
+        "decomposer",
+        "colony"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
+    "hasExtras": false
+  },
+  {
+    "id": "bio-micro-002",
+    "subject": "biology",
+    "title": {
+      "zh": "病毒与微生物的利用",
+      "en": "Viruses and the Use of Microorganisms"
+    },
+    "summary": {
+      "zh": "认识病毒的结构特点与繁殖方式，了解人类对细菌、真菌的利用——发酵食品、食品保存、医药与环境保护。",
+      "en": "Learn the structure and replication of viruses, and how humans make use of bacteria and fungi — fermented foods, food preservation, medicine and environmental protection."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-bio-j8a/ch1"
+      ],
+      "igcse": [
+        "0610/1",
+        "0610/21"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "病毒",
+        "蛋白质外壳",
+        "遗传物质",
+        "寄生",
+        "噬菌体",
+        "发酵",
+        "酵母菌",
+        "乳酸菌",
+        "抗生素",
+        "食品保存"
+      ],
+      "en": [
+        "virus",
+        "protein coat",
+        "genetic material",
+        "parasitism",
+        "bacteriophage",
+        "fermentation",
+        "yeast",
+        "lactic acid bacteria",
+        "antibiotic",
+        "food preservation"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
     "hasNarration": false,
     "hasExtras": false
   },
@@ -1784,6 +2178,101 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     "hasExtras": false
   },
   {
+    "id": "chem-intro-001",
+    "subject": "chemistry",
+    "title": {
+      "zh": "走进化学世界",
+      "en": "Entering the World of Chemistry"
+    },
+    "summary": {
+      "zh": "认识化学研究的对象，抓住\"是否生成新物质\"区分物理变化与化学变化、物理性质与化学性质，并掌握药品取用、加热、称量等实验基本操作。",
+      "en": "Learn what chemistry studies, tell physical from chemical changes and physical from chemical properties by whether a new substance forms, and master basic lab skills: handling chemicals, heating and weighing."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-che-j9a/ch1"
+      ],
+      "igcse": [
+        "0620/6.1",
+        "0620/12.1"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "物理变化",
+        "化学变化",
+        "物理性质",
+        "化学性质",
+        "实验基本操作",
+        "酒精灯",
+        "托盘天平"
+      ],
+      "en": [
+        "physical change",
+        "chemical change",
+        "physical property",
+        "chemical property",
+        "laboratory techniques",
+        "Bunsen burner",
+        "balance"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
+    "hasExtras": false
+  },
+  {
+    "id": "chem-life-001",
+    "subject": "chemistry",
+    "title": {
+      "zh": "化学与生活",
+      "en": "Chemistry in Everyday Life"
+    },
+    "summary": {
+      "zh": "认识六大营养素与人体健康所需的化学元素，了解塑料、合成纤维、合成橡胶三大合成材料及\"白色污染\"的防治，关注空气与水污染等环境问题。",
+      "en": "Meet the six nutrient groups and the chemical elements the human body needs, learn about the three synthetic materials — plastics, synthetic fibres and synthetic rubber — together with \"white pollution\", and consider air and water pollution."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-che-j9b/ch5"
+      ],
+      "igcse": [
+        "0620/11.8",
+        "0620/10.3",
+        "0610/7.1"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "营养素",
+        "蛋白质",
+        "糖类",
+        "维生素",
+        "微量元素",
+        "有机合成材料",
+        "白色污染",
+        "酸雨"
+      ],
+      "en": [
+        "nutrients",
+        "protein",
+        "carbohydrates",
+        "vitamins",
+        "trace elements",
+        "synthetic materials",
+        "polymers",
+        "acid rain"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
+    "hasExtras": false
+  },
+  {
     "id": "chem-metal-001",
     "subject": "chemistry",
     "title": {
@@ -1912,6 +2401,99 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     "hasSimulation": true,
     "hasExamPractice": false,
     "hasNarration": true,
+    "hasExtras": false
+  },
+  {
+    "id": "chem-solution-001",
+    "subject": "chemistry",
+    "title": {
+      "zh": "溶液的形成与溶解度",
+      "en": "Formation of Solutions and Solubility"
+    },
+    "summary": {
+      "zh": "认识溶液的均一性与稳定性，区分饱和溶液与不饱和溶液，理解固体溶解度的四要素，学会读溶解度曲线并选择恰当的结晶方法。",
+      "en": "Learn what makes a solution homogeneous and stable, distinguish saturated from unsaturated solutions, master the four key points of solubility, and read solubility curves to choose the right crystallisation method."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-che-j9b/ch2"
+      ],
+      "igcse": [
+        "0620/12.1",
+        "0620/7.3"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "溶液",
+        "溶质",
+        "溶剂",
+        "饱和溶液",
+        "不饱和溶液",
+        "溶解度",
+        "溶解度曲线",
+        "结晶"
+      ],
+      "en": [
+        "solution",
+        "solute",
+        "solvent",
+        "saturated solution",
+        "unsaturated solution",
+        "solubility",
+        "solubility curve",
+        "crystallisation"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
+    "hasExtras": false
+  },
+  {
+    "id": "chem-solution-002",
+    "subject": "chemistry",
+    "title": {
+      "zh": "溶质的质量分数与溶液配制",
+      "en": "Mass Percentage of Solute and Preparing Solutions"
+    },
+    "summary": {
+      "zh": "掌握溶质质量分数的计算公式与溶液稀释规律，学会按\"计算—称量—量取—溶解\"的步骤配制一定溶质质量分数的溶液，并能分析操作误差对结果的影响。",
+      "en": "Master the mass-percentage formula and the dilution rule, prepare a solution of a given mass percentage by the calculate–weigh–measure–dissolve sequence, and analyse how operational errors affect the result."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-che-j9b/ch2"
+      ],
+      "igcse": [
+        "0620/3.3",
+        "0620/12.1"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "溶质的质量分数",
+        "溶液配制",
+        "稀释",
+        "托盘天平",
+        "量筒",
+        "误差分析"
+      ],
+      "en": [
+        "mass percentage",
+        "concentration",
+        "dilution",
+        "preparing solutions",
+        "balance",
+        "measuring cylinder",
+        "error analysis"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
     "hasExtras": false
   },
   {
@@ -2078,6 +2660,101 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
         "mole",
         "molar mass",
         "Avogadro constant"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
+    "hasExtras": false
+  },
+  {
+    "id": "phy-density-001",
+    "subject": "physics",
+    "title": {
+      "zh": "质量及其测量",
+      "en": "Mass and Its Measurement"
+    },
+    "summary": {
+      "zh": "理解质量是物体所含物质的多少、是物体本身的一种属性，认识质量的单位，并学会正确使用托盘天平测量物体的质量。",
+      "en": "Understand mass as the quantity of matter in an object and as a property of the object itself, know the units of mass, and learn to use a beam balance correctly to measure mass."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-phy-j8a/ch6"
+      ],
+      "igcse": [
+        "0625/1.3",
+        "0625/1.1"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "质量",
+        "托盘天平",
+        "平衡螺母",
+        "游码",
+        "砝码",
+        "千克",
+        "物质的多少",
+        "属性"
+      ],
+      "en": [
+        "mass",
+        "beam balance",
+        "balance nuts",
+        "rider",
+        "weights",
+        "kilogram",
+        "quantity of matter",
+        "property"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
+    "hasExtras": false
+  },
+  {
+    "id": "phy-density-002",
+    "subject": "physics",
+    "title": {
+      "zh": "密度及其测量",
+      "en": "Density and Its Measurement"
+    },
+    "summary": {
+      "zh": "理解密度是物质的一种特性，掌握定义式 ρ = m/V 与单位换算，会用天平和量筒测量固体、液体的密度，并了解密度与温度的关系。",
+      "en": "Understand density as a characteristic property of a material, master the defining equation ρ = m/V and unit conversions, measure the density of solids and liquids with a balance and measuring cylinder, and learn how density varies with temperature."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-phy-j8a/ch6"
+      ],
+      "igcse": [
+        "0625/1.4"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "密度",
+        "密度公式",
+        "千克每立方米",
+        "克每立方厘米",
+        "量筒",
+        "排水法",
+        "物质的特性",
+        "热胀冷缩"
+      ],
+      "en": [
+        "density",
+        "density equation",
+        "kilogram per cubic metre",
+        "gram per cubic centimetre",
+        "measuring cylinder",
+        "displacement method",
+        "characteristic property",
+        "thermal expansion"
       ]
     },
     "hasSimulation": false,
@@ -2281,6 +2958,57 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     "hasExtras": false
   },
   {
+    "id": "phy-energy-001",
+    "subject": "physics",
+    "title": {
+      "zh": "能源与可持续发展",
+      "en": "Energy Resources and Sustainable Development"
+    },
+    "summary": {
+      "zh": "了解能源的分类（一次/二次能源、可再生/不可再生能源），认识核能与太阳能的利用方式，理解能量守恒与能量转移转化的方向性，树立可持续发展的能源观。",
+      "en": "Classify energy resources (primary/secondary, renewable/non-renewable), learn how nuclear and solar energy are harnessed, understand energy conservation and the directionality of energy transfers, and build a view of sustainable development."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-phy-j9/ch10"
+      ],
+      "igcse": [
+        "0625/1.7.3"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "一次能源",
+        "二次能源",
+        "可再生能源",
+        "不可再生能源",
+        "核能",
+        "核裂变",
+        "核聚变",
+        "太阳能",
+        "能量守恒",
+        "可持续发展"
+      ],
+      "en": [
+        "primary energy source",
+        "secondary energy source",
+        "renewable",
+        "non-renewable",
+        "nuclear energy",
+        "fission",
+        "fusion",
+        "solar energy",
+        "conservation of energy",
+        "sustainable development"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
+    "hasExtras": false
+  },
+  {
     "id": "phy-force-001",
     "subject": "physics",
     "title": {
@@ -2461,6 +3189,240 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     "hasSimulation": true,
     "hasExamPractice": true,
     "hasNarration": true,
+    "hasExtras": false
+  },
+  {
+    "id": "phy-heat-engine-001",
+    "subject": "physics",
+    "title": {
+      "zh": "热机",
+      "en": "Heat Engines"
+    },
+    "summary": {
+      "zh": "了解热机把内能转化为机械能的原理，掌握四冲程汽油机的工作过程与各冲程的能量转化，对比柴油机的异同。",
+      "en": "See how heat engines transfer internal energy into mechanical work, follow the four strokes of a petrol engine with their energy transfers, and compare with the diesel engine."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-phy-j9/ch2"
+      ],
+      "igcse": [
+        "0625/1.7.1"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "热机",
+        "内燃机",
+        "四冲程",
+        "汽油机",
+        "柴油机",
+        "做功冲程",
+        "压缩冲程",
+        "能量转化"
+      ],
+      "en": [
+        "heat engine",
+        "internal combustion engine",
+        "four-stroke cycle",
+        "petrol engine",
+        "diesel engine",
+        "power stroke",
+        "compression stroke",
+        "energy transfer"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
+    "hasExtras": false
+  },
+  {
+    "id": "phy-heat-engine-002",
+    "subject": "physics",
+    "title": {
+      "zh": "热机效率",
+      "en": "Efficiency of Heat Engines"
+    },
+    "summary": {
+      "zh": "理解燃料热值的含义并用 Q = mq 计算燃料完全燃烧放出的热量，认识热机中能量的流向，会用 η = W/Q放 计算热机效率并了解提高热机效率的途径。",
+      "en": "Understand the energy value of a fuel and calculate heat released with Q = mq, trace where the energy goes in a heat engine, calculate efficiency with η = W/Q and learn how engine efficiency can be improved."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-phy-j9/ch2"
+      ],
+      "igcse": [
+        "0625/1.7.3"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "热值",
+        "完全燃烧",
+        "热机效率",
+        "能量流向",
+        "有用功",
+        "废气",
+        "焦每千克"
+      ],
+      "en": [
+        "energy value of fuel",
+        "complete combustion",
+        "engine efficiency",
+        "energy flow",
+        "useful work",
+        "exhaust losses",
+        "joules per kilogram"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
+    "hasExtras": false
+  },
+  {
+    "id": "phy-home-001",
+    "subject": "physics",
+    "title": {
+      "zh": "家庭电路",
+      "en": "Household Circuits"
+    },
+    "summary": {
+      "zh": "认识家庭电路的组成与连接方式，分清火线与零线，学会使用试电笔，理解保险丝、空气开关与漏电保护器的作用。",
+      "en": "Learn the layout of a household circuit, tell the live wire from the neutral, use a test screwdriver, and understand fuses, circuit breakers and residual-current devices."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-phy-j9/ch7"
+      ],
+      "igcse": [
+        "0625/4.4"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "家庭电路",
+        "火线",
+        "零线",
+        "试电笔",
+        "保险丝",
+        "空气开关",
+        "漏电保护器",
+        "电能表"
+      ],
+      "en": [
+        "household circuit",
+        "live wire",
+        "neutral wire",
+        "fuse",
+        "circuit breaker",
+        "test screwdriver",
+        "electricity meter"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
+    "hasExtras": false
+  },
+  {
+    "id": "phy-home-002",
+    "subject": "physics",
+    "title": {
+      "zh": "安全用电",
+      "en": "Electrical Safety"
+    },
+    "summary": {
+      "zh": "知道触电的原因与类型，记住安全电压，理解接地保护的原理，掌握安全用电的基本原则与触电急救方法。",
+      "en": "Learn why and how electric shocks happen, remember the safe voltage, understand earthing, and master the rules of electrical safety and first aid."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-phy-j9/ch7"
+      ],
+      "igcse": [
+        "0625/4.4"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "触电",
+        "安全电压",
+        "接地保护",
+        "三脚插头",
+        "单线触电",
+        "双线触电",
+        "跨步电压"
+      ],
+      "en": [
+        "electric shock",
+        "safe voltage",
+        "earthing",
+        "three-pin plug",
+        "electric hazards",
+        "first aid"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
+    "hasExtras": false
+  },
+  {
+    "id": "phy-info-001",
+    "subject": "physics",
+    "title": {
+      "zh": "信息的传递",
+      "en": "Communication and the Transmission of Information"
+    },
+    "summary": {
+      "zh": "了解电磁波的产生与传播条件，掌握波速、波长、频率的关系 c = λf，认识电磁波谱，并了解广播、电视、移动通信、卫星通信与光纤通信等现代通信方式。",
+      "en": "Learn how electromagnetic waves are produced and travel, use c = λf to relate speed, wavelength and frequency, survey the electromagnetic spectrum, and meet modern communications: radio, TV, mobile phones, satellites and optical fibres."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-phy-j9/ch9"
+      ],
+      "igcse": [
+        "0625/3.1",
+        "0625/3.3"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "电磁波",
+        "波速",
+        "波长",
+        "频率",
+        "电磁波谱",
+        "无线电波",
+        "微波通信",
+        "卫星通信",
+        "光纤通信",
+        "网络通信"
+      ],
+      "en": [
+        "electromagnetic wave",
+        "wave speed",
+        "wavelength",
+        "frequency",
+        "electromagnetic spectrum",
+        "radio waves",
+        "microwave communication",
+        "satellite communication",
+        "optical fibres",
+        "the Internet"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
     "hasExtras": false
   },
   {
@@ -2823,6 +3785,150 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     "hasExtras": false
   },
   {
+    "id": "phy-magnet-001",
+    "subject": "physics",
+    "title": {
+      "zh": "磁现象与磁场",
+      "en": "Magnetic Phenomena and Magnetic Fields"
+    },
+    "summary": {
+      "zh": "认识磁体、磁极与磁极间的相互作用，理解磁场的存在，学会用磁感线描述磁场，并了解地磁场与指南针的原理。",
+      "en": "Meet magnets and their poles, understand the magnetic field as the region where poles feel forces, describe fields with field lines, and learn about the Earth’s magnetism and the compass."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-phy-j9/ch8"
+      ],
+      "igcse": [
+        "0625/4.1"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "磁体",
+        "磁极",
+        "磁场",
+        "磁感线",
+        "地磁场",
+        "磁偏角",
+        "指南针",
+        "磁化"
+      ],
+      "en": [
+        "magnet",
+        "magnetic pole",
+        "magnetic field",
+        "field line",
+        "Earth’s magnetism",
+        "compass",
+        "magnetisation",
+        "magnetic declination"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
+    "hasExtras": false
+  },
+  {
+    "id": "phy-magnet-002",
+    "subject": "physics",
+    "title": {
+      "zh": "电流的磁效应与电磁铁",
+      "en": "Magnetic Effect of a Current and Electromagnets"
+    },
+    "summary": {
+      "zh": "通过奥斯特实验认识电流的磁效应，探究通电螺线管的磁场并用安培定则判断磁极，了解电磁铁的构造、影响因素及其在电磁继电器中的应用。",
+      "en": "From Oersted’s experiment to the magnetic field of a solenoid, use the right-hand grip rule to find poles, and learn how electromagnets work and where they are used, such as in relays."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-phy-j9/ch8"
+      ],
+      "igcse": [
+        "0625/4.5.3"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "电流的磁效应",
+        "奥斯特实验",
+        "通电螺线管",
+        "安培定则",
+        "电磁铁",
+        "电磁继电器",
+        "电铃",
+        "电磁起重机"
+      ],
+      "en": [
+        "magnetic effect of a current",
+        "Oersted’s experiment",
+        "solenoid",
+        "right-hand grip rule",
+        "electromagnet",
+        "relay",
+        "electric bell",
+        "electromagnetic crane"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
+    "hasExtras": false
+  },
+  {
+    "id": "phy-magnet-003",
+    "subject": "physics",
+    "title": {
+      "zh": "电动机与电磁感应",
+      "en": "Electric Motors and Electromagnetic Induction"
+    },
+    "summary": {
+      "zh": "理解磁场对通电导体的作用与电动机的原理（换向器的作用），认识法拉第电磁感应现象、感应电流产生的条件，了解发电机的原理及两种装置的能量转化。",
+      "en": "Understand the force on a current-carrying conductor and how a d.c. motor works (including the commutator), then Faraday’s electromagnetic induction, the conditions for an induced current, the a.c. generator, and the energy transfers in both devices."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-phy-j9/ch8"
+      ],
+      "igcse": [
+        "0625/4.5.1",
+        "0625/4.5.2",
+        "0625/4.5.4",
+        "0625/4.5.5"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "磁场对电流的作用",
+        "电动机",
+        "换向器",
+        "电磁感应",
+        "感应电流",
+        "法拉第",
+        "发电机",
+        "能量转化"
+      ],
+      "en": [
+        "force on a current-carrying conductor",
+        "d.c. motor",
+        "split-ring commutator",
+        "electromagnetic induction",
+        "induced current",
+        "Faraday",
+        "a.c. generator",
+        "energy transfer"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
+    "hasExtras": false
+  },
+  {
     "id": "phy-motion-001",
     "subject": "physics",
     "title": {
@@ -2965,6 +4071,96 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     "hasSimulation": true,
     "hasExamPractice": false,
     "hasNarration": true,
+    "hasExtras": false
+  },
+  {
+    "id": "phy-power-001",
+    "subject": "physics",
+    "title": {
+      "zh": "电功与电功率",
+      "en": "Electrical Work and Power"
+    },
+    "summary": {
+      "zh": "理解电功 W = UIt 与电功率 P = UI 的意义和单位，认识千瓦时（度），并学会用电功率公式进行计算。",
+      "en": "Understand electrical work W = VIt and electrical power P = IV with their units, meet the kilowatt-hour, and use the power equations in calculations."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-phy-j9/ch6"
+      ],
+      "igcse": [
+        "0625/4.2.5",
+        "0625/1.7.4"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "电功",
+        "电功率",
+        "焦耳",
+        "瓦特",
+        "千瓦时",
+        "度",
+        "P=UI",
+        "W=Pt"
+      ],
+      "en": [
+        "electrical work",
+        "electrical power",
+        "joule",
+        "watt",
+        "kilowatt-hour",
+        "P = IV",
+        "E = Pt"
+      ]
+    },
+    "hasSimulation": true,
+    "hasExamPractice": true,
+    "hasNarration": false,
+    "hasExtras": false
+  },
+  {
+    "id": "phy-power-002",
+    "subject": "physics",
+    "title": {
+      "zh": "额定功率与实际功率",
+      "en": "Rated Power and Actual Power"
+    },
+    "summary": {
+      "zh": "理解额定电压与额定功率的含义，知道实际功率随实际电压变化，并掌握“测量小灯泡的电功率”实验的原理与操作。",
+      "en": "Understand rated voltage and rated power, see how actual power varies with the actual voltage, and master the experiment to measure the power of a small lamp."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-phy-j9/ch6"
+      ],
+      "igcse": [
+        "0625/4.2.5"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "额定电压",
+        "额定功率",
+        "实际功率",
+        "灯泡亮度",
+        "伏安法测功率",
+        "铭牌"
+      ],
+      "en": [
+        "rated voltage",
+        "rated power",
+        "actual power",
+        "lamp brightness",
+        "measuring power",
+        "rating plate"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
     "hasExtras": false
   },
   {
@@ -3140,6 +4336,114 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     "hasExtras": false
   },
   {
+    "id": "phy-sound-001",
+    "subject": "physics",
+    "title": {
+      "zh": "声现象",
+      "en": "Sound Phenomena"
+    },
+    "summary": {
+      "zh": "认识声音由物体振动产生、靠介质传播，知道 15 ℃ 空气中的声速约 340 m/s，理解音调、响度、音色三要素，了解噪声的控制途径与超声、次声的应用。",
+      "en": "Learn that sound is produced by vibrating objects and needs a medium to travel, know that the speed of sound in air at 15 °C is about 340 m/s, understand pitch, loudness and timbre, and survey noise control and the uses of ultrasound and infrasound."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-phy-j8a/ch2"
+      ],
+      "igcse": [
+        "0625/3.4"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "振动",
+        "介质",
+        "真空不能传声",
+        "声速",
+        "音调",
+        "响度",
+        "音色",
+        "噪声控制",
+        "超声波",
+        "次声波"
+      ],
+      "en": [
+        "vibration",
+        "medium",
+        "sound cannot travel through a vacuum",
+        "speed of sound",
+        "pitch",
+        "loudness",
+        "timbre",
+        "noise control",
+        "ultrasound",
+        "infrasound"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
+    "hasExtras": false
+  },
+  {
+    "id": "phy-state-001",
+    "subject": "physics",
+    "title": {
+      "zh": "物态变化",
+      "en": "Changes of State"
+    },
+    "summary": {
+      "zh": "认识熔化与凝固、汽化与液化、升华与凝华六种物态变化及吸放热规律，区分晶体与非晶体的熔化特点，并能用物态变化解释生活中的热现象。",
+      "en": "Learn the six changes of state — melting and solidification, vaporisation and condensation, sublimation and deposition — with their energy transfers, distinguish crystalline from non-crystalline melting behaviour, and explain everyday thermal phenomena."
+    },
+    "gradeTier": "middle",
+    "syllabus": {
+      "pep": [
+        "pep-phy-j8a/ch3"
+      ],
+      "igcse": [
+        "0625/2.1.1",
+        "0625/2.2.3",
+        "0620/1.1"
+      ]
+    },
+    "keywords": {
+      "zh": [
+        "熔化",
+        "凝固",
+        "汽化",
+        "液化",
+        "升华",
+        "凝华",
+        "熔点",
+        "沸点",
+        "晶体",
+        "非晶体",
+        "吸热",
+        "放热"
+      ],
+      "en": [
+        "melting",
+        "solidification",
+        "vaporisation",
+        "condensation",
+        "sublimation",
+        "deposition",
+        "melting point",
+        "boiling point",
+        "crystalline",
+        "non-crystalline",
+        "energy absorbed",
+        "energy released"
+      ]
+    },
+    "hasSimulation": false,
+    "hasExamPractice": true,
+    "hasNarration": false,
+    "hasExtras": false
+  },
+  {
     "id": "phy-thermal-001",
     "subject": "physics",
     "title": {
@@ -3196,7 +4500,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
       "zh": "从分子动理论理解气体压强的来源，探究一定质量的气体在温度不变时压强与体积的反比关系（玻意耳定律），以及温度对压强的影响。",
       "en": "Understand the origin of gas pressure through the kinetic particle model, explore how pressure varies inversely with volume at constant temperature (Boyle’s law), and see the effect of temperature on pressure."
     },
-    "gradeTier": "both",
+    "gradeTier": "senior",
     "syllabus": {
       "pep": [
         "pep-phy-j8b/ch3"

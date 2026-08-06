@@ -9,7 +9,7 @@ export const bioEco002: KnowledgePoint = {
     zh: '比较理想条件下的 J 型（指数）增长和资源有限条件下的 S 型（逻辑斯谛）增长，理解内禀增长率 r 与环境容纳量 K 的含义。',
     en: 'Compare exponential (J-shaped) growth under ideal conditions with logistic (S-shaped) growth under limited resources, and understand the intrinsic growth rate r and the carrying capacity K.',
   },
-  gradeTier: 'both',
+  gradeTier: 'senior',
   syllabus: {
     pep: ['pep-bio-j7a/ch1'],
     igcse: ['0610/19'],
