@@ -127,4 +127,5 @@ export const chemBonding002: KnowledgePoint = {
       },
     },
   ],
+  related: ['igcse-0620-2-4-bonding', 'igcse-0620-2-6-giant-structures', 'chem-bonding-001', 'chem-atomic-003'],
 };

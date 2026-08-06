@@ -257,4 +257,49 @@ export const phyKinematicsVelocity: KnowledgePoint = {
       expected: { v: 6, s: 60 },
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '百米飞人冲线那一刻时速超过 40 公里，可他全程的平均速度其实还不到 29 公里每小时。一个“快”字，其实藏着两种不同的速度——这节课我们就把它们分清楚。',
+          en: 'A top sprinter crosses the line at over 40 kilometres per hour, yet his average speed for the whole race is under 29. That one word "fast" hides two different speeds — and this lesson keeps them apart.',
+        },
+      },
+      {
+        id: 'concept-velocity',
+        kind: 'concept',
+        text: {
+          zh: '速度描述运动的快慢和方向：位移除以时间，v 等于 s 比 t。它是矢量——有大小也有方向；只有大小的那一半叫速率。单位米每秒，生活里常用千米每小时，记住 1 米每秒等于 3.6 千米每小时。',
+          en: 'Velocity describes how fast something moves and in which direction: displacement over time, v equals s over t. It is a vector — magnitude plus direction; the magnitude alone is the speed. The unit is metres per second; everyday life uses kilometres per hour, and 1 m/s is 3.6 km/h.',
+        },
+      },
+      {
+        id: 'concept-average',
+        kind: 'concept',
+        text: {
+          zh: '变速运动里，全程的快慢用平均速度来概括：总位移除以总时间。两个坑要避开：中途停下来休息的时间也得算进总时间；平均速度一般不是各段速度的平均值。只有匀变速直线运动时，它才恰好等于初末速度之和的一半——这个巧合别乱用。',
+          en: 'For non-uniform motion the average velocity sums up the journey: total displacement over total time. Two traps: time spent stopped still counts towards the total; and average velocity is generally not the mean of the speeds. Only for uniform acceleration does it happen to equal half the sum of the initial and final velocities — do not borrow that coincidence elsewhere.',
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '来仿真里感受一下。先点“自行车匀速骑行”：v-t 图像是水平线，任意时刻的瞬时速度都等于平均速度。再点“列车出站加速”，看 v-t 图线爬坡——平均速度就藏在图线下的面积里。最后点“汽车进站减速”，拖一拖初速度和加速度滑块，看刹车的快慢怎么改变图线的斜率。',
+          en: 'Feel it in the simulation. Start with "cycling at constant speed": the v–t graph is flat, and the instantaneous velocity equals the average at every moment. Then tap "train accelerating out of a station" and watch the v–t line climb — the average velocity hides in the area beneath it. Finally try "car slowing into a stop", and drag the initial-velocity and acceleration sliders to see how brisk braking steepens the line.',
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '收个尾：速度是位移与时间的比，是矢量；平均速度只认“总位移除以总时间”；匀变速时才有 v̄ 等于 (u+v)/2 这个捷径；匀速时瞬时速度处处等于平均速度。概念分清了，小测里那些陷阱选项就骗不到你。',
+          en: 'Wrapping up: velocity is displacement over time, a vector; average velocity means total displacement over total time, nothing else; the shortcut v-bar equals (u+v)/2 works only for uniform acceleration; and in uniform motion the instantaneous velocity equals the average everywhere. With the concepts sorted, the quiz traps won\'t catch you.',
+        },
+      },
+    ],
+  },
+  related: ['igcse-0625-1-2-motion', 'phy-motion-001', 'phy-kinematics-reference-frame'],
 };

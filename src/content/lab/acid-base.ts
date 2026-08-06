@@ -11,6 +11,11 @@ import type { LabExperiment } from "./types";
 export const acidBaseExperiments: LabExperiment[] = [
   {
     slug: "acid-base-titration",
+    related: ["chem-acidbase-001", "igcse-0620-7-1-acids-bases", "igcse-0620-3-3-moles"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch3"],
+      igcse: ["0620/7.1", "0620/12.2", "0620/3.3"],
+    },
     title: { zh: "酸碱中和滴定", en: "Acid–Base Titration" },
     description: {
       zh: "用标准盐酸滴定未知浓度的氢氧化钠溶液，借助酚酞指示剂判断终点，掌握定量分析基本操作。",
@@ -35,6 +40,11 @@ export const acidBaseExperiments: LabExperiment[] = [
   },
   {
     slug: "hcl-naoh-neutralization",
+    related: ["chem-acidbase-001", "chem-energetics-001", "igcse-0620-5-1-energetics"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch3", "pep-che-s2/ch2"],
+      igcse: ["0620/7.1", "0620/5.1"],
+    },
     title: { zh: "盐酸与氢氧化钠中和热测定", en: "Measuring the Heat of Neutralisation of Hydrochloric Acid and Sodium Hydroxide" },
     description: {
       zh: "在保温杯量热计中测定盐酸与氢氧化钠反应的中和热，理解放热反应能量变化。",
@@ -59,6 +69,11 @@ export const acidBaseExperiments: LabExperiment[] = [
   },
   {
     slug: "indicator-color-change",
+    related: ["chem-ph-001", "chem-acidbase-001", "igcse-0620-7-1-acids-bases"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch3"],
+      igcse: ["0620/7.1"],
+    },
     title: { zh: "酸碱指示剂变色规律", en: "Colour Changes of Acid–Base Indicators" },
     description: {
       zh: "观察石蕊、酚酞、甲基橙在酸性与碱性溶液中的颜色变化，归纳变色范围。",
@@ -83,6 +98,11 @@ export const acidBaseExperiments: LabExperiment[] = [
   },
   {
     slug: "vinegar-soda",
+    related: ["chem-acidbase-002", "chem-gas-002", "igcse-0620-7-1-acids-bases"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch3", "pep-che-j9a/ch6"],
+      igcse: ["0620/7.1"],
+    },
     title: { zh: "食醋与小苏打反应", en: "Reaction of Vinegar and Baking Soda" },
     description: {
       zh: "探究厨房中食醋（乙酸）与小苏打反应产生二氧化碳的现象，联系生活中的化学。",
@@ -107,6 +127,11 @@ export const acidBaseExperiments: LabExperiment[] = [
   },
   {
     slug: "metal-oxide-acid",
+    related: ["chem-acidbase-002", "igcse-0620-7-1-acids-bases", "chem-acidbase-004"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch3"],
+      igcse: ["0620/7.1", "0620/7.2"],
+    },
     title: { zh: "氧化铜与稀硫酸反应", en: "Reaction of Copper(II) Oxide with Dilute Sulfuric Acid" },
     description: {
       zh: "观察黑色氧化铜溶于稀硫酸生成蓝色硫酸铜溶液，认识金属氧化物与酸的反应。",
@@ -131,6 +156,11 @@ export const acidBaseExperiments: LabExperiment[] = [
   },
   {
     slug: "limewater-co2",
+    related: ["chem-gas-002", "chem-acidbase-003", "igcse-0620-12-5-tests"],
+    syllabus: {
+      pep: ["pep-che-j9a/ch6"],
+      igcse: ["0620/12.5", "0620/7.2"],
+    },
     title: { zh: "二氧化碳与石灰水反应", en: "Reaction of Carbon Dioxide with Limewater" },
     description: {
       zh: "向澄清石灰水中通入二氧化碳，观察变浑浊，掌握二氧化碳的检验方法。",
@@ -155,6 +185,11 @@ export const acidBaseExperiments: LabExperiment[] = [
   },
   {
     slug: "carbonate-acid-identify",
+    related: ["chem-acidbase-002", "igcse-0620-12-5-tests", "chem-gas-002"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch4"],
+      igcse: ["0620/12.5", "0620/7.1"],
+    },
     title: { zh: "碳酸盐的检验", en: "Testing for Carbonates" },
     description: {
       zh: "用稀盐酸鉴别碳酸钠固体，依据放出能使石灰水变浑浊的气体确认碳酸根。",
@@ -179,6 +214,11 @@ export const acidBaseExperiments: LabExperiment[] = [
   },
   {
     slug: "ph-measurement",
+    related: ["chem-ph-001", "igcse-0620-7-1-acids-bases"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch3"],
+      igcse: ["0620/7.1"],
+    },
     title: { zh: "常见溶液 pH 的测定", en: "Measuring the pH of Common Solutions" },
     description: {
       zh: "用 pH 试纸和 pH 计测定多种生活溶液的酸碱度，比较两种方法的精度。",
@@ -202,6 +242,11 @@ export const acidBaseExperiments: LabExperiment[] = [
   },
   {
     slug: "weak-acid-ionization",
+    related: ["chem-ph-001", "igcse-0620-7-1-acids-bases", "igcse-0620-6-3-equilibrium"],
+    syllabus: {
+      pep: ["pep-che-s1/ch1"],
+      igcse: ["0620/7.1"],
+    },
     title: { zh: "弱电解质的电离", en: "Ionisation of Weak Electrolytes" },
     description: {
       zh: "对比相同浓度盐酸与乙酸的导电性与 pH，理解弱电解质部分电离的特点。",
@@ -226,6 +271,11 @@ export const acidBaseExperiments: LabExperiment[] = [
   },
   {
     slug: "salt-hydrolysis",
+    related: ["chem-acidbase-004", "chem-ph-001", "igcse-0620-7-1-acids-bases"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch4"],
+      igcse: ["0620/7.1"],
+    },
     title: { zh: "盐类水解探究", en: "Investigating Salt Hydrolysis" },
     description: {
       zh: "测定碳酸钠、氯化铵、氯化钠溶液的 pH，探究盐类水解使溶液呈酸碱性的规律。",
@@ -249,6 +299,11 @@ export const acidBaseExperiments: LabExperiment[] = [
   },
   {
     slug: "antacid-stomach",
+    related: ["chem-acidbase-001", "chem-acidbase-003", "igcse-0620-7-1-acids-bases"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch3"],
+      igcse: ["0620/7.1"],
+    },
     title: { zh: "胃药中和胃酸探究", en: "Investigating Antacids Neutralising Stomach Acid" },
     description: {
       zh: "用氢氧化铝、碳酸氢钠等胃药中和模拟胃酸的稀盐酸，联系医药中的酸碱中和。",
@@ -273,6 +328,11 @@ export const acidBaseExperiments: LabExperiment[] = [
   },
   {
     slug: "diprotic-acid-titration",
+    related: ["chem-acidbase-001", "chem-acidbase-002", "igcse-0620-3-3-moles"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch3"],
+      igcse: ["0620/7.1", "0620/12.2", "0620/3.3"],
+    },
     title: { zh: "二元酸的分步滴定", en: "Stepwise Titration of a Diprotic Acid" },
     description: {
       zh: "用氢氧化钠分步滴定硫酸，结合 pH 曲线认识多元强酸的中和特征。",
@@ -297,6 +357,11 @@ export const acidBaseExperiments: LabExperiment[] = [
   },
   {
     slug: "buffer-solution",
+    related: ["chem-ph-001", "igcse-0620-7-1-acids-bases", "chem-energetics-003"],
+    syllabus: {
+      pep: ["pep-che-s1/ch1"],
+      igcse: ["0620/7.1"],
+    },
     title: { zh: "缓冲溶液的性质", en: "Properties of Buffer Solutions" },
     description: {
       zh: "配制乙酸-乙酸钠缓冲液并测试加入少量酸碱后 pH 的稳定性，理解缓冲作用。",

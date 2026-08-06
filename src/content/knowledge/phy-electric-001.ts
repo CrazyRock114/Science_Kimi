@@ -19,6 +19,16 @@ export const phyElectric001: KnowledgePoint = {
   },
   theory: {
     zh: [
+      { type: 'heading', text: '学习目标' },
+      {
+        type: 'list',
+        items: [
+          '说出电路的组成部分，并能识别通路、断路和短路三种状态。',
+          '用 I = Q / t 计算电流，说明电流方向的规定与金属中自由电子定向移动方向的关系。',
+          '说明电压是形成电流的原因，列举常见的电压值。',
+          '正确连接电流表（串联）与电压表（并联）。',
+        ],
+      },
       { type: 'heading', text: '电路的组成与三种状态' },
       {
         type: 'paragraph',
@@ -43,8 +53,30 @@ export const phyElectric001: KnowledgePoint = {
           '连接电路时开关应断开，绝不允许用导线直接把电源两极连接起来。',
         ],
       },
+      { type: 'heading', text: '术语表' },
+      {
+        type: 'list',
+        items: [
+          'circuit（电路）：电流流通的完整路径，由电源、用电器、开关和导线连接而成。',
+          'current（电流）：单位时间内通过导体横截面的电荷量，I = Q / t，单位安培（A）。',
+          'voltage（电压）：使自由电荷定向移动形成电流的原因，由电源提供，单位伏特（V）。',
+          'short circuit（短路）：不经过用电器直接把电源两极相连的状态，电流很大，十分危险。',
+          'ammeter（电流表）：测量电流的仪表，必须串联在被测电路中。',
+          'voltmeter（电压表）：测量电压的仪表，必须并联在被测元件两端。',
+        ],
+      },
     ],
     en: [
+      { type: 'heading', text: 'Learning objectives' },
+      {
+        type: 'list',
+        items: [
+          'State the components of an electric circuit and identify complete, open and short circuits.',
+          'Use I = Q / t to calculate current, and relate the conventional current direction to the drift of free electrons in metals.',
+          'Explain that voltage is what drives the current, and quote typical voltage values.',
+          'Connect an ammeter in series and a voltmeter in parallel correctly.',
+        ],
+      },
       { type: 'heading', text: 'Circuit components and circuit states' },
       {
         type: 'paragraph',
@@ -67,6 +99,18 @@ export const phyElectric001: KnowledgePoint = {
           'An ammeter measures current and must be connected in series in the circuit.',
           'A voltmeter measures voltage and must be connected in parallel across the component.',
           'Keep the switch open while connecting a circuit, and never connect the two terminals of a source directly with a wire.',
+        ],
+      },
+      { type: 'heading', text: 'Glossary' },
+      {
+        type: 'list',
+        items: [
+          'circuit (电路): A complete path around which current can flow — source, components, switch and wires.',
+          'current (电流): The charge passing a point per unit time, I = Q / t, measured in amperes (A).',
+          'voltage (电压): What drives charge around a circuit; supplied by the source, measured in volts (V).',
+          'short circuit (短路): A direct connection across the source with no component in between, producing a dangerously large current.',
+          'ammeter (电流表): Measures current; connected in series so that the current passes through it.',
+          'voltmeter (电压表): Measures voltage; connected in parallel across the component.',
         ],
       },
     ],
@@ -141,4 +185,84 @@ export const phyElectric001: KnowledgePoint = {
       },
     },
   ],
+  examPractice: [
+    {
+      id: 'ep-meters-connection',
+      syllabus: ['0625/4.2.2.2', '0625/4.2.3.5'],
+      tier: 'core',
+      commandWord: 'State',
+      marks: 1,
+      stem: 'A student wants to measure the current through a lamp and the potential difference across it. How should the ammeter and the voltmeter be connected?',
+      options: [
+        'Ammeter in series with the lamp; voltmeter in parallel across the lamp',
+        'Ammeter in parallel across the lamp; voltmeter in series with the lamp',
+        'Both meters in series with the lamp',
+        'Both meters in parallel across the lamp',
+      ],
+      answerIndex: 0,
+      markScheme: [
+        {
+          text: 'Ammeter in series and voltmeter in parallel with the lamp',
+          marks: 1,
+        },
+      ],
+      examinerNote: {
+        zh: '记法：电流必须从电流表中“流过”，所以串联；电压表在“比较两个点”，所以并联。接反的电压表（串联）几乎让电路断路，接反的电流表（并联）则几乎造成短路。',
+        en: 'Memory aid: the current must flow through the ammeter, so it goes in series; the voltmeter compares two points, so it goes in parallel. A series voltmeter nearly breaks the circuit, and a parallel ammeter nearly short-circuits it.',
+      },
+    },
+    {
+      id: 'ep-charge-calculation',
+      syllabus: ['0625/4.2.2.5'],
+      tier: 'supplement',
+      commandWord: 'Calculate',
+      marks: 3,
+      stem: 'A current of 0.30 A flows through a torch bulb for 5.0 minutes. Calculate the charge that passes through the bulb.',
+      markScheme: [
+        {
+          text: 'Converts the time: 5.0 minutes = 300 s',
+          marks: 1,
+        },
+        {
+          text: 'Q = I t = 0.30 × 300',
+          marks: 1,
+        },
+        {
+          text: '= 90 C',
+          marks: 1,
+        },
+      ],
+      examinerNote: {
+        zh: '安培是库仑每秒，时间必须先换成秒。直接代入 5.0 会得到 1.5 C，差了 60 倍——这是本题唯一的陷阱，也是最常见的失分点。',
+        en: 'The ampere is a coulomb per second, so the time must be converted first. Substituting 5.0 directly gives 1.5 C, out by a factor of 60 — the only trap in this question and the commonest way to lose the marks.',
+      },
+    },
+    {
+      id: 'ep-electron-flow',
+      syllabus: ['0625/4.2.2.3', '0625/4.2.2.6'],
+      tier: 'supplement',
+      commandWord: 'Describe',
+      marks: 3,
+      stem: 'Describe how a current flows in a metal wire, and state the direction of the electron flow relative to the conventional current.',
+      markScheme: [
+        {
+          text: 'A metal contains free electrons that are not bound to individual atoms',
+          marks: 1,
+        },
+        {
+          text: 'When a p.d. is applied, these free electrons drift through the wire, and this flow of charge is the current',
+          marks: 1,
+        },
+        {
+          text: 'The electrons flow from the negative terminal to the positive terminal, opposite to the conventional current',
+          marks: 1,
+        },
+      ],
+      examinerNote: {
+        zh: '必须点明“自由电子”，只写“电荷移动”拿不到第一分；方向要说清“电子从负极到正极，与规定的电流方向相反”，缺一半也会失分。',
+        en: 'You must say “free electrons” — a vague “charges move” does not earn the first mark. For the direction, state both halves: electrons go from negative to positive, opposite to the conventional current.',
+      },
+    },
+  ],
+  related: ['phy-electric-002', 'igcse-0625-4-2-current-power', 'igcse-0625-4-2-1-electric-charge'],
 };

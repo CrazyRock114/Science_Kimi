@@ -243,4 +243,49 @@ export const phyKinematicsFreefall: KnowledgePoint = {
       expected: { maxHeight: 1.2755102041, flightTime: 1.0204081633 },
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '传说伽利略在比萨斜塔上同时丢下一大一小两个铁球——结果它们同时落地。羽毛为什么落得慢？球抛到最高点那一瞬间，它又处于什么状态？这节课把自由落体一次讲透。',
+          en: 'Legend has it Galileo dropped two cannonballs of different sizes from the Leaning Tower of Pisa — and they hit the ground together. So why does a feather fall slowly? And what exactly is true at the very top of a throw? This lesson settles free fall once and for all.',
+        },
+      },
+      {
+        id: 'concept-freefall',
+        kind: 'concept',
+        text: {
+          zh: '只在重力作用下、从静止开始的下落，叫自由落体。它是初速度为零、加速度恒为 g 的匀加速运动：v 等于 gt，下落高度 h 等于二分之一 gt 平方。关键结论：没有空气阻力时，一切物体下落得一样快——与质量无关。羽毛慢，慢在空气，不在重力。',
+          en: 'Motion from rest under gravity alone is free fall: uniformly accelerated motion with zero initial velocity and constant acceleration g. The velocity is gt and the height fallen is a half g t squared. The key result: without air resistance everything falls at the same rate, whatever its mass. A feather lags because of the air, not because of gravity.',
+        },
+      },
+      {
+        id: 'concept-vertical-throw',
+        kind: 'concept',
+        text: {
+          zh: '把物体竖直往上抛，就是“反着放的自由落体”：上升时匀减速，到最高点瞬时速度为零——但注意，加速度仍然是 g，方向向下，否则它就不会落回来了。最高高度是 v₀ 平方除以 2g，总飞行时间是 2v₀ 除以 g。g 越小，飞得越高、越久。',
+          en: 'Throw an object straight up and you get free fall in reverse: it decelerates uniformly to the top, where the velocity is momentarily zero — but the acceleration is still g, pointing down, or it would never come back. The maximum height is v₀ squared over 2g, and the total flight time is 2v₀ over g. The smaller g is, the higher and longer the flight.',
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '亲手试试。抛射角先保持在 90 度，拖动初速度滑块：初速度翻倍，最高高度会变成几倍？再点“地面竖直上抛”预设，记下约 2 秒的飞行时间；然后切换到“月球竖直上抛”——同样的 10 米每秒，在月球上要飞 12.5 秒、冲到 31 米高。g 的威力，一看就懂。',
+          en: 'Try it yourself. Keep the launch angle at 90 degrees and drag the initial-speed slider: double the speed, and the maximum height grows by what factor? Then tap the "vertical throw on Earth" preset and note the two-second flight; switch to "vertical throw on the Moon" — the same 10 m/s flies for 12.5 seconds and tops out at 31 metres. That is the power of g.',
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '总结一下：自由落体就是加速度为 g 的匀加速运动，规律 v = gt、h = ½gt²，与质量无关；竖直上抛的最高点速度为零但加速度仍是 g；换个星球只换 g 的大小。带着这三条去做小测吧。',
+          en: 'To sum up: free fall is uniformly accelerated motion at g, with v equals gt and h equals a half g t squared, independent of mass; at the top of a vertical throw the velocity is zero but the acceleration is still g; and moving to another planet just changes g. Take those three facts into the quiz.',
+        },
+      },
+    ],
+  },
+  related: ['igcse-0625-1-2-motion', 'igcse-0625-1-5-forces', 'phy-kinematics-projectile', 'phy-motion-001'],
 };

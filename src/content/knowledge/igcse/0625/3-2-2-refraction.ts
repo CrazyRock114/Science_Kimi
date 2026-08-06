@@ -71,8 +71,20 @@ export const kp322Refraction: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "这个比值是常数"
+      },
+      {
         "type": "paragraph",
-        "text": "拖动光线穿过界面，观察光如何偏折、找出临界角，并看到折射彻底停止的瞬间。"
+        "text": "关键在于：无论你怎么改变角度，sin i 与 sin r 的比值始终不变。这个常数就是介质的折射率。"
+      },
+      {
+        "type": "formula",
+        "latex": "n = \\frac{\\sin i}{\\sin r}"
+      },
+      {
+        "type": "paragraph",
+        "text": "把介质换成钻石。它的折射率是 2.42，比玻璃偏折得厉害得多——这正是切割过的钻石会闪耀的原因。"
       },
       {
         "type": "formula",
@@ -118,8 +130,20 @@ export const kp322Refraction: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "The ratio is constant"
+      },
+      {
         "type": "paragraph",
-        "text": "Drag a ray across a boundary to see how light bends, find the critical angle, and watch refraction stop altogether."
+        "text": "Here is the useful part: however you change the angle, the ratio of sine i to sine r stays the same. That constant is the refractive index of the material."
+      },
+      {
+        "type": "formula",
+        "latex": "n = \\frac{\\sin i}{\\sin r}"
+      },
+      {
+        "type": "paragraph",
+        "text": "Switch the material to diamond. Its refractive index is 2.42, so it bends light far more sharply than glass — which is exactly why cut diamonds sparkle."
       },
       {
         "type": "formula",

@@ -161,4 +161,5 @@ export const chemEnergetics002: KnowledgePoint = {
       },
     },
   ],
+  related: ['igcse-0620-6-2-rate-of-reaction', 'chem-energetics-001', 'chem-energetics-003', 'chem-gas-001'],
 };

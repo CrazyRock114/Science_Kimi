@@ -69,8 +69,56 @@ export const kp103AirAndClimate: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "温室效应的原理"
+      },
+      {
         "type": "paragraph",
-        "text": "二氧化碳在一个世纪里每十年上升不到 1 ppm，此后每十年约上升 16 ppm。这条曲线的形状本身就是论据。"
+        "text": "来自太阳的能量主要以短波辐射的形式到达，大气几乎让它直接穿过。地面吸收后升温，再把能量辐射出去——但波长更长，因为地面比太阳冷得多。"
+      },
+      {
+        "type": "paragraph",
+        "text": "区别就在这里。二氧化碳和甲烷会吸收射出的长波辐射，并向各个方向重新发射——包括向下。本该离开的能量，在途中把部分大气留住了热量。"
+      },
+      {
+        "type": "paragraph",
+        "text": "这本身不是坏事。若完全没有温室效应，地球平均温度约为 −18 °C，无法居住。问题不在于它是否存在，而在于强弱程度，这取决于空气中这些气体的含量。"
+      },
+      {
+        "type": "heading",
+        "text": "空气中的其他东西"
+      },
+      {
+        "type": "paragraph",
+        "text": "温室气体不等于污染物，考纲要求掌握四种污染物，各自的来源与危害。一氧化碳：不完全燃烧产生。它有毒，因为它与血红蛋白结合，使血液无法运输氧气。"
+      },
+      {
+        "type": "paragraph",
+        "text": "二氧化硫：燃烧含硫化合物的化石燃料时产生。它溶于雨水形成酸雨，腐蚀建筑、毁坏树木、使湖泊酸化。"
+      },
+      {
+        "type": "paragraph",
+        "text": "氮氧化物：在高温发动机内生成，空气中的氮气与氧气在那里反应。这是吸热反应，所以只在足够高温处发生。它们同样造成酸雨，并在阳光下形成光化学烟雾。"
+      },
+      {
+        "type": "paragraph",
+        "text": "还有颗粒物——不完全燃烧产生的微小固体颗粒，主要是碳。它们沉积在肺部，引起呼吸系统疾病。"
+      },
+      {
+        "type": "heading",
+        "text": "可以采取什么措施"
+      },
+      {
+        "type": "paragraph",
+        "text": "催化转化器能同时处理其中三种。在排气管内的铂表面上，一氧化碳与一氧化氮相互反应：一氧化碳被氧化为二氧化碳，一氧化氮被还原为氮气。"
+      },
+      {
+        "type": "paragraph",
+        "text": "两种有毒气体进去，两种无害气体出来。注意它对二氧化碳毫无帮助——反而生成更多。催化转化器是治理空气质量的装置，不是治理气候的，这个区别是得分点。"
+      },
+      {
+        "type": "paragraph",
+        "text": "至于气候本身，措施包括：减少化石燃料、增加可再生能源；植树以吸收二氧化碳；在电厂捕集并封存二氧化碳；减少农业与垃圾填埋产生的甲烷。"
       },
       {
         "type": "formula",
@@ -121,8 +169,56 @@ export const kp103AirAndClimate: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "How the greenhouse effect works"
+      },
+      {
         "type": "paragraph",
-        "text": "Carbon dioxide rose by less than one part per million per decade for a century, then by about sixteen. The shape of that curve is the argument."
+        "text": "Energy arrives from the Sun as mostly short-wavelength radiation, and the atmosphere lets it straight through. The ground absorbs it, warms up, and radiates it back out — but at a longer wavelength, because the ground is much cooler than the Sun."
+      },
+      {
+        "type": "paragraph",
+        "text": "And that is where the difference lies. Carbon dioxide and methane absorb the longer wavelength going out, and re-emit it in all directions — including back down. Energy that would have left keeps some of the atmosphere warm on its way."
+      },
+      {
+        "type": "paragraph",
+        "text": "This is not a fault. Without any greenhouse effect the Earth would average about minus eighteen degrees and be uninhabitable. The question is not whether it happens but how much of it there is, and that depends on how much of these gases the air holds."
+      },
+      {
+        "type": "heading",
+        "text": "The other things in the air"
+      },
+      {
+        "type": "paragraph",
+        "text": "Greenhouse gases are not the same thing as pollutants, and the syllabus wants four pollutants with a source and an effect for each. Carbon monoxide: incomplete combustion. It is toxic because it binds to haemoglobin and stops your blood carrying oxygen."
+      },
+      {
+        "type": "paragraph",
+        "text": "Sulfur dioxide: from burning fossil fuels that contain sulfur compounds. It dissolves in rain to make acid rain, which damages buildings, kills trees and acidifies lakes."
+      },
+      {
+        "type": "paragraph",
+        "text": "Oxides of nitrogen: made inside a hot engine, where nitrogen and oxygen from the air react together. Endothermic, so it only happens where it is hot enough. They cause acid rain too, and photochemical smog in sunlight."
+      },
+      {
+        "type": "paragraph",
+        "text": "And particulates — tiny solid specks from incomplete combustion, mostly carbon. They lodge in lungs and cause respiratory disease."
+      },
+      {
+        "type": "heading",
+        "text": "What can be done about it"
+      },
+      {
+        "type": "paragraph",
+        "text": "A catalytic converter deals with three of those at once. Inside the exhaust, over a platinum surface, carbon monoxide and nitrogen monoxide react with each other: the carbon monoxide is oxidised to carbon dioxide and the nitrogen monoxide is reduced to nitrogen."
+      },
+      {
+        "type": "paragraph",
+        "text": "Two poisons in, two harmless gases out. Notice it does nothing about the carbon dioxide — it makes more of it. A catalytic converter is an air-quality device, not a climate one, and that distinction is worth marks."
+      },
+      {
+        "type": "paragraph",
+        "text": "For the climate itself, the strategies are: use less fossil fuel and more renewable energy, plant trees to absorb carbon dioxide, capture and store it at power stations, and reduce methane from farming and landfill."
       },
       {
         "type": "formula",

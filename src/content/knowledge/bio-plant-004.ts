@@ -167,4 +167,5 @@ export const bioPlant004: KnowledgePoint = {
       },
     },
   ],
+  related: ['igcse-0610-19-1-ecosystems', 'bio-plant-001', 'bio-eco-003', 'igcse-0610-6-1-photosynthesis'],
 };

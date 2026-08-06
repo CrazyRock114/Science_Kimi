@@ -66,8 +66,24 @@ export const kp11StatesOfMatter: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "为什么隔着房间也能闻到"
+      },
+      {
         "type": "paragraph",
-        "text": "熔化过程中加热器并没有关，那能量去哪了？去把粒子分开，而不是加速粒子——这正是温度计停住的原因。"
+        "text": "在房间一端打开一瓶气味浓烈的东西，过一会儿另一端也能闻到。这就是扩散：粒子从浓度较高处向浓度较低处的净移动，直到均匀分布。"
+      },
+      {
+        "type": "paragraph",
+        "text": "并没有什么在推它们。气体粒子本来就在各个方向快速随机运动，而由于一侧的粒子更多，向外游走的就比向内的多。加热气体则更快，因为粒子运动得更快。"
+      },
+      {
+        "type": "paragraph",
+        "text": "由此有一个漂亮的推论。在相同温度下，所有气体粒子的平均动能相同——因此较重的粒子必然运动得较慢才能具有同样的动能。于是较轻的分子扩散更快，相对分子质量越小，气体扩散得越快。"
+      },
+      {
+        "type": "paragraph",
+        "text": "经典演示是在长玻璃管一端放浸过浓氨水的棉花，另一端放浓盐酸。两者相遇处会生成白色的氯化铵环——而这个环明显偏离中点，靠近盐酸那一端，因为氨的相对分子质量是 17，而氯化氢是 36.5。在相同时间内，较轻的气体走得更远。"
       },
       {
         "type": "formula",
@@ -106,8 +122,24 @@ export const kp11StatesOfMatter: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Why you can smell it from across the room"
+      },
+      {
         "type": "paragraph",
-        "text": "The heater is still on during melting, so where is the energy going? Into pulling particles apart rather than speeding them up — which is exactly why the thermometer stops."
+        "text": "Open a bottle of something strong-smelling at one end of a room and after a while it can be smelled at the other. That is diffusion: the net movement of particles from a region of higher concentration to a region of lower concentration, until they are spread evenly."
+      },
+      {
+        "type": "paragraph",
+        "text": "Nothing is pushing them. Gas particles are moving quickly and randomly in all directions anyway, and with more of them on one side, more happen to wander outwards than inwards. Heat the gas and it happens faster, because the particles are moving faster."
+      },
+      {
+        "type": "paragraph",
+        "text": "There is a neat consequence. At the same temperature, all gas particles have on average the same kinetic energy — so a heavier particle must be moving more slowly to have it. Lighter molecules therefore diffuse faster, and the lower the relative molecular mass, the faster the gas spreads."
+      },
+      {
+        "type": "paragraph",
+        "text": "The classic demonstration puts cotton wool soaked in concentrated ammonia at one end of a long glass tube and concentrated hydrochloric acid at the other. A white ring of ammonium chloride forms where the two meet — and it forms well past the middle, nearer the acid end, because ammonia has a relative molecular mass of seventeen and hydrogen chloride thirty-six and a half. The lighter gas travelled further in the same time."
       },
       {
         "type": "formula",

@@ -141,4 +141,5 @@ export const bioEco004: KnowledgePoint = {
       },
     },
   ],
+  related: ['igcse-0610-18-1-variation-selection', 'igcse-0610-17-1-inheritance', 'bio-genetics-001'],
 };

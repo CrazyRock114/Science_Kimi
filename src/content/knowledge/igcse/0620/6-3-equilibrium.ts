@@ -64,8 +64,40 @@ export const kp63Equilibrium: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "很忙，却哪儿也没去"
+      },
+      {
         "type": "paragraph",
-        "text": "给哈伯反应器降温能让产率翻三倍。没有工厂这么做——图上显示的是化学想要的，而不这么做的理由不在任何一条坐标轴上。"
+        "text": "现在把容器封闭，使任何物质都无法逸出。起初只有反应物，所以正反应很快，逆反应根本无法发生。随着生成物积累，正反应变慢，逆反应变快。"
+      },
+      {
+        "type": "paragraph",
+        "text": "最终两个速率相等，这就是平衡。从外部看不再有任何变化——各物质的浓度都保持恒定。而在内部，两个反应仍在全速进行。正因如此它被称为动态平衡。"
+      },
+      {
+        "type": "paragraph",
+        "text": "若要求描述平衡，有三点要说。正反应与逆反应的速率相等。反应物和生成物的浓度保持恒定。而且它只能在封闭体系中达到——若有物质逸出，逆反应就没有原料，体系永远无法稳定。"
+      },
+      {
+        "type": "paragraph",
+        "text": "\"恒定\"不等于\"相等\"。平衡混合物可以有 90% 是生成物，也可以有 90% 是反应物；恒定的是这些数字不再变动。平衡落在哪里，由条件控制。"
+      },
+      {
+        "type": "heading",
+        "text": "同样的推理，另一座工厂"
+      },
+      {
+        "type": "paragraph",
+        "text": "接触法制硫酸，其关键一步是同一类平衡：2SO₂ + O₂ ⇌ 2SO₃，可逆，用五氧化二钒作催化剂，约 450 度、2 个大气压。"
+      },
+      {
+        "type": "paragraph",
+        "text": "注意压强——只有 2 个大气压，而哈伯法需要 200 个。3 个气体分子变成 2 个，所以加压确实有帮助，但在常压下产率已经约 95%。几乎没有提升空间，因此不值得为此花钱。"
+      },
+      {
+        "type": "paragraph",
+        "text": "两者的对比正是同时学习它们的意义。两个例子中化学给出的结论相同——放热、气体分子数减少——但工业上的答案不同，因为答案取决于能获得多少收益、以及为此要付出多少成本。"
       },
       {
         "type": "formula",
@@ -108,8 +140,40 @@ export const kp63Equilibrium: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Busy, and going nowhere"
+      },
+      {
         "type": "paragraph",
-        "text": "Cooling the Haber reactor would triple the yield. No plant does it — the graph shows what chemistry wants, and the reason not to is on neither axis."
+        "text": "Now close the vessel so nothing can escape. At first there are only reactants, so the forward reaction is fast and the backward one cannot happen at all. As products build up, the forward reaction slows and the backward one speeds up."
+      },
+      {
+        "type": "paragraph",
+        "text": "Eventually the two rates become equal, and that is equilibrium. From the outside nothing changes any more — the concentrations of everything stay constant. From the inside both reactions are still running flat out. It is called a dynamic equilibrium for exactly that reason."
+      },
+      {
+        "type": "paragraph",
+        "text": "Three things to say if asked to describe it. The rates of the forward and backward reactions are equal. The concentrations of reactants and products remain constant. And it can only be reached in a closed system — if anything escapes, the backward reaction is starved and the system never settles."
+      },
+      {
+        "type": "paragraph",
+        "text": "Constant does not mean equal. An equilibrium mixture can be ninety per cent product or ninety per cent reactant; what is constant is that the numbers have stopped moving. Where the balance sits is what the conditions control."
+      },
+      {
+        "type": "heading",
+        "text": "The same reasoning, a different plant"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Contact process makes sulfuric acid, and its key step is the same kind of equilibrium: two sulfur dioxide plus one oxygen gives two sulfur trioxide, reversible, with a vanadium(V) oxide catalyst at about four hundred and fifty degrees and two atmospheres."
+      },
+      {
+        "type": "paragraph",
+        "text": "Notice the pressure — only two atmospheres, where the Haber process needs two hundred. Three molecules of gas become two, so pressure does help, but the yield is already about ninety-five per cent at atmospheric pressure. There is almost nothing left to gain, so there is no case for the expense."
+      },
+      {
+        "type": "paragraph",
+        "text": "That comparison is the point of learning both. The chemistry says the same thing in each case — exothermic, fewer molecules of gas — but the industrial answer is different, because the answer depends on how much there is to gain and what it costs to get."
       },
       {
         "type": "formula",

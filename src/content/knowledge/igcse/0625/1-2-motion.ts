@@ -70,8 +70,40 @@ export const kp12Motion: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "斜率代表变化率"
+      },
+      {
         "type": "paragraph",
-        "text": "从位移–时间图和速度–时间图中读出速度与加速度，并由图像下的面积求路程。"
+        "text": "位移–时间图的斜率就是速度。越陡越快。水平线表示物体静止。"
+      },
+      {
+        "type": "formula",
+        "latex": "v = \\frac{\\Delta s}{\\Delta t}"
+      },
+      {
+        "type": "paragraph",
+        "text": "速度–时间图的斜率是加速度。把加速度设为零，速度–时间图变成水平线，而位移–时间图变成一条直的斜线。"
+      },
+      {
+        "type": "formula",
+        "latex": "a = \\frac{\\Delta v}{\\Delta t}"
+      },
+      {
+        "type": "heading",
+        "text": "速度–时间图的面积是路程"
+      },
+      {
+        "type": "paragraph",
+        "text": "速度–时间图下的面积给出通过的路程。矩形就是速度乘时间；三角形是二分之一乘底乘高。"
+      },
+      {
+        "type": "formula",
+        "latex": "s = \\text{area under } v\\text{–}t"
+      },
+      {
+        "type": "paragraph",
+        "text": "这不是近似。你可以验证：下方的路程读数由公式算出，与图像下的面积完全一致。"
       },
       {
         "type": "formula",
@@ -120,8 +152,40 @@ export const kp12Motion: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Gradient tells you the rate"
+      },
+      {
         "type": "paragraph",
-        "text": "Read speed and acceleration off distance–time and speed–time graphs, and get distance back from the area underneath."
+        "text": "The gradient of a distance–time graph is the speed. Steeper means faster. A horizontal line means the object is at rest."
+      },
+      {
+        "type": "formula",
+        "latex": "v = \\frac{\\Delta s}{\\Delta t}"
+      },
+      {
+        "type": "paragraph",
+        "text": "The gradient of a speed–time graph is the acceleration. Set the acceleration to zero and watch the speed–time line go flat while the distance–time graph becomes a straight slope."
+      },
+      {
+        "type": "formula",
+        "latex": "a = \\frac{\\Delta v}{\\Delta t}"
+      },
+      {
+        "type": "heading",
+        "text": "Area under speed–time is distance"
+      },
+      {
+        "type": "paragraph",
+        "text": "The area under a speed–time graph gives the distance travelled. For a rectangle that is just speed times time; for a triangle it is a half times base times height."
+      },
+      {
+        "type": "formula",
+        "latex": "s = \\text{area under } v\\text{–}t"
+      },
+      {
+        "type": "paragraph",
+        "text": "This is not an approximation. Check it: the distance readout below is calculated from the equation, and it matches the area under the graph exactly."
       },
       {
         "type": "formula",

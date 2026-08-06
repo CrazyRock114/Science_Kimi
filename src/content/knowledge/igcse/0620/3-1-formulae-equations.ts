@@ -65,8 +65,24 @@ export const kp31FormulaeEquations: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "把没参与的略去"
+      },
+      {
         "type": "paragraph",
-        "text": "配平不是不停试系数直到看着顺眼。它是让两列数字相等——而这里你能看见是哪种元素不相等。"
+        "text": "把硝酸银溶液加入氯化钠溶液，会生成氯化银白色沉淀。完整方程式里有四种化合物——但看看真正发生了什么。"
+      },
+      {
+        "type": "paragraph",
+        "text": "两种溶液里都是彼此分开、四处游动的离子。银离子与氯离子相遇并结合成固体。钠离子和硝酸根离子反应前在溶液中、反应后仍在溶液中——它们什么变化也没有。它们被称为旁观离子，离子方程式把它们略去。"
+      },
+      {
+        "type": "paragraph",
+        "text": "于是离子方程式就是：银离子 + 氯离子 → 氯化银固体。三种微粒代替了四种化合物，而且它说出了完整方程式没说的事：任何可溶银盐与任何可溶氯化物都会发生同样的反应，因为旁观离子从来就无关紧要。"
+      },
+      {
+        "type": "paragraph",
+        "text": "离子方程式必须配平两样东西，而不是一样：原子和总电荷。如果两边的电荷总数不相等，那么无论原子看起来多整齐，方程式都是错的。"
       },
       {
         "type": "formula",
@@ -104,8 +120,24 @@ export const kp31FormulaeEquations: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Leaving out what did not do anything"
+      },
+      {
         "type": "paragraph",
-        "text": "Balancing is not guessing coefficients until it looks right. It is making two columns of numbers agree — and here you can see which element disagrees."
+        "text": "When silver nitrate solution is added to sodium chloride solution, a white precipitate of silver chloride forms. The full equation has four compounds in it — but look at what actually happened."
+      },
+      {
+        "type": "paragraph",
+        "text": "Both solutions contain separate ions drifting about. The silver ions and the chloride ions found each other and stuck together as a solid. The sodium ions and the nitrate ions were in solution before and are still in solution afterwards — nothing happened to them at all. They are called spectator ions, and an ionic equation leaves them out."
+      },
+      {
+        "type": "paragraph",
+        "text": "So the ionic equation is silver ion plus chloride ion gives silver chloride solid. Three species instead of four compounds, and it says something the full equation does not: this same reaction happens with any soluble silver salt and any soluble chloride, because the spectators never mattered."
+      },
+      {
+        "type": "paragraph",
+        "text": "Two things must balance in an ionic equation, not one: the atoms, and the total charge. If the charges do not add up to the same value on both sides, the equation is wrong however neat the atoms look."
       },
       {
         "type": "formula",

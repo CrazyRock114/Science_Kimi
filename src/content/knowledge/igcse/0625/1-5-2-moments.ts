@@ -65,8 +65,28 @@ export const kp152Moments: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "力矩"
+      },
+      {
         "type": "paragraph",
-        "text": "在杠杆上移动重物，看它如何倾斜。转动效果取决于到支点的距离，而不只是力的大小。"
+        "text": "力矩等于力乘以到支点的垂直距离。两千克重约二十牛顿，在零点二米处力矩约为四牛顿米——两边相同。"
+      },
+      {
+        "type": "formula",
+        "latex": "\\text{moment} = F \\times d"
+      },
+      {
+        "type": "heading",
+        "text": "平衡的条件"
+      },
+      {
+        "type": "paragraph",
+        "text": "当合力为零且合力矩为零时，物体处于平衡。对这根杠杆来说，就是顺时针力矩等于逆时针力矩。"
+      },
+      {
+        "type": "paragraph",
+        "text": "在考试中这会变成一个可解的方程。写出两边力矩，令其相等，把未知量单独留下。"
       },
       {
         "type": "formula",
@@ -110,8 +130,28 @@ export const kp152Moments: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Moment of a force"
+      },
+      {
         "type": "paragraph",
-        "text": "Move masses along a beam and watch it tip. Turning effect depends on distance from the pivot, not just on force."
+        "text": "The moment of a force is the force multiplied by the perpendicular distance from the pivot. Two kilograms weighs about twenty newtons, so at nought point two metres that is a moment of about four newton metres — the same on both sides."
+      },
+      {
+        "type": "formula",
+        "latex": "\\text{moment} = F \\times d"
+      },
+      {
+        "type": "heading",
+        "text": "The condition for equilibrium"
+      },
+      {
+        "type": "paragraph",
+        "text": "An object is in equilibrium when there is no resultant force and no resultant moment. For this beam, that means the clockwise moment equals the anticlockwise moment."
+      },
+      {
+        "type": "paragraph",
+        "text": "In an exam this becomes an equation you can solve. Write down both moments, set them equal, and make the unknown the only thing left."
       },
       {
         "type": "formula",

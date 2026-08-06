@@ -215,4 +215,49 @@ export const phyMotion001: KnowledgePoint = {
       expected: { v: 12, s: 48 },
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '汽车起步、高速巡航、紧急刹车——同样是四个轮子在路上跑，运动的样子却完全不同。怎么用图像把它们一眼区分开？这节课我们就靠两张图：位移-时间图和速度-时间图。',
+          en: 'A car pulling away, cruising on the motorway, braking hard — same four wheels, completely different kinds of motion. How do you tell them apart at a glance? With two graphs: displacement–time and velocity–time.',
+        },
+      },
+      {
+        id: 'concept-uniform',
+        kind: 'concept',
+        text: {
+          zh: '先说最简单的：速度不变，叫匀速直线运动。位移和时间成正比，s-t 图像是一条过原点的倾斜直线，斜率就是速度。对应的 v-t 图像更简单——一条水平线。记住：v-t 图像水平，不表示物体不动，而表示它动得很稳。',
+          en: 'Start with the simplest case: constant velocity — uniform motion. Displacement is proportional to time, so the s–t graph is a straight line through the origin whose gradient is the velocity. The v–t graph is even simpler: a flat horizontal line. Remember, horizontal on a v–t graph does not mean "not moving" — it means moving steadily.',
+        },
+      },
+      {
+        id: 'concept-accelerated',
+        kind: 'concept',
+        text: {
+          zh: '再看匀变速运动：加速度保持不变。末速度等于初速度加 at，位移等于 ut 加二分之一 at 平方。在 v-t 图像上，斜率就是加速度——上坡加速，下坡减速；图线和时间轴围成的面积，就是这段时间走过的位移。',
+          en: 'Now uniformly accelerated motion: the acceleration stays constant. The final velocity is u plus at; the displacement is ut plus a half a t squared. On the v–t graph the gradient is the acceleration — uphill means speeding up, downhill means slowing down — and the area between the line and the time axis is the displacement covered.',
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '动手时间。依次点三个预设：“汽车起步”“高速巡航”“紧急刹车”，对比三张 v-t 图像的斜率和形状。然后把加速度滑块拖到 0，看 v-t 图线怎么变成水平线。最后试试负的加速度——v-t 图线往下走的同时，s-t 图线会从往上翘变成往下弯，你能看出为什么吗？',
+          en: 'Your turn. Tap the three presets in turn — "car pulling away", "cruising", "emergency braking" — and compare the gradient and shape of each v–t graph. Then drag the acceleration slider to zero and watch the v–t line flatten out. Finally try a negative acceleration: as the v–t line slopes down, the s–t curve bends over instead of curving up. Can you see why?',
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '总结一下：匀速运动，s-t 是直线、v-t 是水平线；匀变速运动，v-t 的斜率是加速度，面积是位移。两个公式记牢：v 等于 u 加 at，s 等于 ut 加二分之一 at 平方。会读图、会用公式，这一节就齐了——去做小测吧。',
+          en: 'To wrap up: in uniform motion the s–t graph is a straight line and the v–t graph is flat; in uniformly accelerated motion the v–t gradient is the acceleration and the area is the displacement. Keep the two equations: v equals u plus at, and s equals ut plus a half a t squared. Read the graphs, use the formulas — and the quiz is yours.',
+        },
+      },
+    ],
+  },
+  related: ['igcse-0625-1-2-motion', 'phy-kinematics-velocity', 'phy-kinematics-freefall'],
 };

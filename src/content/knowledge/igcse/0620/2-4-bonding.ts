@@ -74,8 +74,24 @@ export const kp24Bonding: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "这为什么改变了一切"
+      },
+      {
         "type": "paragraph",
-        "text": "每个原子都想填满最外层，而办法只有两种：把电子交出去，或者共用。"
+        "text": "氯化钠不是两个离子，而是数以亿计的离子堆积成的巨型晶格，每个正离子都被负离子包围。要熔化它就必须同时破坏所有这些引力，所以它的熔点高达 800 °C。"
+      },
+      {
+        "type": "paragraph",
+        "text": "它能导电——但只在熔融或溶解时。固态时离子被固定，什么也动不了。熔化后离子就能自由移动、携带电荷。这个区别本身就是得分点。"
+      },
+      {
+        "type": "paragraph",
+        "text": "水正相反。每个分子内部的键很强，但分子*之间*的作用力很弱。把水烧开并不会断裂任何一根 O–H 键——只是把分子彼此拉开。这就是简单分子物质熔沸点低的原因。"
+      },
+      {
+        "type": "paragraph",
+        "text": "而且既没有离子也没有自由电子，就没有东西能传导电流。简单分子物质在任何状态下都不导电。"
       },
       {
         "type": "formula",
@@ -126,8 +142,24 @@ export const kp24Bonding: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Why this changes everything"
+      },
+      {
         "type": "paragraph",
-        "text": "Every atom wants a full outer shell, and there are only two ways to get one: hand electrons over, or share them."
+        "text": "Sodium chloride is not two ions. It is billions of them, stacked in a giant lattice, every positive one surrounded by negatives. To melt it you must break all those attractions at once, which is why it melts at eight hundred degrees."
+      },
+      {
+        "type": "paragraph",
+        "text": "And it conducts electricity — but only when molten or dissolved. Solid, the ions are locked in place and nothing can move. Melt it and the ions are free to carry charge. That distinction is worth marks on its own."
+      },
+      {
+        "type": "paragraph",
+        "text": "Water is the opposite. The bonds inside each molecule are strong, but the forces *between* separate molecules are weak. Boiling water does not break a single O–H bond — it only pulls the molecules apart. That is why simple molecular substances have low melting and boiling points."
+      },
+      {
+        "type": "paragraph",
+        "text": "And with no ions and no free electrons, there is nothing to carry a current. Simple molecular substances do not conduct, in any state."
       },
       {
         "type": "formula",

@@ -11,6 +11,11 @@ import type { LabExperiment } from "./types";
 export const organicExperiments: LabExperiment[] = [
   {
     slug: "ester-synthesis",
+    related: ["igcse-0620-11-6-alcohols-acids", "chem-energetics-003"],
+    syllabus: {
+      pep: ["pep-che-s2/ch3"],
+      igcse: ["0620/11.6", "0620/11.7"],
+    },
     title: { zh: "乙酸乙酯的制取", en: "Preparing Ethyl Ethanoate" },
     description: {
       zh: "乙酸与乙醇在浓硫酸催化下酯化生成有果香味的乙酸乙酯，掌握酯化反应。",
@@ -35,6 +40,11 @@ export const organicExperiments: LabExperiment[] = [
   },
   {
     slug: "silver-mirror",
+    related: ["igcse-0620-11-6-alcohols-acids", "igcse-0620-12-5-tests"],
+    syllabus: {
+      pep: ["pep-che-s2/ch3"],
+      igcse: ["0620/11.6"],
+    },
     title: { zh: "银镜反应", en: "The Silver Mirror Test" },
     description: {
       zh: "乙醛与银氨溶液水浴加热，在试管壁形成光亮银镜，检验醛基的还原性。",
@@ -62,6 +72,11 @@ export const organicExperiments: LabExperiment[] = [
   },
   {
     slug: "glucose-fehling",
+    related: ["igcse-0620-11-6-alcohols-acids", "chem-acidbase-003"],
+    syllabus: {
+      pep: ["pep-che-s2/ch3"],
+      igcse: ["0620/11.6"],
+    },
     title: { zh: "葡萄糖与新制氢氧化铜反应", en: "Reaction of Glucose with Freshly Prepared Copper(II) Hydroxide" },
     description: {
       zh: "葡萄糖与新制氢氧化铜加热生成砖红色氧化亚铜，检验葡萄糖中的醛基。",
@@ -86,6 +101,11 @@ export const organicExperiments: LabExperiment[] = [
   },
   {
     slug: "ethylene-bromine",
+    related: ["igcse-0620-11-5-alkenes", "igcse-0620-11-1-homologous-series"],
+    syllabus: {
+      pep: ["pep-che-s2/ch3"],
+      igcse: ["0620/11.5"],
+    },
     title: { zh: "乙烯使溴水褪色", en: "Decolourising Bromine Water with Ethene" },
     description: {
       zh: "将乙烯通入溴水，橙色褪去，验证碳碳双键的加成反应。",
@@ -110,6 +130,11 @@ export const organicExperiments: LabExperiment[] = [
   },
   {
     slug: "ethanol-sodium",
+    related: ["igcse-0620-11-6-alcohols-acids", "chem-metal-001"],
+    syllabus: {
+      pep: ["pep-che-s2/ch3"],
+      igcse: ["0620/11.6"],
+    },
     title: { zh: "乙醇与钠反应", en: "Reaction of Ethanol with Sodium" },
     description: {
       zh: "金属钠投入无水乙醇缓慢放出氢气，对比与水反应的剧烈程度，认识羟基活泼氢。",
@@ -134,6 +159,11 @@ export const organicExperiments: LabExperiment[] = [
   },
   {
     slug: "phenol-bromine-water",
+    related: ["igcse-0620-11-1-homologous-series", "igcse-0620-11-6-alcohols-acids"],
+    syllabus: {
+      pep: ["pep-che-s2/ch3"],
+      igcse: ["0620/11.1"],
+    },
     title: { zh: "苯酚与溴水反应", en: "Reaction of Phenol with Bromine Water" },
     description: {
       zh: "向苯酚溶液中加入溴水生成白色三溴苯酚沉淀，验证苯环受羟基活化的取代反应。",
@@ -161,6 +191,11 @@ export const organicExperiments: LabExperiment[] = [
   },
   {
     slug: "starch-iodine-test",
+    related: ["igcse-0620-12-5-tests", "bio-plant-001"],
+    syllabus: {
+      pep: ["pep-che-s2/ch3"],
+      igcse: ["0620/11.8"],
+    },
     title: { zh: "淀粉的检验", en: "Testing for Starch" },
     description: {
       zh: "用碘液检验食物中的淀粉，变蓝则含淀粉，联系食品成分分析。",
@@ -185,6 +220,11 @@ export const organicExperiments: LabExperiment[] = [
   },
   {
     slug: "sucrose-hydrolysis",
+    related: ["igcse-0620-11-1-homologous-series", "chem-energetics-002"],
+    syllabus: {
+      pep: ["pep-che-s2/ch3"],
+      igcse: ["0620/11.1"],
+    },
     title: { zh: "蔗糖的水解", en: "Hydrolysis of Sucrose" },
     description: {
       zh: "蔗糖在稀硫酸催化下水解为葡萄糖与果糖，再用银氨溶液检验产物。",
@@ -208,6 +248,11 @@ export const organicExperiments: LabExperiment[] = [
   },
   {
     slug: "ethanol-oxidation-copper",
+    related: ["igcse-0620-11-6-alcohols-acids", "chem-energetics-002"],
+    syllabus: {
+      pep: ["pep-che-s2/ch3"],
+      igcse: ["0620/11.6"],
+    },
     title: { zh: "乙醇的催化氧化", en: "Catalytic Oxidation of Ethanol" },
     description: {
       zh: "用灼热铜丝催化乙醇氧化为乙醛，铜丝黑红交替变化，认识醇的催化氧化。",
@@ -231,6 +276,11 @@ export const organicExperiments: LabExperiment[] = [
   },
   {
     slug: "soap-saponification",
+    related: ["igcse-0620-11-6-alcohols-acids", "chem-acidbase-003"],
+    syllabus: {
+      pep: ["pep-che-s2/ch3"],
+      igcse: ["0620/11.6"],
+    },
     title: { zh: "肥皂的制取（皂化反应）", en: "Making Soap (Saponification)" },
     description: {
       zh: "油脂在氢氧化钠溶液中加热水解生成高级脂肪酸钠（肥皂）与甘油。",

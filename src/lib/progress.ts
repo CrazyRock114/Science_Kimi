@@ -9,6 +9,8 @@ export interface KnowledgePointProgress {
   bestScore?: number;
   total?: number;
   completed?: boolean;
+  /** 真题结构化题自评结果（题 id → 是否答对）；与小测成绩并存，互不影响 */
+  examSelfAssessment?: Record<string, boolean>;
   updatedAt?: string;
 }
 
@@ -69,6 +71,21 @@ export function recordQuizScore(kpId: string, score: number, total: number): voi
     bestScore,
     total,
     completed: prev.completed === true || (total > 0 && bestScore >= total),
+    updatedAt: new Date().toISOString(),
+  };
+  saveProgress(map);
+}
+
+/**
+ * 记录一道真题结构化题的自评结果（对照 mark scheme 自判对错）。
+ * 按题覆盖最新自评；不影响小测成绩与完成标记。
+ */
+export function recordExamSelfAssessment(kpId: string, questionId: string, correct: boolean): void {
+  const map = getProgress();
+  const prev = map[kpId] ?? {};
+  map[kpId] = {
+    ...prev,
+    examSelfAssessment: { ...prev.examSelfAssessment, [questionId]: correct },
     updatedAt: new Date().toISOString(),
   };
   saveProgress(map);

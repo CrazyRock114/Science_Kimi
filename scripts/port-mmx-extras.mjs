@@ -6,7 +6,9 @@
  * 复制 .reference/IGCSE_miniMax（只读，作者 CrazyRock114，non-commercial）的
  * src/components/lesson-extras/**.tsx（解剖探索器 / 流程图 / 对比卡片等 20 个
  * 数据驱动模块 + LessonExtras 分发器）与 src/lib/lessonExtrasStrings.ts，
- * 并从源 src/content/types.ts 抽取 LessonExtra 联合类型段落生成 types.ts。
+ * 并从源 src/content/types.ts 抽取 LessonExtra 联合类型段落生成
+ * src/content/extras-types.ts（content 层单一来源；components/lesson-extras/types.ts
+ * 仅保留 re-export 垫片，组件的 `./types` import 不变）。
  *
  * @/ import 改写（与 port-mmx-primitives.mjs 同款模式）：
  *   @/content/types           → ./types（本目录由源类型段落抽取的 LessonExtra 类型）
@@ -853,8 +855,10 @@ port(
   'src/lib/lessonExtrasStrings.ts',
 );
 
-// LessonExtra 联合类型段落：从源 content/types.ts 的 "Lesson extras" 节抽取到文件尾。
-// 该节只引用 Bilingual（与本节内部类型），Bilingual 改由 mmx types 引入。
+// LessonExtra 联合类型段落：从源 content/types.ts 的 "Lesson extras" 节抽取。
+// 该节只引用 Bilingual（与本节内部类型），Bilingual 改由 igcse-kernels types 引入。
+// 类型落在 content 层（src/content/extras-types.ts）：content/types.ts 直接引用，
+// 消除 content→components 反向依赖；DEST/types.ts 仅写 re-export 垫片。
 const typesText = readFileSync(REF_TYPES, 'utf8');
 const marker = '// Lesson extras — visual / interactive learning modules';
 const markerIdx = typesText.indexOf(marker);
@@ -864,13 +868,23 @@ const sepIdx = typesText.lastIndexOf('// ----', markerIdx);
 const section = typesText.slice(sepIdx).trimEnd() + '\n';
 if (/^import /m.test(section)) throw new Error('类型段落意外包含 import');
 writeFileSync(
-  join(DEST, 'types.ts'),
-  HEADER('src/content/types.ts（Lesson extras 类型段落，Bilingual 改由 mmx types 引入）') +
-    `import type { Bilingual } from '../../simulations/mmx/types';\n\n` +
+  resolve(import.meta.dirname, '../src/content/extras-types.ts'),
+  '// 移植自 IGCSE_miniMax（作者 CrazyRock114，non-commercial）：src/content/types.ts（Lesson extras 类型段落，Bilingual 改由 igcse-kernels types 引入）\n' +
+    '// 由 scripts/port-mmx-extras.mjs 生成（从源 content/types.ts 抽取），勿手改\n' +
+    `import type { Bilingual } from '../simulations/igcse-kernels/types';\n\n` +
     `export type { Bilingual };\n\n` +
     section,
 );
-console.log('[port] LessonExtra 类型段落 → types.ts');
+console.log('[port] LessonExtra 类型段落 → ../content/extras-types.ts');
+writeFileSync(
+  join(DEST, 'types.ts'),
+  '// LessonExtra 类型已移至 content 层（src/content/extras-types.ts，由\n' +
+    '// scripts/port-mmx-extras.mjs 生成）——content/types.ts 直接引用 content 层定义，\n' +
+    '// 消除 content→components 的反向依赖。本文件仅为 re-export 垫片，\n' +
+    '// 保持 extras 组件的 `./types` import 不变。\n' +
+    `export * from '../../content/extras-types';\n`,
+);
+console.log('[port] types.ts re-export 垫片');
 
 // PATCH 步骤：zh 本地化补丁（见文件头说明与 PATCHES 定义）
 applyPatches();

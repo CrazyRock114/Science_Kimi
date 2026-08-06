@@ -233,4 +233,57 @@ export const phyElectric003: KnowledgePoint = {
       expected: { rEq: 12, iTotal: 2, v1: 8, v2: 16, p: 48 },
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '节日里挂一串小彩灯，只要有一颗烧断，整串全灭。为什么它们这么“同生共死”？因为它们串联在一起——电流只有一条路可走。这节课我们就把串联电路的规律摸透。',
+          en: 'Hang up a string of decorative lights, and if a single bulb burns out, the whole string goes dark. Why do they live and die together? Because they\'re wired in series — the current has only one path. In this lesson we\'ll pin down the rules of series circuits.',
+        },
+      },
+      {
+        id: 'concept-connection',
+        kind: 'concept',
+        text: {
+          zh: '把元件一个接一个顺次连接起来，就是串联。整条电路电流只有一条路径：任何一处断开，处处都没有电流。所以一个开关不管接在哪个位置，都能控制整个电路；一个用电器损坏，其他用电器全部停工。',
+          en: 'Connect components one after another in a single loop, and that\'s a series circuit. The current has exactly one path: break it anywhere and the current stops everywhere. So a single switch, wherever you put it, controls the whole circuit — and one failed component shuts down all the rest.',
+        },
+      },
+      {
+        id: 'concept-rules',
+        kind: 'concept',
+        text: {
+          zh: '串联有三条铁律：电流处处相等；总电压等于各部分电压之和；总电阻等于各电阻之和。把欧姆定律一代入，就得到一个特别有用的推论：电流相同，电压按电阻大小分配——电阻越大，分走的电压越多。这就是串联分压。',
+          en: 'Series circuits obey three iron rules: the current is the same everywhere; the total voltage equals the sum of the parts; and the total resistance equals the sum of the resistors. Substitute Ohm\'s law and you get a very handy corollary: with the same current, voltage is shared in proportion to resistance — the bigger the resistor, the bigger its share. That\'s voltage division.',
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '打开仿真，先确认电路类型拨在串联（0）。默认 6 V 电源接 10 Ω 和 20 Ω：总电阻 30 Ω，电流 0.2 A，10 Ω 分走 2 V，20 Ω 分走 4 V——电压之比正好等于电阻之比 1:2。点“等阻串联分压”预设：两个 25 Ω 各分一半电压。再看“串联限流”：40 Ω 的大电阻拿走大部分电压，也把电流压了下去。最后你自己拖一拖 R₂ 的滑块，盯着两个电压读数，看分压怎么跟着电阻变。',
+          en: 'Open the simulation and make sure the circuit type is set to series (0). By default a 6 V supply feeds 10 Ω and 20 Ω: total resistance 30 Ω, current 0.2 A, and the voltages are 2 V and 4 V — exactly the 1:2 ratio of the resistances. Tap the "equal resistors in series" preset: two 25 Ω resistors each take half the voltage. Then look at "series current limiting": the big 40 Ω resistor grabs most of the voltage and chokes the current down. Finally drag the R₂ slider yourself and watch the two voltage readings follow the resistance.',
+        },
+      },
+      {
+        id: 'concept-applications',
+        kind: 'concept',
+        text: {
+          zh: '串联分压的用处很大：滑动变阻器和用电器串联，就能调节电路中的电流；给灵敏电流表串联一个大电阻，它就摇身一变成了电压表。但也要记住串联的软肋——一处断开，全路瘫痪。',
+          en: 'Voltage division earns its keep: a rheostat in series with a component adjusts the current; add a large resistor in series with a sensitive meter and it transforms into a voltmeter. But keep the weakness of series in mind too — one break, and the whole circuit is down.',
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '回顾一下：串联一条路径，电流处处相等，电压按电阻分配，电阻越串越大。下一课我们会看到并联——那里完全是另一番景象。先去小测里练练手吧。',
+          en: 'To recap: one path in series, the same current everywhere, voltage shared in proportion to resistance, and resistances that add up. Next lesson brings parallel circuits — a completely different landscape. Warm up with the quiz first.',
+        },
+      },
+    ],
+  },
+  related: ['phy-electric-004', 'phy-electric-002', 'igcse-0625-4-3-2-series-parallel'],
 };

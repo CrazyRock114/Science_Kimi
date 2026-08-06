@@ -157,4 +157,5 @@ export const chemMetal001: KnowledgePoint = {
       },
     },
   ],
+  related: ['igcse-0620-9-4-reactivity-series', 'igcse-0620-9-6-extraction', 'chem-metal-002', 'chem-acidbase-002'],
 };

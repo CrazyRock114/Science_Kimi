@@ -19,6 +19,16 @@ export const bioGenetics001: KnowledgePoint = {
   },
   theory: {
     zh: [
+      { type: 'heading', text: '学习目标' },
+      {
+        type: 'list',
+        items: [
+          '说明染色体由 DNA 和蛋白质组成，是遗传物质的载体。',
+          '把基因定义为有遗传效应的 DNA 片段，理清“细胞核 → 染色体 → DNA → 基因”的层次关系。',
+          '说出人体细胞与生殖细胞中染色体的数目，解释受精如何恢复成对状态。',
+          '描述 DNA 的双螺旋结构与碱基互补配对规律。',
+        ],
+      },
       { type: 'heading', text: '染色体：遗传物质的载体' },
       {
         type: 'paragraph',
@@ -45,8 +55,30 @@ export const bioGenetics001: KnowledgePoint = {
           '形成生殖细胞时，成对的染色体彼此分离，染色体数目减半，受精后恢复成对。',
         ],
       },
+      { type: 'heading', text: '术语表' },
+      {
+        type: 'list',
+        items: [
+          'chromosome（染色体）：细胞核中由 DNA 和蛋白质组成的结构，携带遗传信息，细胞分裂时易被染色。',
+          'DNA（脱氧核糖核酸）：主要的遗传物质，呈双螺旋结构，两条链按 A–T、G–C 互补配对。',
+          'gene（基因）：有遗传效应的 DNA 片段，编码一种蛋白质，从而控制生物的性状。',
+          'diploid（二倍体）：含有两套染色体的细胞核，如人的体细胞 2n = 46。',
+          'haploid（单倍体）：只含一套染色体的细胞核，如人的精子和卵细胞 n = 23。',
+          'gamete（生殖细胞/配子）：参与受精的细胞，染色体数目是体细胞的一半。',
+        ],
+      },
     ],
     en: [
+      { type: 'heading', text: 'Learning objectives' },
+      {
+        type: 'list',
+        items: [
+          'State that chromosomes are made of DNA and protein and carry the genetic material.',
+          'Define a gene as a section of DNA that codes for a protein, and place it in the hierarchy nucleus → chromosome → DNA → gene.',
+          'State the chromosome numbers in human body cells and gametes, and explain how fertilisation restores the paired state.',
+          'Describe the double-helix structure of DNA and the base-pairing rule.',
+        ],
+      },
       { type: 'heading', text: 'Chromosomes: carriers of genetic material' },
       {
         type: 'paragraph',
@@ -71,6 +103,18 @@ export const bioGenetics001: KnowledgePoint = {
           'Each chromosome contains one DNA molecule; each DNA molecule carries many genes.',
           'Chromosomes exist in pairs in body cells, and so do the genes located on them.',
           'When gametes form, the chromosome pairs separate so the number is halved; fertilisation restores the paired state.',
+        ],
+      },
+      { type: 'heading', text: 'Glossary' },
+      {
+        type: 'list',
+        items: [
+          'chromosome（染色体）: a structure in the nucleus made of DNA and protein, carrying genetic information; it stains darkly during cell division.',
+          'DNA (deoxyribonucleic acid)（脱氧核糖核酸）: the genetic material, a double helix whose two strands pair A with T and G with C.',
+          'gene（基因）: a section of DNA that codes for a protein and so controls a characteristic.',
+          'diploid（二倍体）: a nucleus containing two sets of chromosomes, e.g. human body cells with 2n = 46.',
+          'haploid（单倍体）: a nucleus containing a single set of chromosomes, e.g. human sperm and egg cells with n = 23.',
+          'gamete（生殖细胞/配子）: a cell involved in fertilisation, carrying half the chromosome number of a body cell.',
         ],
       },
     ],
@@ -145,6 +189,60 @@ export const bioGenetics001: KnowledgePoint = {
       },
     },
   ],
+  examPractice: [
+    {
+      id: 'gen001-ex1',
+      syllabus: ['0610/17.1.1', '0610/17.1.2'],
+      tier: 'core',
+      commandWord: 'State',
+      marks: 3,
+      stem: 'State what a chromosome is made of, state where chromosomes are found in a cell, and define a gene.',
+      markScheme: [
+        { text: 'Chromosomes are made of DNA and protein', marks: 1 },
+        { text: 'They are found in the nucleus', marks: 1 },
+        { text: 'A gene is a section/length of DNA that codes for a protein', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '“基因是 DNA”拿不到定义分——必须说出是 DNA 的一段，并且编码蛋白质。只写“控制性状”也只能算一半。',
+        en: '“A gene is DNA” earns nothing — the mark needs a section of DNA that codes for a protein. “Controls a characteristic” alone is only half the answer.',
+      },
+    },
+    {
+      id: 'gen001-ex2',
+      syllabus: ['0610/17.1.4'],
+      tier: 'core',
+      commandWord: 'Explain',
+      marks: 3,
+      stem: 'In humans, the sex of a child is determined by the X and Y chromosomes. Explain why a newborn baby is equally likely to be a boy or a girl.',
+      markScheme: [
+        { text: 'Every egg cell carries one X chromosome (the mother is XX)', marks: 1 },
+        { text: 'Half the sperm carry an X and half carry a Y (the father is XY)', marks: 1 },
+        { text: 'Fertilisation by either sperm type is equally likely, giving equal chances of XX (girl) and XY (boy)', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '采分点在父亲一侧：母亲只能提供 X，性别取决于哪种精子受精。漏掉“概率相等/随机受精”这一环会丢最后一分。',
+        en: 'The marks hinge on the father: the mother can only supply X, so sex depends on which sperm fertilises the egg. Missing “equal chance / random fertilisation” costs the final mark.',
+      },
+    },
+    {
+      id: 'gen001-ex3',
+      syllabus: ['0610/17.1.5', '0610/17.1.6'],
+      tier: 'supplement',
+      commandWord: 'Describe',
+      marks: 3,
+      stem: 'Describe how the base sequence of a gene leads to a protein with a particular function.',
+      markScheme: [
+        { text: 'The base sequence of the gene determines the sequence of amino acids in the protein', marks: 1 },
+        { text: 'Different amino acid sequences fold into proteins of different shapes', marks: 1 },
+        { text: 'The shape of the protein determines its function, e.g. the active site of an enzyme', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '链条要完整：碱基序列 → 氨基酸序列 → 蛋白质形状 → 功能。大多数失分发生在漏掉“形状”这一中间环节。',
+        en: 'Keep the chain complete: base sequence → amino acid sequence → protein shape → function. Most lost marks come from skipping the shape link in the middle.',
+      },
+    },
+  ],
+  related: ['igcse-0610-17-1-inheritance', 'bio-cell-004', 'bio-genetics-002'],
 };
 
 export default bioGenetics001;

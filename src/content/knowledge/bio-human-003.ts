@@ -156,4 +156,5 @@ export const bioHuman003: KnowledgePoint = {
       },
     },
   ],
+  related: ['igcse-0610-11-1-gas-exchange', 'bio-human-002', 'bio-plant-002'],
 };

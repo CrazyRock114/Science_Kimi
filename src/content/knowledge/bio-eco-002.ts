@@ -261,4 +261,57 @@ export const bioEco002: KnowledgePoint = {
       tolerance: 1e-5,
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '一个细菌每 20 分钟分裂一次，照这个速度，两天后它的后代能装满整个地球——显然这从来没有发生过。现实中种群到底怎么增长？这节课我们认识两条著名的曲线：J 型和 S 型。',
+          en: 'A single bacterium dividing every 20 minutes would, in theory, produce enough descendants to cover the whole Earth in a couple of days — which obviously never happens. So how do populations really grow? In this lesson we meet two famous curves: the J curve and the S curve.',
+        },
+      },
+      {
+        id: 'concept-j-curve',
+        kind: 'concept',
+        text: {
+          zh: '先看理想国：食物管够、空间管够、没有天敌，种群每一代都按固定倍数翻上去，数量一路狂奔，画出来是一个大写的“J”，叫指数增长。公式是 N 等于 N₀ 乘 e 的 rt 次方，r 是内禀增长率，r 越大，涨得越猛。实验室刚接种的细菌、入侵新地盘又没有天敌的外来物种，开头都是这个节奏。',
+          en: 'First, the perfect world: unlimited food, unlimited space, no predators. The population multiplies by a fixed factor every generation and races upwards — a big letter “J”, exponential growth. The formula is N equals N-zero times e to the power r t, where r is the intrinsic growth rate: the bigger r, the steeper the climb. Freshly inoculated bacteria and invasive species arriving in a predator-free habitat both start off exactly like this.',
+        },
+      },
+      {
+        id: 'concept-s-curve',
+        kind: 'concept',
+        text: {
+          zh: '可真实世界资源是有限的。密度一大，食物紧张、空间拥挤、天敌和疾病都来了，出生率下降、死亡率上升，增长自然慢下来；当出生率等于死亡率，数量就稳定在一个上限附近——环境容纳量 K。曲线先快后慢，像字母“S”，这就是逻辑斯谛增长。注意 K 不是死数：环境变好 K 就变大，环境恶化 K 就缩水，种群数量是在 K 附近波动的。',
+          en: 'But the real world runs on limited resources. As density rises, food runs short, space gets crowded, predators and disease move in; the birth rate falls, the death rate climbs, and growth slows. When births balance deaths, the population settles near an upper limit — the carrying capacity, K. The curve rises fast then levels off, like the letter “S”: logistic growth. And K is not a fixed number: improve the environment and K rises, degrade it and K falls, with the population fluctuating around it.',
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '动手感受一下。仿真里把增长模型切到 J 型，拉一拉 r，看指数曲线怎么越翘越陡，根本没有刹车。再切回 S 型，把 K 从 500 调到 800，看曲线的“天花板”跟着抬高；把 r 调到 0.8，看种群多快冲到 K 值。也可以直接跑三个预设：“理想条件 J 型”“有限资源 S 型”和“高增长率”，再顺手看看右侧公式里 N₀、r、K 是怎么代进去的。',
+          en: 'Time to play with it. In the simulation, switch the growth model to the J curve and drag r — watch the exponential curve bend ever steeper, with no brakes at all. Then switch back to the S curve, raise K from 500 to 800 and see the ceiling lift with it; push r to 0.8 and see how fast the population races up to K. Or simply run the three presets — “Ideal conditions (J curve)”, “Limited resources (S curve)” and “High growth rate” — and glance at the live formula to see how N-zero, r and K are substituted in.',
+        },
+      },
+      {
+        id: 'concept-half-k',
+        kind: 'concept',
+        text: {
+          zh: 'S 型曲线有个黄金中点：种群数量等于 K 的一半时，增长速率最大。渔业捕捞就盯着这个点——把鱼群维持在 K/2 附近，捞走的刚好是长得最快的部分，年年有鱼捞，这就是最大持续产量。另外记一个小公式：倍增时间等于 ln2 除以 r，r 翻倍，翻倍所需的时间就减半。',
+          en: 'The S curve has a golden midpoint: the growth rate is fastest when the population is exactly half of K. Fisheries bank on this — keep the fish stock near K over two, harvest the surplus, and the stock replenishes at top speed year after year: the maximum sustainable yield. One more handy formula: the doubling time is ln 2 divided by r, so doubling r halves the time it takes the population to double.',
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '收个尾：J 型是资源无限的理想模型，一路指数狂飙；S 型才是自然界的常态，增长被环境容纳量 K 拉住。记住三个关键词——r 决定快慢，K 决定上限，K/2 处增长最快。带着这三件武器去做小测，看看你能不能拿下那些曲线题。',
+          en: 'Let’s wrap up. The J curve is the idealised model of unlimited resources, all exponential surge; the S curve is nature’s reality, with growth reined in by the carrying capacity K. Keep three keywords in mind — r sets the speed, K sets the ceiling, and growth peaks at K over two. Take those three into the quiz and see if you can tame the curve questions.',
+        },
+      },
+    ],
+  },
+  related: ['igcse-0610-19-1-ecosystems', 'bio-eco-001', 'bio-eco-003'],
 };

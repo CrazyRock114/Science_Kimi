@@ -231,4 +231,49 @@ export const phyOptics002: KnowledgePoint = {
       expected: { v: -15, m: 2.5, type: 1 },
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '同一块凸透镜，装在照相机里能把远处的风景缩进指甲盖大的传感器，装在投影仪里又能把小胶片放大成一整面墙。它凭什么“一镜多能”？秘密就在于物体放在哪儿。这节课我们来摸清凸透镜成像的规律。',
+          en: 'The same kind of convex lens shrinks a distant landscape onto a fingernail-sized sensor in a camera, yet blows a tiny slide up to fill a whole wall in a projector. How can one lens do both? The secret is where the object is placed. In this lesson we uncover the rules of image formation by a convex lens.',
+        },
+      },
+      {
+        id: 'concept-lens',
+        kind: 'concept',
+        text: {
+          zh: '凸透镜中间厚、边缘薄，对光有会聚作用。平行于主光轴的光穿过透镜后会聚到一点，这就是焦点 F，光心到焦点的距离叫焦距 f。描述成像要用三个距离：物距 u、像距 v 和焦距 f，它们被薄透镜公式绑在一起：1/f 等于 1/u 加 1/v。',
+          en: 'A convex lens is thicker in the middle and converges light. Rays parallel to the principal axis meet at the principal focus F after passing through, and the distance from the optical centre to F is the focal length f. Three distances describe the imaging: object distance u, image distance v and focal length f, tied together by the thin lens equation — 1 over f equals 1 over u plus 1 over v.',
+        },
+      },
+      {
+        id: 'concept-cases',
+        kind: 'concept',
+        text: {
+          zh: '物距一变，像的性格就完全变了，分界点是焦点 F 和二倍焦距点 2F。物距大于 2f，成倒立缩小的实像——这是照相机；物距在 f 和 2f 之间，成倒立放大的实像——这是投影仪；物距小于 f，折射光线发散了，只能透过透镜看到正立放大的虚像——这是放大镜。记住：实像倒立、能用光屏承接；虚像正立、只能用眼睛看。',
+          en: 'Change the object distance and the image changes character completely, with the focal point F and the 2F point as the boundaries. Beyond 2f you get an inverted, diminished real image — the camera. Between f and 2f, an inverted, magnified real image — the projector. Inside f the rays diverge, and you only see an upright, magnified virtual image by looking through the lens — the magnifying glass. Remember: real images are inverted and can land on a screen; virtual images are upright and exist only for the eye.',
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '轮到你了。保持焦距 10 厘米不变，把物距从 60 厘米慢慢往小拖：先看缩小的实像怎样一点点变大，物距逼近 10 厘米时像会“跑”到无穷远；再拖过焦点进入 10 厘米以内，实像突然消失，取而代之的是同侧正立的虚像。懒得拖的话，直接点“照相机”“投影仪”“放大镜”三个预设，对比三种经典情形。',
+          en: 'Now it’s your turn. Keep the focal length at 10 centimetres and drag the object distance down from 60: watch the small real image grow, and as u approaches 10 centimetres the image races off to infinity. Then push past the focal point, below 10 centimetres — the real image disappears and an upright virtual image appears on the same side. If you’d rather skip the slider, tap the “Camera”, “Projector” and “Magnifying glass” presets to compare the three classic cases directly.',
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '总结一下：凸透镜成像由薄透镜公式 1/f = 1/u + 1/v 定量描述，物距与焦距的相对大小决定像的虚实、正倒和大小。u 大于 f 成实像，u 小于 f 成虚像，物体越靠近焦点，实像越远越大。去小测里检验一下，顺便算算放大率。',
+          en: 'To wrap up: image formation by a convex lens follows the thin lens equation, and how u compares with f decides whether the image is real or virtual, upright or inverted, large or small. Beyond f the image is real; inside f it is virtual; and the closer the object gets to the focal point, the further and larger the real image becomes. Check your understanding in the quiz — and practise working out the magnification.',
+        },
+      },
+    ],
+  },
+  related: ['phy-optics-001', 'igcse-0625-3-2-lenses', 'igcse-0625-3-2-2-refraction'],
 };

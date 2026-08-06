@@ -20,6 +20,9 @@
  * 生成的课程文件 import 上述代码并适配：narration 经 adaptIgcseNarration 保留
  * 行级 lines/action/latex/pause；equations 的 substitute 经 igcseLiveFormulas
  * 接入 simulation.liveFormulas（ReadoutLiveFormula，以内核 readouts 代入）。
+ * narration 的 concept/equation/worked-example/application 类 section 同时回写为
+ * theory 教学正文（section title 作 heading、行文本作 paragraph、行内 latex 作
+ * formula；intro/summary/interaction 类不回写，summary 原文也不再重复进 theory）。
  * simulation 完整转换为 simulation.mmx（SimSpec 内嵌 + 内核函数引用），
  * 由 simulations/mmx/MmxStage 渲染。
  *
@@ -139,6 +142,7 @@ interface Counters {
   simsConverted: number;
   narrationsCopied: number;
   equationsEmitted: number;
+  theorySectionsWritten: number;
 }
 
 // ---------------------------------------------------------------------------
@@ -377,7 +381,12 @@ function convertLesson(
     if (!statementIds.has(ref)) counters.unresolvedRefs.push(`${lesson.slug}: ${ref}`);
   }
 
-  // theory：objectives 列表 → summary 段落 → equations 公式块 → glossary 列表
+  // theory：objectives 列表 → narration 教学正文（concept/equation/worked-example/
+  // application 类 section 回写：title 作 heading，每行文本作 paragraph，行内 latex
+  // 作 formula 紧随其后；intro/summary/interaction 不回写，避免与 summary 字段重复、
+  // 或把"拖动滑块看看"这类旁白指令写进正文）→ equations 公式块 → glossary 列表。
+  // summary 原文不再放入 theory 首段（summary 字段已有，逐字重复）。
+  const THEORY_SECTION_TYPES = new Set(['concept', 'equation', 'worked-example', 'application']);
   const theoryZh: unknown[] = [];
   const theoryEn: unknown[] = [];
   if (lesson.objectives.length > 0) {
@@ -389,8 +398,20 @@ function convertLesson(
     });
     theoryEn.push({ type: 'list', items: lesson.objectives.map((o) => o.en) });
   }
-  theoryZh.push({ type: 'paragraph', text: zh(lesson.summary, counters, `${lesson.slug} summary`) });
-  theoryEn.push({ type: 'paragraph', text: lesson.summary.en });
+  for (const section of lesson.narration.sections) {
+    if (!THEORY_SECTION_TYPES.has(section.type)) continue;
+    theoryZh.push({ type: 'heading', text: zh(section.title, counters, `${lesson.slug} section ${section.id} title`) });
+    theoryEn.push({ type: 'heading', text: section.title.en });
+    for (const line of section.lines) {
+      theoryZh.push({ type: 'paragraph', text: zh(line.text, counters, `${lesson.slug} line ${line.id}`) });
+      theoryEn.push({ type: 'paragraph', text: line.text.en });
+      if (line.latex) {
+        theoryZh.push({ type: 'formula', latex: line.latex });
+        theoryEn.push({ type: 'formula', latex: line.latex });
+      }
+    }
+    counters.theorySectionsWritten++;
+  }
   for (const eq of lesson.equations) {
     theoryZh.push({ type: 'formula', latex: eq.latex, caption: zh(eq.meaning, counters, `${lesson.slug} equation meaning`) });
     theoryEn.push({ type: 'formula', latex: eq.latex, caption: eq.meaning.en });
@@ -596,6 +617,7 @@ async function main() {
     simsConverted: 0,
     narrationsCopied: 0,
     equationsEmitted: 0,
+    theorySectionsWritten: 0,
   };
 
   const outDir = join(KP_ROOT, subject);
@@ -665,6 +687,7 @@ ${names.map((n) => `  ${n.name},`).join('\n')}
   console.log(`中文缺失回退英文：${counters.zhFallbacks} 处`);
   console.log(`内核复制：kernel.ts ${counters.kernelsCopied} 个，kernel.test.ts ${counters.kernelTestsCopied} 个（含共享依赖，总文件数 ${copiedSources.size}）`);
   console.log(`讲解复制：narration.ts ${counters.narrationsCopied} 个；equations.ts ${counters.equationsEmitted} 个`);
+  console.log(`theory 正文回写：narration section ${counters.theorySectionsWritten} 个（concept/equation/worked-example/application）`);
   console.log(`仿真接通：${counters.simsConverted} 课输出 simulation.mmx（renderer 'mmx'）`);
   console.log(`mark scheme 分值求和不符：${counters.markSumMismatches.length} 条`, counters.markSumMismatches);
   console.log(`无法解析的考纲引用：${counters.unresolvedRefs.length} 条`, counters.unresolvedRefs);

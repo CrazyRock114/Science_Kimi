@@ -94,8 +94,48 @@ export const kp191Ecosystems: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "能量流动，物质循环"
+      },
+      {
         "type": "paragraph",
-        "text": "一棵橡树养活着五十万只昆虫，因此按数量画出的金字塔是立在尖端上的。改为称重，它立刻就正了过来。"
+        "text": "注意能量与物质的区别。能量以阳光进入，以热散失——它单向流动，太阳必须持续供应。而原子不会离开。你体内的碳曾经在空气中，将来还会回到空气中。"
+      },
+      {
+        "type": "paragraph",
+        "text": "碳循环：光合作用把二氧化碳从空气中取出，固定成糖类。植物、动物与分解者的呼吸作用把它送回去。木材和化石燃料的燃烧则以快得多的速度把它送回去。分解作用把一切死亡生物中的碳归还回去。"
+      },
+      {
+        "type": "paragraph",
+        "text": "氮循环几乎每一步都需要微生物，这正是要记的部分。固氮细菌把氮气转化为植物可利用的化合物。分解者把死亡有机物中的蛋白质分解为铵。硝化细菌把铵氧化为亚硝酸盐、再氧化为硝酸盐，而硝酸盐正是根所吸收的形式。反硝化细菌则把这一切逆转，把氮气还给空气。"
+      },
+      {
+        "type": "paragraph",
+        "text": "氮气占空气的五分之四，却几乎没有生物能利用它——三键太强了。你体内每一种蛋白质中的氮，几乎全都是因为某种细菌先打断了那个键才得以进入的。"
+      },
+      {
+        "type": "heading",
+        "text": "种群为什么会停止增长"
+      },
+      {
+        "type": "paragraph",
+        "text": "种群是在同一时间生活在同一区域的同一物种。所有种群合起来是群落，群落再加上它的物理环境就是生态系统。"
+      },
+      {
+        "type": "paragraph",
+        "text": "把少量生物放进食物充足的新生境中，种群的增长会呈现出一种到处都能认出的形状。先是延滞期：数量几乎不动，生物在适应、成熟并开始繁殖。此时个体太少，还形不成气候。"
+      },
+      {
+        "type": "paragraph",
+        "text": "接着是指数期，而它之所以呈指数增长，原因值得说清楚：每一个个体都能繁殖，因此数量越多，新增得越快。此时食物充足、废物尚未积累、捕食者还没找上门。没有什么在拖住它。"
+      },
+      {
+        "type": "paragraph",
+        "text": "这不可能持续。食物短缺、空间用尽、废物积累、疾病在密集中更易传播、捕食者也来了。出生与死亡趋于平衡，曲线变平进入稳定期——种群达到了该生境的环境容纳量。"
+      },
+      {
+        "type": "paragraph",
+        "text": "而在封闭容器中还有 S 形曲线并不总会显示的第四个阶段：衰亡期——食物耗尽、废物有毒，死亡超过出生。野外种群通常不会走到这一步，因为稳定期是一种平衡，而不是它撞上去的天花板。"
       },
       {
         "type": "formula",
@@ -142,8 +182,48 @@ export const kp191Ecosystems: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Energy flows, matter goes round"
+      },
+      {
         "type": "paragraph",
-        "text": "One oak tree supports half a million insects, so counting them gives a pyramid standing on its point. Weigh them instead and it turns the right way up."
+        "text": "Notice the difference between energy and matter. Energy enters as sunlight and leaves as heat — it flows one way, and the Sun has to keep supplying it. Atoms do not leave. The carbon in you was in the air, and will be again."
+      },
+      {
+        "type": "paragraph",
+        "text": "The carbon cycle: photosynthesis takes carbon dioxide out of the air and fixes it into carbohydrates. Respiration in plants, animals and decomposers puts it back. Combustion of wood and fossil fuels puts it back much faster. Decomposition returns the carbon in anything that dies."
+      },
+      {
+        "type": "paragraph",
+        "text": "The nitrogen cycle needs microorganisms at nearly every step, which is the part to learn. Nitrogen-fixing bacteria turn nitrogen gas into compounds plants can use. Decomposers break proteins in dead matter down to ammonium. Nitrifying bacteria oxidise ammonium to nitrite and then to nitrate, which is the form roots absorb. Denitrifying bacteria undo it all and return nitrogen gas to the air."
+      },
+      {
+        "type": "paragraph",
+        "text": "Nitrogen gas is four fifths of the air and almost no organism can touch it — the triple bond is too strong. Nearly all the nitrogen in every protein in your body got there because a bacterium broke that bond first."
+      },
+      {
+        "type": "heading",
+        "text": "Why a population stops growing"
+      },
+      {
+        "type": "paragraph",
+        "text": "A population is one species living in the same area at the same time. All the populations together are a community, and the community plus its physical environment is an ecosystem."
+      },
+      {
+        "type": "paragraph",
+        "text": "Put a few organisms into a new habitat with plenty of food and the population grows in a shape you can recognise anywhere. First a lag phase: numbers barely move while the organisms settle, mature and begin to reproduce. There are too few of them to make much difference yet."
+      },
+      {
+        "type": "paragraph",
+        "text": "Then the exponential phase, and it is exponential for a reason worth stating: every individual can reproduce, so the more there are the faster more appear. Food is plentiful, waste has not built up, predators have not found them. Nothing is holding it back."
+      },
+      {
+        "type": "paragraph",
+        "text": "It cannot last. Food runs short, space runs out, waste accumulates, disease spreads more easily in a crowd and predators arrive. Births and deaths come into balance and the curve flattens into the stationary phase — the population is at the carrying capacity of the habitat."
+      },
+      {
+        "type": "paragraph",
+        "text": "And in a closed container there is a fourth phase the sigmoid curve does not always show: the death phase, where the food is gone and the waste is toxic, and deaths outnumber births. A wild population does not usually get there, because the stationary phase is a balance rather than a ceiling it crashes into."
       },
       {
         "type": "formula",

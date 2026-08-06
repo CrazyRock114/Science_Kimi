@@ -253,4 +253,57 @@ export const phyOptics001: KnowledgePoint = {
       expected: { criticalAngle: 48.753466631327235, tir: 1 },
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '把筷子斜插进一杯水里，它看起来就像在水面处“折断”了。筷子当然没断——是光在两种介质的交界面上拐了弯。这节课我们就来研究这个拐弯的规律：光的折射。',
+          en: 'Stick a chopstick into a glass of water and it appears to snap at the surface. The chopstick is perfectly straight, of course — it is the light that bends at the boundary between two media. In this lesson we investigate the rules of that bend: refraction.',
+        },
+      },
+      {
+        id: 'concept-refraction',
+        kind: 'concept',
+        text: {
+          zh: '光从一种介质斜射进另一种介质时，传播方向在界面上发生偏折，这就是折射。根源在于光在不同介质里跑得不一样快。有一个细节必须记住：所有的角度——入射角、折射角——都是相对于法线量的，法线就是那条与界面垂直的虚线。',
+          en: 'When light crosses obliquely from one medium into another, its direction changes at the boundary — that is refraction, and it happens because light travels at different speeds in different media. One detail to lock in: every angle, incidence or refraction, is measured from the normal, the dashed line perpendicular to the boundary.',
+        },
+      },
+      {
+        id: 'concept-snell',
+        kind: 'concept',
+        text: {
+          zh: '偏折多少由折射率决定。真空的折射率是 1，水约 1.33，玻璃约 1.5。折射率越大，光被“拖慢”得越厉害。斯涅尔定律把这件事写成了公式：n₁ sinθ₁ 等于 n₂ sinθ₂。记住一个口诀就够了：光进入光密介质，折向法线；进入光疏介质，远离法线。',
+          en: 'How much the ray bends is set by the refractive index: 1 for a vacuum, about 1.33 for water, about 1.5 for glass — the bigger the index, the more light is slowed down. Snell’s law puts it in a formula: n₁ sine θ₁ equals n₂ sine θ₂. One rule of thumb is enough: entering a denser medium, the ray bends towards the normal; entering a rarer one, away from it.',
+        },
+      },
+      {
+        id: 'concept-tir',
+        kind: 'concept',
+        text: {
+          zh: '如果光是从光密介质射向光疏介质，比如从水里射向空气，事情会变得更有意思：折射角总是比入射角大。入射角不断增大时，折射角会先到达 90 度——这时的入射角叫临界角。再大一点，光干脆不出来了，全部反射回去，这就是全反射。光纤能让光在细细的玻璃丝里跑几十公里，靠的就是它。',
+          en: 'Things get more interesting when light travels from a denser to a rarer medium — from water into air, say. Now the refracted ray always bends further from the normal. Increase the angle of incidence and the refracted ray reaches 90 degrees first; that angle of incidence is the critical angle. Go beyond it and the light does not come out at all — it is totally internally reflected. Optical fibres carry light for kilometres through a hair-thin strand of glass using exactly this effect.',
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '轮到你了。先点“空气 → 水”预设，拖动入射角滑块，看折射角怎么跟着变、但始终小于入射角。再把 n₂ 从 1.33 调到 1.5，体会玻璃比水“折”得更狠。最后来个反转：把 n₁ 设成 1.33、n₂ 设成 1，让光从水射向空气，慢慢加大入射角——大约 48.8 度时折射光会突然消失，全反射发生了。“水 → 空气”预设已经替你调好了这个状态。',
+          en: 'Now it’s your turn. Start with the “Air → water” preset and drag the angle of incidence slider — the refraction angle follows but always stays smaller. Then push n₂ from 1.33 to 1.5 and feel how glass bends light harder than water. Finally, flip it around: set n₁ to 1.33 and n₂ to 1 so the ray goes from water into air, and slowly raise the angle — at about 48.8 degrees the refracted ray vanishes and total internal reflection takes over. The “Water → air” preset has that state ready for you.',
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '回顾一下：折射是光在介质界面上的偏折，角度一律对法线测量；斯涅尔定律 n₁ sinθ₁ 等于 n₂ sinθ₂ 给出定量关系；光从光密到光疏、入射角超过临界角，就会发生全反射。接下来做做小测，看看你能不能算出折射角、判断全反射的条件。',
+          en: 'Let’s recap: refraction is the bending of light at a boundary, with all angles measured from the normal; Snell’s law, n₁ sine θ₁ equals n₂ sine θ₂, makes it quantitative; and light going from dense to rare beyond the critical angle undergoes total internal reflection. Try the quiz next and see whether you can compute refraction angles and spot the conditions for total internal reflection.',
+        },
+      },
+    ],
+  },
+  related: ['phy-optics-002', 'igcse-0625-3-2-2-refraction', 'igcse-0625-3-2-lenses', 'igcse-0625-3-1-waves'],
 };

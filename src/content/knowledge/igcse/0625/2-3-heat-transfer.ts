@@ -83,8 +83,32 @@ export const kp23HeatTransfer: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "传导需要接触"
+      },
+      {
         "type": "paragraph",
-        "text": "冷却一个热物体，在同一坐标上比较不同表面。光亮银色明显比粗糙黑色保持更高温度。"
+        "text": "传导中能量沿物质传递，而物质本身不移动。所有固体中粒子都在振动并推挤邻近粒子。金属还有第二条快得多的通道：自由电子在晶格中携带能量。"
+      },
+      {
+        "type": "paragraph",
+        "text": "正是这第二条通道让金属摸起来发凉——它把能量迅速从你手上导走。气体导热差，因为粒子相距远、碰撞少，所以封闭空气是极好的绝热材料。"
+      },
+      {
+        "type": "paragraph",
+        "text": "加上保温层，看曲线变平。保温层起作用靠的是封住不流动的空气，而不是材料本身有什么特别。"
+      },
+      {
+        "type": "heading",
+        "text": "对流靠流体本身搬运"
+      },
+      {
+        "type": "paragraph",
+        "text": "对流只发生在液体和气体中，因为物质本身必须移动。杯边的空气受热膨胀、密度变小而上升，较冷的空气下沉补充，形成对流。"
+      },
+      {
+        "type": "paragraph",
+        "text": "这就是暖气片装在窗下、冷冻室置于顶部的原因。这也解释了固体中为何不能发生对流——粒子被固定在原位。"
       },
       {
         "type": "formula",
@@ -129,8 +153,32 @@ export const kp23HeatTransfer: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Conduction needs contact"
+      },
+      {
         "type": "paragraph",
-        "text": "Cool a hot object and compare surfaces on the same axes. A shiny silver surface stays measurably hotter than a dull black one."
+        "text": "In conduction, energy passes along without the material itself moving. In all solids the particles vibrate and jostle their neighbours. In metals there is a second, much faster route: free electrons carrying energy through the lattice."
+      },
+      {
+        "type": "paragraph",
+        "text": "That second route is why metals feel cold — they conduct energy out of your hand fast. Gases conduct badly because their particles are far apart and rarely collide, which is why trapped air is such a good insulator."
+      },
+      {
+        "type": "paragraph",
+        "text": "Add lagging and watch the curve flatten. The lagging works by trapping still air, not by being special in itself."
+      },
+      {
+        "type": "heading",
+        "text": "Convection carries the fluid"
+      },
+      {
+        "type": "paragraph",
+        "text": "Convection only happens in liquids and gases, because the material itself has to move. Warm the air near the cup and it expands, so it becomes less dense, so it rises. Cooler air sinks to replace it and a convection current forms."
+      },
+      {
+        "type": "paragraph",
+        "text": "This is why radiators go under windows and freezer compartments sit at the top. It also explains why convection cannot happen in a solid — the particles are locked in place."
       },
       {
         "type": "formula",

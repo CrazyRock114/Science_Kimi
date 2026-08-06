@@ -19,6 +19,16 @@ export const chemStoich003: KnowledgePoint = {
   },
   theory: {
     zh: [
+      { type: 'heading', text: '学习目标' },
+      {
+        type: 'list',
+        items: [
+          '说出相对原子质量与相对分子质量的定义，知道它们都是比值、没有单位。',
+          '根据化学式计算相对分子质量（含结晶水合物）。',
+          '计算化合物中各元素的质量比和某元素的质量分数。',
+          '求一定质量的化合物中某元素的质量。',
+        ],
+      },
       { type: 'heading', text: '相对原子质量' },
       {
         type: 'paragraph',
@@ -48,8 +58,28 @@ export const chemStoich003: KnowledgePoint = {
           '求一定质量化合物中某元素的质量：某元素质量 = 化合物质量 × 该元素的质量分数。如 100 g 硝酸铵中含氮元素 100 g × 35% = 35 g。',
         ],
       },
+      { type: 'heading', text: '术语表' },
+      {
+        type: 'list',
+        items: [
+          'relative atomic mass, Ar（相对原子质量）：以碳-12 原子质量的 1/12 为标准，某元素原子的平均质量与它相比所得的比值，没有单位。',
+          'relative formula mass, Mr（相对分子质量/式量）：化学式中各原子的相对原子质量之和。',
+          'percentage by mass（质量分数）：某元素的质量占化合物总质量的百分比。',
+          'water of crystallisation（结晶水）：结晶水合物中按固定比例含有的水分子，计算式量时必须计入。',
+        ],
+      },
     ],
     en: [
+      { type: 'heading', text: 'Learning objectives' },
+      {
+        type: 'list',
+        items: [
+          'Define relative atomic mass and relative formula mass, knowing both are ratios with no units.',
+          'Calculate relative formula mass from a chemical formula, including hydrated salts.',
+          'Calculate the mass ratio of elements and the percentage by mass of an element in a compound.',
+          'Find the mass of an element in a given mass of compound.',
+        ],
+      },
       { type: 'heading', text: 'Relative atomic mass' },
       {
         type: 'paragraph',
@@ -77,6 +107,16 @@ export const chemStoich003: KnowledgePoint = {
           'Ratio of masses of elements = ratio of (Aᵣ × number of atoms) for each element. In H₂O, m(H) : m(O) = (1×2) : 16 = 1 : 8. Note this is not the same as the ratio of numbers of atoms.',
           'Percentage by mass of an element = (Aᵣ × number of atoms) ÷ Mᵣ × 100%.',
           'Mass of an element in a given sample = mass of compound × percentage by mass of that element. For example, 100 g of ammonium nitrate contains 100 g × 35% = 35 g of nitrogen.',
+        ],
+      },
+      { type: 'heading', text: 'Glossary' },
+      {
+        type: 'list',
+        items: [
+          'relative atomic mass, Ar（相对原子质量）: the average mass of the atoms of an element compared with 1/12 of the mass of a carbon-12 atom; a ratio with no units.',
+          'relative formula mass, Mr（相对分子质量/式量）: the sum of the relative atomic masses of all the atoms in a formula.',
+          'percentage by mass（质量分数）: the mass of an element as a percentage of the total mass of the compound.',
+          'water of crystallisation（结晶水）: water molecules present in fixed proportion in a hydrated salt; they must be included when working out Mr.',
         ],
       },
     ],
@@ -131,4 +171,56 @@ export const chemStoich003: KnowledgePoint = {
       },
     },
   ],
+  examPractice: [
+    {
+      id: 'chem-stoich-003-cp1',
+      syllabus: ['0620/3.2.2'],
+      tier: 'core',
+      commandWord: 'Calculate',
+      marks: 2,
+      stem: 'Calculate the relative formula mass of magnesium hydroxide, Mg(OH)₂. (Ar: H = 1, O = 16, Mg = 24.)',
+      markScheme: [
+        { text: '2 × (16 + 1) = 34', marks: 1 },
+        { text: 'Mr = 24 + 34 = 58', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '括号外的 2 要乘括号内的全部内容，包括氢。若答案是 50，说明只把 2 乘到了氧上。',
+        en: 'The bracket multiplies everything inside it, hydrogen included. An answer of 50 means the 2 was applied only to the oxygen.',
+      },
+    },
+    {
+      id: 'chem-stoich-003-cp2',
+      syllabus: ['0620/3.2.1'],
+      tier: 'core',
+      commandWord: 'Explain',
+      marks: 2,
+      stem: 'The relative atomic mass of boron is 10.8, but no single boron atom has a mass of 10.8. Explain why.',
+      markScheme: [
+        { text: 'Boron exists as isotopes (boron-10 and boron-11) which have different masses', marks: 1 },
+        { text: 'The relative atomic mass is a weighted average over the isotopes, so it lies between 10 and 11', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '这个平均值必须是加权的。10 与 11 的简单平均是 10.5，而答案更接近 11，说明硼-11 的丰度更高。',
+        en: 'The average has to be weighted. A plain average of 10 and 11 would give 10.5, and the fact that the answer is nearer 11 tells you boron-11 is the more abundant isotope.',
+      },
+    },
+    {
+      id: 'chem-stoich-003-cp3',
+      syllabus: ['0620/3.2.2'],
+      tier: 'core',
+      commandWord: 'Calculate',
+      marks: 3,
+      stem: 'Calculate the percentage by mass of water in hydrated copper(II) sulfate, CuSO₄·5H₂O. (Ar: H = 1, O = 16, S = 32, Cu = 64.)',
+      markScheme: [
+        { text: 'Mr(CuSO₄·5H₂O) = 64 + 32 + 4 × 16 + 5 × 18 = 250', marks: 1 },
+        { text: 'Mass of water in the formula = 5 × 18 = 90', marks: 1 },
+        { text: 'Percentage = 90 / 250 × 100% = 36%', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '结晶水必须计入式量，漏掉 5H₂O 的 90 是最常见的错误。注意题目问的是水的质量分数，不是硫酸铜的。',
+        en: 'The water of crystallisation must be included in Mr — forgetting the 90 from 5H₂O is the commonest error. Note the question asks for the percentage of water, not of copper(II) sulfate.',
+      },
+    },
+  ],
+  related: ['igcse-0620-3-3-moles', 'chem-bonding-003', 'chem-stoich-004', 'chem-atomic-001'],
 };

@@ -111,8 +111,92 @@ export const kp91TransportAnimals: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "四个腔和四组瓣膜"
+      },
+      {
         "type": "paragraph",
-        "text": "运动员的心脏每分钟比你少跳三十次，却泵出同样多的血液。把心率乘以每搏输出量，两者都是每分钟五升。"
+        "text": "血液离开心脏走的永远是动脉，回到心脏走的永远是静脉。这是定义，取决于方向而不是含氧量——肺动脉输送的是缺氧血，肺静脉输送的是含氧血。两者都是按流向命名的。"
+      },
+      {
+        "type": "paragraph",
+        "text": "缺氧血由上下腔静脉从全身返回，进入右心房，下行至右心室，再经肺动脉泵往肺。含氧血由肺静脉返回左心房，下行至左心室，再经主动脉泵往全身。"
+      },
+      {
+        "type": "paragraph",
+        "text": "左心室壁比右心室厚得多。不是因为它容纳更多血液——两者容量相同——而是因为它要把血液推送到全身，而右心室只需推到肺再回来。需要更大的力，就需要更多的肌肉。"
+      },
+      {
+        "type": "paragraph",
+        "text": "心房壁很薄，因为心房只需把血液推入其下方的心室——只有几厘米，几乎不需要克服阻力。"
+      },
+      {
+        "type": "paragraph",
+        "text": "瓣膜使一切保持向前。房室瓣位于心房与心室之间，在心室收缩时关闭，血液便无法倒流回心房。半月瓣位于主动脉和肺动脉中，在心室舒张时关闭，血液便无法回落到心室。心跳的两个声音就是这两组瓣膜关闭的声音。"
+      },
+      {
+        "type": "paragraph",
+        "text": "而位于中央的室间隔把左右两侧完全隔开。若没有它，含氧血与缺氧血就会混合，全身每个器官得到的都将是含氧量不足的血液。"
+      },
+      {
+        "type": "heading",
+        "text": "三种血管，三种压力"
+      },
+      {
+        "type": "paragraph",
+        "text": "动脉以高压、呈脉冲式把血液从心脏运出。因此它们管壁厚，含有大量肌肉和弹性组织，管腔狭窄。弹性组织随每次搏动扩张、在两次之间回缩，使血流变得平稳。"
+      },
+      {
+        "type": "paragraph",
+        "text": "静脉以低压把血液送回，因此不需要厚壁——壁薄、腔宽、肌肉少。但低压无法把血液从脚部往上推，因此静脉内有瓣膜，行走时腿部肌肉又会挤压它们。"
+      },
+      {
+        "type": "paragraph",
+        "text": "毛细血管才是真正完成任务的地方。它们的壁只有一个细胞厚，因此到体细胞的扩散距离尽可能短。它们又细又极多，从而提供巨大的总表面积并使血流减慢——为物质交换留出时间。"
+      },
+      {
+        "type": "paragraph",
+        "text": "把这些血管成对记忆。心脏：腔静脉入、主动脉出。肺：肺动脉入、肺静脉出。肾：肾动脉入、肾静脉出。肝：肝动脉入、肝静脉出——还多一条肝门静脉，它把血液从消化道带到肝脏，使吸收进来的一切在到达身体其余部分之前先经过检查。"
+      },
+      {
+        "type": "heading",
+        "text": "血液里究竟有什么"
+      },
+      {
+        "type": "paragraph",
+        "text": "血液由红细胞、白细胞、血小板和血浆组成。血浆是液体部分，几乎所有溶解的物质都由它运输：二氧化碳、消化后的食物、尿素、激素和热量。"
+      },
+      {
+        "type": "paragraph",
+        "text": "红细胞借助血红蛋白运输氧气。它们没有细胞核，从而为血红蛋白腾出更多空间；它们呈双凹圆盘形，既增大了氧气扩散的表面积，又能弯曲着挤过比自身还窄的毛细血管。"
+      },
+      {
+        "type": "paragraph",
+        "text": "白细胞保卫身体，其中有两类值得区分。吞噬细胞吞入并消化病原体——它们的细胞核分叶，能四处移动。淋巴细胞产生抗体，抗体对某一种病原体具有专一性；它们的细胞核大而圆，占据细胞的大部分。"
+      },
+      {
+        "type": "paragraph",
+        "text": "血小板使血液凝固。血凝块既阻止你失血而死，也把伤口封住以防病原体进入。其机制是血浆中可溶的纤维蛋白原转变为不溶的纤维蛋白，后者在伤口上形成网状结构，网住红细胞而形成血凝块。"
+      },
+      {
+        "type": "heading",
+        "text": "当心脏自身的供血出问题"
+      },
+      {
+        "type": "paragraph",
+        "text": "心脏是一块肌肉，和任何肌肉一样需要自己的血液供应——分布在其表面的冠状动脉。脂肪沉积在其内部堆积，使管腔变窄，这就是冠心病。"
+      },
+      {
+        "type": "paragraph",
+        "text": "到达心肌的血液减少，因此氧气和葡萄糖供应不足。如果冠状动脉完全堵塞，它所供应的那部分心肌就会因缺氧而坏死——这就是心肌梗死。"
+      },
+      {
+        "type": "paragraph",
+        "text": "风险因素包括：高饱和脂肪和高盐饮食、吸烟、超重、缺乏运动、压力、年龄、男性以及家族史。后三项无法改变，前五项则可以。"
+      },
+      {
+        "type": "paragraph",
+        "text": "这就是为什么建议永远是那两条。少吃饱和脂肪和盐，使沉积减少。以及运动，它增强心肌、降低静息心率，并有助于控制体重和血压——正是你刚才在图上看到的那个效果。"
       },
       {
         "type": "formula",
@@ -169,8 +253,92 @@ export const kp91TransportAnimals: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Four chambers and four valves"
+      },
+      {
         "type": "paragraph",
-        "text": "An athlete’s heart beats thirty times a minute slower than yours and pumps exactly as much blood. Multiply rate by stroke volume and both come to five litres."
+        "text": "Blood always leaves the heart in an artery and returns in a vein. That is the definition, and it is about direction, not about oxygen — the pulmonary artery carries deoxygenated blood, and the pulmonary vein carries oxygenated blood. Both are named for which way they point."
+      },
+      {
+        "type": "paragraph",
+        "text": "Deoxygenated blood comes back from the body in the vena cava into the right atrium, down into the right ventricle, and out through the pulmonary artery to the lungs. Oxygenated blood returns in the pulmonary vein to the left atrium, down into the left ventricle, and out through the aorta to the body."
+      },
+      {
+        "type": "paragraph",
+        "text": "The left ventricle wall is much thicker than the right. Not because it holds more blood — the two hold the same — but because it pushes blood all the way round the body, while the right pushes it only to the lungs and back. More force needed, more muscle."
+      },
+      {
+        "type": "paragraph",
+        "text": "And the atria walls are thin, because an atrium only pushes blood down into the ventricle beneath it — a few centimetres, against almost no resistance."
+      },
+      {
+        "type": "paragraph",
+        "text": "The valves keep it all going forwards. Atrioventricular valves between each atrium and ventricle shut when the ventricle contracts, so blood cannot go back up. Semilunar valves in the aorta and pulmonary artery shut when the ventricle relaxes, so blood cannot fall back in. The two heart sounds are those two sets closing."
+      },
+      {
+        "type": "paragraph",
+        "text": "And the septum, the wall down the middle, keeps the two sides completely separate. Without it the oxygenated and deoxygenated blood would mix, and every organ in the body would be supplied with something less than fully oxygenated blood."
+      },
+      {
+        "type": "heading",
+        "text": "Three vessels, three pressures"
+      },
+      {
+        "type": "paragraph",
+        "text": "Arteries carry blood away from the heart at high pressure, in surges. So they have thick walls with a great deal of muscle and elastic tissue, and a narrow lumen. The elastic tissue stretches with each surge and recoils between them, which smooths the flow."
+      },
+      {
+        "type": "paragraph",
+        "text": "Veins return blood at low pressure, so they need no thick wall — thin walls, a wide lumen, and little muscle. But low pressure will not push blood uphill from your feet, so veins have valves along them, and the leg muscles squeeze them as you walk."
+      },
+      {
+        "type": "paragraph",
+        "text": "Capillaries are where the job actually gets done. Their walls are one cell thick, so the diffusion distance to a body cell is as short as it can be. They are narrow and there are enormous numbers of them, which gives a huge total surface area and slows the blood down — giving time for exchange."
+      },
+      {
+        "type": "paragraph",
+        "text": "Learn the named vessels as pairs. Heart: vena cava in, aorta out. Lungs: pulmonary artery in, pulmonary vein out. Kidneys: renal artery in, renal vein out. Liver: hepatic artery in, hepatic vein out — and one extra, the hepatic portal vein, which brings blood from the gut to the liver so that everything absorbed is checked before it reaches the rest of you."
+      },
+      {
+        "type": "heading",
+        "text": "What is actually in it"
+      },
+      {
+        "type": "paragraph",
+        "text": "Blood is red cells, white cells, platelets and plasma. Plasma is the liquid, and it carries almost everything dissolved: carbon dioxide, digested food, urea, hormones and heat."
+      },
+      {
+        "type": "paragraph",
+        "text": "Red cells carry oxygen, using haemoglobin. They have no nucleus, which leaves more room for haemoglobin, and they are biconcave discs, which gives a larger surface area for oxygen to diffuse across and lets them bend through a capillary narrower than they are."
+      },
+      {
+        "type": "paragraph",
+        "text": "White cells defend the body, and there are two kinds worth telling apart. Phagocytes engulf and digest pathogens — they have a lobed nucleus and move about. Lymphocytes make antibodies, which are specific to one pathogen; they have a large round nucleus filling most of the cell."
+      },
+      {
+        "type": "paragraph",
+        "text": "Platelets clot the blood. A clot stops you bleeding to death and seals the wound against pathogens getting in. The mechanism is a soluble protein in the plasma, fibrinogen, being converted into insoluble fibrin, which forms a mesh across the wound and traps red cells to make the clot."
+      },
+      {
+        "type": "heading",
+        "text": "When the heart’s own supply fails"
+      },
+      {
+        "type": "paragraph",
+        "text": "The heart is a muscle, and like any muscle it needs its own blood supply — the coronary arteries, running over its surface. Fatty deposits building up inside them narrow the lumen, and that is coronary heart disease."
+      },
+      {
+        "type": "paragraph",
+        "text": "Less blood reaches the heart muscle, so it gets less oxygen and glucose. If a coronary artery blocks completely the muscle it supplies dies for want of oxygen — a heart attack."
+      },
+      {
+        "type": "paragraph",
+        "text": "The risk factors: a diet high in saturated fat and salt, smoking, being overweight, lack of exercise, stress, age, being male, and a family history of it. The last three you cannot do anything about; the first five you can."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which is why the advice is always the same two things. Eat less saturated fat and salt, so fewer deposits build up. And exercise, which strengthens the heart muscle, lowers the resting rate, and helps keep weight and blood pressure down — the same effect you were just watching on the graph."
       },
       {
         "type": "formula",

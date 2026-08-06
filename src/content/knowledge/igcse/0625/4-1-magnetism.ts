@@ -80,8 +80,32 @@ export const kp41Magnetism: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "线密表示磁场强"
+      },
+      {
         "type": "paragraph",
-        "text": "描绘磁体周围、磁极之间以及电流周围的真实磁感线。线的疏密代表强弱——因为这些线是由磁场本身算出来的。"
+        "text": "再说第二条。注意靠近磁极处磁感线多么密集，而远离时又如何散开。这个疏密就代表磁场强弱——线越密，磁场越强。"
+      },
+      {
+        "type": "paragraph",
+        "text": "读数证实了这一点：紧靠磁极处的磁场比远离磁体处强好几倍。这就是磁感线必须画得疏密不均的原因。"
+      },
+      {
+        "type": "heading",
+        "text": "电流也能产生磁场"
+      },
+      {
+        "type": "paragraph",
+        "text": "磁体不是唯一的来源。直导线中的电流会在周围产生同心圆磁场。右手拇指指向电流方向，四指弯曲的方向就是磁场方向。"
+      },
+      {
+        "type": "paragraph",
+        "text": "注意圆环越大间距越宽——离导线越远磁场越弱，和磁体的情形一样。"
+      },
+      {
+        "type": "paragraph",
+        "text": "现在把导线绕成线圈。螺线管在内部产生强而近乎均匀的磁场，外部看起来则完全像一根条形磁铁。这就是电磁铁——与永磁体不同，它可以断电关闭。"
       },
       {
         "type": "formula",
@@ -127,8 +151,32 @@ export const kp41Magnetism: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Crowded lines mean a strong field"
+      },
+      {
         "type": "paragraph",
-        "text": "Trace real field lines around magnets, between poles, and around a current. Line spacing shows strength, because the lines are computed from the field itself."
+        "text": "Now the second piece. Look at how tightly packed the lines are close to each pole, and how they spread out further away. That spacing is the field strength — crowded lines mean a strong field."
+      },
+      {
+        "type": "paragraph",
+        "text": "The readings confirm it: the field just off a pole is several times stronger than the field well away from the magnet. That is why the lines had to be drawn unevenly."
+      },
+      {
+        "type": "heading",
+        "text": "A current makes a field too"
+      },
+      {
+        "type": "paragraph",
+        "text": "Magnets are not the only source. A current in a straight wire makes a field of concentric circles round it. Point your right thumb along the current and your fingers curl the way the field goes."
+      },
+      {
+        "type": "paragraph",
+        "text": "Notice the rings get further apart as they get bigger — the field weakens as you move away from the wire, just as it did with the magnet."
+      },
+      {
+        "type": "paragraph",
+        "text": "Now wind that wire into a coil. A solenoid gives a strong, almost uniform field down the middle, and outside it looks exactly like a bar magnet. That is an electromagnet — and unlike a permanent magnet, you can switch it off."
       },
       {
         "type": "formula",

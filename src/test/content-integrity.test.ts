@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { getAllKnowledgePoints, knowledgePointMetas, toMeta } from '../content/knowledge';
+import { getAllKnowledgePoints, getKnowledgePointMeta, knowledgePointMetas, toMeta } from '../content/knowledge';
 import { resolveIgcseRef } from '../content/syllabus/igcse';
 import { resolvePepRef } from '../content/syllabus/pep';
 import { hasSimulationRenderer } from '../simulations/registry';
@@ -78,6 +78,15 @@ describe('内容数据完整性', () => {
           }
           expect(item.answerIndex).toBeGreaterThanOrEqual(0);
           expect(item.answerIndex).toBeLessThan(item.options.zh.length);
+        }
+      });
+
+      it('related 互链的知识点 id 可解析', () => {
+        for (const id of kp.related ?? []) {
+          expect(
+            getKnowledgePointMeta(id),
+            `${kp.id} related 引用了不存在的知识点: ${id}`,
+          ).toBeDefined();
         }
       });
 

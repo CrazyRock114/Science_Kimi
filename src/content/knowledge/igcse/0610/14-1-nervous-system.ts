@@ -81,8 +81,48 @@ export const kp141NervousSystem: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "快，是因为它不去请示"
+      },
+      {
         "type": "paragraph",
-        "text": "在你意识到烫之前，手已经离开了热盘，因为脉冲根本没有传到大脑。反射之所以快，恰恰就是它之所以\"笨\"的原因。"
+        "text": "碰到烫的东西，你的手在你意识到\"烫\"之前就已经缩回来了。这就是反射：自动、迅速，而且不经决定。它所走的通路就是反射弧。"
+      },
+      {
+        "type": "paragraph",
+        "text": "刺激：热。感受器：皮肤中的温度感受器。感觉神经元：把脉冲传到脊髓。中间神经元：直接把它转接过去。运动神经元：把它传到肌肉。效应器：肌肉收缩。反应：手缩回。"
+      },
+      {
+        "type": "paragraph",
+        "text": "注意这个清单里少了什么——大脑。脉冲到达脊髓就直接折返，这正是它快的原因：最短的路径就是不经过\"决定\"的那一条。你稍后才感到疼，那是另一组脉冲到达大脑的时候，而那时你的手早就动了。"
+      },
+      {
+        "type": "paragraph",
+        "text": "一个神经元与下一个之间有一道缝隙——突触。脉冲无法跳过去，因为脉冲是电信号，而缝隙不是。于是信息改变了形式：第一个神经元的末端释放出一种化学物质——神经递质，它预先贮存在微小的小泡中。"
+      },
+      {
+        "type": "paragraph",
+        "text": "神经递质扩散过缝隙，与下一个神经元上的受体蛋白结合，在其中引发新的脉冲。随后它被分解，以免信号无休止地持续下去。"
+      },
+      {
+        "type": "paragraph",
+        "text": "接下来是真正值分的推论：小泡只在一侧，受体只在另一侧。因此脉冲只能沿一个方向跨过突触，反方向则不行——这就是为什么由双向\"导线\"构成的神经系统，最终却是单向通行。"
+      },
+      {
+        "type": "heading",
+        "text": "两类感受器"
+      },
+      {
+        "type": "paragraph",
+        "text": "视网膜上有两类感受器细胞。视杆细胞在弱光下工作，但不能分辨颜色。视锥细胞需要较强的光，却能分辨颜色——共三种，分别对红、绿、蓝敏感。"
+      },
+      {
+        "type": "paragraph",
+        "text": "它们的分布并不均匀。中央凹正对瞳孔，密布视锥细胞而几乎没有视杆细胞，因此视觉最清晰、色彩最丰富——这就是你要转头正视某物的原因。越往边缘，视杆细胞越占主导。"
+      },
+      {
+        "type": "paragraph",
+        "text": "这也解释了一件你今晚就能验证的事：一颗暗淡的星星，你直视它时会消失，稍微偏开视线又会重现——因为直视会把它的像投在中央凹上，那里没有视杆细胞，而在那种光照下只有视杆细胞才工作。"
       },
       {
         "type": "formula",
@@ -128,8 +168,48 @@ export const kp141NervousSystem: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Fast because it does not ask"
+      },
+      {
         "type": "paragraph",
-        "text": "Your hand is off the hotplate before you know it was hot, because the impulse never went to the brain. A reflex is fast for exactly the reason it is stupid."
+        "text": "Touch something hot and your hand is away before you know it was hot. That is a reflex action: automatic, rapid, and not decided on. The pathway it takes is the reflex arc."
+      },
+      {
+        "type": "paragraph",
+        "text": "Stimulus: the heat. Receptor: a temperature receptor in the skin. Sensory neurone: carries the impulse to the spinal cord. Relay neurone: passes it straight across. Motor neurone: carries it out to the muscle. Effector: the muscle contracts. Response: the hand pulls back."
+      },
+      {
+        "type": "paragraph",
+        "text": "Notice what is missing from that list. The brain. The impulse reaches the spinal cord and turns straight round, and that is precisely why it is fast — the shortest path is the one that does not go via a decision. You feel the pain a moment later, when a separate set of impulses reaches the brain, by which time your hand has already moved."
+      },
+      {
+        "type": "paragraph",
+        "text": "Between one neurone and the next there is a gap — a synapse. The impulse cannot jump it, because it is electrical and the gap is not. So the message changes form: the end of the first neurone releases a chemical, a neurotransmitter, held ready in tiny vesicles."
+      },
+      {
+        "type": "paragraph",
+        "text": "The neurotransmitter diffuses across the gap, binds to receptor proteins on the next neurone, and sets off a new impulse in it. Then it is broken down, so the signal does not go on forever."
+      },
+      {
+        "type": "paragraph",
+        "text": "And here is the consequence worth the marks. The vesicles are only on one side, and the receptors are only on the other. So an impulse can cross a synapse in one direction and not the other — which is how a nervous system made of two-way wires ends up with one-way traffic."
+      },
+      {
+        "type": "heading",
+        "text": "Two kinds of receptor"
+      },
+      {
+        "type": "paragraph",
+        "text": "The retina holds two kinds of receptor cell. Rods work in dim light but cannot distinguish colour. Cones need brighter light and do distinguish colour — three types, sensitive to red, green and blue."
+      },
+      {
+        "type": "paragraph",
+        "text": "They are not spread evenly. The fovea, directly opposite the pupil, is packed with cones and has almost no rods, so it gives the sharpest and most colourful vision — which is why you turn your head to look straight at something. Further out towards the edges, rods take over."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which explains something you can test tonight. A faint star vanishes when you look straight at it and reappears when you look slightly to one side — because looking straight at it puts its image on the fovea, where there are no rods, and rods are the only cells that work at that light level."
       },
       {
         "type": "formula",

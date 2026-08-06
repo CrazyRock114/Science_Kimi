@@ -29,6 +29,15 @@ export const phyElectric002: KnowledgePoint = {
   },
   theory: {
     zh: [
+      { type: 'heading', text: '学习目标' },
+      {
+        type: 'list',
+        items: [
+          '描述用控制变量法探究电流与电压、电阻关系的实验，并用 I = U / R 及其变形式进行计算。',
+          '说明电阻是导体本身的性质，区分电阻的量度式 R = U / I 与它的决定因素。',
+          '识别线性元件与非线性元件（灯丝、二极管）的 I–U 图像，并定性解释灯丝电阻随温度的变化。',
+        ],
+      },
       { type: 'heading', text: '探究：电流与电压、电阻的关系' },
       {
         type: 'paragraph',
@@ -57,8 +66,28 @@ export const phyElectric002: KnowledgePoint = {
           '已知 U、I 求 R：R = U/I，即“伏安法”测电阻的原理。',
         ],
       },
+      { type: 'heading', text: '术语表' },
+      {
+        type: 'list',
+        items: [
+          "Ohm's law（欧姆定律）：导体中的电流跟两端电压成正比、跟电阻成反比，I = U / R。",
+          'resistance（电阻）：导体对电流阻碍作用的量度，R = U / I，单位欧姆（Ω）。',
+          'ohmic conductor（线性元件）：I–U 图像是过原点直线的元件，如温度恒定的金属导体。',
+          'rheostat（滑动变阻器）：通过改变接入电路的电阻来调节电流的可变电阻器。',
+          'I–V characteristic（伏安特性曲线）：表示通过元件的电流随两端电压变化的图像。',
+        ],
+      },
     ],
     en: [
+      { type: 'heading', text: 'Learning objectives' },
+      {
+        type: 'list',
+        items: [
+          'Describe the control-variable experiments relating current to voltage and resistance, and calculate with I = V / R and its rearrangements.',
+          'Explain that resistance is a property of the conductor itself, distinguishing the measuring equation R = V / I from the factors that determine resistance.',
+          'Recognise the I–V graphs of ohmic and non-ohmic components (filament lamp, diode) and explain qualitatively how filament resistance changes with temperature.',
+        ],
+      },
       { type: 'heading', text: 'Investigating current, voltage and resistance' },
       {
         type: 'paragraph',
@@ -85,6 +114,17 @@ export const phyElectric002: KnowledgePoint = {
           'Find current from V and R: I = V/R — e.g. 6 V across 10 Ω gives 0.6 A.',
           'Find voltage from I and R: V = IR, the voltage across a component.',
           'Find resistance from V and I: R = V/I, the principle of the voltmeter–ammeter method.',
+        ],
+      },
+      { type: 'heading', text: 'Glossary' },
+      {
+        type: 'list',
+        items: [
+          "Ohm's law (欧姆定律): The current through a conductor is proportional to the voltage across it and inversely proportional to its resistance, I = V / R.",
+          'resistance (电阻): A measure of how much a conductor opposes the current, R = V / I, measured in ohms (Ω).',
+          'ohmic conductor (线性元件): A component whose I–V graph is a straight line through the origin, such as a metal at constant temperature.',
+          'rheostat (滑动变阻器): A variable resistor used to adjust the current in a circuit.',
+          'I–V characteristic (伏安特性曲线): A graph showing how the current through a component varies with the voltage across it.',
         ],
       },
     ],
@@ -302,4 +342,76 @@ export const phyElectric002: KnowledgePoint = {
       },
     ],
   },
+  examPractice: [
+    {
+      id: 'ep-resistance-calculation',
+      syllabus: ['0625/4.2.4.1'],
+      tier: 'core',
+      commandWord: 'Calculate',
+      marks: 2,
+      stem: 'The p.d. across a resistor is 12 V and the current through it is 0.50 A. Calculate the resistance of the resistor.',
+      markScheme: [
+        {
+          text: 'Uses R = V / I',
+          marks: 1,
+          alternatives: ['12 / 0.50'],
+        },
+        {
+          text: '24 Ω',
+          marks: 1,
+        },
+      ],
+      examinerNote: {
+        zh: '先把公式变形再代入：R = V / I。直接写 0.50 / 12 得到约 0.042 Ω，是把公式记倒了；考试时先写符号式再代数字，能有效避免这类错误。',
+        en: 'Rearrange before substituting: R = V / I. Writing 0.50 / 12 gives about 0.042 Ω — the formula remembered upside down. Writing the symbolic form first, then the numbers, prevents exactly this slip.',
+      },
+    },
+    {
+      id: 'ep-ohm-law-rearranged',
+      syllabus: ['0625/4.2.4.1'],
+      tier: 'core',
+      commandWord: 'Calculate',
+      marks: 1,
+      stem: 'The current through a 15 Ω resistor is 0.40 A. What is the p.d. across the resistor?',
+      options: ['6.0 V', '37.5 V', '0.027 V', '15.4 V'],
+      answerIndex: 0,
+      markScheme: [
+        {
+          text: 'V = I R = 0.40 × 15 = 6.0 V',
+          marks: 1,
+        },
+      ],
+      examinerNote: {
+        zh: '37.5 V 来自 R / I，0.027 V 来自 I / R——都是把变形式记错。15.4 V 是把电阻和电流相加，说明没有理解三个量的关系。',
+        en: '37.5 V comes from R / I and 0.027 V from I / R — both are the rearrangement remembered wrongly. 15.4 V adds resistance and current, showing the relationship itself is not understood.',
+      },
+    },
+    {
+      id: 'ep-filament-iv-graph',
+      syllabus: ['0625/4.2.4.4'],
+      tier: 'supplement',
+      commandWord: 'Explain',
+      marks: 3,
+      stem: 'The I–V graph for a filament lamp is a curve rather than a straight line. Explain why.',
+      markScheme: [
+        {
+          text: 'As the p.d. increases, the current increases and the filament gets hotter',
+          marks: 1,
+        },
+        {
+          text: 'The resistance of the filament increases with temperature',
+          marks: 1,
+        },
+        {
+          text: 'So the current increases less than in proportion to the p.d., and the graph bends',
+          marks: 1,
+        },
+      ],
+      examinerNote: {
+        zh: '因果链要完整：电压变大 → 电流变大 → 灯丝温度升高 → 电阻增大 → 图像弯曲。只写“电阻会变化”最多得一分；要解释的是“为什么会变”。',
+        en: 'The chain must be complete: higher p.d. → more current → hotter filament → higher resistance → the curve. Saying only “the resistance changes” earns one mark at most; the question asks why it changes.',
+      },
+    },
+  ],
+  related: ['phy-electric-001', 'phy-electric-003', 'igcse-0625-4-2-4-resistance'],
 };

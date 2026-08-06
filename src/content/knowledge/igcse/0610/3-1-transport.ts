@@ -69,8 +69,20 @@ export const kp31Transport: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "还有什么影响速率"
+      },
+      {
         "type": "paragraph",
-        "text": "把两者分别对梯度和温度作图，看它们在哪里出现分歧。一个没有梯度就归零，另一个在酶变性时崩溃。"
+        "text": "表面积对两者都有影响，而且方式相同——膜面积加倍，通量加倍。所以凡是用于交换的结构都是折叠、分支或扁平的：绒毛、肺泡、根毛、鳃。"
+      },
+      {
+        "type": "paragraph",
+        "text": "距离同样重要，虽然这张图上没有：屏障越薄，穿越越快。肺泡壁只有一个细胞厚，原因正在于此。"
+      },
+      {
+        "type": "paragraph",
+        "text": "还有一样只影响主动运输：载体蛋白的数量。每个载体都是膜上的特定蛋白，它结合分子、改变构象、在另一侧释放。载体用尽后，再多的能量也无法提高速率。"
       },
       {
         "type": "formula",
@@ -121,8 +133,20 @@ export const kp31Transport: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "What else changes the rate"
+      },
+      {
         "type": "paragraph",
-        "text": "Plot both against gradient and against temperature, and look for where they disagree. One flatlines without a gradient; the other collapses when its enzymes do."
+        "text": "Surface area affects both, and in the same way — double the membrane, double the traffic. That is why anything built for exchange is folded, branched or flattened: villi, alveoli, root hairs, gills."
+      },
+      {
+        "type": "paragraph",
+        "text": "Distance matters too, though it is not on this graph: the thinner the barrier, the faster the crossing. An alveolus wall is one cell thick for exactly that reason."
+      },
+      {
+        "type": "paragraph",
+        "text": "And one thing that only affects active transport: the number of carrier proteins. Each one is a specific protein in the membrane that binds the molecule, changes shape, and releases it on the other side. Run out of carriers and the rate stops rising however much energy you supply."
       },
       {
         "type": "formula",

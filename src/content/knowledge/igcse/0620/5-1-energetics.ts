@@ -69,8 +69,40 @@ export const kp51Energetics: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "为什么放热是负值"
+      },
+      {
         "type": "paragraph",
-        "text": "断键消耗能量，成键放出能量。两者之差就是 ΔH——而 ΔH 决定了产物在能量图上的高度。"
+        "text": "ΔH 是 −184。学生常觉得这个符号反了，因为房间变*暖*了——为什么是负的？"
+      },
+      {
+        "type": "paragraph",
+        "text": "因为 ΔH 是从化学物质的角度、而不是从房间的角度衡量的。是化学物质失去了这部分能量，把它送了出去。能量流出反应体系记为负，而它出现在周围环境中，所以温度计读数上升。"
+      },
+      {
+        "type": "paragraph",
+        "text": "现在切换到氮气加氧气。断三键要 945，断氧氧双键要 496——而收回的只有 1262，净亏 179。"
+      },
+      {
+        "type": "paragraph",
+        "text": "ΔH 是正的，再看图——产物现在高于反应物。这个反应必须从别处吸收能量。这就是吸热。它不会在你周围的空气中发生，但在汽车发动机内会，尾气中的氮氧化物正源于此。"
+      },
+      {
+        "type": "heading",
+        "text": "做这个计算"
+      },
+      {
+        "type": "paragraph",
+        "text": "三步，永远一样。把所有断裂的键的键能加起来。把所有形成的键的键能加起来。用前者减后者。这个顺序——断键减成键——会自动给出正确的符号。"
+      },
+      {
+        "type": "paragraph",
+        "text": "有一点容易出错：只计算真正发生变化的键。乙烯加氢只断 C=C 和 H–H，别无其他。乙烯原有的四根 C–H 键在乙烷中依然存在、毫发无损，所以两边都不出现它们。"
+      },
+      {
+        "type": "paragraph",
+        "text": "要坦白一点：这些是*平均*键能，是在许多化合物上取的平均值，所以算出的 ΔH 接近实测值但不等于它。这里甲烷算得 −822，而实测约为 −890。接近——而\"接近\"正是这个方法所能承诺的。"
       },
       {
         "type": "formula",
@@ -121,8 +153,40 @@ export const kp51Energetics: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Why exothermic is negative"
+      },
+      {
         "type": "paragraph",
-        "text": "Breaking bonds costs energy and making them releases it. The difference is ΔH — and ΔH is where the product level sits on the diagram."
+        "text": "ΔH is minus one hundred and eighty-four. Students find that sign backwards, because the room got *warmer* — so why is it negative?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Because ΔH is measured from the chemicals, not the room. The chemicals lost that energy; they gave it away. Energy out of the reaction is negative, and it turned up in the surroundings, which is why the thermometer went up."
+      },
+      {
+        "type": "paragraph",
+        "text": "Now switch to nitrogen plus oxygen. Nine hundred and forty-five to break the triple bond, four hundred and ninety-six for the oxygen — and you only get twelve hundred and sixty-two back. You are down by a hundred and seventy-nine."
+      },
+      {
+        "type": "paragraph",
+        "text": "ΔH is positive, and look at the diagram — the products sit above the reactants now. This reaction has to take energy in from somewhere. Endothermic. It does not happen in the air around you, but it does inside a car engine, and that is where the nitrogen oxides in exhaust come from."
+      },
+      {
+        "type": "heading",
+        "text": "Doing the calculation"
+      },
+      {
+        "type": "paragraph",
+        "text": "Three steps, always the same. Add up the bond energies of everything that breaks. Add up the bond energies of everything that forms. Subtract the second from the first. That order — broken minus made — gives you the sign for free."
+      },
+      {
+        "type": "paragraph",
+        "text": "And one thing that catches people out: only count the bonds that actually change. Hydrogenating ethene breaks the C=C and the H–H, and nothing else. Ethene’s four C–H bonds are still there in ethane, untouched, so they appear on neither side."
+      },
+      {
+        "type": "paragraph",
+        "text": "One honest caveat. These are *mean* bond energies, averaged over many compounds, so a calculated ΔH lands near the measured value rather than on it. Methane comes out at minus eight hundred and twenty-two here; measured, it is about minus eight hundred and ninety. Close, and close is what the method promises."
       },
       {
         "type": "formula",

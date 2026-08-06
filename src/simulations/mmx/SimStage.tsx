@@ -36,6 +36,9 @@ export interface SimViewProps {
  *
  * Every lesson goes through here, so `LessonPage` never learns about individual
  * primitives. Adding a primitive means adding a case, not touching the lesson page.
+ *
+ * 分支集合与 content/sim-spec.ts 的 IMPLEMENTED_PRIMITIVES 清单一一对应
+ * （switch 无法从常量派生，新增基元时两处同步；测试以该清单校验课程数据）。
  */
 export function SimStage(props: SimViewProps) {
   switch (props.spec.primitive) {

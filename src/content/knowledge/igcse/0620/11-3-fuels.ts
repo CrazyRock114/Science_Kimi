@@ -61,10 +61,6 @@ export const kp113Fuels: KnowledgePoint = {
         ]
       },
       {
-        "type": "paragraph",
-        "text": "各馏分的顺序不是要背的清单。沸点随碳链长度稳步上升，塔底最热，顺序自然就定了。"
-      },
-      {
         "type": "formula",
         "latex": "\\text{boiling point} \\uparrow \\text{ as chain length} \\uparrow",
         "caption": "本主题一切内容背后的唯一趋势——馏分的顺序、黏度、挥发性与用途。较大的分子之间吸引力更强，因此分开它们需要更多能量。"
@@ -97,10 +93,6 @@ export const kp113Fuels: KnowledgePoint = {
           "Name the fractions and state a use for each.",
           "Describe the trend in the properties of the fractions with chain length."
         ]
-      },
-      {
-        "type": "paragraph",
-        "text": "The order of the fractions is not a list to memorise. Boiling point climbs steadily with chain length, the column is hot at the bottom, and the order follows."
       },
       {
         "type": "formula",

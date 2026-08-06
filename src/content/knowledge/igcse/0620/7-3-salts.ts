@@ -69,8 +69,20 @@ export const kp73Salts: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "三条路线，一个问题"
+      },
+      {
         "type": "paragraph",
-        "text": "制盐有三条路线，选哪条不是凭喜好：这种盐可溶吗？剩余的碱能过滤掉吗？"
+        "text": "制盐有三条路线，考试会要求你选一条。这不是凭喜好。有两个关于这种盐的事实决定了答案，而这两点你都能推出来。"
+      },
+      {
+        "type": "paragraph",
+        "text": "第一：这种盐可溶吗？所有硝酸盐都可溶，所有钠盐和钾盐也都可溶。碳酸盐不溶，钠钾除外。氯化物可溶，银和铅除外。硫酸盐可溶，钡、铅和钙除外。"
+      },
+      {
+        "type": "paragraph",
+        "text": "要背的是例外，不是规则。例外只有五个，其余全都可溶。"
       },
       {
         "type": "formula",
@@ -121,8 +133,20 @@ export const kp73Salts: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Three routes, one question"
+      },
+      {
         "type": "paragraph",
-        "text": "Three ways to make a salt, and the choice is not a matter of taste. Is the salt soluble, and can you filter the leftover base out?"
+        "text": "There are three ways to make a salt, and the exam will ask you to pick one. It is not a matter of taste. Two facts about the salt decide it, and you can work both out."
+      },
+      {
+        "type": "paragraph",
+        "text": "First: is the salt soluble? All nitrates are, and all sodium and potassium salts. Carbonates are not, except sodium and potassium. Chlorides are, except silver and lead. Sulfates are, except barium, lead and calcium."
+      },
+      {
+        "type": "paragraph",
+        "text": "Learn the exceptions, not the rules. There are only five of them and everything else is soluble."
       },
       {
         "type": "formula",

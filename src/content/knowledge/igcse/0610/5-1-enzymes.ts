@@ -71,8 +71,36 @@ export const kp51Enzymes: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "一种酶，一件事"
+      },
+      {
         "type": "paragraph",
-        "text": "pH 曲线是钟形的，温度曲线不是——它缓慢上升、陡然坠落，因为两侧是完全不同的过程。"
+        "text": "底物与活性位点的契合就像钥匙配锁。二者结合形成酶—底物复合物，反应发生，产物离开，而酶毫无变化，随时准备接待下一个底物。"
+      },
+      {
+        "type": "paragraph",
+        "text": "正因为必须精确契合，每种酶只作用于一种底物。淀粉酶分解淀粉，对蛋白质完全不起作用。这就是专一性，而它完全是形状带来的结果。"
+      },
+      {
+        "type": "paragraph",
+        "text": "记住这一点。本主题其余全部内容，讲的都是形状被破坏之后会发生什么。"
+      },
+      {
+        "type": "heading",
+        "text": "最适值不是普适常数"
+      },
+      {
+        "type": "paragraph",
+        "text": "很容易以为酶的最适条件就是 37 °C 和中性 pH。并非如此。酶的最适条件取决于生物所处的环境，以及它在体内工作的部位。"
+      },
+      {
+        "type": "paragraph",
+        "text": "这一种来自生活在近沸温泉中的细菌，最适温度是 70 °C——而淀粉酶在低于此 20 °C 时就已经被破坏了。"
+      },
+      {
+        "type": "paragraph",
+        "text": "化学原理相同、锁钥模型相同、变性机制相同。不同的只是数值，因为蛋白质折叠方式不同，以适应不同的环境。"
       },
       {
         "type": "formula",
@@ -124,8 +152,36 @@ export const kp51Enzymes: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "One enzyme, one job"
+      },
+      {
         "type": "paragraph",
-        "text": "The pH curve is a bell. The temperature curve is not — it climbs gently and falls off a cliff, because the two sides are different processes."
+        "text": "The substrate fits the active site the way a key fits a lock. They come together as an enzyme–substrate complex, the reaction happens, the products leave, and the enzyme is unchanged and ready for the next one."
+      },
+      {
+        "type": "paragraph",
+        "text": "And because the fit has to be exact, each enzyme works on one substrate and no other. Amylase breaks down starch and will not touch protein. That is what specificity means, and it is entirely a consequence of shape."
+      },
+      {
+        "type": "paragraph",
+        "text": "Keep hold of that. Everything else in this topic is about what happens when the shape is disturbed."
+      },
+      {
+        "type": "heading",
+        "text": "Optimum is not a universal number"
+      },
+      {
+        "type": "paragraph",
+        "text": "It is easy to come away thinking enzymes optimise at thirty-seven degrees and neutral pH. They do not. They optimise wherever the organism lives and wherever in it they work."
+      },
+      {
+        "type": "paragraph",
+        "text": "This one comes from bacteria living in a hot spring, near boiling. Its optimum is seventy degrees — a temperature that would have destroyed amylase twenty degrees ago."
+      },
+      {
+        "type": "paragraph",
+        "text": "Same chemistry, same lock-and-key, same denaturation. Only the number differs, because the protein folded differently to suit different conditions."
       },
       {
         "type": "formula",

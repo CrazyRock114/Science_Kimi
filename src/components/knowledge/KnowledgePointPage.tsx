@@ -1,8 +1,10 @@
 import { useMemo, useRef, useState, lazy, Suspense } from 'react';
 import { useTranslation } from 'react-i18next';
-import type { KnowledgePoint, Lang, NarrationAction, ParamValues } from '../../content/types';
+import type { KnowledgePoint, KnowledgePointMeta, Lang, NarrationAction, ParamValues } from '../../content/types';
 import { resolveIgcseRef } from '../../content/syllabus/igcse';
 import { resolvePepRef } from '../../content/syllabus/pep';
+import { getKnowledgePointMeta } from '../../content/knowledge';
+import { getLabExperimentsForKnowledgePoint } from '../../content/lab';
 import { getKnowledgePointProgress } from '../../lib/progress';
 import { dispatchNarrationAction } from '../../lib/narration';
 import { Formula } from '../Formula';
@@ -13,6 +15,7 @@ import { SimulationCanvas } from './SimulationCanvas';
 import { QuizSection } from './QuizSection';
 import { ExamPracticeSection } from './ExamPracticeSection';
 import { NarrationPlayer } from './NarrationPlayer';
+import { RelatedSections } from './RelatedSections';
 import { TutorPanel } from '../ai/TutorPanel';
 import { theoryBlocksToText } from '../../lib/ai';
 import type { MmxClockCommand } from '../../simulations/mmx/MmxStage';
@@ -51,12 +54,21 @@ export function KnowledgePointPage({ kp, lang }: KnowledgePointPageProps) {
   const clockNonceRef = useRef(0);
   const highlightTimerRef = useRef<number | null>(null);
 
-  // mmx 模式下内核读数：喂给 ReadoutLiveFormula 的 substitute（公式实时数值代入）
+  // mmx 内核每次参数变更只算一次：完整结果传给 MmxStage（画布 + 读数面板），
+  // 其 readouts 喂给 ReadoutLiveFormula 的 substitute（公式实时数值代入）
   const mmx = kp.simulation?.mmx;
-  const mmxReadouts = useMemo(
-    () => (mmx ? mmx.kernel(params).readouts : undefined),
-    [mmx, params],
+  const mmxResult = useMemo(() => (mmx ? mmx.kernel(params) : null), [mmx, params]);
+  const mmxReadouts = mmxResult?.readouts;
+
+  // 页底互链：相关课程（kp.related → meta 查标题/学科）与相关实验（实验 related 反向查找）
+  const relatedLessons = useMemo(
+    () =>
+      (kp.related ?? [])
+        .map((id) => getKnowledgePointMeta(id))
+        .filter((meta): meta is KnowledgePointMeta => meta !== undefined),
+    [kp],
   );
+  const relatedExperiments = useMemo(() => getLabExperimentsForKnowledgePoint(kp.id), [kp]);
 
   // 讲解动作 → 仿真：setParams/reset 改参数 state；play/pause 控制 mmx 动画时钟
   // （原生仿真无受控时钟，忽略并记录）；highlight 按选择器短暂高亮页面元素。
@@ -217,6 +229,7 @@ export function KnowledgePointPage({ kp, lang }: KnowledgePointPageProps) {
                 <MmxStage
                   params={params}
                   mmx={kp.simulation.mmx}
+                  result={mmxResult}
                   onParamChange={handleParamChange}
                   clockCommand={clockCommand}
                 />
@@ -273,7 +286,7 @@ export function KnowledgePointPage({ kp, lang }: KnowledgePointPageProps) {
           <h2 className="mb-4 border-b border-slate-200 pb-2 text-xl font-semibold text-slate-900">
             {t('kp.examPractice')}
           </h2>
-          <ExamPracticeSection items={kp.examPractice} lang={lang} />
+          <ExamPracticeSection kpId={kp.id} items={kp.examPractice} lang={lang} />
         </section>
       )}
 
@@ -290,6 +303,9 @@ export function KnowledgePointPage({ kp, lang }: KnowledgePointPageProps) {
           lang={lang}
         />
       </section>
+
+      {/* 相关课程 / 相关实验互链（无数据时不渲染） */}
+      <RelatedSections lang={lang} lessons={relatedLessons} experiments={relatedExperiments} />
     </article>
   );
 }

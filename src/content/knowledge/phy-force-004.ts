@@ -20,6 +20,15 @@ export const phyForce004: KnowledgePoint = {
   },
   theory: {
     zh: [
+      { type: 'heading', text: '学习目标' },
+      {
+        type: 'list',
+        items: [
+          '说明摩擦力产生的条件与方向，区分静摩擦与滑动摩擦，并使用 f = μN。',
+          '把斜面上的重力分解为沿斜面与垂直斜面的两个分力。',
+          '用 tanθ 与 μ 的关系判断斜面上的物块是否下滑，并求下滑加速度。',
+        ],
+      },
       { type: 'heading', text: '摩擦力：阻碍相对运动的力' },
       {
         type: 'paragraph',
@@ -52,8 +61,29 @@ export const phyForce004: KnowledgePoint = {
           '有害的摩擦要减小：加润滑油、用滚动代替滑动（轴承）、磁悬浮。',
         ],
       },
+      { type: 'heading', text: '术语表' },
+      {
+        type: 'list',
+        items: [
+          'friction（摩擦力）：在接触面上阻碍相对运动（或相对运动趋势）的力，方向与相对运动相反。',
+          'static friction（静摩擦力）：物体尚未滑动时的摩擦力，随外力增大而增大，直到最大值。',
+          'sliding friction（滑动摩擦力）：物体滑动时的摩擦力，大小 f = μN。',
+          'coefficient of friction（摩擦因数）：描述接触面粗糙程度的比例常数 μ，无单位。',
+          'normal force（支持力/法向力）：接触面垂直作用于物体的支持力 N；斜面上 N = mg·cosθ。',
+          'resolving forces（力的分解）：把一个力拆成两个互相垂直的分力，如斜面上 mg·sinθ 与 mg·cosθ。',
+        ],
+      },
     ],
     en: [
+      { type: 'heading', text: 'Learning objectives' },
+      {
+        type: 'list',
+        items: [
+          'State when friction arises and which way it acts, distinguish static from sliding friction, and use f = μN.',
+          'Resolve the weight on a slope into components along and perpendicular to the surface.',
+          'Use the relation between tanθ and μ to decide whether a block slides, and find its acceleration.',
+        ],
+      },
       { type: 'heading', text: 'Friction: opposing relative motion' },
       {
         type: 'paragraph',
@@ -84,6 +114,18 @@ export const phyForce004: KnowledgePoint = {
         items: [
           'Increasing useful friction: treaded soles and tyres, sanding icy roads.',
           'Reducing unwanted friction: lubricating oil, rolling instead of sliding (ball bearings), magnetic levitation.',
+        ],
+      },
+      { type: 'heading', text: 'Glossary' },
+      {
+        type: 'list',
+        items: [
+          'friction (摩擦力): The force at a contact surface that opposes relative motion (or the tendency to move), acting opposite to the motion.',
+          'static friction (静摩擦力): The friction before sliding starts; it grows with the applied force up to a maximum value.',
+          'sliding friction (滑动摩擦力): The friction once sliding begins, of size f = μN.',
+          'coefficient of friction (摩擦因数): The dimensionless constant μ describing how rough the contact is.',
+          'normal force (支持力): The contact force N acting perpendicular to the surface; on a slope N = mg·cosθ.',
+          'resolving forces (力的分解): Splitting a force into two perpendicular components, e.g. mg·sinθ and mg·cosθ on a slope.',
         ],
       },
     ],
@@ -238,6 +280,67 @@ export const phyForce004: KnowledgePoint = {
       },
     },
   ],
+  examPractice: [
+    {
+      id: 'force004-ep1',
+      syllabus: ['0625/1.5.1.6', '0625/1.5.1.4'],
+      tier: 'core',
+      commandWord: 'Explain',
+      marks: 3,
+      stem: 'A block is pushed across a rough horizontal table so that it moves at a constant velocity. Explain, in terms of the forces acting, why a steady pushing force is needed to keep it moving, and state one other effect friction has besides opposing motion.',
+      markScheme: [
+        { text: 'Friction acts on the block in the direction opposite to its motion', marks: 1 },
+        {
+          text: 'At constant velocity the resultant force is zero, so the pushing force must balance the friction',
+          marks: 1,
+        },
+        { text: 'Friction also transfers energy by heating the surfaces', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '“保持运动需要力”听起来像亚里士多德，但这里的关键是摩擦力在不断消耗推力——合力为零才是匀速的条件。别忘了摩擦生热这一分。',
+        en: '“A force is needed to keep it moving” sounds Aristotelian, but the point is that friction keeps eating the push — zero resultant is the condition for constant velocity. Do not forget the heating mark.',
+      },
+    },
+    {
+      id: 'force004-ep2',
+      syllabus: ['0625/1.5.1.11', '0625/1.5.1.6'],
+      tier: 'supplement',
+      commandWord: 'Calculate',
+      marks: 3,
+      stem: 'A trolley of mass 5.0 kg is pulled along a rough horizontal bench by a horizontal force of 12 N and accelerates at 1.6 m/s². Calculate the frictional force acting on the trolley.',
+      markScheme: [
+        { text: 'Resultant force F = ma = 5.0 × 1.6 = 8.0 N', marks: 1 },
+        { text: 'Friction = 12 − 8.0', marks: 1 },
+        { text: '= 4.0 N, acting opposite to the motion', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '反推摩擦力的思路：先用 F = ma 求出合力，再用拉力减去合力。直接把 12 N 当摩擦力是最常见的错误。',
+        en: 'The way back to friction: get the resultant from F = ma first, then subtract it from the pull. Taking 12 N itself as the friction is the most common error.',
+      },
+    },
+    {
+      id: 'force004-ep3',
+      syllabus: ['0625/1.5.1.6'],
+      tier: 'core',
+      commandWord: 'State',
+      marks: 2,
+      stem: 'State one example where friction is useful, and one way of reducing friction where it is unwanted.',
+      markScheme: [
+        {
+          text: 'Useful friction, e.g. grip between a shoe sole or tyre and the ground (made larger by a treaded surface)',
+          marks: 1,
+        },
+        {
+          text: 'Reducing unwanted friction, e.g. lubricating moving parts or using ball bearings to roll instead of slide',
+          marks: 1,
+        },
+      ],
+      examinerNote: {
+        zh: '例子要具体：“增大摩擦”不给分，要说清是哪个接触面之间、用什么方法。',
+        en: 'Be specific: "increase friction" earns nothing — name the surfaces in contact and the method used.',
+      },
+    },
+  ],
   kernels: {
     incline: inclineKernel,
   },
@@ -291,4 +394,49 @@ export const phyForce004: KnowledgePoint = {
       tolerance: 1e-3,
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '搓搓手会觉得热，鞋底刻花纹才不打滑，给门轴滴点油就不吱呀响——这些日常小事背后都是同一个角色：摩擦力。这节课我们就把它研究明白，顺便揭开“斜面上的木块到底滑不滑”的判定方法。',
+          en: 'Rub your hands and they warm up; treaded soles keep you from slipping; a drop of oil silences a squeaky hinge. Behind all of these is the same character: friction. This lesson pins it down — and settles when a block on a slope will slide and when it will not.',
+        },
+      },
+      {
+        id: 'concept-friction',
+        kind: 'concept',
+        text: {
+          zh: '摩擦力产生在相互接触、相互挤压且有相对运动或相对运动趋势的粗糙接触面上，方向总是与相对运动相反。静摩擦会随外力增大而增大，但有个最大值；一旦滑动，滑动摩擦力就等于 μ 乘以压力 N。μ 越大、压力越大，摩擦越强。',
+          en: 'Friction appears where rough surfaces press together and slide — or try to slide — over each other, always acting opposite to the relative motion. Static friction grows with the applied force, up to a maximum; once sliding starts, the friction equals μ times the normal force N. Bigger μ, bigger normal force, stronger friction.',
+        },
+      },
+      {
+        id: 'concept-incline',
+        kind: 'concept',
+        text: {
+          zh: '把木块放上斜面，重力要拆成两半：沿斜面向下的 mg 乘 sinθ，负责让木块下滑；垂直斜面的 mg 乘 cosθ，等于支持力 N。于是最大摩擦力是 μmg 乘 cosθ。判据很优雅：tanθ 大于 μ 就滑，否则就停——注意，这个结果和质量无关。',
+          en: 'Put a block on a slope and the weight splits in two: mg sinθ down the slope, which tries to slide the block, and mg cosθ into the slope, which equals the normal force N. So the maximum friction is μmg cosθ. The criterion is elegant: the block slides when tanθ exceeds μ, and stays put otherwise — and notice, mass plays no part in the verdict.',
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '动手找一找临界角。先点“木块静置缓坡”，然后慢慢拖动倾角滑块，盯住实时公式里沿斜面分力和最大摩擦力的较量——哪个瞬间木块开始下滑？再点“冰面斜面”预设，看 μ 只有 0.05 时同样的角度滑得多快。最后验证一下那个神奇结论：把质量滑块拉来拉去，加速度变不变？',
+          en: 'Hunt for the critical angle yourself. Start with "block at rest on a gentle slope", then drag the angle slider slowly while watching the tug-of-war in the live formulas between the downhill component and the maximum friction — at which angle does the block give way? Then tap the "icy slope" preset to see how fast the same angle slides when μ is only 0.05. Finally test that curious claim: drag the mass slider back and forth — does the acceleration change at all?',
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '总结一下：摩擦力阻碍相对运动，滑动摩擦 f 等于 μN；斜面上把重力分解成 mg sinθ 和 mg cosθ，tanθ 大于 μ 就下滑，加速度是 g 乘（sinθ 减 μcosθ），与质量无关。有益摩擦要增大、有害摩擦要减小的例子，也顺手记两个。小测见。',
+          en: 'To wrap up: friction opposes relative motion, and sliding friction is μN. On a slope, resolve the weight into mg sinθ and mg cosθ; the block slides when tanθ exceeds μ, accelerating at g times (sinθ minus μcosθ), regardless of mass. Keep a couple of examples of useful and unwanted friction in your pocket too. See you in the quiz.',
+        },
+      },
+    ],
+  },
+  related: ['igcse-0625-1-5-forces', 'phy-force-003', 'phy-force-001'],
 };

@@ -62,8 +62,20 @@ export const kp11Measurement: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "两类物理量"
+      },
+      {
         "type": "paragraph",
-        "text": "向东 6 加向北 8 等于 10，而不是 14。虚线矩形正是直角的来源——也是勾股定理之所以适用的原因。"
+        "text": "标量只有大小：多少，没有别的。矢量既有大小又有方向，而方向是这个量本身的一部分，不是关于它的附加信息。"
+      },
+      {
+        "type": "paragraph",
+        "text": "标量：距离、速率、时间、质量、能量、温度。矢量：位移、速度、加速度、力、重力、动量，以及重力场、电场或磁场的强度。"
+      },
+      {
+        "type": "paragraph",
+        "text": "要记的是这些成对的量：距离与位移、速率与速度。绕跑道走一圈，你的距离是四百米，位移是零。你的平均速率有每秒几米，平均速度却完全为零。"
       },
       {
         "type": "formula",
@@ -104,8 +116,20 @@ export const kp11Measurement: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Two kinds of quantity"
+      },
+      {
         "type": "paragraph",
-        "text": "Six east plus eight north is ten, not fourteen. The dashed rectangle is where the right angle comes from — and why Pythagoras applies at all."
+        "text": "A scalar has magnitude only: how much, and nothing else. A vector has magnitude and direction, and the direction is part of the quantity rather than extra information about it."
+      },
+      {
+        "type": "paragraph",
+        "text": "Scalars: distance, speed, time, mass, energy, temperature. Vectors: displacement, velocity, acceleration, force, weight, momentum, and the strength of a gravitational, electric or magnetic field."
+      },
+      {
+        "type": "paragraph",
+        "text": "The pairs are the ones to learn: distance and displacement, speed and velocity. Walk once round a running track and your distance is four hundred metres and your displacement is zero. Your average speed was several metres per second and your average velocity was nothing at all."
       },
       {
         "type": "formula",

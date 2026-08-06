@@ -11,6 +11,11 @@ import type { LabExperiment } from "./types";
 export const redoxExperiments: LabExperiment[] = [
   {
     slug: "kmno4-oxalic-acid",
+    related: ["igcse-0620-6-4-redox", "chem-energetics-002", "igcse-0620-6-2-rate-of-reaction"],
+    syllabus: {
+      pep: ["pep-che-s1/ch1"],
+      igcse: ["0620/6.4", "0620/6.2"],
+    },
     title: { zh: "高锰酸钾氧化草酸", en: "Potassium Manganate(VII) Oxidising Oxalic Acid" },
     description: {
       zh: "酸性高锰酸钾与草酸反应紫红色褪去，探究浓度、温度对反应速率的影响。",
@@ -35,6 +40,11 @@ export const redoxExperiments: LabExperiment[] = [
   },
   {
     slug: "kmno4-fe2",
+    related: ["igcse-0620-6-4-redox", "igcse-0620-3-3-moles", "chem-stoich-004"],
+    syllabus: {
+      pep: ["pep-che-s1/ch1", "pep-che-s1/ch3"],
+      igcse: ["0620/6.4"],
+    },
     title: { zh: "高锰酸钾滴定亚铁离子", en: "Titrating Iron(II) Ions with Potassium Manganate(VII)" },
     description: {
       zh: "用高锰酸钾标准液滴定硫酸亚铁，以紫红色不褪为终点，掌握氧化还原滴定。",
@@ -59,6 +69,11 @@ export const redoxExperiments: LabExperiment[] = [
   },
   {
     slug: "halogen-displacement-cl-br",
+    related: ["igcse-0620-8-2-groups", "igcse-0620-6-4-redox", "chem-atomic-004"],
+    syllabus: {
+      pep: ["pep-che-s1/ch4"],
+      igcse: ["0620/8.3", "0620/6.4"],
+    },
     title: { zh: "氯气置换溴", en: "Chlorine Displacing Bromine" },
     description: {
       zh: "向溴化钾溶液通入氯气，置换出橙色溴，验证卤素氧化性强弱顺序。",
@@ -83,6 +98,11 @@ export const redoxExperiments: LabExperiment[] = [
   },
   {
     slug: "halogen-displacement-br-i",
+    related: ["igcse-0620-8-2-groups", "igcse-0620-6-4-redox", "chem-atomic-004"],
+    syllabus: {
+      pep: ["pep-che-s1/ch4"],
+      igcse: ["0620/8.3", "0620/6.4"],
+    },
     title: { zh: "溴置换碘", en: "Bromine Displacing Iodine" },
     description: {
       zh: "向碘化钾溶液中加入溴水，置换出碘并以淀粉显蓝验证，比较溴碘氧化性。",
@@ -107,6 +127,11 @@ export const redoxExperiments: LabExperiment[] = [
   },
   {
     slug: "iodine-starch",
+    related: ["igcse-0620-12-5-tests", "igcse-0620-6-4-redox"],
+    syllabus: {
+      pep: ["pep-che-s1/ch2"],
+      igcse: ["0620/12.5", "0620/6.4"],
+    },
     title: { zh: "碘与淀粉显色", en: "The Iodine–Starch Colour Reaction" },
     description: {
       zh: "观察碘单质遇淀粉变蓝的特征反应，用于碘的检验与碘量法终点判断。",
@@ -131,6 +156,11 @@ export const redoxExperiments: LabExperiment[] = [
   },
   {
     slug: "so2-bromine-water",
+    related: ["igcse-0620-6-4-redox", "igcse-0620-10-3-air-and-climate"],
+    syllabus: {
+      pep: ["pep-che-s2/ch1"],
+      igcse: ["0620/6.4"],
+    },
     title: { zh: "二氧化硫使溴水褪色", en: "Sulfur Dioxide Decolourising Bromine Water" },
     description: {
       zh: "将二氧化硫通入溴水，橙色褪去，验证二氧化硫的还原性而非漂白性。",
@@ -155,6 +185,11 @@ export const redoxExperiments: LabExperiment[] = [
   },
   {
     slug: "h2o2-ki-catalysis",
+    related: ["chem-energetics-002", "chem-gas-001", "igcse-0620-6-2-rate-of-reaction"],
+    syllabus: {
+      pep: ["pep-che-j9a/ch2"],
+      igcse: ["0620/6.2"],
+    },
     title: { zh: "碘离子催化过氧化氢分解", en: "Iodide Ions Catalysing the Decomposition of Hydrogen Peroxide" },
     description: {
       zh: "以碘化钾催化过氧化氢分解放出氧气，观察催化剂在反应前后不变。",
@@ -179,6 +214,11 @@ export const redoxExperiments: LabExperiment[] = [
   },
   {
     slug: "copper-nitric-acid",
+    related: ["igcse-0620-6-4-redox", "igcse-0620-9-4-reactivity-series"],
+    syllabus: {
+      pep: ["pep-che-s1/ch1"],
+      igcse: ["0620/6.4", "0620/9.1"],
+    },
     title: { zh: "铜与硝酸反应", en: "Copper Reacting with Nitric Acid" },
     description: {
       zh: "铜与稀硝酸反应生成蓝色溶液并放出气体，认识硝酸的强氧化性（通风操作）。",
@@ -203,6 +243,11 @@ export const redoxExperiments: LabExperiment[] = [
   },
   {
     slug: "fe3-reduction-by-iron",
+    related: ["igcse-0620-6-4-redox", "chem-metal-001"],
+    syllabus: {
+      pep: ["pep-che-s1/ch3"],
+      igcse: ["0620/6.4"],
+    },
     title: { zh: "铁还原铁(III)离子", en: "Iron Reducing Iron(III) Ions" },
     description: {
       zh: "向氯化铁溶液中加入铁粉，棕黄色变浅绿，验证铁把三价铁还原为二价铁。",
@@ -227,6 +272,11 @@ export const redoxExperiments: LabExperiment[] = [
   },
   {
     slug: "kmno4-ethanol",
+    related: ["igcse-0620-6-4-redox", "igcse-0620-11-6-alcohols-acids"],
+    syllabus: {
+      pep: ["pep-che-s2/ch3"],
+      igcse: ["0620/6.4", "0620/11.6"],
+    },
     title: { zh: "高锰酸钾氧化乙醇", en: "Potassium Manganate(VII) Oxidising Ethanol" },
     description: {
       zh: "酸性高锰酸钾氧化乙醇紫红色褪去，认识醇的还原性与氧化产物。",
@@ -251,6 +301,11 @@ export const redoxExperiments: LabExperiment[] = [
   },
   {
     slug: "iodine-clock",
+    related: ["chem-energetics-002", "igcse-0620-6-2-rate-of-reaction", "igcse-0620-6-4-redox"],
+    syllabus: {
+      pep: ["pep-che-s2/ch2"],
+      igcse: ["0620/6.2", "0620/6.4"],
+    },
     title: { zh: "碘钟反应", en: "The Iodine Clock Reaction" },
     description: {
       zh: "混合碘酸盐与还原剂体系，经一段诱导期后溶液骤然变蓝，认识反应速率与振荡现象。",
@@ -275,6 +330,11 @@ export const redoxExperiments: LabExperiment[] = [
   },
   {
     slug: "chlorine-bleaching",
+    related: ["igcse-0620-8-2-groups", "igcse-0620-6-4-redox"],
+    syllabus: {
+      pep: ["pep-che-s1/ch2"],
+      igcse: ["0620/8.3"],
+    },
     title: { zh: "氯水的漂白作用", en: "The Bleaching Action of Chlorine Water" },
     description: {
       zh: "用氯水使有色布条或品红褪色，认识次氯酸的强氧化性与漂白原理。",
@@ -298,6 +358,11 @@ export const redoxExperiments: LabExperiment[] = [
   },
   {
     slug: "fe2-fe3-conversion",
+    related: ["igcse-0620-6-4-redox", "chem-metal-001", "igcse-0620-12-5-tests"],
+    syllabus: {
+      pep: ["pep-che-s1/ch3"],
+      igcse: ["0620/6.4", "0620/12.5"],
+    },
     title: { zh: "铁的两种价态相互转化", en: "Interconversion of the Two Oxidation States of Iron" },
     description: {
       zh: "用氯水把亚铁离子氧化为铁离子、用铁粉把铁离子还原为亚铁，认识变价金属。",

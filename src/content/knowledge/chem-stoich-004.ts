@@ -19,6 +19,16 @@ export const chemStoich004: KnowledgePoint = {
   },
   theory: {
     zh: [
+      { type: 'heading', text: '学习目标' },
+      {
+        type: 'list',
+        items: [
+          '理解化学方程式中各物质的质量比是固定的，能由一种物质的质量按比例求其他物质的质量。',
+          '按"设、写、标、列、解、答"的步骤规范完成根据化学方程式的计算。',
+          '说出物质的量、摩尔质量、阿伏加德罗常数的含义，并用 n = m / M 进行换算。',
+          '知道化学计量数之比等于物质的量之比，能用摩尔简化计算。',
+        ],
+      },
       { type: 'heading', text: '计算的依据：方程式中的质量比' },
       {
         type: 'paragraph',
@@ -54,8 +64,29 @@ export const chemStoich004: KnowledgePoint = {
         latex: 'n = \\frac{m}{M}',
         caption: '物质的量（mol）= 质量（g）÷ 摩尔质量（g/mol）。如 36 g 水的物质的量为 36 ÷ 18 = 2 mol',
       },
+      { type: 'heading', text: '术语表' },
+      {
+        type: 'list',
+        items: [
+          'stoichiometry（化学计量）：根据配平的化学方程式研究各物质之间定量关系的计算。',
+          'amount of substance（物质的量）：联系宏观质量与微观粒子数目的物理量，符号 n，单位是摩尔。',
+          'mole（摩尔）：物质的量的单位；1 mol 任何粒子集体约含 6.02×10²³ 个粒子。',
+          'Avogadro constant（阿伏加德罗常数）：1 mol 粒子所含的粒子数，符号 Nᴀ，约为 6.02×10²³ mol⁻¹。',
+          'molar mass（摩尔质量）：单位物质的量的物质所具有的质量，符号 M，单位 g/mol，数值上等于相对分子质量。',
+        ],
+      },
     ],
     en: [
+      { type: 'heading', text: 'Learning objectives' },
+      {
+        type: 'list',
+        items: [
+          'Explain why the mass ratios in a chemical equation are fixed, and find unknown masses by proportion.',
+          'Carry out equation calculations in clear steps: define, write, mark, proportion, solve, answer.',
+          'Define amount of substance, molar mass and the Avogadro constant, and convert using n = m / M.',
+          'Use the fact that the coefficient ratio equals the mole ratio to simplify calculations.',
+        ],
+      },
       { type: 'heading', text: 'The basis: fixed mass ratios in an equation' },
       {
         type: 'paragraph',
@@ -90,6 +121,17 @@ export const chemStoich004: KnowledgePoint = {
         type: 'formula',
         latex: 'n = \\frac{m}{M}',
         caption: 'Amount (mol) = mass (g) ÷ molar mass (g/mol). For example, 36 g of water is 36 ÷ 18 = 2 mol.',
+      },
+      { type: 'heading', text: 'Glossary' },
+      {
+        type: 'list',
+        items: [
+          'stoichiometry（化学计量）: calculation of the quantitative relationships between substances using a balanced equation.',
+          'amount of substance（物质的量）: the quantity linking mass to the number of particles; symbol n, unit the mole.',
+          'mole（摩尔）: the unit of amount of substance; one mole contains about 6.02×10²³ particles.',
+          'Avogadro constant（阿伏加德罗常数）: the number of particles in one mole, symbol Nᴀ, about 6.02×10²³ mol⁻¹.',
+          'molar mass（摩尔质量）: the mass of one mole of a substance; symbol M, unit g/mol, numerically equal to the relative formula mass.',
+        ],
       },
     ],
   },
@@ -153,4 +195,59 @@ export const chemStoich004: KnowledgePoint = {
       },
     },
   ],
+  examPractice: [
+    {
+      id: 'chem-stoich-004-cp1',
+      syllabus: ['0620/3.2.3'],
+      tier: 'core',
+      commandWord: 'Calculate',
+      marks: 3,
+      stem: 'Hydrogen burns in oxygen: 2H₂ + O₂ → 2H₂O. Calculate the mass of oxygen needed to burn 8 g of hydrogen completely, and the mass of water formed. (Ar: H = 1, O = 16.)',
+      markScheme: [
+        { text: 'Mass ratio H₂ : O₂ : H₂O = 4 : 32 : 36 (from Mr × coefficient)', marks: 1 },
+        { text: 'Mass of oxygen = 8 × 32 / 4 = 64 g', marks: 1 },
+        { text: 'Mass of water = 8 × 36 / 4 = 72 g (or 8 + 64 by conservation of mass)', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '质量比必须乘上化学计量数：是 4 : 32 : 36，不是 2 : 1 : 2。最后一问用质量守恒（8 + 64）检验答案是个好习惯。',
+        en: 'The mass ratio uses Mr × coefficient: it is 4 : 32 : 36, not 2 : 1 : 2. Checking the last answer by conservation of mass (8 + 64) is a good habit.',
+      },
+    },
+    {
+      id: 'chem-stoich-004-cp2',
+      syllabus: ['0620/3.3.3', '0620/3.3.5'],
+      tier: 'supplement',
+      commandWord: 'Calculate',
+      marks: 4,
+      stem: 'Calcium carbonate decomposes on heating: CaCO₃ → CaO + CO₂. Calculate the mass of calcium oxide produced when 50 g of calcium carbonate is fully decomposed. (Ar: C = 12, O = 16, Ca = 40.)',
+      markScheme: [
+        { text: 'Mr(CaCO₃) = 40 + 12 + 48 = 100', marks: 1 },
+        { text: 'Moles of CaCO₃ = 50 / 100 = 0.50 mol', marks: 1 },
+        { text: 'The equation is 1 : 1, so 0.50 mol of CaO is formed', marks: 1 },
+        { text: 'Mr(CaO) = 56, so mass = 0.50 × 56 = 28 g', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '四步各一分：算式量、算物质的量、按比例换算、算质量。这样列式能让"按比例"这一步显现出来，而不是被默认跳过。',
+        en: 'Four steps, one mark each: Mr in, moles in, ratio across, mass out. Setting the calculation out that way makes the ratio step visible instead of assumed.',
+      },
+    },
+    {
+      id: 'chem-stoich-004-cp3',
+      syllabus: ['0620/3.3.4', '0620/3.3.5'],
+      tier: 'supplement',
+      commandWord: 'Calculate',
+      marks: 3,
+      stem: 'Zinc reacts with excess hydrochloric acid: Zn + 2HCl → ZnCl₂ + H₂. Calculate the volume of hydrogen, measured at r.t.p., produced when 6.5 g of zinc reacts completely. (Ar: Zn = 65; molar gas volume = 24 dm³ at r.t.p.)',
+      markScheme: [
+        { text: 'Moles of Zn = 6.5 / 65 = 0.10 mol', marks: 1 },
+        { text: 'The ratio is 1 : 1, so 0.10 mol of H₂ is produced', marks: 1 },
+        { text: 'Volume = 0.10 × 24 = 2.4 dm³', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '"盐酸过量"意味着锌是限量反应物，直接从锌的物质的量算起，无需核对盐酸。',
+        en: '"Excess hydrochloric acid" tells you zinc is the limiting reactant, so work straight from the moles of zinc — there is no need to check the acid.',
+      },
+    },
+  ],
+  related: ['igcse-0620-3-3-moles', 'igcse-0620-3-1-formulae-equations', 'chem-stoich-001', 'chem-stoich-003'],
 };

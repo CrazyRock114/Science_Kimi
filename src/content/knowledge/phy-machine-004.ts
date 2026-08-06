@@ -274,4 +274,57 @@ export const phyMachine004: KnowledgePoint = {
       tolerance: 1e-4,
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '盘山公路为什么不修成一条直线直通山顶？因为绕着山坡慢慢爬，路虽然远了，却省力得多。斜面，就是人类最早使用的省力机械——这节课我们不但要看懂它怎么省力，还要算清它“浪费”了多少功。',
+          en: 'Why doesn\'t a mountain road run straight up the slope? Because winding up the hill is a longer journey but a much easier push. The inclined plane is one of humanity\'s oldest force-saving machines — and in this lesson we\'ll not only see how it saves force, but also account for the work it wastes.',
+        },
+      },
+      {
+        id: 'concept-incline',
+        kind: 'concept',
+        text: {
+          zh: '沿斜面把物体匀速拉上去，只需要克服重力沿斜面的分力 mg·sinθ，比直接竖直抬省劲。但别高兴太早：斜面越缓，走的距离越长。光滑斜面上拉力做的功 F·L 恰好等于直接把物体抬高的功 mg·h——省力不省功，任何机械都省不了功。',
+          en: 'Pulling an object steadily up an incline only requires overcoming the component of gravity along the slope, mg·sinθ — much easier than lifting it straight up. But don\'t celebrate too early: the gentler the slope, the longer the pull. On a frictionless incline the work F·L exactly equals the work of lifting directly, mg·h — saving force never saves work, and no machine can save work.',
+        },
+      },
+      {
+        id: 'concept-efficiency',
+        kind: 'concept',
+        text: {
+          zh: '有了摩擦，拉力做的总功就分成两份：一份是把物体抬高的有用功 mgh，一份是克服摩擦的额外功。有用功占总功的比例，就是机械效率。因为额外功无法避免，机械效率永远小于百分之百。',
+          en: 'Once friction enters, the total work of the pulling force splits into two parts: the useful work mgh that raises the object, and the extra work wasted against friction. The share of useful work in the total is the mechanical efficiency. Since the extra work can never be avoided, efficiency is always below one hundred percent.',
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '打开仿真。先点“光滑斜面”：μ 为零，效率百分之百，物块一放就自己滑下来。再点“粗糙斜面：静止”：倾角 15°、μ 0.5，摩擦力足够大，物块稳稳地停在斜面上。切到“粗糙斜面：下滑”：45° 时沿斜面的分力压过了摩擦力，物块加速下滑。现在轮到你了：把角度固定在 30°，慢慢调大 μ，看机械效率从百分之百一路往下掉；再固定 μ 调角度，体会“越陡效率越高，但拉力也越大”这对矛盾。',
+          en: 'Open the simulation. Start with the "frictionless incline" preset: μ is zero, efficiency is one hundred percent, and the block slides down by itself. Then "rough incline: at rest": at 15° with μ of 0.5, friction is strong enough to hold the block still. Switch to "rough incline: sliding": at 45° the component along the slope overpowers friction and the block accelerates down. Now it\'s your turn: fix the angle at 30° and slowly raise μ, watching the efficiency fall away from 100%; then fix μ and vary the angle to feel the trade-off — steeper means more efficient, but harder to pull.',
+        },
+      },
+      {
+        id: 'concept-factors',
+        kind: 'concept',
+        text: {
+          zh: '规律收拢一下：斜面越光滑，额外功越少，效率越高；提升同一高度，斜面越陡，效率越高，但也越费力。想让物块自己滑下来？让 tanθ 大过 μ 就行——这就是为什么陡坡上放个箱子要自己当心。',
+          en: 'Let\'s gather the rules: a smoother incline wastes less work and is more efficient; for the same height, a steeper incline is more efficient but harder to pull. Want the block to slide by itself? Just make tan θ larger than μ — which is exactly why you should think twice before parking a box on a steep slope.',
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '回顾一下：斜面靠加长距离来省力；总功等于有用功加额外功；机械效率等于有用功除以总功，永远小于百分之百。后面的小测会请你亲手算一台斜面的效率——去试试。',
+          en: 'To recap: an incline saves force by stretching the distance; total work equals useful work plus extra work; efficiency is the useful work over the total, and it never reaches one hundred percent. The quiz will ask you to compute the efficiency of an incline yourself — give it a go.',
+        },
+      },
+    ],
+  },
+  related: ['phy-machine-001', 'phy-machine-002', 'igcse-0625-1-7-energy', 'phy-force-004'],
 };

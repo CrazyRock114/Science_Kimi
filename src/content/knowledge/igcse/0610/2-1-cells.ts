@@ -75,8 +75,36 @@ export const kp21Cells: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "从一个细胞到一个个体"
+      },
+      {
         "type": "paragraph",
-        "text": "植物细胞并不是\"动物细胞加几样东西\"。把结构分一分类就会发现，大多数结构每种细胞都有——而细菌的特征恰恰在于它缺什么。"
+        "text": "新细胞只能由已有细胞分裂而来。随着生物体生长，它的大多数细胞会特化——形成适合某一项工作的形状与内含物，例如根毛细胞、红细胞或纤毛细胞。"
+      },
+      {
+        "type": "paragraph",
+        "text": "接着层次叠加：组织是一群结构相似、共同工作的细胞；器官是若干组织为同一项功能共同工作；器官系统是若干器官共同工作；个体则是整体。"
+      },
+      {
+        "type": "paragraph",
+        "text": "把一个例子从头到尾记一遍，这些定义就不再抽象了：肌细胞、肌肉组织、胃、消化系统、人。"
+      },
+      {
+        "type": "heading",
+        "text": "放大倍数，以及其中的陷阱"
+      },
+      {
+        "type": "paragraph",
+        "text": "放大倍数等于图像大小除以实际大小。按题目需要变形即可：实际大小 = 图像大小 ÷ 放大倍数。"
+      },
+      {
+        "type": "paragraph",
+        "text": "陷阱在于单位。你用尺子量出的图像大小是毫米，而实际大小常以微米给出。1 毫米 = 1000 微米——所以要在做除法之前换算，而不是之后。"
+      },
+      {
+        "type": "paragraph",
+        "text": "而且放大倍数没有单位。它是长度除以长度，单位相互抵消。写成\"×400 mm\"是错的；数字后面什么都不写才是对的。"
       },
       {
         "type": "formula",
@@ -117,8 +145,36 @@ export const kp21Cells: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "From one cell to an organism"
+      },
+      {
         "type": "paragraph",
-        "text": "A plant cell is not an animal cell with extras. Sort the structures and most of them turn out to be in every cell — a bacterium is defined by what it lacks."
+        "text": "New cells only ever come from the division of existing cells. And as an organism grows, most of its cells specialise — they take on a shape and a set of contents suited to one job, like a root hair cell, a red blood cell or a ciliated cell."
+      },
+      {
+        "type": "paragraph",
+        "text": "Then the levels stack. A tissue is a group of cells of similar structure working together. An organ is several tissues working together for one function. An organ system is several organs working together. An organism is the whole thing."
+      },
+      {
+        "type": "paragraph",
+        "text": "Learn one example the whole way up and the definitions stop being abstract. Muscle cell, muscle tissue, the stomach, the digestive system, a human."
+      },
+      {
+        "type": "heading",
+        "text": "Magnification, and the trap in it"
+      },
+      {
+        "type": "paragraph",
+        "text": "Magnification is image size divided by actual size. Rearrange it however the question needs: actual size is image size divided by magnification."
+      },
+      {
+        "type": "paragraph",
+        "text": "The trap is units. Measure the image in millimetres with a ruler, and the actual size will often be given in micrometres. A thousand micrometres in a millimetre — so convert before you divide, not after."
+      },
+      {
+        "type": "paragraph",
+        "text": "And magnification has no unit at all. It is a length divided by a length, so the units cancel. Writing \"× 400 mm\" is wrong, and writing nothing after the number is right."
       },
       {
         "type": "formula",

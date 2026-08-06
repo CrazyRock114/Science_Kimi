@@ -42,6 +42,8 @@ export default {
       quiz: '随堂小测',
       examPractice: '考试真题演练',
       syllabusTags: '考纲与教材',
+      relatedLessons: '相关课程',
+      relatedExperiments: '相关实验',
     },
     exam: {
       check: '查看答案',
@@ -51,6 +53,9 @@ export default {
       alsoAccept: '也接受',
       examinerNote: '考官点评',
       marks: '{{count}} 分',
+      selfAssessPrompt: '对照评分标准自评：',
+      selfCorrect: '我答对了',
+      selfWrong: '我答错了',
       tier: {
         core: 'Core',
         supplement: 'Supplement',
@@ -79,6 +84,7 @@ export default {
       experimentCount: '共 {{count}} 个实验',
       minutes: '约 {{minutes}} 分钟',
       backToList: '返回实验列表',
+      relatedKnowledgePoints: '相关知识点',
       reagents: '试剂架',
       apparatus: '实验仪器',
       objectives: '实验目标',

@@ -101,10 +101,6 @@ export const kp71Nutrition: KnowledgePoint = {
         ]
       },
       {
-        "type": "paragraph",
-        "text": "消化道是一根贯穿全身、两端开口的管道。其中的东西在穿过管壁之前都不属于你——消化的存在，正是为了让这次穿越成为可能。"
-      },
-      {
         "type": "heading",
         "text": "术语表"
       },
@@ -144,10 +140,6 @@ export const kp71Nutrition: KnowledgePoint = {
           "Explain the role of bile in emulsifying fats and in neutralising stomach acid. (Extended)",
           "Explain how villi and microvilli increase the absorbing surface area, and describe the structure of a villus. (Extended)"
         ]
-      },
-      {
-        "type": "paragraph",
-        "text": "The gut is a tube running through you, open at both ends. Nothing in it is yours until it has crossed the wall — and digestion exists to make that crossing possible."
       },
       {
         "type": "heading",

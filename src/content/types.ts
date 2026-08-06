@@ -3,8 +3,8 @@
  * 知识点是声明式数据对象，由统一渲染引擎（components/knowledge）驱动。
  */
 
-import type { MmxSimulation } from '../simulations/mmx/types';
-import type { LessonExtra } from '../components/lesson-extras/types';
+import type { MmxSimulation } from './sim-spec';
+import type { LessonExtra } from './extras-types';
 
 export type Lang = 'zh' | 'en';
 
@@ -245,4 +245,6 @@ export interface KnowledgePoint {
    * IGCSE_miniMax lesson-extras），渲染在仿真区之后；纯 JSON 数据。
    */
   extras?: LessonExtra[];
+  /** 相关知识点 id 列表（页底"相关课程"互链；id 须能解析到现有知识点） */
+  related?: string[];
 }

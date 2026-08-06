@@ -236,4 +236,49 @@ export const phyThermal002: KnowledgePoint = {
       expected: { pressure: 2.545795667746887, pv: 1.2728978338734436 },
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '给自行车打气时，你把打气筒的出气口堵住再往下压，越压越费劲——筒里的空气在“反抗”。这股反抗的力就是气体压强。它从哪儿来？又遵循什么规律？这节课我们从分子的视角把压强看个明白。',
+          en: 'Pump up a bicycle tyre with the outlet blocked and the plunger fights back harder and harder as you push — the trapped air is resisting. That resistance is gas pressure. Where does it come from, and what rules does it follow? In this lesson we look at pressure from the molecules’ point of view.',
+        },
+      },
+      {
+        id: 'concept-microscopic',
+        kind: 'concept',
+        text: {
+          zh: '从微观看，气体是无数不停乱跑的分子，它们没完没了地撞在容器壁上，每撞一下就给器壁一个小小的推力，无数次撞击平均下来，就是我们测到的压强。所以有两条路能让压强变大：把气体压进更小的空间，分子更密、撞得更勤；或者升高温度，分子跑得更快、撞得更狠。',
+          en: 'Microscopically, a gas is a swarm of molecules in constant random motion, hammering the container walls endlessly. Each collision gives the wall a tiny push, and the average of countless collisions is the pressure we measure. So there are two ways to raise it: squeeze the gas into a smaller volume so the molecules crowd together and collide more often, or heat it so the molecules move faster and hit harder.',
+        },
+      },
+      {
+        id: 'concept-boyle',
+        kind: 'concept',
+        text: {
+          zh: '温度不变时，压强和体积的关系特别干净：体积减半，压强加倍——压强乘体积是个常数，这就是玻意耳定律，p₁V₁ 等于 p₂V₂。但要注意温度的那条路：压强跟热力学温度成正比，单位是开尔文，不是摄氏度。从 20 度加热到 100 度，压强可不是翻 5 倍，而是按 373 比 293 来算，只增大到约 1.27 倍。',
+          en: 'At constant temperature, the pressure–volume relationship is beautifully simple: halve the volume and the pressure doubles — pressure times volume stays constant. That is Boyle’s law, p₁V₁ equals p₂V₂. But watch the temperature route: pressure is proportional to the absolute temperature in kelvin, not Celsius. Heating from 20 to 100 degrees does not multiply the pressure by five; it rises by the ratio 373 to 293, about 1.27 times.',
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '轮到你了。先把温度固定在 20 度，把体积滑块从 1 慢慢压到 0.5，盯着压强读数——它应该正好翻倍到 2 个大气压，而 pV 乘积纹丝不动。再把体积拉回 1，把温度升到 100 度，看压强只涨到约 1.27。最后试试“压缩一半并升温”预设：两个因素叠加，压强冲到约 2.55 倍，想想为什么是 2 乘 1.27。',
+          en: 'Now it’s your turn. Hold the temperature at 20 degrees and drag the volume slider from 1 down to 0.5 — watch the pressure reading double to exactly 2 atmospheres while the pV product stays rock steady. Then return the volume to 1, raise the temperature to 100 degrees, and see the pressure climb only to about 1.27. Finally try the “Compress to half and heat” preset: both effects stack, pushing the pressure to about 2.55 times — can you see why that is 2 times 1.27?',
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '回顾一下：气体压强来自分子对器壁的持续撞击；温度不变时 p 与 V 成反比，pV 是常数；体积不变时 p 与热力学温度 T 成正比，摄氏温度必须先加 273.15 换算成开尔文。掌握这两条，下面的计算题就难不倒你了。',
+          en: 'Let’s recap: gas pressure comes from molecules bombarding the container walls; at constant temperature p and V are inversely proportional with pV constant; at constant volume p is proportional to the absolute temperature T, so Celsius readings must first be converted to kelvin by adding 273.15. With these two rules in hand, the calculations below should give you no trouble.',
+        },
+      },
+    ],
+  },
+  related: ['phy-thermal-001', 'phy-pressure-001', 'igcse-0625-2-1-gas-particles', 'igcse-0625-2-2-thermal-properties'],
 };

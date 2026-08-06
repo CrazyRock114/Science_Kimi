@@ -71,8 +71,40 @@ export const kp62RateOfReaction: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "斜率就是速率"
+      },
+      {
         "type": "paragraph",
-        "text": "加热、研磨、加催化剂——曲线更陡，终点却相同。只有限量反应物能改变平台高度。"
+        "text": "反应速率就是这条曲线的斜率。测初始速率的方法是在原点处画切线并求其斜率——这是标准的考试技巧。"
+      },
+      {
+        "type": "paragraph",
+        "text": "现在把温度升到四十五度。曲线陡峭得多。灰色参照线是原来的实验，可以清楚看出快了多少。"
+      },
+      {
+        "type": "paragraph",
+        "text": "但看它最终停在哪里——和之前完全相同的气体体积。加热让反应更快，但并没有产生更多二氧化碳。"
+      },
+      {
+        "type": "heading",
+        "text": "各因素为何有效"
+      },
+      {
+        "type": "paragraph",
+        "text": "碰撞理论能解释这一切。反应发生的条件是：粒子相互碰撞、能量足够（至少达到活化能）、且取向合适。"
+      },
+      {
+        "type": "paragraph",
+        "text": "温度升高使粒子动能增大，碰撞更频繁，*而且*能量足够的碰撞比例更大。第二点正是加热效果如此显著的原因。"
+      },
+      {
+        "type": "paragraph",
+        "text": "把大理石磨成粉末暴露出多得多的表面，酸能同时接触更多部分。大理石总量不变，但可发生碰撞的位置多得多。"
+      },
+      {
+        "type": "paragraph",
+        "text": "催化剂的作用方式不同。它提供活化能更低的途径，使更大比例的碰撞成功。而且反应结束时催化剂化学性质不变——可以全部回收。"
       },
       {
         "type": "formula",
@@ -114,8 +146,40 @@ export const kp62RateOfReaction: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Gradient is the rate"
+      },
+      {
         "type": "paragraph",
-        "text": "Heat it, grind it, add a catalyst — the curve gets steeper but ends in the same place. Only the limiting reactant moves the plateau."
+        "text": "The rate of reaction is the gradient of this curve. To measure the initial rate, draw a tangent at the origin and find its slope — that is the standard exam technique."
+      },
+      {
+        "type": "paragraph",
+        "text": "Now raise the temperature to forty-five degrees. The curve shoots up far more steeply. The grey reference line is the original run, so you can see exactly how much faster it got."
+      },
+      {
+        "type": "paragraph",
+        "text": "But look where it ends up. Exactly the same volume of gas as before. Heating the flask made the reaction faster; it did not make any more carbon dioxide."
+      },
+      {
+        "type": "heading",
+        "text": "Why each factor works"
+      },
+      {
+        "type": "paragraph",
+        "text": "Collision theory explains all of it. A reaction happens when particles collide with enough energy — at least the activation energy — and in the right orientation."
+      },
+      {
+        "type": "paragraph",
+        "text": "Higher temperature gives the particles more kinetic energy, so they collide more often *and* a greater fraction of collisions has enough energy. That second part is why heating has such a large effect."
+      },
+      {
+        "type": "paragraph",
+        "text": "Grinding the marble into powder exposes far more surface, so the acid can reach more of it at once. Same amount of marble, many more places for collisions to happen."
+      },
+      {
+        "type": "paragraph",
+        "text": "A catalyst works differently. It provides a route with a lower activation energy, so a larger fraction of collisions succeeds. And it is chemically unchanged at the end — you get it all back."
       },
       {
         "type": "formula",

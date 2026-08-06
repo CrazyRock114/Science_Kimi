@@ -74,8 +74,24 @@ export const kp42CurrentPower: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "两个量，单位都是伏特"
+      },
+      {
         "type": "paragraph",
-        "text": "千瓦时的名称里带着功率单位，它却不是功率。它是\"1 千瓦持续 1 小时\"——速率乘以时间，得到的是总量。"
+        "text": "电动势是电源驱动单位电荷绕完整回路一周所做的功：E = W/Q。尽管名称中有\"力\"字，它的单位是伏特——这是历史遗留的叫法。"
+      },
+      {
+        "type": "paragraph",
+        "text": "电势差是单位电荷通过某个元件时所做的功：V = W/Q。单位同样是伏特。两个式子看起来完全一样，区别全在于\"功\"是在做什么。"
+      },
+      {
+        "type": "paragraph",
+        "text": "清晰区分它们的办法是：电动势是电源每库仑电荷\"输入\"的能量；电势差是元件上每库仑电荷\"输出\"的能量。电池提供电动势；灯泡两端存在电势差。"
+      },
+      {
+        "type": "paragraph",
+        "text": "1 伏特就是 1 焦耳每库仑。12 伏电池给每一库仑绕行一周的电荷 12 焦耳的能量。这样理解单位，两个公式就变得显而易见，而不再是硬记的规定。"
       },
       {
         "type": "formula",
@@ -124,8 +140,24 @@ export const kp42CurrentPower: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Two quantities, both in volts"
+      },
+      {
         "type": "paragraph",
-        "text": "A kilowatt-hour has a power unit in its name and is not a power. It is a kilowatt for an hour — a rate times a time, which is an amount."
+        "text": "Electromotive force is the work done by a source in driving a unit charge round a complete circuit: E equals W over Q. It is measured in volts, despite the word \"force\" in its name, which is a historical accident."
+      },
+      {
+        "type": "paragraph",
+        "text": "Potential difference is the work done by a unit charge passing through a component: V equals W over Q. Also volts. The two look identical as equations, and the difference is entirely in what the work is doing."
+      },
+      {
+        "type": "paragraph",
+        "text": "The clean way to hold them apart: e.m.f. is energy going in, per coulomb, from the source. Potential difference is energy coming out, per coulomb, at a component. A cell supplies e.m.f.; a lamp has a p.d. across it."
+      },
+      {
+        "type": "paragraph",
+        "text": "And a volt is a joule per coulomb. A twelve-volt battery gives twelve joules to every coulomb that goes round. That reading of the unit makes both equations obvious rather than arbitrary."
       },
       {
         "type": "formula",

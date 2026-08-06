@@ -28,7 +28,8 @@ npm run check:coverage # IGCSE 考纲覆盖度报告
 
 - **Localized 双语必填**：所有面向学生的文本都是 `{ zh, en }` 两个字段，缺一测试即失败；不要只写一种语言"以后再补"。
 - **探针（expectedResults）**：知识点/实验声明「输入 → 预期数值/现象」，`src/test/probes.test.ts` 与 `src/content/lab/probe.test.ts` 自动遍历断言。新增带仿真的知识点必须写探针；改内核数值行为必须同步更新探针预期。
-- **生成文件勿手改**（重跑即覆盖）：`src/content/knowledge/metas.ts`、`src/content/knowledge/igcse/`、`src/content/knowledge/igcse-src/`、`src/simulations/igcse-kernels/`。上游 IGCSE_miniMax 在 `.reference/`（gitignored，需自行 clone）。
+- **生成文件勿手改**（重跑即覆盖）：`src/content/knowledge/metas.ts`、`src/content/knowledge/igcse/`、`src/content/knowledge/igcse-src/`、`src/simulations/igcse-kernels/`、`src/content/extras-types.ts`（port-mmx-extras.mjs 生成；`components/lesson-extras/types.ts` 只是它的 re-export 垫片）。上游 IGCSE_miniMax 在 `.reference/`（gitignored，需自行 clone）。
+- **mmx 仿真类型单源**：结果/参数类型（SimResult、ParamSpec、Bilingual……）唯一定义在 `simulations/igcse-kernels/types.ts`；规格类型（SimSpec、MmxSimulation、SimPrimitive 清单……）在 `content/sim-spec.ts`；`simulations/mmx/types.ts` 只做 re-export。新增基元时 `IMPLEMENTED_PRIMITIVES`（content/sim-spec.ts）与 SimStage 的 switch 两处同步。
 - **考纲引用格式**：人教版 `"册id/章id"`（如 `pep-che-j9b/ch3`，见 `content/syllabus/pep.ts`）；IGCSE topic `"0625/1.2"`、statement `"0625/1.2.6"`（见 `content/syllabus/igcse.ts` 与 `igcse-statements.ts`）。引用必须可解析，测试会校验。
 - **分层依赖**：content 层（数据）不依赖 components/simulations 的 UI 代码；仿真组件只经 registry 引用。
 - **console**：业务代码禁 `console.log/info`（ESLint error），告警用 `console.warn/error`；CLI 脚本（scripts/、server/）不受限。

@@ -79,8 +79,36 @@ export const kp71AcidsBases: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "pH 值"
+      },
+      {
         "type": "paragraph",
-        "text": "并排滴定强酸与弱酸。浓度相同，pH 却大不相同——因为\"强\"和\"浓\"不是一回事。"
+        "text": "pH 衡量氢离子浓度。小于七为酸性，等于七为中性，大于七为碱性。每变化一个单位，浓度相差十倍——pH 三比 pH 四酸性强十倍。"
+      },
+      {
+        "type": "paragraph",
+        "text": "蓝色曲线是用氢氧化钠滴定盐酸。它从 pH 一开始，很长一段几乎不变，随后近乎垂直地跃升，然后再次趋平。"
+      },
+      {
+        "type": "paragraph",
+        "text": "那段近乎垂直的部分就是滴定终点，也是滴定法有效的原因。一滴之差就能从酸性跨到碱性，指示剂颜色骤变，体积便可精确读出。"
+      },
+      {
+        "type": "heading",
+        "text": "曲线中的两条线索"
+      },
+      {
+        "type": "paragraph",
+        "text": "对比两条曲线还有两点不同。第一，弱酸的等当点在 pH 七以上，而不是正好七——因为它生成的盐略呈碱性。"
+      },
+      {
+        "type": "paragraph",
+        "text": "第二，弱酸的垂直跃升更短。这在实践中很重要：它限制了可用的指示剂，因为指示剂必须在这段跃升范围内变色。"
+      },
+      {
+        "type": "paragraph",
+        "text": "现在把滴定管中碱的浓度加倍。等当点体积减半——中和同样的酸只需一半的量。"
       },
       {
         "type": "formula",
@@ -130,8 +158,36 @@ export const kp71AcidsBases: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "The pH scale"
+      },
+      {
         "type": "paragraph",
-        "text": "Titrate a strong and a weak acid side by side. Same concentration, very different pH — because \"strong\" and \"concentrated\" are not the same thing."
+        "text": "pH measures hydrogen ion concentration. Below seven is acidic, seven is neutral, above seven is alkaline. Each step of one on the scale is a factor of ten in concentration — pH three is ten times more acidic than pH four."
+      },
+      {
+        "type": "paragraph",
+        "text": "The blue curve is hydrochloric acid being titrated with sodium hydroxide. It starts at pH one, barely moves for a long time, then leaps almost vertically before flattening out again."
+      },
+      {
+        "type": "paragraph",
+        "text": "That near-vertical section is the end-point, and it is why titration works. A single drop takes you from acidic to alkaline, so an indicator changes colour sharply and you can read the volume precisely."
+      },
+      {
+        "type": "heading",
+        "text": "Two clues in the curves"
+      },
+      {
+        "type": "paragraph",
+        "text": "Compare the two curves and there are two more differences. First, the weak acid ends up at an equivalence point above pH seven, not exactly at seven — because the salt it forms is slightly alkaline."
+      },
+      {
+        "type": "paragraph",
+        "text": "Second, the vertical jump is shorter for the weak acid. That matters practically: it limits which indicators will work, because the indicator must change colour inside that jump."
+      },
+      {
+        "type": "paragraph",
+        "text": "Now double the concentration of the alkali in the burette. The equivalence point halves — you need only half as much to neutralise the same acid."
       },
       {
         "type": "formula",

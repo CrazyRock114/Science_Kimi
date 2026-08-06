@@ -6,6 +6,9 @@
 import { describe, it, expect } from "vitest";
 import { allLabExperiments } from "./index";
 import { resolveSubstance } from "../../chem-engine/reagents";
+import { knowledgePointMetas } from "../knowledge";
+import { resolveIgcseRef } from "../syllabus/igcse";
+import { resolvePepRef } from "../syllabus/pep";
 
 describe("实验数据一致性", () => {
   it("每个 probe 的 reagentKeys 都能由该实验的 reagents 覆盖（化学式一致）", () => {
@@ -33,6 +36,21 @@ describe("实验数据一致性", () => {
       expect(e.objectives.zh.length).toBeGreaterThan(0);
       expect(e.objectives.en.length).toBeGreaterThan(0);
       expect(e.estimatedMinutes).toBeGreaterThan(0);
+    }
+  });
+
+  it("related 知识点 id 与 syllabus 考纲引用可解析", () => {
+    const kpIds = new Set(knowledgePointMetas.map((m) => m.id));
+    for (const e of allLabExperiments) {
+      for (const id of e.related ?? []) {
+        expect(kpIds.has(id), `${e.slug} related 引用了不存在的知识点: ${id}`).toBe(true);
+      }
+      for (const ref of e.syllabus?.igcse ?? []) {
+        expect(resolveIgcseRef(ref), `${e.slug} IGCSE 引用无法解析: ${ref}`).toBeDefined();
+      }
+      for (const ref of e.syllabus?.pep ?? []) {
+        expect(resolvePepRef(ref), `${e.slug} 人教版引用无法解析: ${ref}`).toBeDefined();
+      }
     }
   });
 });

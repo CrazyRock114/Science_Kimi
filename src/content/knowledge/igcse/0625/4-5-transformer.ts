@@ -66,8 +66,24 @@ export const kp45Transformer: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "为什么必须是交流电"
+      },
+      {
         "type": "paragraph",
-        "text": "把输电电压加倍，电缆中的损耗不是减半，而是降到四分之一。电流曲线与损耗曲线的形状明显不同，这个差别正是电网存在的全部理由。"
+        "text": "工作原理是这样的。原线圈中的交流电产生一个不断增强、消失、反向的磁场。软铁芯几乎把这个磁场全部导引到副线圈。"
+      },
+      {
+        "type": "paragraph",
+        "text": "副线圈此时处在一个不断变化的磁场中——而穿过线圈的磁场变化会产生感应电动势。于是副线圈两端出现同频率的交变电压，而没有一个电子从一个线圈跑到另一个线圈。"
+      },
+      {
+        "type": "paragraph",
+        "text": "这也立刻说明了变压器为什么不能用于直流。恒定电流产生恒定磁场，恒定磁场不是变化的磁场，副线圈中什么也感应不出来。把变压器接到电池上，只会在接通的一瞬间得到一个脉冲，之后一无所有。"
+      },
+      {
+        "type": "paragraph",
+        "text": "铁芯用软铁也是有原因的。软铁易于磁化也易于退磁，因此能跟上每秒反向五十次的磁场。钢会保留磁性，对抗每一次反向，把能量白白变成热。"
       },
       {
         "type": "formula",
@@ -116,8 +132,24 @@ export const kp45Transformer: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Why alternating current is essential"
+      },
+      {
         "type": "paragraph",
-        "text": "Doubling the transmission voltage does not halve the loss in the cable — it cuts it to a quarter. The current curve and the loss curve have visibly different shapes, and that difference is the whole reason the grid exists."
+        "text": "Here is how it works. An alternating current in the primary makes a magnetic field that is constantly growing, collapsing and reversing. The soft iron core carries almost all of that field round to the secondary coil."
+      },
+      {
+        "type": "paragraph",
+        "text": "The secondary now sits in a magnetic field that is changing all the time — and a changing field through a coil induces an e.m.f. So an alternating voltage appears across the secondary, at the same frequency, without a single electron crossing from one coil to the other."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which tells you immediately why a transformer will not work on d.c. A steady current makes a steady field, a steady field is not a changing field, and nothing at all is induced in the secondary. Connect a transformer to a battery and you get one brief pulse as you switch on, then nothing."
+      },
+      {
+        "type": "paragraph",
+        "text": "The core is soft iron for a reason too. Soft iron magnetises and demagnetises easily, so it can follow a field that reverses fifty times a second. Steel would hold its magnetism and fight every reversal, wasting energy as heat."
       },
       {
         "type": "formula",

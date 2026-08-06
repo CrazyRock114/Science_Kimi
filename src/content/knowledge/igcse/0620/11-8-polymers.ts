@@ -70,8 +70,44 @@ export const kp118Polymers: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "换单体，换塑料"
+      },
+      {
         "type": "paragraph",
-        "text": "打开每一个双键，分子就首尾相连。既不加入也不失去任何原子——所以图下的分子式始终不变。"
+        "text": "把一个氢换成氯，单体就成了氯乙烯。聚合后得到 PVC——硬到可以做排水管和窗框。"
+      },
+      {
+        "type": "paragraph",
+        "text": "把四个氢全换成氟，就得到 PTFE，也就是煎锅上的不粘涂层。反应相同、机理相同——材料却完全不同。"
+      },
+      {
+        "type": "paragraph",
+        "text": "这个过程也可以反过来，考试很喜欢这样出题。给你一段聚合物，找出重复单元，在两个碳之间把双键补回去，去掉两端伸出的键。这就是单体。"
+      },
+      {
+        "type": "heading",
+        "text": "另一种聚合"
+      },
+      {
+        "type": "paragraph",
+        "text": "尼龙和 PET 的制法不同。它们的单体两端各有一个活性基团，两个单体结合时会挤出一个小分子——通常是水。这就是缩聚。"
+      },
+      {
+        "type": "paragraph",
+        "text": "所以判断很简单。如果聚合物的质量与所用单体完全相等，那是加聚；如果每个连接处都脱去了小分子，那是缩聚。尼龙是聚酰胺，PET 是聚酯。"
+      },
+      {
+        "type": "heading",
+        "text": "塑料为什么成为问题"
+      },
+      {
+        "type": "paragraph",
+        "text": "你刚刚搭出来的这条链，除了牢固的碳碳单键什么都没有。这正是它有用的原因——也正是它成为问题的原因。细菌没有能分解它的酶，所以塑料不可生物降解。"
+      },
+      {
+        "type": "paragraph",
+        "text": "填埋时它能存留几百年，而填埋场终会用尽。在海洋中它碎裂成微塑料，被动物吞食。焚烧也不是出路：PVC 含氯，燃烧会放出有毒的氯化氢，而且烧任何塑料都会释放二氧化碳。"
       },
       {
         "type": "formula",
@@ -117,8 +153,44 @@ export const kp118Polymers: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Change the monomer, change the plastic"
+      },
+      {
         "type": "paragraph",
-        "text": "Open every double bond and the molecules join end to end. Nothing is added and nothing is lost — which is why the formula under the picture never changes."
+        "text": "Swap one hydrogen for a chlorine and the monomer is chloroethene. Polymerise it and you get PVC — rigid enough for drainpipes and window frames."
+      },
+      {
+        "type": "paragraph",
+        "text": "Replace all four hydrogens with fluorine and you get PTFE, the non-stick coating on a frying pan. Same reaction, same mechanism — a completely different material."
+      },
+      {
+        "type": "paragraph",
+        "text": "This also works backwards, and exams like asking it that way. Given a section of polymer, find the repeat unit, put the double bond back between its two carbon atoms, and remove the bonds sticking out. That is the monomer."
+      },
+      {
+        "type": "heading",
+        "text": "The other kind of polymerisation"
+      },
+      {
+        "type": "paragraph",
+        "text": "Nylon and PET are made differently. Their monomers have a reactive group at each end, and when two of them join, a small molecule is squeezed out — water, usually. That is condensation polymerisation."
+      },
+      {
+        "type": "paragraph",
+        "text": "So the test is simple. If the polymer weighs exactly as much as the monomers that made it, it was addition. If something small came off at every join, it was condensation. Nylon is a polyamide, PET a polyester."
+      },
+      {
+        "type": "heading",
+        "text": "Why plastics are a problem"
+      },
+      {
+        "type": "paragraph",
+        "text": "The chain you just built is nothing but strong carbon–carbon single bonds. That is exactly why it is useful — and exactly why it is a problem. Bacteria have no enzyme that will break it, so the plastic is non-biodegradable."
+      },
+      {
+        "type": "paragraph",
+        "text": "In landfill it stays for centuries and the space runs out. In the sea it breaks into microplastics that animals swallow. And burning it is no escape: PVC contains chlorine, so it gives off toxic hydrogen chloride, and burning any plastic releases carbon dioxide."
       },
       {
         "type": "formula",

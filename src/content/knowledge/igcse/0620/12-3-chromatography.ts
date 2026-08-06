@@ -68,8 +68,24 @@ export const kp123Chromatography: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "如何选择分离方法"
+      },
+      {
         "type": "paragraph",
-        "text": "把层析跑得更久，每一个距离都会变。而没有一个 Rf 会变——这正是 Rf 才是值得记录的数字的原因。"
+        "text": "用哪种方法，取决于两种物质在什么性质上不同。过滤把不溶固体与液体分开：固体作为残渣留在滤纸上，液体作为滤液流过。"
+      },
+      {
+        "type": "paragraph",
+        "text": "结晶从溶液中回收可溶固体：加热蒸发部分溶剂，趁热停止，冷却使晶体析出。若一直蒸干，杂质会和晶体一起留下，所以两者并不相同。"
+      },
+      {
+        "type": "paragraph",
+        "text": "简单蒸馏从溶液中取回溶剂——液体沸腾，蒸气经冷凝管冷凝后滴出纯净液体，溶解的固体留在原处。分馏则利用两种液体沸点的差异把它们彼此分开，需要分馏柱。"
+      },
+      {
+        "type": "paragraph",
+        "text": "熔点和沸点还有第二个用途：鉴定物质并判断纯度。纯净物在一个确定的温度熔化。不纯的物质在一个温度范围内熔化，而且熔点偏低——这正是在结冰的路面撒盐的原因。"
       },
       {
         "type": "formula",
@@ -108,8 +124,24 @@ export const kp123Chromatography: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Choosing how to separate"
+      },
+      {
         "type": "paragraph",
-        "text": "Run the plate for longer and every distance changes. Not one Rf does — which is exactly why Rf is the number worth writing down."
+        "text": "Which technique to use is decided by what the two substances differ in. Filtration separates an insoluble solid from a liquid: the solid stays on the paper as the residue, the liquid passes through as the filtrate."
+      },
+      {
+        "type": "paragraph",
+        "text": "Crystallisation recovers a soluble solid from its solution: warm to evaporate some of the solvent, stop while it is still hot, and let it cool so crystals form. Evaporating right to dryness would leave any impurities behind with the crystals, which is why it is not the same thing."
+      },
+      {
+        "type": "paragraph",
+        "text": "Simple distillation gets the solvent back from a solution — the liquid boils, the vapour passes through a condenser and drips out pure, leaving the dissolved solid behind. Fractional distillation separates two liquids from each other, using the difference between their boiling points, and needs a fractionating column."
+      },
+      {
+        "type": "paragraph",
+        "text": "And melting and boiling points do a second job: identifying a substance and judging how pure it is. A pure substance melts at one sharp temperature. An impure one melts over a range, and melts lower than it should — which is why salt is put on icy roads."
       },
       {
         "type": "formula",

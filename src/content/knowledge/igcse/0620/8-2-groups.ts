@@ -63,8 +63,20 @@ export const kp82Groups: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "卤素的样子"
+      },
+      {
         "type": "paragraph",
-        "text": "沿族向下，最外层离原子核越来越远。这使金属更活泼、卤素更不活泼——原因相同，结果相反。"
+        "text": "卤素是唯一一个要求你按名称说出外观的族。氯：黄绿色气体。溴：红棕色液体。碘：灰黑色固体，升华为紫色蒸气。"
+      },
+      {
+        "type": "paragraph",
+        "text": "气、液、固三态出现在连续三个元素中——表中别处找不到这种情况。看熔点图：卤素那条线陡峭上升，在溴与碘之间越过室温。"
+      },
+      {
+        "type": "paragraph",
+        "text": "而在同一坐标系上，第 I 主族那条线是下降的。两个族、两个相反的趋势、一张图。脑中有这幅图，方向就不会记反。"
       },
       {
         "type": "formula",
@@ -107,8 +119,20 @@ export const kp82Groups: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "What the halogens look like"
+      },
+      {
         "type": "paragraph",
-        "text": "Down a group the outer shell moves further from the nucleus. That makes a metal more reactive and a halogen less — same cause, opposite effect."
+        "text": "The halogens are the one group where you are asked for appearances by name. Chlorine: a yellow-green gas. Bromine: a red-brown liquid. Iodine: a grey-black solid that sublimes to a purple vapour."
+      },
+      {
+        "type": "paragraph",
+        "text": "Gas, liquid, solid, in three consecutive elements — you will not find that anywhere else in the table. Look at the melting point graph: the halogen line climbs steeply and crosses room temperature between bromine and iodine."
+      },
+      {
+        "type": "paragraph",
+        "text": "And on the same axes, the Group I line falls. Two groups, two opposite trends, one graph. If you can see that picture in your head you will not get the direction wrong."
       },
       {
         "type": "formula",

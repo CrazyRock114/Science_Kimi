@@ -76,8 +76,20 @@ export const kp61Photosynthesis: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "叶片就是为此而生的"
+      },
+      {
         "type": "paragraph",
-        "text": "当植物缺的是二氧化碳时，再多给光也毫无作用。限制因素就是决定上限的那一个。"
+        "text": "叶片的每一个特征，都是对这三种短缺之一的回应。宽而扁平：大表面积以捕获光照。薄：二氧化碳只需扩散很短距离就能到达任何需要它的细胞。"
+      },
+      {
+        "type": "paragraph",
+        "text": "内部，栅栏组织细胞位于上层，富含叶绿体并排列成柱状，因为光首先到达那里。下方的海绵组织充满气腔，二氧化碳可以自由移动。"
+      },
+      {
+        "type": "paragraph",
+        "text": "下表皮的气孔让二氧化碳进入，保卫细胞在缺水时把它们关闭。而叶脉网络由木质部输入水分、由韧皮部运走糖分。"
       },
       {
         "type": "formula",
@@ -129,8 +141,20 @@ export const kp61Photosynthesis: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "A leaf is built for this"
+      },
+      {
         "type": "paragraph",
-        "text": "Give a plant more light when carbon dioxide is what it is short of and nothing happens. A limiting factor is the one that sets the ceiling."
+        "text": "Every feature of a leaf is an answer to one of these three shortages. Broad and flat: a large surface area to catch light. Thin: carbon dioxide has a short distance to diffuse to any cell that needs it."
+      },
+      {
+        "type": "paragraph",
+        "text": "Inside, the palisade cells are at the top, packed with chloroplasts and lined up in a column, because that is where the light arrives first. Below them the spongy mesophyll is full of air spaces, so carbon dioxide can move about freely."
+      },
+      {
+        "type": "paragraph",
+        "text": "Stomata in the lower epidermis let that carbon dioxide in, with guard cells to close them when water is short. And a network of veins brings water from the xylem and takes the sugars away in the phloem."
       },
       {
         "type": "formula",

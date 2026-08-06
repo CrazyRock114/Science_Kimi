@@ -19,6 +19,15 @@ export const chemAcidbase004: KnowledgePoint = {
   },
   theory: {
     zh: [
+      { type: 'heading', text: '学习目标' },
+      {
+        type: 'list',
+        items: [
+          '说出盐的定义，列举制备可溶性盐与不溶性盐的常见途径。',
+          '说明复分解反应的定义，并用"生成沉淀、气体或水"判断反应能否发生。',
+          '运用溶解性规律分析酸、碱、盐之间的反应，并描述碳酸根离子的检验方法。',
+        ],
+      },
       { type: 'heading', text: '什么是盐？' },
       {
         type: 'paragraph',
@@ -61,8 +70,28 @@ export const chemAcidbase004: KnowledgePoint = {
         type: 'paragraph',
         text: '向样品中加入稀盐酸，若有气泡产生，将生成的气体通入澄清石灰水，石灰水变浑浊，则证明样品中含有碳酸根离子（CO₃²⁻）。这是利用"碳酸盐 + 酸 → 盐 + 水 + 二氧化碳"的复分解反应。',
       },
+      { type: 'heading', text: '术语表' },
+      {
+        type: 'list',
+        items: [
+          'salt（盐）：由金属离子（或铵根离子 NH₄⁺）与酸根离子构成的化合物，是一大类物质而非仅指食盐。',
+          'double displacement（复分解反应）：两种化合物互相交换成分生成另外两种化合物的反应，AB + CD → AD + CB，反应前后化合价不变。',
+          'precipitation（沉淀法）：利用生成难溶盐的反应制备不溶性盐的方法，沉淀经过滤、洗涤、干燥得到纯净物。',
+          'solubility rules（溶解性规律）：判断盐与碱是否可溶的经验规律，如钾钠铵盐与硝酸盐全溶、AgCl 与 BaSO₄ 不溶于稀硝酸。',
+          'carbonate test（碳酸盐检验）：加稀盐酸产生气泡，气体使澄清石灰水变浑浊，证明含 CO₃²⁻。',
+        ],
+      },
     ],
     en: [
+      { type: 'heading', text: 'Learning objectives' },
+      {
+        type: 'list',
+        items: [
+          'State what a salt is and list the common routes for preparing soluble and insoluble salts.',
+          'Define double displacement and use "a precipitate, a gas or water is formed" to decide whether a reaction takes place.',
+          'Apply the solubility rules to reactions between acids, bases and salts, and describe the test for carbonate ions.',
+        ],
+      },
       { type: 'heading', text: 'What is a salt?' },
       {
         type: 'paragraph',
@@ -104,6 +133,17 @@ export const chemAcidbase004: KnowledgePoint = {
       {
         type: 'paragraph',
         text: 'Add dilute hydrochloric acid to the sample. If bubbles of gas are produced, pass the gas into limewater; if the limewater turns milky, the sample contains carbonate ions (CO₃²⁻). This uses the double displacement reaction "carbonate + acid → salt + water + carbon dioxide".',
+      },
+      { type: 'heading', text: 'Glossary' },
+      {
+        type: 'list',
+        items: [
+          'salt (盐): A compound of metal ions (or ammonium ions, NH₄⁺) and acid anions — a whole class of substances, not just table salt.',
+          'double displacement (复分解反应): A reaction in which two compounds exchange components to form two new compounds, AB + CD → AD + CB, with no change in oxidation states.',
+          'precipitation (沉淀法): Preparing an insoluble salt by forming it as a precipitate, then filtering, washing and drying to obtain the pure solid.',
+          'solubility rules (溶解性规律): Empirical rules for whether salts and bases dissolve — all potassium, sodium, ammonium and nitrate salts are soluble; AgCl and BaSO₄ are insoluble in dilute nitric acid.',
+          'carbonate test (碳酸盐检验): Add dilute hydrochloric acid; bubbles that turn limewater milky prove the presence of CO₃²⁻.',
+        ],
       },
     ],
   },
@@ -187,4 +227,64 @@ export const chemAcidbase004: KnowledgePoint = {
       },
     },
   ],
+  examPractice: [
+    {
+      id: 'ab4-ep1',
+      syllabus: ['0620/7.3.2'],
+      tier: 'core',
+      commandWord: 'State',
+      marks: 1,
+      stem: 'Which of these salts is insoluble in water?',
+      options: [
+        'Calcium carbonate',
+        'Sodium sulfate',
+        'Potassium chloride',
+        'Copper(II) nitrate',
+      ],
+      answerIndex: 0,
+      markScheme: [
+        { text: 'Calcium carbonate', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '钾盐、钠盐与硝酸盐永远可溶，可直接排除三个选项；碳酸盐中只有钾、钠、铵盐可溶。',
+        en: 'Potassium, sodium and nitrate salts are always soluble, which eliminates three options at once; among carbonates only the potassium, sodium and ammonium salts dissolve.',
+      },
+    },
+    {
+      id: 'ab4-ep2',
+      syllabus: ['0620/7.3.1'],
+      tier: 'core',
+      commandWord: 'Describe',
+      marks: 4,
+      stem: 'Describe how you would prepare pure, dry crystals of copper(II) sulfate, starting from copper(II) oxide and dilute sulfuric acid.',
+      markScheme: [
+        { text: 'Add copper(II) oxide to warm dilute sulfuric acid until it is in excess / no more dissolves', marks: 1 },
+        { text: 'Filter off the unreacted copper(II) oxide', marks: 1 },
+        { text: 'Heat the filtrate to evaporate water until the solution is saturated (point of crystallisation)', marks: 1 },
+        { text: 'Leave to cool so crystals form, then dry them (between filter papers)', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '"蒸干"是高频失分答案：把水完全煮干会失去结晶水，得到粉末而不是晶体。氧化物必须过量，才能保证硫酸全部反应完。',
+        en: '"Evaporate to dryness" is the classic mark-loser: boiling off all the water drives off the water of crystallisation and leaves a powder, not crystals. The oxide must be in excess so that all the acid reacts.',
+      },
+    },
+    {
+      id: 'ab4-ep3',
+      syllabus: ['0620/7.3.4'],
+      tier: 'supplement',
+      commandWord: 'Describe',
+      marks: 3,
+      stem: 'Barium sulfate is insoluble in water. Describe how a pure, dry sample of barium sulfate could be prepared from aqueous sodium sulfate and aqueous barium chloride.',
+      markScheme: [
+        { text: 'Mix the two solutions; barium sulfate precipitates: Na₂SO₄ + BaCl₂ → BaSO₄↓ + 2NaCl', marks: 1 },
+        { text: 'Filter to collect the precipitate', marks: 1 },
+        { text: 'Wash the precipitate with distilled water and dry it', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '"洗涤"是最常被漏掉的得分点——不洗的话，可溶的 NaCl 会留在沉淀表面，样品就不纯了。题目里出现 pure、dry 两个词，过滤之后必须还有两步。',
+        en: 'Washing is the most commonly omitted mark — without it, soluble NaCl dries onto the precipitate and the sample is not pure. When the question says pure and dry, filtration must be followed by two more steps.',
+      },
+    },
+  ],
+  related: ['igcse-0620-7-3-salts', 'igcse-0620-12-5-tests', 'chem-acidbase-001', 'chem-acidbase-003'],
 };

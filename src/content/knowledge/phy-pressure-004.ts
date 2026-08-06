@@ -256,4 +256,57 @@ export const phyPressure004: KnowledgePoint = {
       expected: { weight: 5.145, buoyantForce: 5.145, submergedFraction: 0.9545454545454546 },
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '生饺子下锅，一个个沉在锅底；煮熟了，却又鼓鼓地漂了上来。潜水艇更神，想沉就沉、想浮就浮。它们遵守的是同一套规则——这节课我们就把物体的浮沉条件彻底搞清楚。',
+          en: 'Drop raw dumplings into boiling water and they sink to the bottom; once cooked, they bob back up to the surface. A submarine is even cleverer — it dives and surfaces on command. They all follow the same set of rules, and in this lesson we\'ll pin down the conditions for floating and sinking.',
+        },
+      },
+      {
+        id: 'concept-conditions',
+        kind: 'concept',
+        text: {
+          zh: '浸在液体里的物体同时受两个力：向下的重力和向上的浮力，谁大听谁的。浮力大于重力，上浮；两者相等，悬浮；浮力小于重力，下沉。对实心物体还有个更快的判断法——直接比密度：物体比液体“轻”就浮，比液体“重”就沉。',
+          en: 'An immersed object feels two forces at once: weight pulling down and upthrust pushing up, and the bigger one wins. Upthrust larger — it rises; equal — it hangs suspended; smaller — it sinks. For a solid object there\'s a shortcut: just compare densities. Less dense than the liquid, it floats; denser, it sinks.',
+        },
+      },
+      {
+        id: 'concept-floating',
+        kind: 'concept',
+        text: {
+          zh: '漂浮是上浮的终点站。物体一露出液面，排开液体的体积就变小，浮力跟着变小，直到恰好等于重力，物体就停在那里。所以漂浮时浸入体积占的比例，正好等于物体密度与液体密度之比。冰山密度约是海水的九成，所以九成的体积藏在水面下——“冰山一角”就是这么来的。',
+          en: 'Floating is the final stop of rising. Once the object breaks the surface, the displaced volume shrinks, the upthrust falls with it, and everything settles when upthrust exactly equals weight. So the submerged fraction of a floating object equals the ratio of the two densities. Ice is about nine tenths as dense as sea water, so nine tenths of an iceberg hides below the waterline — that\'s the real tip of the iceberg.',
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '打开仿真，亲手验证一遍。先点“木块（漂浮）”：密度只有水的一半，正好一半体积浸在水里。换成“铁块（沉底）”：浮力只有重力的八分之一，沉得毫不犹豫。再看“悬浮潜水艇”：密度调到和水一样，物体就停在水中间不上不下。最有意思的是“盐水浮鸡蛋”：把液体密度从 1000 调到 1100，原本下沉的鸡蛋慢慢浮了起来。你也可以拖一拖物体密度的滑块，亲手找出浮沉的那条分界线。',
+          en: 'Open the simulation and check it all yourself. Tap the "wood block" preset first: at half the density of water, it floats exactly half-submerged. Switch to the "iron block": the upthrust is only an eighth of the weight, and down it goes. Then the "suspended submarine": match the densities and the object hangs motionless mid-water. Best of all, the "egg in salt water" preset: raise the liquid density from 1000 to 1100 and the sinking egg floats. Then drag the object-density slider yourself and hunt for the exact dividing line between floating and sinking.',
+        },
+      },
+      {
+        id: 'concept-applications',
+        kind: 'concept',
+        text: {
+          zh: '这套条件的应用到处都是。轮船用钢铁做成空心，排开的水多，浮力就够大。潜水艇外壳体积不变、浮力基本不变，靠往水舱里充水或排水改变自身重力，实现下潜和上浮。密度计总是漂着，浮力恒等于自身重力，液体越密它浸得越浅，所以它的刻度是上小下大的。',
+          en: 'These conditions are at work everywhere. A ship\'s hollow steel hull displaces plenty of water, so the upthrust is big enough. A submarine keeps its hull volume — and so its upthrust — fixed, and floods or blows its ballast tanks to change its weight, diving or surfacing at will. A hydrometer always floats, so its upthrust constantly equals its weight; the denser the liquid, the shallower it sits, which is why its scale reads small at the top and large at the bottom.',
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '回顾一下：比较浮力和重力——或者比较两种密度——就能判断浮沉；漂浮时浮力等于重力，浸入的体积分数等于密度之比。后面的小测有一艘从河里开进海里的轮船：想想它的浮力变不变、吃水深不深，你就知道自己学没学懂了。',
+          en: 'To recap: compare upthrust with weight — or simply the two densities — and you can predict floating or sinking; when floating, the upthrust equals the weight and the submerged fraction equals the density ratio. In the quiz you\'ll meet a ship sailing from a river into the sea: if you can say whether its upthrust changes and how deep it sits, you\'ve truly got it.',
+        },
+      },
+    ],
+  },
+  related: ['phy-pressure-003', 'igcse-0625-1-6-momentum-pressure', 'igcse-0625-1-3-mass-density'],
 };

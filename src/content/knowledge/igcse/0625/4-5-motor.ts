@@ -67,8 +67,40 @@ export const kp45Motor: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "由此造出的两样东西"
+      },
+      {
         "type": "paragraph",
-        "text": "没有换向器，电动机线圈前半圈被向前推，后半圈就被往回推。并排的两条曲线让换向器的真正作用一目了然。"
+        "text": "继电器是由电磁铁带动的开关。线圈中的小电流使软铁芯磁化，铁芯吸引衔铁，衔铁闭合另一对触点。于是一个安全的小电流控制了一个危险的大电流——汽车起动机要取用几百安培，你不会希望这样的电流通过手里的点火开关。"
+      },
+      {
+        "type": "paragraph",
+        "text": "扬声器把变化的电流变成声音。线圈置于永磁体的磁隙中，并与纸盆相连。放大器送来的电流不断变化，线圈受到的力随之变化，纸盆被来回推动——推动空气，产生频率相同的声波。"
+      },
+      {
+        "type": "paragraph",
+        "text": "注意扬声器依赖于什么。如果电流反向，力也必须反向，否则纸盆只能朝一个方向被推，根本不会发出声音。磁场中电流所受的这个力，正是接下来要弄清的。"
+      },
+      {
+        "type": "heading",
+        "text": "两个磁场，相互推挤"
+      },
+      {
+        "type": "paragraph",
+        "text": "把一根硬导线松松地架在磁铁两极之间的两条导轨上，接通电源。导线会向侧面跳出。把电流反向，它向相反方向跳。把磁铁掉转使磁场反向，它又向另一方向跳。两者同时反向，它就回到最初的方向。"
+      },
+      {
+        "type": "paragraph",
+        "text": "之所以有力，是因为导线本身有环形磁场，而它又处在磁铁的磁场之中。在导线的一侧两个磁场方向相同而叠加；另一侧方向相反而抵消。结果是一侧磁场强、另一侧弱，导线被从强的一侧推向弱的一侧。这常被画成\"弹弓磁场\"，这个比喻是恰当的。"
+      },
+      {
+        "type": "paragraph",
+        "text": "力、磁场与电流三者互相垂直，左手定则能理清它们的对应关系。食指：磁场，由 N 指向 S。中指：常规电流。拇指：力，也就是运动方向。把三指像盒子的一角那样互相垂直地伸开。"
+      },
+      {
+        "type": "paragraph",
+        "text": "同一定则也适用于真空中的带电粒子束，因为运动的电荷就是电流。但要注意符号。向右运动的电子束，其常规电流方向向左，所以中指要指向与束流相反的方向。弄错这一点，偏转方向就会完全相反——这是本主题最常见的失误。"
       },
       {
         "type": "formula",
@@ -107,8 +139,40 @@ export const kp45Motor: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Two things built on that"
+      },
+      {
         "type": "paragraph",
-        "text": "Without a commutator a motor coil is pushed forwards for half a turn and backwards for the next. Two curves side by side show what the split ring is actually for."
+        "text": "A relay is a switch worked by an electromagnet. A small current through the coil magnetises a soft iron core, which attracts an iron armature, and the armature closes a second pair of contacts. So a small, safe current switches a large, dangerous one — a car starter motor draws hundreds of amps, and you would not want that running through the ignition switch in your hand."
+      },
+      {
+        "type": "paragraph",
+        "text": "A loudspeaker turns a varying current into sound. A coil sits in the gap of a permanent magnet and is attached to a paper cone. The current from the amplifier varies, the force on the coil varies with it, and the cone is pushed in and out — pushing the air and making a sound wave of the same frequency."
+      },
+      {
+        "type": "paragraph",
+        "text": "Notice what the loudspeaker depends on. If the current reverses, the force must reverse too, or the cone could only ever be pushed one way and there would be no sound at all. That force on a current in a field is the next thing to pin down."
+      },
+      {
+        "type": "heading",
+        "text": "Two fields, pushing"
+      },
+      {
+        "type": "paragraph",
+        "text": "Lay a stiff wire loosely across two rails between the poles of a magnet, and switch on. The wire jumps out sideways. Reverse the current and it jumps the other way. Turn the magnet round so the field is reversed and it jumps the other way again. Reverse both, and it goes back to the first direction."
+      },
+      {
+        "type": "paragraph",
+        "text": "The force is there because the wire has its own circular field, and it is sitting in the magnet's field. On one side of the wire the two fields point the same way and add; on the other they oppose and cancel. The result is a stronger field on one side than the other, and the wire is pushed from the strong side to the weak. It is often drawn as a catapult field, and that is a fair picture of it."
+      },
+      {
+        "type": "paragraph",
+        "text": "Force, field and current are mutually at right angles, and Fleming's left-hand rule sorts out which is which. First finger: field, north to south. Second finger: conventional current. Thumb: the force, and therefore the motion. Hold them at right angles like the corner of a box."
+      },
+      {
+        "type": "paragraph",
+        "text": "The same rule works on a beam of charged particles in a vacuum, because a moving charge is a current. But watch the sign. A beam of electrons travelling to the right is a conventional current to the left, so your second finger points against the beam. Get that wrong and you will deflect the beam exactly the wrong way — it is the single most common slip on this topic."
       },
       {
         "type": "formula",

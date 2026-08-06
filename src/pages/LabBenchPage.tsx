@@ -2,7 +2,9 @@ import { lazy, Suspense } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { getLabExperiment } from '../content/lab';
-import type { Lang } from '../content/types';
+import { getKnowledgePointMeta } from '../content/knowledge';
+import type { KnowledgePointMeta, Lang } from '../content/types';
+import { RelatedSections } from '../components/knowledge/RelatedSections';
 import { NotFoundPage } from './NotFoundPage';
 
 // 实验台主组件懒加载（SVG 渲染与引擎调用较重，按需分包）
@@ -18,6 +20,11 @@ export function LabBenchPage() {
   if (!experiment) {
     return <NotFoundPage />;
   }
+
+  // 相关知识点（experiment.related → meta 查标题/学科；无数据时区块不渲染）
+  const relatedLessons = (experiment.related ?? [])
+    .map((id) => getKnowledgePointMeta(id))
+    .filter((meta): meta is KnowledgePointMeta => meta !== undefined);
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
@@ -71,6 +78,15 @@ export function LabBenchPage() {
             ))}
           </div>
         </section>
+      </div>
+
+      {/* 相关知识点互链（无数据时不渲染） */}
+      <div className="mt-8">
+        <RelatedSections
+          lang={lang}
+          lessons={relatedLessons}
+          lessonsHeading={t('lab.relatedKnowledgePoints')}
+        />
       </div>
     </div>
   );

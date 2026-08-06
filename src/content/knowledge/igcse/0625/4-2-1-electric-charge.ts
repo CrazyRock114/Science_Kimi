@@ -75,8 +75,32 @@ export const kp421ElectricCharge: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "场是受力的区域"
+      },
+      {
         "type": "paragraph",
-        "text": "起电就是电子转移，仅此而已。再描绘点电荷、带电球以及平行板之间匀强电场的分布。"
+        "text": "电场是电荷会受力的区域。我们用电场线表示它，方向定义为正电荷所受的力——所以电场线从正电荷指出、指向负电荷。"
+      },
+      {
+        "type": "paragraph",
+        "text": "注意电场线离电荷越远越分散。这种分散表示场在减弱——和磁感线的约定完全一样。"
+      },
+      {
+        "type": "heading",
+        "text": "平行板产生匀强电场"
+      },
+      {
+        "type": "paragraph",
+        "text": "这是最重要的装置。两块平行板，一正一负。它们之间的电场线是直的、平行的、间距均匀的。"
+      },
+      {
+        "type": "paragraph",
+        "text": "间距均匀意味着两板之间各处场强相同。这就是匀强电场，读数也证实了这一点——中心与偏侧的场强一致。"
+      },
+      {
+        "type": "paragraph",
+        "text": "不过看最边缘，电场线向外鼓出。这是边缘效应，也是考纲说明不考端部效应的原因——匀强的结论只在内部成立。"
       },
       {
         "type": "formula",
@@ -120,8 +144,32 @@ export const kp421ElectricCharge: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "A field is a region of force"
+      },
+      {
         "type": "paragraph",
-        "text": "Charging is electron transfer, nothing else. Then trace the field around a charge, a sphere, and the uniform field between parallel plates."
+        "text": "An electric field is a region where a charge feels a force. We draw it with field lines, and the direction is defined as the force on a *positive* charge — so the lines point away from positive and towards negative."
+      },
+      {
+        "type": "paragraph",
+        "text": "Look how the lines spread apart as they get further from the charge. That spreading is the field getting weaker — exactly the same convention as magnetic field lines."
+      },
+      {
+        "type": "heading",
+        "text": "Parallel plates make it uniform"
+      },
+      {
+        "type": "paragraph",
+        "text": "Here is the arrangement that matters most. Two parallel plates, one positive and one negative. Between them the lines are straight, parallel and evenly spaced."
+      },
+      {
+        "type": "paragraph",
+        "text": "Evenly spaced means the field has the same strength everywhere between them. That is a uniform field, and the readings confirm it — the strength at the centre and off to one side agree."
+      },
+      {
+        "type": "paragraph",
+        "text": "Look at the very edges, though, where the lines bulge outwards. That is fringing, and it is why the syllabus says end effects will not be examined — the uniform result only holds well inside."
       },
       {
         "type": "formula",

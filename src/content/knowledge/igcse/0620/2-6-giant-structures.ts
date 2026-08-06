@@ -61,10 +61,6 @@ export const kp26GiantStructures: KnowledgePoint = {
         ]
       },
       {
-        "type": "paragraph",
-        "text": "金刚石和石墨都是纯碳。一个是已知最硬的物质且不导电；另一个软到能书写而且导电。数一数键的数目就明白了。"
-      },
-      {
         "type": "formula",
         "latex": "\\text{properties} \\leftarrow \\text{structure and bonding}",
         "caption": "本主题所有答案的推理方向。先说原子如何连接，再说这允许或阻止了什么——硬度、导电、滑动——最后才说用途。"
@@ -97,10 +93,6 @@ export const kp26GiantStructures: KnowledgePoint = {
           "Describe metallic bonding as the attraction between a lattice of positive ions and a sea of delocalised electrons. (Extended)",
           "Explain the electrical conductivity and malleability of metals in terms of their structure and bonding. (Extended)"
         ]
-      },
-      {
-        "type": "paragraph",
-        "text": "Diamond and graphite are both pure carbon. One is the hardest substance known and an insulator; the other is soft enough to write with and conducts. Count the bonds and you can see why."
       },
       {
         "type": "formula",

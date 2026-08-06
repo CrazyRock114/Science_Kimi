@@ -19,6 +19,15 @@ export const chemAcidbase003: KnowledgePoint = {
   },
   theory: {
     zh: [
+      { type: 'heading', text: '学习目标' },
+      {
+        type: 'list',
+        items: [
+          '说出氢氧化钠与氢氧化钙的俗称、物理性质及保存与使用注意事项。',
+          '列举碱的化学通性，并写出代表性的化学方程式。',
+          '说明检验二氧化碳用澄清石灰水、而吸收较多二氧化碳用氢氧化钠溶液的原因。',
+        ],
+      },
       { type: 'heading', text: '氢氧化钠（NaOH）' },
       {
         type: 'list',
@@ -67,8 +76,28 @@ export const chemAcidbase003: KnowledgePoint = {
         type: 'paragraph',
         text: '注意比较：氢氧化钠与二氧化碳反应没有明显现象，而氢氧化钙与二氧化碳反应生成白色沉淀，所以检验 CO₂ 用澄清石灰水，吸收（除去）较多 CO₂ 则用溶解度大的氢氧化钠溶液。',
       },
+      { type: 'heading', text: '术语表' },
+      {
+        type: 'list',
+        items: [
+          'alkali（可溶性碱）：能溶于水的碱，其水溶液中含有氢氧根离子 OH⁻，如 NaOH、Ca(OH)₂ 溶液。',
+          'deliquescence（潮解）：固体吸收空气中的水分而逐渐溶解的现象，如固体氢氧化钠暴露在空气中。',
+          'limewater（石灰水）：氢氧化钙的水溶液，遇二氧化碳变浑浊，是检验 CO₂ 的试剂。',
+          'caustic（腐蚀性）：能腐蚀皮肤和有机物的性质；NaOH 俗称烧碱、火碱、苛性钠，使用时须防沾到皮肤。',
+          'slaked lime（熟石灰）：氢氧化钙 Ca(OH)₂ 的俗称，由生石灰与水反应制得，反应放热。',
+        ],
+      },
     ],
     en: [
+      { type: 'heading', text: 'Learning objectives' },
+      {
+        type: 'list',
+        items: [
+          'State the common names and physical properties of sodium hydroxide and calcium hydroxide, and the precautions for storing and handling them.',
+          'List the general chemical reactions of alkalis and write representative equations.',
+          'Explain why limewater is used to test for carbon dioxide while sodium hydroxide solution is used to absorb larger amounts of it.',
+        ],
+      },
       { type: 'heading', text: 'Sodium hydroxide (NaOH)' },
       {
         type: 'list',
@@ -116,6 +145,17 @@ export const chemAcidbase003: KnowledgePoint = {
       {
         type: 'paragraph',
         text: 'Compare the two: sodium hydroxide reacts with carbon dioxide with no visible change, while calcium hydroxide gives a white precipitate. So limewater is used to test for CO₂, whereas the much more soluble sodium hydroxide solution is used when a larger amount of CO₂ needs to be absorbed.',
+      },
+      { type: 'heading', text: 'Glossary' },
+      {
+        type: 'list',
+        items: [
+          'alkali (可溶性碱): A base that dissolves in water, giving a solution containing hydroxide ions OH⁻, such as NaOH or Ca(OH)₂ solution.',
+          'deliquescence (潮解): The process by which a solid absorbs moisture from the air and gradually dissolves in it, as solid sodium hydroxide does.',
+          'limewater (石灰水): An aqueous solution of calcium hydroxide; it turns milky with carbon dioxide and is the reagent for the CO₂ test.',
+          'caustic (腐蚀性): Able to corrode skin and organic matter; NaOH is called caustic soda and must never touch the skin.',
+          'slaked lime (熟石灰): The common name for calcium hydroxide, Ca(OH)₂, made by adding water to quicklime in an exothermic reaction.',
+        ],
       },
     ],
   },
@@ -199,4 +239,56 @@ export const chemAcidbase003: KnowledgePoint = {
       },
     },
   ],
+  examPractice: [
+    {
+      id: 'ab3-ep1',
+      syllabus: ['0620/12.5.3'],
+      tier: 'core',
+      commandWord: 'Describe',
+      marks: 2,
+      stem: 'Describe the test for carbon dioxide and the result you would observe. Explain why holding a burning splint in the gas is not a reliable test.',
+      markScheme: [
+        { text: 'Bubble the gas through limewater; it turns milky (a white precipitate of CaCO₃ forms)', marks: 1 },
+        { text: 'Other gases such as nitrogen also extinguish a burning splint, so a flame going out does not prove the gas is CO₂', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '检验题要写"试剂 + 现象"两件套：只写"石灰水"或只写"变浑浊"都拿不到第一分。"木条熄灭"类现象不具特征性，是常见失分点。',
+        en: 'A test answer needs both reagent and result: "limewater" alone or "goes milky" alone does not earn the first mark. A splint going out is not a characteristic result and is a common way to lose the second.',
+      },
+    },
+    {
+      id: 'ab3-ep2',
+      syllabus: ['0620/7.1.4'],
+      tier: 'core',
+      commandWord: 'Describe',
+      marks: 3,
+      stem: 'Aqueous sodium hydroxide is added to copper(II) sulfate solution. Describe what is observed and write the balanced chemical equation for the reaction.',
+      markScheme: [
+        { text: 'A (pale) blue precipitate forms', marks: 1 },
+        { text: 'The precipitate is copper(II) hydroxide, Cu(OH)₂', marks: 1 },
+        { text: '2NaOH + CuSO₄ → Cu(OH)₂ + Na₂SO₄, correctly balanced', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '"蓝色溶液"不算现象描述——必须写出生成了蓝色沉淀。方程式中 Cu(OH)₂ 前的系数 2 常被漏掉。',
+        en: '"The solution is blue" is not an observation of the reaction — you must state that a blue precipitate forms. The coefficient 2 in front of NaOH is the most commonly missed part of the equation.',
+      },
+    },
+    {
+      id: 'ab3-ep3',
+      syllabus: ['0620/7.1.3'],
+      tier: 'core',
+      commandWord: 'Explain',
+      marks: 2,
+      stem: 'Limewater is used to test for carbon dioxide, but sodium hydroxide solution is preferred when a large amount of carbon dioxide must be absorbed. Explain this difference.',
+      markScheme: [
+        { text: 'Calcium hydroxide gives a visible white precipitate with CO₂, so a positive result is easy to see (the NaOH reaction has no visible change)', marks: 1 },
+        { text: 'Sodium hydroxide is much more soluble than calcium hydroxide, so a given volume of its solution can absorb far more CO₂', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '两条理由分别落在"现象"和"溶解度"上，缺一不可。把两者混写成"NaOH 反应更明显"是典型的方向性错误。',
+        en: 'The two reasons rest on visibility and solubility respectively, and both are needed. Claiming NaOH "reacts more obviously" is the classic wrong-way-round error.',
+      },
+    },
+  ],
+  related: ['igcse-0620-7-1-acids-bases', 'igcse-0620-12-5-tests', 'chem-acidbase-001', 'chem-acidbase-002'],
 };

@@ -275,4 +275,49 @@ export const bioCell003: KnowledgePoint = {
       expected: { flow: -1, plasmolysis: 0.8, concGradient: 0.4 },
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '凉拌黄瓜撒上盐，过一会儿盘子里就汪出一层汁；蔫掉的青菜泡进清水，又能支棱起来。这一出一进的都是水，幕后导演就是渗透作用。这节课我们搞清楚：水到底听谁的指挥，往哪个方向走。',
+          en: 'Salt a plate of sliced cucumber and a pool of juice appears; soak a wilted vegetable in fresh water and it firms up again. Water moving out, water moving in — both are directed by osmosis. In this lesson we work out exactly who gives water its marching orders.',
+        },
+      },
+      {
+        id: 'concept-osmosis',
+        kind: 'concept',
+        text: {
+          zh: '渗透是扩散的特例：水分子通过半透膜，从稀溶液一侧向浓溶液一侧净移动——用更专业的说法，是从水势高的一侧向水势低的一侧。注意这个方向总让初学者犯晕：水往“浓”处走，因为浓溶液里水分子相对更少。发生渗透只需两个条件：一层半透膜，加上膜两侧的浓度差。植物细胞的原生质层就扮演着这层膜的角色。',
+          en: 'Osmosis is a special case of diffusion: water molecules make a net movement across a partially permeable membrane from the dilute side to the concentrated side — in more precise language, from higher water potential to lower. That direction confuses everyone at first: water moves towards the concentrated solution because that is where water molecules are relatively scarcer. Osmosis needs just two things: a partially permeable membrane and a concentration difference across it. In a plant cell, that membrane role is played by the cell surface membrane, the tonoplast and the cytoplasm between them.',
+        },
+      },
+      {
+        id: 'concept-plasmolysis',
+        kind: 'concept',
+        text: {
+          zh: '外界浓度决定细胞的命运。外界比细胞液稀，细胞吸水，液泡胀大，细胞壁顶住压力，细胞变得硬挺；两边一样浓，水分进出平衡，什么变化也看不到；外界比细胞液浓，麻烦来了——细胞失水，液泡收缩，原生质层和细胞壁逐渐分家，这就是质壁分离。好在把细胞放回清水，它还能吸水复原，这也是检验细胞死活的办法。',
+          en: 'The external concentration decides the cell’s fate. If the surroundings are more dilute than the cell sap, water enters, the vacuole swells and the wall resists the pressure, leaving the cell firm and turgid. If the concentrations match, water flows balance and nothing visibly changes. But if the surroundings are more concentrated, trouble: the cell loses water, the vacuole shrinks and the cell contents pull away from the wall — plasmolysis. Return the cell to pure water and it recovers, which doubles as a test of whether the cell is still alive.',
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '轮到你了。仿真里细胞液浓度默认 0.5。先把外界浓度滑块拖到 0.05 附近，看细胞吸水膨胀；再拖到 0.5 的等渗点，观察水分进出刚好打平；最后狠心拖到 0.9，看液泡缩小、原生质层从细胞壁上剥离的过程。“清水”“等渗溶液”“浓盐水”三个预设正好对应这三种命运，点一遍对比最直观。',
+          en: 'Now it’s your turn. The cell sap starts at 0.5 in the simulation. Drag the external concentration down to about 0.05 and watch the cell swell as water rushes in; move it to the isotonic point at 0.5 and see the flows exactly balance; then push it up to 0.9 and watch the vacuole shrink as the cell contents peel away from the wall. The “Pure water”, “Isotonic solution” and “Concentrated salt solution” presets line up these three fates — click through them for the clearest comparison.',
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '回顾一下：渗透是水跨半透膜、从水势高处向水势低处的净移动；外稀吸水、等渗平衡、外浓失水，失水过度就质壁分离。烧苗、腌菜出水、输液用 0.9% 生理盐水，都是同一个原理。做完小测，你可以接着去看细胞怎样靠分裂增殖。',
+          en: 'Let’s recap: osmosis is the net movement of water across a partially permeable membrane, from high water potential to low; dilute surroundings bring water in, isotonic ones balance the flow, concentrated ones pull water out — and too much loss means plasmolysis. Fertiliser burn, salted vegetables weeping juice, and the 0.9% saline in IV drips all follow the same principle. After the quiz, move on to how cells multiply by division.',
+        },
+      },
+    ],
+  },
+  related: ['bio-cell-002', 'bio-plant-003', 'igcse-0610-3-2-osmosis', 'igcse-0610-3-1-transport'],
 };

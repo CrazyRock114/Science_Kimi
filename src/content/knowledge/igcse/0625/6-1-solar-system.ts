@@ -80,8 +80,48 @@ export const kp61SolarSystem: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "越远越慢"
+      },
+      {
         "type": "paragraph",
-        "text": "用真实行星数据作图，看轨道速度随距离下降——再切换到表面重力，看趋势消失。"
+        "text": "平均轨道速度就是绕行一周的路程除以周期：2πr 除以 T。"
+      },
+      {
+        "type": "formula",
+        "latex": "v = \\frac{2\\pi r}{T}"
+      },
+      {
+        "type": "paragraph",
+        "text": "看图。离太阳越远的行星运动越慢。水星以每秒约四十八公里飞驰，海王星只有每秒五公里。"
+      },
+      {
+        "type": "paragraph",
+        "text": "原因是引力。太阳几乎占有太阳系全部质量，其引力场随距离减弱——所以远处的行星只需更小的速度就能维持轨道。"
+      },
+      {
+        "type": "heading",
+        "text": "光需要时间"
+      },
+      {
+        "type": "paragraph",
+        "text": "太阳距我们一亿五千万公里。除以光速，约得八又三分之一分钟。你从未看到此刻的太阳——只看到八分钟前的它。"
+      },
+      {
+        "type": "paragraph",
+        "text": "到海王星要四小时。这类计算就是距离除以 3 × 10⁸ 米每秒——记得先把距离换算成米。"
+      },
+      {
+        "type": "heading",
+        "text": "日、年与月"
+      },
+      {
+        "type": "paragraph",
+        "text": "三种周期，三种运动。地球绕倾斜的自转轴约二十四小时转一圈，形成昼夜；绕太阳约三百六十五天转一圈，而由于自转轴倾斜，便产生了四季。"
+      },
+      {
+        "type": "paragraph",
+        "text": "月球绕地球约一个月一圈，形成月相变化。把这三者分清楚——混淆自转与公转是常见且代价不小的错误。"
       },
       {
         "type": "formula",
@@ -132,8 +172,48 @@ export const kp61SolarSystem: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Further out means slower"
+      },
+      {
         "type": "paragraph",
-        "text": "Plot real planetary data and watch orbital speed fall with distance — then switch to surface gravity and watch the trend disappear."
+        "text": "Average orbital speed is just the distance once round the orbit divided by the time to go round: two pi r over T."
+      },
+      {
+        "type": "formula",
+        "latex": "v = \\frac{2\\pi r}{T}"
+      },
+      {
+        "type": "paragraph",
+        "text": "Look at the graph. Every planet further from the Sun moves more slowly. Mercury races round at about forty-eight kilometres per second; Neptune crawls at five."
+      },
+      {
+        "type": "paragraph",
+        "text": "The reason is gravity. The Sun holds nearly all the mass of the Solar System, and its gravitational field gets weaker with distance — so distant planets need less speed to stay in orbit."
+      },
+      {
+        "type": "heading",
+        "text": "Light takes time"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Sun is a hundred and fifty million kilometres away. Divide by the speed of light and you get about eight and a third minutes. You never see the Sun as it is now — only as it was eight minutes ago."
+      },
+      {
+        "type": "paragraph",
+        "text": "For Neptune it is four hours. Any calculation like this is just distance divided by three times ten to the eight metres per second — remember to convert the distance into metres first."
+      },
+      {
+        "type": "heading",
+        "text": "Day, year and month"
+      },
+      {
+        "type": "paragraph",
+        "text": "Three cycles, three different motions. The Earth spins on its tilted axis once in about twenty-four hours, giving day and night. It orbits the Sun once in about three hundred and sixty-five days, and because the axis is tilted, that gives the seasons."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Moon takes about a month to orbit the Earth, which gives the cycle of phases. Keep those three straight — mixing up rotation and orbit is a common and expensive slip."
       },
       {
         "type": "formula",

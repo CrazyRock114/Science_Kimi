@@ -78,8 +78,36 @@ export const kp15Forces: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "转弯却不加速"
+      },
+      {
         "type": "paragraph",
-        "text": "这个模拟从未被告知\"终极速度\"。它只是 F = ma 加上一个随速度增大的力，速率变平是算出来的结果。"
+        "text": "以恒定速率做圆周运动的物体是在加速的。这听起来不对，直到你想起速度是矢量：速率不变，但方向每时每刻都在改变，所以速度在变。"
+      },
+      {
+        "type": "paragraph",
+        "text": "速度改变需要合力，而这个力指向圆心——与运动方向垂直。\"垂直\"是关键词：沿运动方向的力会改变速率，而这个力不会。"
+      },
+      {
+        "type": "paragraph",
+        "text": "质量更大、速率更快或半径更小，都需要更大的力。撤掉这个力——把绳剪断——物体并不会向外飞出，而是沿切线笔直前进，因为没有合力时它保持原有的速度。"
+      },
+      {
+        "type": "heading",
+        "text": "重力作用在哪里"
+      },
+      {
+        "type": "paragraph",
+        "text": "重心是可以认为物体全部重力集中作用的那一点。对均匀物体，它在几何中心；对其他物体，它在质量集中之处。"
+      },
+      {
+        "type": "paragraph",
+        "text": "要找出不规则薄板的重心：用针把它悬起使其自由摆动，从同一点挂下铅垂线并画出这条竖直线。换一个悬点重复一次。两线交点就是重心——再画第三条线作为检验是值得的。"
+      },
+      {
+        "type": "paragraph",
+        "text": "稳定性由此而来。重心低、底面宽的物体更稳定，因为倾斜时重心升高，重力会把它拉回去。若倾斜到重心越出底面之外，重力反而会使它继续翻转——于是倾倒。"
       },
       {
         "type": "formula",
@@ -125,8 +153,36 @@ export const kp15Forces: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Turning without speeding up"
+      },
+      {
         "type": "paragraph",
-        "text": "Nothing in this simulation was ever told about terminal velocity. It is F = ma with a force that grows as you go, and the levelling off falls out of the arithmetic."
+        "text": "An object moving in a circle at a steady speed is accelerating, which sounds wrong until you remember that velocity is a vector. The speed is constant but the direction is changing every instant, so the velocity is changing."
+      },
+      {
+        "type": "paragraph",
+        "text": "Changing velocity needs a resultant force, and that force acts towards the centre of the circle — perpendicular to the motion. Perpendicular is the key word: a force along the motion would change the speed, and this one does not."
+      },
+      {
+        "type": "paragraph",
+        "text": "A larger mass, a faster speed or a smaller radius all need a larger force. Take the force away — cut the string — and the object does not fly outwards; it carries straight on along the tangent, because with no resultant force it keeps the velocity it had."
+      },
+      {
+        "type": "heading",
+        "text": "Where the weight acts"
+      },
+      {
+        "type": "paragraph",
+        "text": "The centre of gravity is the point at which the whole weight of an object may be taken to act. For a uniform object it is at the geometrical centre; for anything else it is wherever the mass is concentrated."
+      },
+      {
+        "type": "paragraph",
+        "text": "To find it for an irregular lamina: hang it from a pin so it swings freely, hang a plumb line from the same pin and draw the vertical. Repeat from a different point. Where the lines cross is the centre of gravity — and a third line is worth drawing as a check."
+      },
+      {
+        "type": "paragraph",
+        "text": "And stability follows from it. An object is stable if its centre of gravity is low and its base is wide, because tilting it then raises the centre of gravity and the weight acts to bring it back. Tilt it far enough that the centre of gravity passes outside the base, and the weight now turns it further over instead — it topples."
       },
       {
         "type": "formula",

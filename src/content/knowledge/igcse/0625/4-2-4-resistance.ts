@@ -63,8 +63,28 @@ export const kp424Resistance: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "二极管只让一个方向通过"
+      },
+      {
         "type": "paragraph",
-        "text": "在同一坐标上切换定值电阻、灯丝灯泡与二极管，并改变导线形状，看电阻如何随之变化。"
+        "text": "二极管更奇怪。反向时完全不导通——图像平贴在坐标轴上。正向时在约零点七伏之前也不导通，之后电流急剧上升。"
+      },
+      {
+        "type": "paragraph",
+        "text": "这种单向导电性正是二极管能把交流变成直流的原因。"
+      },
+      {
+        "type": "heading",
+        "text": "越长越细，电阻越大"
+      },
+      {
+        "type": "paragraph",
+        "text": "回到定值电阻。电阻还取决于导线的形状。把它变长三倍，电阻变成三倍——要通过的\"障碍\"多了三倍。"
+      },
+      {
+        "type": "paragraph",
+        "text": "现在改为把它变粗。横截面积变成四倍，电阻变成四分之一。路更宽，同样的车流更容易通过。"
       },
       {
         "type": "formula",
@@ -107,8 +127,28 @@ export const kp424Resistance: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "The diode only lets one way through"
+      },
+      {
         "type": "paragraph",
-        "text": "Flip between a resistor, a filament lamp and a diode on the same axes, and stretch a wire to see resistance change with its shape."
+        "text": "A diode is stranger still. In reverse, nothing at all — the graph sits flat on the axis. Forwards, nothing until about nought point seven volts, and then the current rises very steeply."
+      },
+      {
+        "type": "paragraph",
+        "text": "That one-way behaviour is what makes diodes useful for turning alternating current into direct current."
+      },
+      {
+        "type": "heading",
+        "text": "Longer and thinner means more resistance"
+      },
+      {
+        "type": "paragraph",
+        "text": "Back to the resistor. Resistance also depends on the shape of the wire. Make it three times longer and the resistance triples — three times as much obstacle course to get through."
+      },
+      {
+        "type": "paragraph",
+        "text": "Now make it thicker instead. Four times the cross-sectional area, a quarter of the resistance. A wider road carries the same traffic more easily."
       },
       {
         "type": "formula",

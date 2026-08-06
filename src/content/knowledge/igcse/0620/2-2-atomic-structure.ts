@@ -74,8 +74,20 @@ export const kp22AtomicStructure: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "电子排布"
+      },
+      {
         "type": "paragraph",
-        "text": "改变中子得到同位素，改变电子得到离子，改变质子就是另一种元素了。"
+        "text": "电子从内向外填充：第一层两个，然后八个，再八个。钠有十一个电子，所以是 2,8,1。就这样写——2、逗号、8、逗号、1。"
+      },
+      {
+        "type": "paragraph",
+        "text": "最后那个数字，也就是最外层电子数，几乎决定了全部化学性质。它直接给出族数：最外层一个电子就是第 I 主族。而壳层数给出周期数。"
+      },
+      {
+        "type": "paragraph",
+        "text": "切换到氩。十八个电子，2,8,8——最外层已满。这就是稀有气体几乎不反应的原因：失去或得到电子都无利可图。"
       },
       {
         "type": "formula",
@@ -128,8 +140,20 @@ export const kp22AtomicStructure: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Filling the shells"
+      },
+      {
         "type": "paragraph",
-        "text": "Change the neutrons and you get an isotope. Change the electrons and you get an ion. Change the protons and it is a different element entirely."
+        "text": "Electrons fill the shells from the inside out: two in the first, then eight, then eight. Sodium has eleven electrons, so two, eight, one. Write it exactly like that — two, comma, eight, comma, one."
+      },
+      {
+        "type": "paragraph",
+        "text": "That last number, the outer shell, does almost all the chemistry. It gives you the group number straight away: one outer electron means Group One. And the number of shells gives the period."
+      },
+      {
+        "type": "paragraph",
+        "text": "Switch to argon. Eighteen electrons, two, eight, eight — a full outer shell. That is why the noble gases barely react: there is nothing to gain by losing or gaining electrons."
       },
       {
         "type": "formula",

@@ -48,4 +48,13 @@ export interface LabExperiment {
   estimatedMinutes: number;
   /** 核心反应探针；纯观察 / 测量类实验可省略（无强反应） */
   probe?: ReactionProbe;
+  /** 相关知识点 id 列表（实验台页"相关知识点"链接；知识点页反向查此字段做"相关实验"互链） */
+  related?: string[];
+  /** 考纲/教材映射（先定义字段，数据后续补充） */
+  syllabus?: {
+    /** 人教版章节引用，如 "pep-che-j9b/ch3"（册 id/章 id） */
+    pep?: string[];
+    /** IGCSE topic 引用，如 "0620/2.1"（考纲编号/topic 编号，可用二级编号） */
+    igcse?: string[];
+  };
 }

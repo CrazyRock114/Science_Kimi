@@ -261,4 +261,57 @@ export const phyMachine003: KnowledgePoint = {
       tolerance: 1e-4,
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '把一个小球抛向空中，它越升越慢，又越落越快。这一慢一快之间，有样东西在悄悄地“倒手”——能量正在两种形式之间来回转换。这节课我们就跟着这只小球，看清动能和势能的转化。',
+          en: 'Throw a ball into the air and it slows on the way up, then speeds up on the way down. Behind that slowing and quickening, something is quietly changing hands — energy shifting between two forms. In this lesson we follow the ball and watch kinetic and potential energy trade places.',
+        },
+      },
+      {
+        id: 'concept-energies',
+        kind: 'concept',
+        text: {
+          zh: '先认识两位主角。运动物体具有动能，½mv²——注意是速度的平方，速度加倍，动能变四倍。被举高的物体具有重力势能，mgh，由质量和高度决定。这两位合起来，统称机械能。',
+          en: 'Meet the two leads. A moving object carries kinetic energy, ½mv² — note the speed is squared, so doubling the speed quadruples the energy. A raised object carries gravitational potential energy, mgh, set by its mass and height. Together, these two are called mechanical energy.',
+        },
+      },
+      {
+        id: 'concept-conversion',
+        kind: 'concept',
+        text: {
+          zh: '看竖直上抛：上升时速度变小、高度变大，动能不断变成势能；到达最高点，速度为零，动能全部变成了势能；下落时再原路变回来。只要忽略空气阻力，两者之和始终不变——这就是机械能守恒。能量没有消失，只是换了身衣服。',
+          en: 'Watch a vertical throw: rising, the speed falls and the height grows, so kinetic energy steadily turns into potential; at the very top the speed is zero and the conversion is complete; falling, it all changes back. As long as air resistance is ignored, the sum never changes — that is the conservation of mechanical energy. Nothing is lost; the energy just changes clothes.',
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '打开仿真。先点“竖直上抛”：抛射角 90°，看小球到最高点时速度归零。再切到“斜抛 45°”：这回最高点还有水平速度，动能最小但不是零——这是考试最爱挖的坑，别踩。然后试试“月球上抛”：g 只有 1.6，同样的初速度飞得又高又久，能量转换的节拍慢了下来。你还可以拖一拖初速度滑块，看最大高度和飞行时间怎么跟着变。',
+          en: 'Open the simulation. Start with the "vertical throw" preset: launch angle 90°, and watch the ball\'s speed hit zero at the top. Switch to the "angled throw at 45°": this time the ball keeps its horizontal speed at the top, so the kinetic energy is smallest but not zero — a favourite exam trap, don\'t fall in. Then try "throwing on the Moon": with g at just 1.6, the same launch speed flies higher and longer, and the energy conversion runs in slow motion. You can also drag the initial-speed slider and see the maximum height and flight time respond.',
+        },
+      },
+      {
+        id: 'concept-real-world',
+        kind: 'concept',
+        text: {
+          zh: '真实世界里还有摩擦和空气阻力。它们会把一部分机械能变成内能，于是机械能不再守恒——滚摆越升越低，荡秋千越荡越矮，都是这个原因。但请记住：总能量依然守恒，能量从来不会凭空消失，只是散到环境里去了。',
+          en: 'The real world adds friction and air resistance. They divert part of the mechanical energy into internal energy, so mechanical energy is no longer conserved — a rolling yo-yo climbs lower each time, a swing dies down. But remember: the total energy is still conserved. Energy never vanishes; it just leaks into the surroundings.',
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '回顾一下：动能看质量和速度，势能看质量和高度；只有重力做功时，两者之和保持不变。斜抛的最高点，动能最小但不为零。小测里正好有这道题——去试试看你能不能躲开那个坑。',
+          en: 'To recap: kinetic energy depends on mass and speed, potential energy on mass and height; when only gravity does work, their sum stays constant. At the top of an angled throw, the kinetic energy is minimum but not zero. The quiz has exactly that question — go and see whether you can dodge the trap.',
+        },
+      },
+    ],
+  },
+  related: ['phy-machine-002', 'igcse-0625-1-7-energy', 'phy-kinematics-projectile'],
 };

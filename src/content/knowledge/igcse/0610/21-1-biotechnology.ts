@@ -73,8 +73,56 @@ export const kp211Biotechnology: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "一个反应，两个行业"
+      },
+      {
         "type": "paragraph",
-        "text": "发酵罐上的水冷夹层是用来带走热量的，不是供热的。微生物自己把罐加热，若不冷却，它们会让自己的酶变性。"
+        "text": "酵母进行无氧呼吸，把葡萄糖转化为乙醇和二氧化碳。就是这一个反应支撑起两个完全不同的行业，而你想要哪种产物，决定了整个操作方式。"
+      },
+      {
+        "type": "paragraph",
+        "text": "酿酒时，乙醇是产物。把酵母与来自大麦或葡萄的糖液混合，保持无氧条件，任其发酵。二氧化碳是副产物——不过在起泡酒中它被保留了下来。"
+      },
+      {
+        "type": "paragraph",
+        "text": "做面包时，二氧化碳才是产物。把酵母揉进面团，气泡被面筋网络截留，面团于是发起来。乙醇成了副产物，在烤箱中蒸发掉——这就是为什么面包不会让人喝醉。"
+      },
+      {
+        "type": "paragraph",
+        "text": "酶也被用于工业，模式总是相同的：酶能在低温下完成本来需要加热、强化学品、甚至根本无法完成的事。果胶酶分解水果细胞壁中的果胶，释放出更多果汁，并使其澄清而非浑浊。"
+      },
+      {
+        "type": "paragraph",
+        "text": "生物洗衣粉含蛋白酶和脂肪酶，把蛋白质和油脂污渍消化成可溶的小分子而被洗去——而且它们在低温下就能起作用，从而省电。乳糖酶把牛奶中的乳糖转化为葡萄糖和半乳糖，为不能自行消化乳糖的人生产无乳糖牛奶。"
+      },
+      {
+        "type": "heading",
+        "text": "把一个基因搬过去"
+      },
+      {
+        "type": "paragraph",
+        "text": "基因改造是通过删除、改变或插入单个基因来改变生物的遗传物质。能生产胰岛素的细菌、抗除草剂或抗虫的作物，以及经改造能合成 β-胡萝卜素的水稻，都是标准实例。"
+      },
+      {
+        "type": "paragraph",
+        "text": "用细菌生产人胰岛素的过程是这样的。限制酶把人胰岛素基因从人的 DNA 中切下来，留下黏性末端——短的单链突出端。同一种限制酶切开细菌的质粒，留下互补的黏性末端。"
+      },
+      {
+        "type": "paragraph",
+        "text": "两端配对，连接酶把它们永久连在一起。质粒被放回细菌，细菌在发酵罐中培养——它的每一个后代都携带这个人类基因并生产人胰岛素，随后加以提取和纯化。"
+      },
+      {
+        "type": "paragraph",
+        "text": "两种酶都重要，也都是考点。限制酶负责切，连接酶负责连。而黏性末端才是整件事能成立的关键——正因为有它们，人类基因才能嵌进细菌质粒，而不是直接掉出来。"
+      },
+      {
+        "type": "paragraph",
+        "text": "关于转基因作物的争论，两方的理由都值得了解。支持方：产量更高，同样的土地产出更多粮食；抗虫，从而减少杀虫剂使用；增加营养，如黄金大米中的维生素 A；以及耐旱或耐盐。"
+      },
+      {
+        "type": "paragraph",
+        "text": "反对方：改造过的基因可能经传粉扩散到野生近缘种；对健康的长期影响尚未完全清楚；种子往往被专利保护，农民无法留种；而传统品种的消失会减少遗传变异——正如你在保护那一节看到的，遗传变异正是物种适应变化所必需的。"
       },
       {
         "type": "formula",
@@ -114,8 +162,56 @@ export const kp211Biotechnology: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "One reaction, two industries"
+      },
+      {
         "type": "paragraph",
-        "text": "The water jacket on a fermenter is there to take heat away, not to supply it. The microorganisms heat the vessel themselves, and without cooling they denature their own enzymes."
+        "text": "Yeast respiring anaerobically converts glucose into ethanol and carbon dioxide. That single reaction underlies two entirely different industries, and which product you want decides everything about how you run it."
+      },
+      {
+        "type": "paragraph",
+        "text": "For brewing, the ethanol is the product. Yeast is mixed with a sugar solution from barley or grapes, kept anaerobic, and left to ferment. The carbon dioxide is the by-product — though in a sparkling wine it is kept in."
+      },
+      {
+        "type": "paragraph",
+        "text": "For bread, the carbon dioxide is the product. Yeast is mixed into dough, and the gas bubbles are trapped by the gluten, so the dough rises. The ethanol is the by-product, and it evaporates in the oven — which is why bread does not make you drunk."
+      },
+      {
+        "type": "paragraph",
+        "text": "Enzymes are used industrially too, and the pattern is always the same: an enzyme does at low temperature what would otherwise need heat, harsh chemicals or nothing at all. Pectinase breaks down pectin in fruit cell walls, releasing more juice and making it clear rather than cloudy."
+      },
+      {
+        "type": "paragraph",
+        "text": "Biological washing powders contain proteases and lipases, which digest protein and fat stains into small soluble molecules that wash away — and they work at low temperatures, which saves energy. Lactase converts the lactose in milk into glucose and galactose, producing lactose-free milk for people who cannot digest it themselves."
+      },
+      {
+        "type": "heading",
+        "text": "Moving a gene"
+      },
+      {
+        "type": "paragraph",
+        "text": "Genetic modification is changing an organism’s genetic material by removing, changing or inserting individual genes. Insulin-producing bacteria, crops resistant to herbicides or insects, and rice modified to make beta-carotene are the standard examples."
+      },
+      {
+        "type": "paragraph",
+        "text": "Making human insulin in bacteria goes like this. Restriction enzymes cut the human insulin gene out of human DNA, leaving sticky ends — short single-stranded overhangs. The same restriction enzyme cuts open a bacterial plasmid, leaving complementary sticky ends."
+      },
+      {
+        "type": "paragraph",
+        "text": "The ends pair up, and ligase joins them permanently. The plasmid is put back into a bacterium, which is grown in a fermenter — and every one of its descendants carries the human gene and makes human insulin, which is then extracted and purified."
+      },
+      {
+        "type": "paragraph",
+        "text": "Both enzymes matter and both are examinable. The restriction enzyme cuts; the ligase joins. And the sticky ends are what make it work at all — they are why the human gene fits into a bacterial plasmid instead of simply falling out."
+      },
+      {
+        "type": "paragraph",
+        "text": "The arguments about GM crops are worth knowing on both sides. For: higher yields, so more food from the same land; resistance to pests, so fewer pesticides; added nutrients, such as vitamin A in golden rice; and tolerance of drought or salt."
+      },
+      {
+        "type": "paragraph",
+        "text": "Against: the modified genes may spread to wild relatives by pollination; the long-term effects on health are not fully known; seed is often patented, so farmers cannot save it; and the loss of traditional varieties reduces genetic variation — which, as you saw with conservation, is what a species needs in order to adapt."
       },
       {
         "type": "formula",

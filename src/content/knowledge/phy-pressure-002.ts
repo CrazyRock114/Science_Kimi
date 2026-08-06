@@ -149,4 +149,5 @@ export const phyPressure002: KnowledgePoint = {
       },
     },
   ],
+  related: ['phy-pressure-001', 'phy-pressure-003', 'igcse-0625-1-6-momentum-pressure'],
 };

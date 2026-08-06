@@ -169,4 +169,5 @@ export const bioPlant003: KnowledgePoint = {
       },
     },
   ],
+  related: ['igcse-0610-8-1-transport-plants', 'igcse-0610-3-2-osmosis', 'bio-plant-001'],
 };

@@ -147,4 +147,5 @@ export const bioEco001: KnowledgePoint = {
       },
     },
   ],
+  related: ['igcse-0610-19-1-ecosystems', 'bio-eco-002', 'bio-eco-003'],
 };

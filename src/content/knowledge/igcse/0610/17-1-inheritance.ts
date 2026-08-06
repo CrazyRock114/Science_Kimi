@@ -104,8 +104,56 @@ export const kp171Inheritance: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "基因究竟做什么"
+      },
+      {
         "type": "paragraph",
-        "text": "四分之三的子代开红花，但其中只有一半携带白花等位基因——而红花本身丝毫看不出它属于哪一半。这道落差，就是这一章的全部内容。"
+        "text": "基因并不编码某个特征。它编码一种蛋白质，特征只是随之而来的结果。基因中的碱基序列决定蛋白质中氨基酸的排列顺序，而氨基酸的顺序又决定蛋白质折叠成的形状。"
+      },
+      {
+        "type": "paragraph",
+        "text": "形状就是一切，因为蛋白质靠\"契合\"来工作。你已经见过两次了——酶有底物能嵌入的活性位点，神经元上有神经递质能结合的受体。改变一个氨基酸，形状就变了，契合也就失效了。"
+      },
+      {
+        "type": "paragraph",
+        "text": "合成发生在两个地方。DNA 不能离开细胞核，因此基因被转录成信使 RNA，经核孔进入细胞质。它到达核糖体，核糖体按 mRNA 指定的顺序把氨基酸连接起来。"
+      },
+      {
+        "type": "paragraph",
+        "text": "这里有一点值得停下来想想：你体内几乎每个细胞都含有你的全部基因。肝细胞里也有编码视网膜视杆细胞中那种蛋白质的基因，只是从不使用它。细胞之所以不同，是因为其中开启的基因不同，而不是因为它们拿到了不同的指令。"
+      },
+      {
+        "type": "heading",
+        "text": "细胞核分裂的两种方式"
+      },
+      {
+        "type": "paragraph",
+        "text": "有丝分裂产生两个与亲代细胞、彼此之间在遗传上完全相同的细胞。分裂前每条染色体都被精确复制；随后复制体分离，各进入一个新细胞。染色体数目不变——进去 46 条，出来的每个细胞仍是 46 条。"
+      },
+      {
+        "type": "paragraph",
+        "text": "生长需要的正是这个，修复和无性生殖也是。干细胞做的也是这件事——未分化的细胞进行分裂，其子细胞可以特化成身体所需要的任何类型。"
+      },
+      {
+        "type": "paragraph",
+        "text": "减数分裂是另一种，它产生配子。这是一种\"减数\"的分裂：染色体数目减半，从 46 条变为 23 条。这是必须的，因为受精时两个配子融合——如果每个都带 46 条，每一代都会翻倍。"
+      },
+      {
+        "type": "heading",
+        "text": "读懂一张系谱图"
+      },
+      {
+        "type": "paragraph",
+        "text": "系谱图是同样的信息，只不过针对真实的家庭。方形代表男性，圆形代表女性，横线连接双亲，竖线向下连到子女。涂黑表示患病。"
+      },
+      {
+        "type": "paragraph",
+        "text": "两个问题几乎能解开所有系谱题。第一：有没有两个未患病的双亲生出患病的孩子？如果有，那么这个等位基因一定是隐性的，因为它存在于双亲体内却都被掩盖了。"
+      },
+      {
+        "type": "paragraph",
+        "text": "第二：患者是不是以男性居多？X 染色体上的隐性病症在男性中出现得频繁得多，原因你刚才已经看到了——他们没有第二条 X 来掩盖它。患病的儿子很多而几乎没有患病的女儿，正是伴性遗传的特征。"
       },
       {
         "type": "heading",
@@ -145,8 +193,56 @@ export const kp171Inheritance: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "What a gene actually does"
+      },
+      {
         "type": "paragraph",
-        "text": "Three quarters of the offspring are red, but only half of them carry the white allele — and nothing about a red flower tells you which half it is in. That gap is the whole subject."
+        "text": "A gene does not code for a feature. It codes for a protein, and the feature is a consequence. The sequence of bases in the gene determines the sequence of amino acids in the protein, and the sequence of amino acids determines the shape the protein folds into."
+      },
+      {
+        "type": "paragraph",
+        "text": "Shape is everything, because a protein works by fitting something. You have met that twice already — an enzyme with an active site the substrate fits into, and a receptor on a neurone that a neurotransmitter fits into. Change one amino acid and the shape changes and the fit fails."
+      },
+      {
+        "type": "paragraph",
+        "text": "The making happens in two places. DNA cannot leave the nucleus, so a copy of the gene is made as messenger RNA, which passes out through a pore into the cytoplasm. There it goes to a ribosome, and the ribosome assembles amino acids in the order the mRNA specifies."
+      },
+      {
+        "type": "paragraph",
+        "text": "And here is the thing worth pausing on. Almost every cell in your body contains every one of your genes. A liver cell has the gene for the protein in a rod cell of your retina, and never uses it. Cells differ because different genes are switched on in them, not because they were given different instructions."
+      },
+      {
+        "type": "heading",
+        "text": "Two ways for a nucleus to divide"
+      },
+      {
+        "type": "paragraph",
+        "text": "Mitosis produces two cells genetically identical to the parent cell and to each other. Before it happens, every chromosome is copied exactly; then the copies separate, one to each new cell. The chromosome number is unchanged — forty-six in, forty-six in each cell out."
+      },
+      {
+        "type": "paragraph",
+        "text": "That is what growth needs, and repair, and asexual reproduction. It is also what a stem cell does — an unspecialised cell that divides and whose daughters can become specialised into whatever the body needs."
+      },
+      {
+        "type": "paragraph",
+        "text": "Meiosis is the other one, and it makes gametes. It is a reduction division: the chromosome number is halved, forty-six to twenty-three. Which has to happen, because at fertilisation two gametes fuse — and if each carried forty-six, every generation would double."
+      },
+      {
+        "type": "heading",
+        "text": "Reading a family tree"
+      },
+      {
+        "type": "paragraph",
+        "text": "A pedigree diagram is the same information for a real family. Squares are males, circles are females, a horizontal line joins parents and a vertical one drops to their children. Shaded means affected."
+      },
+      {
+        "type": "paragraph",
+        "text": "Two questions unlock nearly all of them. First: do two unaffected parents ever have an affected child? If so the allele must be recessive, because it was in both of them and hidden in both."
+      },
+      {
+        "type": "paragraph",
+        "text": "Second: is it mostly males? A recessive condition on the X chromosome shows up far more often in males, for the reason you just saw — they have no second X to mask it. A lot of affected sons and almost no affected daughters is the signature of sex linkage."
       },
       {
         "type": "heading",

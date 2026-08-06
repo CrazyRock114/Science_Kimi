@@ -79,8 +79,56 @@ export const kp201HumanInfluences: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "栖息地消失时失去了什么"
+      },
+      {
         "type": "paragraph",
-        "text": "鱼不是被化肥毒死的——化肥对它们没有毒性。它们死于这条链上再往下四步的细菌耗尽了氧气。"
+        "text": "生物多样性是指某一地区不同物种的数目。栖息地被破坏的原因包括：开采木材或矿产等资源、为住房和工业腾出空间，尤其是为农业开垦土地。"
+      },
+      {
+        "type": "paragraph",
+        "text": "森林砍伐有四项后果值得分别说明。栖息地和物种消失，生物多样性下降。没有根系固持，土壤被冲走、河流淤塞——这就是水土流失与洪涝。光合作用减少意味着从空气中移除的二氧化碳减少，而焚烧木材又把更多二氧化碳送回空气。"
+      },
+      {
+        "type": "paragraph",
+        "text": "而由于食物网是相互连接的，移走一个物种会影响所有与之相连的生物。它的捕食者失去食物来源；它原本捕食的对象则失控增殖。这是一条普遍原理，也是为什么\"我们只移走了一个物种\"从来不是一个完整的答案。"
+      },
+      {
+        "type": "heading",
+        "text": "不会分解的东西"
+      },
+      {
+        "type": "paragraph",
+        "text": "不可生物降解的塑料无法被分解者分解，因此会长期存在。在海中，动物误把它们当作食物吞下，塑料填满消化道，动物因此饿死；更大的碎片则会缠住它们并使其溺亡。"
+      },
+      {
+        "type": "paragraph",
+        "text": "二氧化碳和甲烷是温室气体：它们吸收地球辐射出的热量，再把其中一部分辐射回地面，使地表升温。二氧化碳主要来自化石燃料燃烧和森林砍伐。甲烷来自牛、稻田以及垃圾填埋场中腐烂的废弃物。"
+      },
+      {
+        "type": "paragraph",
+        "text": "后果你已经知道：平均气温上升、冰层融化、海平面上升、极端天气增多，以及随着其所适应的气候带迁移，物种分布发生改变。"
+      },
+      {
+        "type": "heading",
+        "text": "取用不超过再生的量"
+      },
+      {
+        "type": "paragraph",
+        "text": "可持续资源是指其补充速度不低于消耗速度的资源。森林和鱼类资源都可以这样管理，而在没有约束时两者通常都被管理得很糟，因为\"再多拿一点\"的动机始终存在。"
+      },
+      {
+        "type": "paragraph",
+        "text": "对森林而言：边砍边种、只伐成熟树木、其余保留、并轮换采伐区域。对渔业而言：设定配额、限制网目尺寸使幼鱼得以逃脱并繁殖、在繁殖季禁渔，并把部分海域完全划为保护区。"
+      },
+      {
+        "type": "paragraph",
+        "text": "物种濒危的原因包括栖息地破坏、猎捕、污染、引入物种的竞争以及气候变化——通常是数种同时发生。保护手段包括自然保护区、采用人工授精与试管受精的圈养繁育计划、种子库，以及教育与法律保护。"
+      },
+      {
+        "type": "paragraph",
+        "text": "还有一种风险值得理解而不只是罗列。个体数量降到极少的物种会失去遗传变异，因为死去的个体所携带的等位基因永远消失了。变异少，自然选择可作用的对象就少——因此即使数量恢复，这个种群也无法适应新的疾病或变化的气候。"
       },
       {
         "type": "heading",
@@ -115,8 +163,56 @@ export const kp201HumanInfluences: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "What is lost when a habitat goes"
+      },
+      {
         "type": "paragraph",
-        "text": "The fish did not die of the fertiliser — it is not poisonous to them. They died because bacteria, four steps down the chain, used up the oxygen."
+        "text": "Biodiversity is the number of different species living in an area. Habitats are destroyed to extract materials such as timber or minerals, to make room for housing and industry, and above all to clear land for farming."
+      },
+      {
+        "type": "paragraph",
+        "text": "Deforestation has four consequences worth naming separately. Habitats and species are lost, so biodiversity falls. With no roots to bind it, soil is washed away and rivers silt up — soil erosion and flooding. Less photosynthesis means less carbon dioxide removed from the air, and burning the timber puts more back."
+      },
+      {
+        "type": "paragraph",
+        "text": "And because a food web is connected, removing one species affects everything joined to it. Its predators lose a food source; what it fed on multiplies unchecked. That is a general principle, and it is why \"we only removed one species\" is never a complete answer."
+      },
+      {
+        "type": "heading",
+        "text": "What does not break down"
+      },
+      {
+        "type": "paragraph",
+        "text": "Non-biodegradable plastics cannot be broken down by decomposers, so they stay. In the sea they are eaten by animals that mistake them for food, filling the gut so the animal starves; larger pieces entangle and drown them."
+      },
+      {
+        "type": "paragraph",
+        "text": "Carbon dioxide and methane are greenhouse gases: they absorb heat radiated from the Earth and re-radiate some of it back, warming the surface. Carbon dioxide comes mostly from burning fossil fuels and from deforestation. Methane comes from cattle, from rice paddies and from decaying waste in landfill."
+      },
+      {
+        "type": "paragraph",
+        "text": "The consequences are the ones you already know: rising average temperatures, ice melting and sea levels rising, more extreme weather, and changes in the distribution of species as the climate they are adapted to moves."
+      },
+      {
+        "type": "heading",
+        "text": "Taking no more than grows back"
+      },
+      {
+        "type": "paragraph",
+        "text": "A sustainable resource is one that is replaced as fast as it is removed. Forests and fish stocks can both be managed that way, and both are managed badly by default because the incentive is always to take a little more."
+      },
+      {
+        "type": "paragraph",
+        "text": "For a forest: replant as you fell, take only mature trees, leave the rest standing, and rotate which area is cut. For fish: set quotas, restrict the mesh size so young fish escape and can breed, close the fishery during the breeding season, and protect some areas entirely."
+      },
+      {
+        "type": "paragraph",
+        "text": "Species become endangered through habitat destruction, hunting, pollution, competition from introduced species and climate change — usually several at once. They can be conserved in wildlife reserves, in captive breeding programmes using artificial insemination and IVF, in seed banks, and by education and legal protection."
+      },
+      {
+        "type": "paragraph",
+        "text": "And there is one risk worth understanding rather than listing. A species reduced to very few individuals loses genetic variation, because the alleles carried by the ones that died are gone for good. With little variation there is little for natural selection to act on — so the population cannot adapt to a new disease or a changing climate, even if its numbers recover."
       },
       {
         "type": "heading",

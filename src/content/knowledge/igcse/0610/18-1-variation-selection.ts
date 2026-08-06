@@ -79,8 +79,52 @@ export const kp181VariationSelection: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "同样的事，发生在医院里"
+      },
+      {
         "type": "paragraph",
-        "text": "这个模拟中从未有任何个体发生改变。没有一个生物\"适应\"了什么——改变的只是各类个体的数量比例。"
+        "text": "抗生素耐药性是你能在一个人的一生中亲眼看到的自然选择。在庞大的细菌种群中，突变会产生少数对某种抗生素耐药的个体——而这发生在抗生素被使用之前。"
+      },
+      {
+        "type": "paragraph",
+        "text": "使用抗生素后，不耐药的细菌死去。少数耐药个体存活下来，竞争者被清除后它们迅速繁殖——细菌每二十分钟分裂一次——并把耐药等位基因传下去。"
+      },
+      {
+        "type": "paragraph",
+        "text": "几天之内，整个种群就以耐药者为主了。这不是因为哪个细菌发生了改变，也不是因为它们\"习惯\"了药物——而是因为药物清除了除本来就恰好能存活的那些以外的一切。"
+      },
+      {
+        "type": "heading",
+        "text": "为生存之地而生"
+      },
+      {
+        "type": "paragraph",
+        "text": "适应性特征是有助于生物在其环境中生存与繁殖的、可遗传的特征。\"可遗传\"是关键词——晒黑不是适应性特征，因为它不会遗传。"
+      },
+      {
+        "type": "paragraph",
+        "text": "旱生植物生活在缺水之地，它的每一个特征都是为了保住水分：厚厚的蜡质角质层；气孔少，且凹陷在小坑中以聚集潮湿空气；叶退化成刺，把表面积大幅削减；根系很深或很广；茎往往膨大以贮水。"
+      },
+      {
+        "type": "paragraph",
+        "text": "水生植物生活在水中，面临的问题正相反。它不需要支撑，因为水会托住它，所以加强组织很少。它需要空气，因此组织中有大的气腔用来漂浮和贮存氧气。而它的气孔长在叶的上表面——那是唯一与空气接触的一面。"
+      },
+      {
+        "type": "heading",
+        "text": "当选择者是人的时候"
+      },
+      {
+        "type": "paragraph",
+        "text": "选择育种是同样的算术，只是由人来做选择。选出具有目标特征的个体，让它们交配，再从后代中继续选择，如此重复许多世代。"
+      },
+      {
+        "type": "paragraph",
+        "text": "所有作物和家畜都是这样变成今天的样子的——籽粒更大的小麦、产奶更多的奶牛、由狼而来的狗。它比自然选择快得多，原因很简单：育种者能施加的选择压力，远强于野外的任何压力。把图上的压力调高，看所需世代数如何骤减。"
+      },
+      {
+        "type": "paragraph",
+        "text": "两者的区别只在于由谁来选择、为了什么而选择。自然选择偏爱一切有助于生物生存与繁殖的特征。人工选择偏爱人所想要的特征——而那对生物本身可能毫无用处。"
       },
       {
         "type": "heading",
@@ -115,8 +159,52 @@ export const kp181VariationSelection: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "The same thing, in a hospital"
+      },
+      {
         "type": "paragraph",
-        "text": "Nothing in this simulation ever changes an individual. Not one organism adapts to anything — the only thing that changes is how many of each kind there are."
+        "text": "Antibiotic resistance is natural selection you can watch happen in a human lifetime. In a large population of bacteria, mutation produces a few individuals resistant to a particular antibiotic — before the antibiotic is ever used."
+      },
+      {
+        "type": "paragraph",
+        "text": "Give the antibiotic and the non-resistant bacteria die. The resistant few survive, and with the competition removed they reproduce rapidly — bacteria divide every twenty minutes — and pass the resistance allele on."
+      },
+      {
+        "type": "paragraph",
+        "text": "Within a few days the population is mostly resistant. Not because any bacterium changed, and not because they got used to the drug — because the drug removed everything except the ones that already happened to survive it."
+      },
+      {
+        "type": "heading",
+        "text": "Built for where they live"
+      },
+      {
+        "type": "paragraph",
+        "text": "An adaptive feature is an inherited feature that helps an organism survive and reproduce in its environment. Inherited is the operative word — a suntan is not an adaptive feature, because it is not passed on."
+      },
+      {
+        "type": "paragraph",
+        "text": "A xerophyte lives where water is scarce, and every feature is about keeping it. A thick waxy cuticle. Few stomata, and sunken into pits where humid air collects. Leaves reduced to spines, cutting the surface area right down. Deep or very wide roots. And often a swollen stem storing water."
+      },
+      {
+        "type": "paragraph",
+        "text": "A hydrophyte lives in water and has the opposite problems. It needs no support, because water holds it up, so it has little strengthening tissue. It needs air, so it has large air spaces in the tissues to float and to store oxygen. And its stomata are on the upper surface of the leaf, the only side in contact with air."
+      },
+      {
+        "type": "heading",
+        "text": "When the selector is a person"
+      },
+      {
+        "type": "paragraph",
+        "text": "Selective breeding is the same arithmetic with a human doing the choosing. Select the individuals with the desired feature, breed them together, select again from the offspring, and repeat over many generations."
+      },
+      {
+        "type": "paragraph",
+        "text": "It is how every crop and every farm animal came to be what it is — wheat with larger grains, cows producing more milk, dogs from wolves. And it is far faster than natural selection, for a simple reason: a breeder can apply a selection pressure far stronger than anything the wild applies. Turn the pressure up on the graph and watch the generations needed collapse."
+      },
+      {
+        "type": "paragraph",
+        "text": "The difference between the two is only who does the selecting, and what for. Natural selection favours whatever helps the organism survive and reproduce. Artificial selection favours whatever the person wants — which may be no use to the organism at all."
       },
       {
         "type": "heading",

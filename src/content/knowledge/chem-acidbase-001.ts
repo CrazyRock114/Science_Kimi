@@ -19,6 +19,15 @@ export const chemAcidbase001: KnowledgePoint = {
   },
   theory: {
     zh: [
+      { type: 'heading', text: '学习目标' },
+      {
+        type: 'list',
+        items: [
+          '说出中和反应的定义（酸 + 碱 → 盐 + 水），并写出其离子方程式。',
+          '用指示剂（如酚酞）判断中和反应恰好完成的时刻。',
+          '列举并解释中和反应在改良酸性土壤、治疗胃酸过多和处理工业废水中的应用。',
+        ],
+      },
       { type: 'heading', text: '什么是中和反应？' },
       {
         type: 'paragraph',
@@ -49,8 +58,29 @@ export const chemAcidbase001: KnowledgePoint = {
         type: 'paragraph',
         text: '使用中和反应时要注意"适量"：碱过量会使土壤或废水变为碱性，反而造成新的问题，因此实际应用中常常需要借助 pH 试纸或指示剂控制用量。',
       },
+      { type: 'heading', text: '术语表' },
+      {
+        type: 'list',
+        items: [
+          'neutralisation（中和反应）：酸与碱作用生成盐和水的反应，本质是 H⁺ 与 OH⁻ 结合生成水。',
+          'salt（盐）：由金属离子（或铵根离子）与酸根离子构成的化合物，是中和反应的产物之一。',
+          'ionic equation（离子方程式）：只写出实际参与反应的离子的方程式，旁观离子相互消去。',
+          'indicator（指示剂）：随溶液酸碱性变化而改变颜色的物质，如酚酞，用于判断中和终点。',
+          'antacid（抗酸药）：含难溶性碱（如 Mg(OH)₂）的药物，用于中和胃里过多的盐酸。',
+          'slaked lime（熟石灰）：氢氧化钙 Ca(OH)₂，用于改良酸性土壤和处理酸性废水。',
+        ],
+      },
     ],
     en: [
+      { type: 'heading', text: 'Learning objectives' },
+      {
+        type: 'list',
+        items: [
+          'State the definition of neutralisation (acid + base → salt + water) and write its ionic equation.',
+          'Use an indicator such as phenolphthalein to identify the exact end-point of a neutralisation.',
+          'Describe and explain applications of neutralisation: treating acidic soil, curing acid indigestion and neutralising industrial waste water.',
+        ],
+      },
       { type: 'heading', text: 'What is neutralisation?' },
       {
         type: 'paragraph',
@@ -80,6 +110,18 @@ export const chemAcidbase001: KnowledgePoint = {
       {
         type: 'paragraph',
         text: 'The amount added matters: too much alkali would make the soil or waste water alkaline instead, creating a new problem. In practice, pH paper or an indicator is used to control how much is added.',
+      },
+      { type: 'heading', text: 'Glossary' },
+      {
+        type: 'list',
+        items: [
+          'neutralisation (中和反应): The reaction between an acid and a base to form a salt and water — in essence H⁺ combining with OH⁻ to form water.',
+          'salt (盐): A compound of metal ions (or ammonium ions) and acid anions; one of the products of neutralisation.',
+          'ionic equation (离子方程式): An equation showing only the ions that actually react, with spectator ions cancelled out.',
+          'indicator (指示剂): A substance that changes colour with the acidity of a solution, e.g. phenolphthalein, used to find the end-point of a neutralisation.',
+          'antacid (抗酸药): A medicine containing an insoluble base such as Mg(OH)₂, used to neutralise excess stomach acid.',
+          'slaked lime (熟石灰): Calcium hydroxide, Ca(OH)₂, used to treat acidic soil and acidic waste water.',
+        ],
       },
     ],
   },
@@ -163,6 +205,64 @@ export const chemAcidbase001: KnowledgePoint = {
       },
     },
   ],
+  examPractice: [
+    {
+      id: 'ab1-ep1',
+      syllabus: ['0620/7.1.8'],
+      tier: 'core',
+      commandWord: 'State',
+      marks: 1,
+      stem: 'Which ionic equation shows the neutralisation of dilute hydrochloric acid by sodium hydroxide solution?',
+      options: [
+        'H⁺(aq) + OH⁻(aq) → H₂O(l)',
+        'HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)',
+        'Na⁺(aq) + Cl⁻(aq) → NaCl(aq)',
+        'H⁺(aq) + H₂O(l) → H₃O⁺(aq)',
+      ],
+      answerIndex: 0,
+      markScheme: [
+        { text: 'H⁺(aq) + OH⁻(aq) → H₂O(l)', marks: 1 },
+      ],
+      examinerNote: {
+        zh: 'Na⁺ 与 Cl⁻ 是旁观离子，相互消去后所有强酸强碱中和共用同一个离子方程式。选 B 写的是完整方程式而非离子方程式，不得分。',
+        en: 'Na⁺ and Cl⁻ are spectator ions; once they cancel, every strong-acid–strong-alkali neutralisation shares one ionic equation. Option B is the full equation, not the ionic one, so it scores nothing.',
+      },
+    },
+    {
+      id: 'ab1-ep2',
+      syllabus: ['0620/7.1.8'],
+      tier: 'core',
+      commandWord: 'Explain',
+      marks: 3,
+      stem: 'Antacid tablets used to treat acid indigestion contain magnesium hydroxide, Mg(OH)₂. Write the balanced chemical equation for its reaction with the hydrochloric acid in the stomach, and explain why an insoluble base such as Mg(OH)₂ is chosen rather than a soluble alkali such as NaOH.',
+      markScheme: [
+        { text: 'Mg(OH)₂ + 2HCl → MgCl₂ + 2H₂O, correctly balanced', marks: 1 },
+        { text: 'The base neutralises the excess stomach acid / H⁺ + OH⁻ → H₂O, lowering the acid concentration', marks: 1 },
+        { text: 'Mg(OH)₂ is insoluble, so the mixture is only weakly alkaline and cannot damage the stomach, whereas excess soluble NaOH would be dangerously corrosive', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '方程式配平本身就值一分：Mg(OH)₂ 需要两个 HCl。解释"为什么用难溶碱"时要落到"过量也温和"这一点上，只写"因为它能中和酸"拿不到第三分。',
+        en: 'Balancing earns a mark in its own right: Mg(OH)₂ needs two HCl. For the explanation, the mark is for "safe even in excess" — writing only "it neutralises the acid" does not earn the third mark.',
+      },
+    },
+    {
+      id: 'ab1-ep3',
+      syllabus: ['0620/7.1.8'],
+      tier: 'core',
+      commandWord: 'Describe',
+      marks: 3,
+      stem: 'Sodium hydroxide solution containing a few drops of phenolphthalein is placed in a flask, and dilute hydrochloric acid is added slowly until the indicator just changes colour. Describe the colour change and explain what it shows about the reaction in the flask.',
+      markScheme: [
+        { text: 'The solution changes from pink to colourless', marks: 1 },
+        { text: 'At this point all the hydroxide ions have just reacted — the solution is no longer alkaline', marks: 1 },
+        { text: 'The acid and alkali have neutralised each other exactly (end-point): H⁺ + OH⁻ → H₂O', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '要区分两种表述："恰好完全反应"给分，"酸过量"不给分——酚酞在酸性和中性溶液中都是无色，所以颜色刚褪去代表终点而非过量。',
+        en: 'Distinguish the two claims: "exactly reacted" earns the mark, "acid in excess" does not — phenolphthalein is colourless in both acidic and neutral solution, so the colour just disappearing marks the end-point, not an excess.',
+      },
+    },
+  ],
   narration: {
     sections: [
       {
@@ -215,4 +315,5 @@ export const chemAcidbase001: KnowledgePoint = {
       },
     ],
   },
+  related: ['igcse-0620-7-1-acids-bases', 'chem-ph-001', 'chem-acidbase-003', 'chem-acidbase-004'],
 };

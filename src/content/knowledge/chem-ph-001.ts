@@ -258,4 +258,5 @@ export const chemPh001: KnowledgePoint = {
       },
     ],
   },
+  related: ['igcse-0620-7-1-acids-bases', 'chem-acidbase-001', 'chem-acidbase-002', 'chem-acidbase-003'],
 };

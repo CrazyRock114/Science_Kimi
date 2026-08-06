@@ -11,6 +11,11 @@ import type { LabExperiment } from "./types";
 export const metalExperiments: LabExperiment[] = [
   {
     slug: "metal-activity-acid",
+    related: ["chem-metal-001", "chem-metal-002", "igcse-0620-9-4-reactivity-series"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch1"],
+      igcse: ["0620/9.4"],
+    },
     title: { zh: "金属活动性顺序探究", en: "Investigating the Reactivity Series of Metals" },
     description: {
       zh: "比较镁、锌、铁与稀盐酸反应放出氢气的剧烈程度，排列金属活动性顺序。",
@@ -35,6 +40,11 @@ export const metalExperiments: LabExperiment[] = [
   },
   {
     slug: "iron-copper-sulfate",
+    related: ["chem-metal-002", "chem-metal-001", "igcse-0620-9-4-reactivity-series"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch1"],
+      igcse: ["0620/9.4", "0620/6.4"],
+    },
     title: { zh: "铁置换硫酸铜中的铜", en: "Iron Displacing Copper from Copper(II) Sulfate" },
     description: {
       zh: "将铁钉浸入硫酸铜溶液，表面析出红色铜、溶液蓝色变浅，验证金属置换。",
@@ -59,6 +69,11 @@ export const metalExperiments: LabExperiment[] = [
   },
   {
     slug: "copper-silver-nitrate",
+    related: ["chem-metal-002", "igcse-0620-9-4-reactivity-series"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch1"],
+      igcse: ["0620/9.4"],
+    },
     title: { zh: "铜置换硝酸银中的银", en: "Copper Displacing Silver from Silver Nitrate" },
     description: {
       zh: "铜丝插入硝酸银溶液，表面生成银白色银树、溶液变蓝，观察置换与晶体生长。",
@@ -83,6 +98,11 @@ export const metalExperiments: LabExperiment[] = [
   },
   {
     slug: "sodium-water",
+    related: ["chem-metal-001", "igcse-0620-8-2-groups"],
+    syllabus: {
+      pep: ["pep-che-s1/ch2"],
+      igcse: ["0620/8.2"],
+    },
     title: { zh: "钠与水反应", en: "The Reaction of Sodium with Water" },
     description: {
       zh: "金属钠投入滴有酚酞的水中，浮、熔、游、响、红，认识活泼金属与水反应。",
@@ -107,6 +127,11 @@ export const metalExperiments: LabExperiment[] = [
   },
   {
     slug: "iron-rusting",
+    related: ["chem-metal-001", "igcse-0620-9-4-reactivity-series"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch1"],
+      igcse: ["0620/9.5"],
+    },
     title: { zh: "铁生锈条件探究", en: "Investigating the Conditions for Iron to Rust" },
     description: {
       zh: "对比铁钉在干燥、潮湿、隔绝空气等条件下的锈蚀，探究铁生锈需要水和氧气。",
@@ -130,6 +155,11 @@ export const metalExperiments: LabExperiment[] = [
   },
   {
     slug: "aluminum-acid-base",
+    related: ["chem-metal-002", "chem-acidbase-002", "chem-acidbase-003"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch1"],
+      igcse: ["0620/9.1"],
+    },
     title: { zh: "铝的两性探究", en: "Investigating the Amphoteric Nature of Aluminium" },
     description: {
       zh: "分别将铝片放入盐酸和氢氧化钠溶液，均放出氢气，认识铝既能与酸又能与碱反应。",
@@ -154,6 +184,11 @@ export const metalExperiments: LabExperiment[] = [
   },
   {
     slug: "magnesium-burning",
+    related: ["chem-metal-001", "chem-energetics-001", "chem-gas-001"],
+    syllabus: {
+      pep: ["pep-che-j9a/ch2", "pep-che-j9b/ch1"],
+      igcse: ["0620/9.1", "0620/5.1"],
+    },
     title: { zh: "镁条燃烧", en: "Burning Magnesium Ribbon" },
     description: {
       zh: "点燃镁条发出耀眼白光生成白色氧化镁，认识剧烈放热的氧化反应。",
@@ -177,6 +212,11 @@ export const metalExperiments: LabExperiment[] = [
   },
   {
     slug: "thermite-reaction",
+    related: ["chem-metal-001", "chem-energetics-001", "igcse-0620-9-6-extraction"],
+    syllabus: {
+      pep: ["pep-che-s1/ch3"],
+      igcse: ["0620/9.6", "0620/6.4"],
+    },
     title: { zh: "铝热反应", en: "The Thermite Reaction" },
     description: {
       zh: "铝粉与氧化铁在高温下剧烈反应生成铁和氧化铝，认识强放热的置换反应应用。",
@@ -200,6 +240,11 @@ export const metalExperiments: LabExperiment[] = [
   },
   {
     slug: "metal-displacement-series",
+    related: ["chem-metal-002", "chem-metal-001", "igcse-0620-9-6-extraction"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch1"],
+      igcse: ["0620/9.4", "0620/9.6"],
+    },
     title: { zh: "湿法炼铜", en: "Extracting Copper by Displacement" },
     description: {
       zh: "用铁置换硫酸铜溶液中的铜，模拟古代湿法炼铜，理解金属冶炼原理。",
@@ -224,6 +269,11 @@ export const metalExperiments: LabExperiment[] = [
   },
   {
     slug: "aluminum-oxide-film",
+    related: ["chem-metal-001", "chem-metal-002"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch1"],
+      igcse: ["0620/9.1", "0620/9.5"],
+    },
     title: { zh: "铝的氧化膜保护作用", en: "The Protective Oxide Layer on Aluminium" },
     description: {
       zh: "对比经砂纸打磨与未打磨的铝片在盐酸中的反应，认识致密氧化膜的保护性。",

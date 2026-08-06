@@ -77,8 +77,52 @@ export const kp11Classification: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "物种究竟是什么"
+      },
+      {
         "type": "paragraph",
-        "text": "蝙蝠会飞、企鹅会游，但这都说明不了它们究竟是什么。分类依据的是特征，而特征本身是关于亲缘关系的主张。"
+        "text": "物种是一群能交配并产生*可育*后代的生物。关键全在\"可育\"二字。马和驴能交配生出骡子——但骡子本身不能生育，所以马和驴仍是两个物种。"
+      },
+      {
+        "type": "paragraph",
+        "text": "每个物种都有一个两部分的名称：先是属名，首字母大写，再是种加词，全小写。Homo sapiens、Panthera leo。两部分都用斜体，手写时则加下划线。这套系统是国际通用的，任何地方的生物学家看到同一个名字，指的都是同一种生物。"
+      },
+      {
+        "type": "paragraph",
+        "text": "而且分类不只是归档。分组的目的是反映生物在进化上的亲缘远近——即它们的共同祖先有多近。特征是我们推测亲缘关系的依据，但那只是推测。"
+      },
+      {
+        "type": "paragraph",
+        "text": "直接的证据是 DNA。比较两个物种的碱基序列：共同祖先越近，积累差异的时间就越短，序列也就越相似。这正是某些生物被重新归类的原因——DNA 与它们的外表不一致。"
+      },
+      {
+        "type": "heading",
+        "text": "把它写成检索表"
+      },
+      {
+        "type": "paragraph",
+        "text": "二歧检索表把你刚才做的分类写成一串问题。\"二歧\"就是一分为二：每一步恰好只有两个选项，答案要么把你引向下一对选项，要么直接给出名称。"
+      },
+      {
+        "type": "paragraph",
+        "text": "记住两条规则就能拿分。只用标本上真正看得见的特征——足的数目、有无翅、叶形。绝不要单独使用大小、颜色或栖息地：动物可能还是幼体，而颜色在同一物种内也会变化。"
+      },
+      {
+        "type": "paragraph",
+        "text": "而且每一对的措辞都要保证任何生物恰好只符合其中一边。\"有翅\"与\"无翅\"是合格的一对。\"有翅\"与\"有六足\"就不是，因为昆虫两条都符合。"
+      },
+      {
+        "type": "heading",
+        "text": "无处安放的那一类"
+      },
+      {
+        "type": "paragraph",
+        "text": "病毒不属于五界中的任何一界。病毒就是蛋白质外壳里包着的遗传物质，仅此而已——没有细胞质，没有细胞膜，没有细胞。"
+      },
+      {
+        "type": "paragraph",
+        "text": "它无法自行呼吸、生长或繁殖，只能由被它侵入的宿主细胞复制。它算不算活的，是一个真实存在的争论；考纲绕开了这个问题，只要求你说出结构：蛋白质外壳、遗传物质。"
       },
       {
         "type": "heading",
@@ -115,8 +159,52 @@ export const kp11Classification: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "What a species actually is"
+      },
+      {
         "type": "paragraph",
-        "text": "A bat flies and a penguin swims, and neither fact tells you what either one is. Classification runs on features, and the features are a claim about ancestry."
+        "text": "A species is a group of organisms that can reproduce to produce fertile offspring. The word fertile is doing all the work. A horse and a donkey will breed and give you a mule — but a mule cannot itself breed, so horses and donkeys stay two species."
+      },
+      {
+        "type": "paragraph",
+        "text": "Each species gets a two-part name: the genus first, with a capital letter, then the species, in lower case. Homo sapiens. Panthera leo. Both parts in italics, or underlined if you are writing by hand. The system is international, so a biologist anywhere reads the same name for the same organism."
+      },
+      {
+        "type": "paragraph",
+        "text": "And classification is not just filing. Groups are meant to reflect how closely organisms are related by evolution — how recently they shared an ancestor. Features are how we guess at that, but they are only a guess."
+      },
+      {
+        "type": "paragraph",
+        "text": "The direct evidence is DNA. Compare the base sequences of two species: the more recent their common ancestor, the fewer differences have had time to accumulate, so the more similar the sequences. That is why some organisms have been moved between groups — the DNA disagreed with the way they looked."
+      },
+      {
+        "type": "heading",
+        "text": "Turning that into a key"
+      },
+      {
+        "type": "paragraph",
+        "text": "A dichotomous key writes the sorting you just did as a chain of questions. Dichotomous means it splits in two: at every step there are exactly two options, and the answer sends you either to another pair of options or to a name."
+      },
+      {
+        "type": "paragraph",
+        "text": "Two rules will get you the marks. Use features you can actually see on the specimen — number of legs, presence of wings, leaf shape. Never use size, colour or habitat on their own: an animal can be young, and colour varies within a species."
+      },
+      {
+        "type": "paragraph",
+        "text": "And phrase each pair so that every organism matches exactly one side. \"Has wings\" and \"has no wings\" is a proper pair. \"Has wings\" and \"has six legs\" is not, because an insect answers yes to both."
+      },
+      {
+        "type": "heading",
+        "text": "The thing that fits nowhere"
+      },
+      {
+        "type": "paragraph",
+        "text": "Viruses are in none of the five kingdoms. A virus is genetic material inside a protein coat, and that is all — no cytoplasm, no cell membrane, no cell."
+      },
+      {
+        "type": "paragraph",
+        "text": "It cannot respire, grow or reproduce on its own; it can only be copied by a host cell it has invaded. Whether that counts as alive is a real argument, and the syllabus sidesteps it by asking you only for the structure: protein coat, genetic material."
       },
       {
         "type": "heading",

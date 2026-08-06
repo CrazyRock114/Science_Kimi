@@ -266,4 +266,49 @@ export const bioCell002: KnowledgePoint = {
       expected: { left: 104.9787068367864, right: 95.0212931632136, equilibrium: 100 },
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '在一杯清水里轻轻滴入一滴红墨水，不用搅拌，过一会儿整杯水都会染上淡淡的红色。墨水分子没有手没有脚，是谁把它们“搬”到水杯的每个角落的？答案是一种无处不在的自发过程——扩散。',
+          en: 'Drop a little red ink into a glass of still water and, without any stirring, the whole glass slowly turns pale pink. The ink molecules have no hands and no feet — so what carried them into every corner of the glass? The answer is a spontaneous process happening all around us: diffusion.',
+        },
+      },
+      {
+        id: 'concept-membrane',
+        kind: 'concept',
+        text: {
+          zh: '对细胞来说，物质进出要过一道关卡：细胞膜。它是一层选择透过性膜——水、氧气、葡萄糖这些细胞需要的物质能进去，二氧化碳、尿素这些废物能出来，而细胞不需要的东西会被挡在外面。正是这层膜，让细胞内部维持着一个相对稳定的小环境。',
+          en: 'For a cell, anything going in or out must pass a checkpoint: the cell membrane. It is partially permeable — water, oxygen and glucose get in, carbon dioxide and urea get out, while unwanted substances are kept at bay. This membrane keeps the cell’s interior a relatively stable environment.',
+        },
+      },
+      {
+        id: 'concept-diffusion',
+        kind: 'concept',
+        text: {
+          zh: '扩散的定义一句话就能说清：粒子从高浓度区域向低浓度区域的净移动。动力来自分子自己的随机热运动，细胞一个单位的能量都不用花，所以扩散属于被动运输。还有个容易误解的点：平衡不等于静止——两侧浓度相等后，粒子还在双向乱窜，只是进出的数目正好相等，宏观上看起来“不动了”。',
+          en: 'Diffusion can be defined in one sentence: the net movement of particles from a region of higher concentration to one of lower concentration. The driving force is the particles’ own random thermal motion — the cell spends no energy at all, which makes diffusion a form of passive transport. And a common misconception: equilibrium does not mean stillness. Once concentrations equalise, particles keep crossing in both directions, just in equal numbers, so nothing seems to change.',
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '轮到你了。打开下方仿真：左侧隔室里一开始挤满了粒子，右侧空空如也。按下播放，看粒子怎样穿过隔板慢慢“摊平”，左右两侧的计数怎样一起逼近平衡点——初始值的一半。再把温度滑块从 0 度拉到 40 度，对比“冰水”和“温水”两个预设：同样的粒子，温度越高，摊平得越快。这就是分子热运动随温度加剧的直接证据。',
+          en: 'Now it’s your turn. In the simulation below, the left chamber starts packed with particles while the right sits empty. Press play and watch the particles spread through the barrier until both counters settle at the equilibrium — half the initial count. Then drag the temperature from 0 up to 40 degrees, comparing the “Ice water” and “Warm water” presets: same particles, but the higher the temperature, the faster they level out — direct evidence that thermal motion intensifies with temperature.',
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '回顾一下：扩散是顺浓度梯度的净移动，不耗能量，直到动态平衡；浓度差越大、温度越高、距离越短，扩散就越快。肺泡里的气体交换、叶片气孔处的气体进出，靠的都是它。下一课我们会看扩散的一个特例——只让水分子过膜的渗透作用。',
+          en: 'Let’s recap: diffusion is net movement down a concentration gradient, costs no energy, and runs until dynamic equilibrium; a steeper gradient, higher temperature or shorter distance all make it faster. Gas exchange in the alveoli and at leaf stomata both rely on it. Next lesson we meet a special case — osmosis, where only water molecules may cross the membrane.',
+        },
+      },
+    ],
+  },
+  related: ['bio-cell-001', 'bio-cell-003', 'igcse-0610-3-1-transport', 'igcse-0610-3-2-osmosis'],
 };

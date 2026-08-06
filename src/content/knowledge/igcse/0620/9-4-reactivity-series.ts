@@ -62,8 +62,32 @@ export const kp94ReactivitySeries: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "为什么表上有氢"
+      },
+      {
         "type": "paragraph",
-        "text": "每种试剂都在活动性顺序上划出一条线。线以上反应，线以下不反应——所以你能预测从未见过的反应。"
+        "text": "氢不是金属，为什么会出现在金属表里？因为金属与酸反应，实际上是把氢从酸中置换出来。能否做到，取决于两者谁在上面。"
+      },
+      {
+        "type": "paragraph",
+        "text": "铁在氢之上，所以能置换：稳定冒泡，气体点燃有爆鸣声。铜在氢之下，做不到。把铜放进盐酸，什么反应都没有。"
+      },
+      {
+        "type": "paragraph",
+        "text": "这也是水管用铜而不用铁的原因。不是因为铜有什么特别，而是因为它相对于氢的位置。"
+      },
+      {
+        "type": "heading",
+        "text": "例外：铝"
+      },
+      {
+        "type": "paragraph",
+        "text": "铝在表中位置很高，就在镁下面，理应非常活泼。可我们用它做锅、窗框和易拉罐，它们并不会溶解。"
+      },
+      {
+        "type": "paragraph",
+        "text": "铝一接触空气，表面立刻生成一层薄薄的氧化铝把它封住。下面的金属确实和表上写的一样活泼——只是永远接触不到别的东西。在水下把这层膜刮掉，它立刻就反应。"
       },
       {
         "type": "formula",
@@ -110,8 +134,32 @@ export const kp94ReactivitySeries: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Why hydrogen is on the list"
+      },
+      {
         "type": "paragraph",
-        "text": "Every reagent draws a line across the series. Above the line it reacts, below the line it does not — so you can predict reactions you have never seen."
+        "text": "Hydrogen is not a metal, so what is it doing in a table of metals? Because a metal reacting with an acid is displacing hydrogen from it. Whether it can do that depends on which of the two is higher."
+      },
+      {
+        "type": "paragraph",
+        "text": "Iron is above hydrogen, so it displaces it: steady fizzing, and the gas gives a squeaky pop. Copper is below hydrogen, so it cannot. Put copper in hydrochloric acid and absolutely nothing happens."
+      },
+      {
+        "type": "paragraph",
+        "text": "That is also why copper is used for water pipes and iron is not. Not because copper is special, but because of where it sits relative to hydrogen."
+      },
+      {
+        "type": "heading",
+        "text": "The exception: aluminium"
+      },
+      {
+        "type": "paragraph",
+        "text": "Aluminium sits high in the series, just below magnesium, so it should be very reactive. Yet we make saucepans, window frames and drinks cans out of it, and they do not dissolve."
+      },
+      {
+        "type": "paragraph",
+        "text": "The moment aluminium meets air, a thin layer of aluminium oxide forms on the surface and seals it. The metal underneath is as reactive as the series says — it just never gets to meet anything. Scratch the layer off under water and it reacts immediately."
       },
       {
         "type": "formula",

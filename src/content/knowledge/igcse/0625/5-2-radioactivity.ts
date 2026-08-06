@@ -87,8 +87,64 @@ export const kp52Radioactivity: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "先减去本底"
+      },
+      {
         "type": "paragraph",
-        "text": "从衰变曲线读出半衰期——前提是先减去本底，而这一步最容易被忽略。"
+        "text": "这里有两条曲线，它们之间的间距很重要。本底辐射始终存在——空气中的氡、岩石、食物、宇宙射线。无论有没有放射源，探测器都会计到它。"
+      },
+      {
+        "type": "paragraph",
+        "text": "把本底调高，看测得曲线整体抬升。它不再降到零，而是趋平于本底值。若从这条曲线读半衰期，你会得到错误答案。"
+      },
+      {
+        "type": "paragraph",
+        "text": "所以一定要先减去本底。校正后的曲线才会正常减半，也只有它能用来求半衰期。"
+      },
+      {
+        "type": "heading",
+        "text": "α、β、γ"
+      },
+      {
+        "type": "paragraph",
+        "text": "三种辐射。α 是氦核——质量大、带正二价电荷，一张纸就能挡住。β 是高速电子，带负一价电荷，几毫米铝可挡住。γ 是电磁波，不带电，需要厚铅板。"
+      },
+      {
+        "type": "paragraph",
+        "text": "注意这个规律：电离能力最强的穿透能力最弱。α 正因为电离作用强而迅速损失能量，所以走不远。"
+      },
+      {
+        "type": "heading",
+        "text": "衰变方程"
+      },
+      {
+        "type": "paragraph",
+        "text": "α 衰变中原子核失去两个质子和两个中子，核子数减四、质子数减二，变成另一种元素。"
+      },
+      {
+        "type": "formula",
+        "latex": "^{238}_{92}\\mathrm{U} \\rightarrow\\ ^{234}_{90}\\mathrm{Th} + ^{4}_{2}\\alpha"
+      },
+      {
+        "type": "paragraph",
+        "text": "β 衰变中一个中子变成一个质子和一个电子。电子射出，质子数加一，核子数不变。"
+      },
+      {
+        "type": "formula",
+        "latex": "^{14}_{6}\\mathrm{C} \\rightarrow\\ ^{14}_{7}\\mathrm{N} + ^{\\ \\ 0}_{-1}\\beta"
+      },
+      {
+        "type": "heading",
+        "text": "时间、距离、屏蔽"
+      },
+      {
+        "type": "paragraph",
+        "text": "电离辐射会损伤活细胞——可致细胞死亡、突变或癌变。三条防护措施几乎能答遍所有考题：缩短照射时间、增大与源的距离、在中间加屏蔽。"
+      },
+      {
+        "type": "paragraph",
+        "text": "放射源存放在铅罐中，并用长柄夹保持距离操作——这同时用上了时间、距离与屏蔽三条。"
       },
       {
         "type": "formula",
@@ -143,8 +199,64 @@ export const kp52Radioactivity: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Subtract the background first"
+      },
+      {
         "type": "paragraph",
-        "text": "Read a half-life off a decay curve — after subtracting the background, which is the step that catches people out."
+        "text": "There are two curves here, and the gap between them matters. Background radiation is always present — radon in the air, rocks, food, cosmic rays. A detector counts it whether or not your source is there."
+      },
+      {
+        "type": "paragraph",
+        "text": "Turn the background up and watch the measured curve lift. It no longer falls to zero — it flattens out onto the background. If you read a half-life off that curve you will get the wrong answer."
+      },
+      {
+        "type": "paragraph",
+        "text": "So always subtract the background first. The corrected curve is the one that halves properly, and it is the only one you may take a half-life from."
+      },
+      {
+        "type": "heading",
+        "text": "Alpha, beta, gamma"
+      },
+      {
+        "type": "paragraph",
+        "text": "Three kinds of emission. Alpha is a helium nucleus — heavy, charge plus two, stopped by a sheet of paper. Beta is a fast electron, charge minus one, stopped by a few millimetres of aluminium. Gamma is a wave, no charge, and needs thick lead."
+      },
+      {
+        "type": "paragraph",
+        "text": "Notice the pattern: the most ionising is the least penetrating. Alpha loses its energy fast precisely because it ionises so strongly, so it does not get far."
+      },
+      {
+        "type": "heading",
+        "text": "Decay equations"
+      },
+      {
+        "type": "paragraph",
+        "text": "In alpha decay the nucleus loses two protons and two neutrons, so the nucleon number falls by four and the proton number by two. It becomes a different element."
+      },
+      {
+        "type": "formula",
+        "latex": "^{238}_{92}\\mathrm{U} \\rightarrow\\ ^{234}_{90}\\mathrm{Th} + ^{4}_{2}\\alpha"
+      },
+      {
+        "type": "paragraph",
+        "text": "In beta decay a neutron turns into a proton and an electron. The electron leaves, so the proton number goes up by one while the nucleon number stays the same."
+      },
+      {
+        "type": "formula",
+        "latex": "^{14}_{6}\\mathrm{C} \\rightarrow\\ ^{14}_{7}\\mathrm{N} + ^{\\ \\ 0}_{-1}\\beta"
+      },
+      {
+        "type": "heading",
+        "text": "Time, distance, shielding"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ionising radiation damages living cells — it can kill them, cause mutations, or lead to cancer. Three precautions cover almost every exam answer: reduce the time of exposure, increase the distance from the source, and put shielding in between."
+      },
+      {
+        "type": "paragraph",
+        "text": "Sources are stored in lead-lined containers and handled with tongs at arm’s length, which is time, distance and shielding all at once."
       },
       {
         "type": "formula",

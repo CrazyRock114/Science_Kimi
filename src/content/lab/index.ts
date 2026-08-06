@@ -29,4 +29,9 @@ export function getLabExperiment(slug: string): LabExperiment | undefined {
   return allLabExperiments.find((e) => e.slug === slug);
 }
 
+/** 反向查找：声明了 related 指向某知识点的全部实验（知识点页"相关实验"区块用） */
+export function getLabExperimentsForKnowledgePoint(kpId: string): LabExperiment[] {
+  return allLabExperiments.filter((e) => e.related?.includes(kpId));
+}
+
 export type { LabExperiment, ReactionProbe, ReactionExpectation } from "./types";

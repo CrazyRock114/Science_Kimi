@@ -163,4 +163,5 @@ export const bioCell001: KnowledgePoint = {
       },
     },
   ],
+  related: ['bio-cell-002', 'bio-plant-001', 'igcse-0610-2-1-cells'],
 };

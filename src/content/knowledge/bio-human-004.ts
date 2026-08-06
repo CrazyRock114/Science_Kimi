@@ -174,4 +174,5 @@ export const bioHuman004: KnowledgePoint = {
       },
     },
   ],
+  related: ['igcse-0610-14-1-nervous-system', 'igcse-0610-14-3-homeostasis'],
 };

@@ -11,6 +11,11 @@ import type { LabExperiment } from "./types";
 export const analysisExperiments: LabExperiment[] = [
   {
     slug: "flame-test",
+    related: ["igcse-0620-12-5-tests", "chem-atomic-001"],
+    syllabus: {
+      pep: ["pep-che-s1/ch2"],
+      igcse: ["0620/12.5"],
+    },
     title: { zh: "焰色反应", en: "Flame Tests" },
     description: {
       zh: "用铂丝蘸取不同金属盐在火焰中灼烧，观察钠黄、钾紫、钙砖红等特征焰色。",
@@ -34,6 +39,11 @@ export const analysisExperiments: LabExperiment[] = [
   },
   {
     slug: "chloride-identification",
+    related: ["igcse-0620-12-5-tests", "chem-acidbase-004"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch4"],
+      igcse: ["0620/12.5"],
+    },
     title: { zh: "氯离子的定性检验", en: "Qualitative Test for Chloride Ions" },
     description: {
       zh: "用硝酸银和稀硝酸检验溶液中的氯离子，依据白色沉淀确认。",
@@ -58,6 +68,11 @@ export const analysisExperiments: LabExperiment[] = [
   },
   {
     slug: "sulfate-identification",
+    related: ["igcse-0620-12-5-tests", "chem-acidbase-004"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch4"],
+      igcse: ["0620/12.5"],
+    },
     title: { zh: "硫酸根的定性检验", en: "Qualitative Test for Sulfate Ions" },
     description: {
       zh: "用氯化钡和稀盐酸检验硫酸根离子，依据不溶于酸的白色沉淀确认。",
@@ -82,6 +97,11 @@ export const analysisExperiments: LabExperiment[] = [
   },
   {
     slug: "carbonate-identification",
+    related: ["igcse-0620-12-5-tests", "chem-gas-002", "chem-acidbase-002"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch4"],
+      igcse: ["0620/12.5"],
+    },
     title: { zh: "碳酸根的定性检验", en: "Qualitative Test for Carbonate Ions" },
     description: {
       zh: "用稀盐酸和澄清石灰水检验碳酸根，依据产气并使石灰水变浑浊确认。",
@@ -106,6 +126,11 @@ export const analysisExperiments: LabExperiment[] = [
   },
   {
     slug: "fe3-identification",
+    related: ["igcse-0620-12-5-tests", "igcse-0620-6-4-redox"],
+    syllabus: {
+      pep: ["pep-che-s1/ch3"],
+      igcse: ["0620/12.5"],
+    },
     title: { zh: "铁(III)离子的检验", en: "Test for Iron(III) Ions" },
     description: {
       zh: "用硫氰酸钾检验铁(III)离子，溶液变血红色，掌握灵敏的定性检验。",
@@ -130,6 +155,11 @@ export const analysisExperiments: LabExperiment[] = [
   },
   {
     slug: "ammonium-identification",
+    related: ["igcse-0620-12-5-tests", "chem-acidbase-003"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch4"],
+      igcse: ["0620/12.5", "0620/10.2"],
+    },
     title: { zh: "铵根离子的检验", en: "Test for Ammonium Ions" },
     description: {
       zh: "向铵盐中加碱共热放出氨气，使湿润红色石蕊试纸变蓝，确认铵根离子。",
@@ -154,6 +184,11 @@ export const analysisExperiments: LabExperiment[] = [
   },
   {
     slug: "copper-identification",
+    related: ["igcse-0620-12-5-tests", "chem-acidbase-003"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch4"],
+      igcse: ["0620/12.5"],
+    },
     title: { zh: "铜(II)离子的检验", en: "Test for Copper(II) Ions" },
     description: {
       zh: "向含铜离子溶液中加入氢氧化钠生成蓝色沉淀，确认铜(II)离子。",
@@ -178,6 +213,11 @@ export const analysisExperiments: LabExperiment[] = [
   },
   {
     slug: "copper-electrolysis",
+    related: ["igcse-0620-4-1-electrolysis", "igcse-0620-6-4-redox"],
+    syllabus: {
+      pep: ["pep-che-s2/ch2"],
+      igcse: ["0620/4.1"],
+    },
     title: { zh: "电解硫酸铜溶液", en: "Electrolysis of Copper(II) Sulfate Solution" },
     description: {
       zh: "电解硫酸铜溶液，阴极析出铜、阳极放出氧气，认识电解原理与电极反应。",
@@ -201,6 +241,11 @@ export const analysisExperiments: LabExperiment[] = [
   },
   {
     slug: "copper-zinc-cell",
+    related: ["igcse-0620-4-1-electrolysis", "igcse-0620-6-4-redox", "chem-metal-001"],
+    syllabus: {
+      pep: ["pep-che-s2/ch2"],
+      igcse: ["0620/4.1", "0620/6.4"],
+    },
     title: { zh: "铜锌原电池", en: "Copper–Zinc Simple Cell" },
     description: {
       zh: "用铜片、锌片和稀硫酸构成原电池，使电流计偏转，认识化学能转化为电能。",
@@ -225,6 +270,11 @@ export const analysisExperiments: LabExperiment[] = [
   },
   {
     slug: "electroplating-copper",
+    related: ["igcse-0620-4-1-electrolysis", "igcse-0620-6-4-redox"],
+    syllabus: {
+      pep: ["pep-che-s2/ch2"],
+      igcse: ["0620/4.1"],
+    },
     title: { zh: "电镀铜实验", en: "Copper Electroplating" },
     description: {
       zh: "以待镀件为阴极、铜为阳极在硫酸铜溶液中电镀，认识电镀原理与应用。",
@@ -248,6 +298,11 @@ export const analysisExperiments: LabExperiment[] = [
   },
   {
     slug: "iron-electrochemical-corrosion",
+    related: ["igcse-0620-6-4-redox", "chem-metal-001"],
+    syllabus: {
+      pep: ["pep-che-s2/ch2", "pep-che-j9b/ch1"],
+      igcse: ["0620/9.5", "0620/6.4"],
+    },
     title: { zh: "铁的电化学腐蚀", en: "Electrochemical Corrosion of Iron" },
     description: {
       zh: "用食盐水模拟钢铁吸氧腐蚀，结合铁氰化钾指示剂观察腐蚀微电池。",
@@ -271,6 +326,11 @@ export const analysisExperiments: LabExperiment[] = [
   },
   {
     slug: "sacrificial-anode",
+    related: ["chem-metal-001", "igcse-0620-9-4-reactivity-series"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch1"],
+      igcse: ["0620/9.5", "0620/9.4"],
+    },
     title: { zh: "牺牲阳极保护法", en: "Sacrificial Protection" },
     description: {
       zh: "用锌块连接铁制品减缓铁的腐蚀，认识牺牲阳极的阴极保护原理。",
@@ -294,6 +354,11 @@ export const analysisExperiments: LabExperiment[] = [
   },
   {
     slug: "gas-volume-measurement",
+    related: ["chem-stoich-004", "igcse-0620-3-3-moles", "chem-gas-002"],
+    syllabus: {
+      pep: ["pep-che-j9a/ch5"],
+      igcse: ["0620/3.3", "0620/12.1"],
+    },
     title: { zh: "气体体积的测量", en: "Measuring Gas Volumes" },
     description: {
       zh: "用排水量气法测定碳酸钙与盐酸反应放出二氧化碳的体积，练习定量气体测量。",
@@ -318,6 +383,11 @@ export const analysisExperiments: LabExperiment[] = [
   },
   {
     slug: "crystallization-purification",
+    related: ["chem-bonding-004", "igcse-0620-12-3-chromatography"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch2"],
+      igcse: ["0620/12.4"],
+    },
     title: { zh: "粗盐的提纯", en: "Purification of Rock Salt" },
     description: {
       zh: "通过溶解、过滤、蒸发结晶提纯含泥沙的粗盐，掌握混合物分离基本操作。",

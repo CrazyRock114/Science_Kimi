@@ -71,10 +71,6 @@ export const kp64Redox: KnowledgePoint = {
         ]
       },
       {
-        "type": "paragraph",
-        "text": "氧化剂不是被氧化的那一方——它是使别的物质被氧化的一方，而它自身被还原。这两个词指向相反的方向。"
-      },
-      {
         "type": "formula",
         "latex": "\\mathrm{Mg} \\rightarrow \\mathrm{Mg^{2+}} + 2e^-",
         "caption": "氧化：电子在右边，说明被失去，氧化数由 0 升到 +2。无论遇到氧还是氯，镁都会这样。"
@@ -114,10 +110,6 @@ export const kp64Redox: KnowledgePoint = {
           "Identify redox reactions by the colour changes of common oxidising and reducing agents. (Extended)",
           "Define and identify oxidising and reducing agents. (Extended)"
         ]
-      },
-      {
-        "type": "paragraph",
-        "text": "An oxidising agent is not the thing being oxidised — it is the thing doing the oxidising, and it is reduced itself. The two words point in opposite directions."
       },
       {
         "type": "formula",

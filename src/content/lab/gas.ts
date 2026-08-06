@@ -11,6 +11,11 @@ import type { LabExperiment } from "./types";
 export const gasExperiments: LabExperiment[] = [
   {
     slug: "co2-preparation",
+    related: ["chem-gas-002", "chem-acidbase-002", "igcse-0620-7-3-salts"],
+    syllabus: {
+      pep: ["pep-che-j9a/ch6"],
+      igcse: ["0620/7.1", "0620/12.5"],
+    },
     title: { zh: "二氧化碳的实验室制取", en: "Laboratory Preparation of Carbon Dioxide" },
     description: {
       zh: "用大理石（碳酸钙）与稀盐酸反应制取二氧化碳，掌握气体发生与收集装置。",
@@ -35,6 +40,11 @@ export const gasExperiments: LabExperiment[] = [
   },
   {
     slug: "o2-from-h2o2",
+    related: ["chem-gas-001", "chem-energetics-002", "igcse-0620-6-2-rate-of-reaction"],
+    syllabus: {
+      pep: ["pep-che-j9a/ch2"],
+      igcse: ["0620/6.2", "0620/12.5"],
+    },
     title: { zh: "过氧化氢制氧气", en: "Preparing Oxygen from Hydrogen Peroxide" },
     description: {
       zh: "以二氧化锰为催化剂分解过氧化氢制取氧气，理解催化剂的作用。",
@@ -59,6 +69,11 @@ export const gasExperiments: LabExperiment[] = [
   },
   {
     slug: "h2-from-zinc",
+    related: ["chem-metal-002", "chem-metal-001", "igcse-0620-9-4-reactivity-series"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch1"],
+      igcse: ["0620/9.4", "0620/12.5"],
+    },
     title: { zh: "锌与稀硫酸制氢气", en: "Preparing Hydrogen from Zinc and Dilute Sulfuric Acid" },
     description: {
       zh: "用锌粒与稀硫酸反应制取氢气，验证氢气的可燃性与爆鸣实验。",
@@ -83,6 +98,11 @@ export const gasExperiments: LabExperiment[] = [
   },
   {
     slug: "nh3-preparation",
+    related: ["chem-acidbase-003", "igcse-0620-12-5-tests"],
+    syllabus: {
+      pep: ["pep-che-s2/ch1"],
+      igcse: ["0620/12.5", "0620/7.1"],
+    },
     title: { zh: "氨气的制取与喷泉实验", en: "Preparing Ammonia and the Fountain Experiment" },
     description: {
       zh: "氯化铵与熟石灰共热制取氨气，并完成经典的氨气喷泉实验观察其极易溶于水。",
@@ -107,6 +127,11 @@ export const gasExperiments: LabExperiment[] = [
   },
   {
     slug: "so2-preparation",
+    related: ["igcse-0620-10-3-air-and-climate", "chem-acidbase-002", "igcse-0620-6-4-redox"],
+    syllabus: {
+      pep: ["pep-che-s2/ch1"],
+      igcse: ["0620/10.3"],
+    },
     title: { zh: "二氧化硫的制取与性质", en: "Preparation and Properties of Sulfur Dioxide" },
     description: {
       zh: "亚硫酸钠与硫酸反应制取二氧化硫，验证其漂白性与还原性。",
@@ -131,6 +156,11 @@ export const gasExperiments: LabExperiment[] = [
   },
   {
     slug: "h2s-preparation",
+    related: ["chem-acidbase-002", "igcse-0620-6-4-redox"],
+    syllabus: {
+      pep: ["pep-che-s2/ch1"],
+      igcse: ["0620/7.1"],
+    },
     title: { zh: "硫化氢的制取与检验", en: "Preparation and Testing of Hydrogen Sulfide" },
     description: {
       zh: "硫化亚铁与稀盐酸反应制取硫化氢，认识其臭鸡蛋气味与强还原性（注意通风）。",
@@ -155,6 +185,11 @@ export const gasExperiments: LabExperiment[] = [
   },
   {
     slug: "co2-baking-soda",
+    related: ["chem-gas-002", "chem-acidbase-002", "igcse-0620-7-1-acids-bases"],
+    syllabus: {
+      pep: ["pep-che-j9a/ch6"],
+      igcse: ["0620/7.1"],
+    },
     title: { zh: "碳酸氢钠受热与产气对比", en: "Heating Sodium Hydrogencarbonate and Comparing Gas Production" },
     description: {
       zh: "对比碳酸氢钠与稀盐酸反应产气，理解小苏打作为膨松剂的化学原理。",
@@ -179,6 +214,11 @@ export const gasExperiments: LabExperiment[] = [
   },
   {
     slug: "ammonia-fountain-hcl",
+    related: ["chem-acidbase-003", "igcse-0620-7-1-acids-bases", "chem-acidbase-001"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch3"],
+      igcse: ["0620/7.1", "0620/12.5"],
+    },
     title: { zh: "氨气与氯化氢相遇成烟", en: "Ammonia and Hydrogen Chloride Forming White Smoke" },
     description: {
       zh: "将蘸有浓氨水与浓盐酸的玻璃棒靠近，观察生成白烟氯化铵，认识气体间反应。",
@@ -203,6 +243,11 @@ export const gasExperiments: LabExperiment[] = [
   },
   {
     slug: "carbonate-thermal",
+    related: ["chem-gas-002", "chem-energetics-001", "igcse-0620-12-5-tests"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch4"],
+      igcse: ["0620/10.2", "0620/12.5"],
+    },
     title: { zh: "碳酸氢铵分解探究", en: "Investigating the Decomposition of Ammonium Hydrogencarbonate" },
     description: {
       zh: "加热碳酸氢铵观察其完全分解为氨气、水和二氧化碳，理解不稳定铵盐特性。",
@@ -227,6 +272,11 @@ export const gasExperiments: LabExperiment[] = [
   },
   {
     slug: "co2-properties",
+    related: ["chem-gas-002", "igcse-0620-7-1-acids-bases", "chem-energetics-004"],
+    syllabus: {
+      pep: ["pep-che-j9a/ch6"],
+      igcse: ["0620/7.2", "0620/12.5"],
+    },
     title: { zh: "二氧化碳的性质探究", en: "Investigating the Properties of Carbon Dioxide" },
     description: {
       zh: "验证二氧化碳不支持燃烧、密度比空气大，并与水反应生成碳酸使石蕊变红。",
@@ -250,6 +300,11 @@ export const gasExperiments: LabExperiment[] = [
   },
   {
     slug: "o2-properties",
+    related: ["chem-gas-001", "chem-energetics-004", "igcse-0620-12-5-tests"],
+    syllabus: {
+      pep: ["pep-che-j9a/ch2"],
+      igcse: ["0620/12.5"],
+    },
     title: { zh: "氧气的性质探究", en: "Investigating the Properties of Oxygen" },
     description: {
       zh: "用带火星木条、铁丝、硫粉验证氧气的助燃性，观察剧烈燃烧现象。",
@@ -274,6 +329,11 @@ export const gasExperiments: LabExperiment[] = [
   },
   {
     slug: "chlorine-preparation",
+    related: ["igcse-0620-8-2-groups", "igcse-0620-6-4-redox", "chem-acidbase-002"],
+    syllabus: {
+      pep: ["pep-che-s1/ch2"],
+      igcse: ["0620/8.3", "0620/6.4"],
+    },
     title: { zh: "氯气的实验室制取", en: "Laboratory Preparation of Chlorine" },
     description: {
       zh: "用二氧化锰与浓盐酸加热制取氯气，验证其漂白性与刺激性（通风橱操作）。",

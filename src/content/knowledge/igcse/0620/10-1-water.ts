@@ -68,8 +68,52 @@ export const kp101Water: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "实验室为什么用蒸馏水"
+      },
+      {
         "type": "paragraph",
-        "text": "四个处理阶段除去四种杂质，还剩一种。正是这个\"漏网之鱼\"，让实验化学必须使用蒸馏水。"
+        "text": "再往下滑一个阶段，越过那条线。蒸馏：把水煮沸、冷凝蒸汽，溶解的盐留在烧瓶里。现在什么都不剩了。"
+      },
+      {
+        "type": "paragraph",
+        "text": "公共供水系统不会这样做——对如此大的水量来说成本太高。所以自来水中总是含有溶解物质，而这些物质会参与你的反应，破坏实验结果。"
+      },
+      {
+        "type": "paragraph",
+        "text": "这就是\"实验化学为什么用蒸馏水\"的完整答案。不是因为自来水脏——而是因为它是一种溶液，而你需要的是溶剂。"
+      },
+      {
+        "type": "heading",
+        "text": "检验水，与检验纯水"
+      },
+      {
+        "type": "paragraph",
+        "text": "两个不同的问题、两种不同的检验方法，把它们混淆是丢分的可靠方式。要证明液体*含有*水：无水氯化钴由蓝变粉，或无水硫酸铜由白变蓝。"
+      },
+      {
+        "type": "paragraph",
+        "text": "但这些检验对茶水、海水或任何含水的东西都会呈阳性。它们只说明有水存在，对纯度只字未提。"
+      },
+      {
+        "type": "paragraph",
+        "text": "要判断纯度就要看熔点和沸点。纯水在常压下恰好 0 °C 熔化、100 °C 沸腾。任何溶解物都会降低熔点、升高沸点——而且混合物是在一个温度范围内熔化，而不是在一个点。"
+      },
+      {
+        "type": "heading",
+        "text": "什么会进入水体"
+      },
+      {
+        "type": "paragraph",
+        "text": "植物需要氮来合成蛋白质，却无法利用空气中的氮。所以要以铵盐和硝酸盐的形式供给，两者都可溶——这正是它们有用的原因，也正是它们成为问题的原因。"
+      },
+      {
+        "type": "paragraph",
+        "text": "NPK 复合肥同时提供三种元素：氮促进叶片生长，磷促进根系，钾促进开花结果。这三个字母就是三个元素符号。"
+      },
+      {
+        "type": "paragraph",
+        "text": "正因为它们可溶，雨水会把它们从农田冲进河流。而一旦进入河流，水处理的任何阶段都无法再把它们除去。"
       },
       {
         "type": "formula",
@@ -118,8 +162,52 @@ export const kp101Water: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Why the laboratory uses distilled water"
+      },
+      {
         "type": "paragraph",
-        "text": "Four treatment stages, four contaminants removed — and one left over. What survives all of it is why practical chemistry uses distilled water."
+        "text": "Slide one stage further, past the line. Distillation: boil the water, condense the steam, and the dissolved salts stay behind in the flask. Now nothing is left."
+      },
+      {
+        "type": "paragraph",
+        "text": "No public water supply does this — it is far too expensive for the volumes involved. So tap water always has dissolved substances in it, and those substances would take part in your reactions and ruin your results."
+      },
+      {
+        "type": "paragraph",
+        "text": "That is the whole answer to \"why is distilled water used in practical chemistry\". Not because tap water is dirty — because it is a solution, and you need a solvent."
+      },
+      {
+        "type": "heading",
+        "text": "Testing for water, and for pure water"
+      },
+      {
+        "type": "paragraph",
+        "text": "Two different questions with two different tests, and mixing them up is a reliable way to lose a mark. To show a liquid *contains* water: anhydrous cobalt chloride turns from blue to pink, or anhydrous copper sulfate from white to blue."
+      },
+      {
+        "type": "paragraph",
+        "text": "But those tests will go off for tea, or seawater, or anything watery. They say water is present. They say nothing about purity."
+      },
+      {
+        "type": "paragraph",
+        "text": "For purity you need the melting and boiling points. Pure water melts at exactly zero and boils at exactly one hundred degrees at normal pressure. Anything dissolved in it lowers the melting point and raises the boiling point — and a mixture melts over a range rather than at a point."
+      },
+      {
+        "type": "heading",
+        "text": "What ends up in the water"
+      },
+      {
+        "type": "paragraph",
+        "text": "Plants need nitrogen to make protein, and they cannot use the nitrogen in the air. So it is supplied as ammonium salts and nitrates, both of which are soluble — which is exactly what makes them useful and exactly what makes them a problem."
+      },
+      {
+        "type": "paragraph",
+        "text": "An NPK fertiliser supplies three elements at once: nitrogen for leaf growth, phosphorus for roots, potassium for flowers and fruit. The three letters are the three symbols."
+      },
+      {
+        "type": "paragraph",
+        "text": "Because they dissolve, rain washes them off the fields and into rivers. And once there, no stage of water treatment takes them out again."
       },
       {
         "type": "formula",

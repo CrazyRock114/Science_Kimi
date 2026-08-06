@@ -343,4 +343,5 @@ export const bioPlant001: KnowledgePoint = {
       },
     ],
   },
+  related: ['igcse-0610-6-1-photosynthesis', 'bio-plant-002', 'bio-plant-004'],
 };

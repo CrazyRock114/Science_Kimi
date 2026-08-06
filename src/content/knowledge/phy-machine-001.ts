@@ -241,4 +241,57 @@ export const phyMachine001: KnowledgePoint = {
       expected: { torqueLeft: 16, torqueRight: 16, netTorque: 0 },
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '阿基米德有句豪言：“给我一个支点，我就能撬动地球。”他凭什么这么自信？凭的就是这节课的主角——杠杆的平衡条件。',
+          en: 'Archimedes once boasted: "Give me a place to stand, and I will move the Earth." What made him so confident? The hero of this lesson — the balance condition of a lever.',
+        },
+      },
+      {
+        id: 'concept-elements',
+        kind: 'concept',
+        text: {
+          zh: '能绕固定点转动的硬棒就是杠杆，它有五个要素：支点、动力、阻力、动力臂、阻力臂。这里要特别提醒一句：力臂是支点到力的作用线的垂直距离，不一定沿着杠杆本身。把这一条看错，后面的计算全错。',
+          en: 'A rigid bar that turns about a fixed point is a lever, and it has five elements: the pivot, the effort, the load, the effort arm and the load arm. One warning worth repeating: an arm is the perpendicular distance from the pivot to the line of action of the force — it does not have to lie along the bar. Get that wrong and every calculation after it goes wrong too.',
+        },
+      },
+      {
+        id: 'concept-balance',
+        kind: 'concept',
+        text: {
+          zh: '实验结论简单得漂亮：杠杆平衡时，动力乘动力臂等于阻力乘阻力臂，也就是两边的力矩相等。所以动力臂是阻力臂的几倍，动力就只需要阻力的几分之一。但天下没有白省力的好事——省力的同时，动力作用点要移动更长的距离。',
+          en: 'The experimental result is beautifully simple: at balance, effort times effort arm equals load times load arm — the moments on the two sides are equal. So if your effort arm is n times the load arm, you need only one n-th of the force. But nothing comes free — saving force means the effort point has to move through a longer distance.',
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '打开仿真试一试。默认状态两边力矩都是 24，杠杆水平平衡。你先把右侧力臂 d₂ 拖大一点，看杠杆往哪边倾。再点“跷跷板”预设：10 N 的大人坐在离支点 2 格，4 N 的小孩坐在 5 格，力矩刚好相等。然后看“撬棍省力”：动力臂 8 格、阻力臂只有 1 格，2 N 的小力就撬起了 16 N 的重物。最后考考自己：左边保持 6 N、4 格不变，你能把右边调成另一组平衡的组合吗？',
+          en: 'Open the simulation and try it. By default both moments are 24 and the lever sits level. First drag the right arm d₂ a little larger and watch which way the lever tips. Then tap the "seesaw" preset: a 10 N adult sits 2 units from the pivot while a 4 N child sits 5 units out — the moments match exactly. Next, "crowbar saves force": an 8-unit effort arm against a 1-unit load arm lets a 2 N effort pry up a 16 N load. Finally test yourself: keep the left side at 6 N and 4 units — can you find another combination on the right that balances it?',
+        },
+      },
+      {
+        id: 'concept-classes',
+        kind: 'concept',
+        text: {
+          zh: '按力臂的长短，杠杆分三类。动力臂长的是省力杠杆：撬棍、羊角锤、开瓶器。动力臂短的是费力杠杆：镊子、钓鱼竿、人的前臂——费力，但换来的是省距离。两臂相等的是等臂杠杆：天平就是，不省力也不费力。',
+          en: 'By the lengths of the arms, levers come in three classes. A longer effort arm gives a force-saving lever: the crowbar, the claw hammer, the bottle opener. A shorter effort arm gives a distance-saving lever: tweezers, a fishing rod, your forearm — it costs force but wins you distance. Equal arms give the equal-arm lever: the balance scale, which saves nothing at all.',
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '回顾一下：杠杆平衡就是力矩相等，F₁l₁ 等于 F₂l₂，力与力臂成反比。判断一件工具省力还是费力，只需比较它两条力臂的长短。接下来的小测里，看看你能不能一眼认出身边的杠杆属于哪一类。',
+          en: 'To recap: a balanced lever means equal moments — F₁l₁ equals F₂l₂ — and force trades off inversely with arm length. To tell whether a tool saves force or distance, just compare its two arms. In the quiz that follows, see if you can sort the levers around you into the right class at a glance.',
+        },
+      },
+    ],
+  },
+  related: ['phy-machine-002', 'igcse-0625-1-5-2-moments', 'igcse-0625-1-5-forces'],
 };

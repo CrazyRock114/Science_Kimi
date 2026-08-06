@@ -155,4 +155,5 @@ export const phyKinematicsReferenceFrame: KnowledgePoint = {
       },
     },
   ],
+  related: ['igcse-0625-1-2-motion', 'phy-kinematics-velocity', 'phy-motion-001'],
 };

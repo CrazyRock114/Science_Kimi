@@ -153,4 +153,5 @@ export const chemAtomic003: KnowledgePoint = {
       },
     },
   ],
+  related: ['igcse-0620-2-2-atomic-structure', 'chem-atomic-001', 'chem-atomic-004', 'chem-bonding-001'],
 };

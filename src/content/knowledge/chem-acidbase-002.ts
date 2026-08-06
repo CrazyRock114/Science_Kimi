@@ -19,6 +19,15 @@ export const chemAcidbase002: KnowledgePoint = {
   },
   theory: {
     zh: [
+      { type: 'heading', text: '学习目标' },
+      {
+        type: 'list',
+        items: [
+          '描述盐酸与浓硫酸的物理性质，说明稀释浓硫酸的正确操作及其原因。',
+          '列举稀酸的化学通性，并写出代表性的化学方程式。',
+          '描述氯离子与硫酸根离子的检验方法及现象。',
+        ],
+      },
       { type: 'heading', text: '盐酸与硫酸的物理性质' },
       {
         type: 'list',
@@ -54,8 +63,28 @@ export const chemAcidbase002: KnowledgePoint = {
       },
       { type: 'formula', latex: '\\mathrm{HCl} + \\mathrm{AgNO_3} \\rightarrow \\mathrm{AgCl}\\downarrow + \\mathrm{HNO_3}', caption: '检验氯离子：生成白色 AgCl 沉淀' },
       { type: 'formula', latex: '\\mathrm{H_2SO_4} + \\mathrm{BaCl_2} \\rightarrow \\mathrm{BaSO_4}\\downarrow + 2\\mathrm{HCl}', caption: '检验硫酸根离子：生成白色 BaSO₄ 沉淀' },
+      { type: 'heading', text: '术语表' },
+      {
+        type: 'list',
+        items: [
+          'volatile（挥发性）：液体容易变为气体的性质；浓盐酸挥发出的 HCl 气体在瓶口形成白雾。',
+          'hygroscopic（吸水性）：能吸收空气中的水分的性质，浓硫酸因此可用作气体干燥剂。',
+          'dilution（稀释）：把浓酸沿器壁慢慢加入水中并不断搅拌的操作，口诀"酸入水"，防止暴沸飞溅。',
+          'precipitate（沉淀）：溶液反应中生成的难溶固体，如白色的 AgCl 和 BaSO₄。',
+          'general properties of acids（酸的通性）：由 H⁺ 决定的相似化学性质，包括与指示剂、活泼金属、金属氧化物、碱和某些盐的反应。',
+        ],
+      },
     ],
     en: [
+      { type: 'heading', text: 'Learning objectives' },
+      {
+        type: 'list',
+        items: [
+          'Describe the physical properties of hydrochloric acid and concentrated sulfuric acid, and explain the safe way to dilute the concentrated acid.',
+          'List the general chemical reactions of dilute acids and write representative equations.',
+          'Describe the tests for chloride and sulfate ions, with their results.',
+        ],
+      },
       { type: 'heading', text: 'Physical properties of the two acids' },
       {
         type: 'list',
@@ -91,6 +120,17 @@ export const chemAcidbase002: KnowledgePoint = {
       },
       { type: 'formula', latex: '\\mathrm{HCl} + \\mathrm{AgNO_3} \\rightarrow \\mathrm{AgCl}\\downarrow + \\mathrm{HNO_3}', caption: 'Test for chloride ions: white AgCl precipitate' },
       { type: 'formula', latex: '\\mathrm{H_2SO_4} + \\mathrm{BaCl_2} \\rightarrow \\mathrm{BaSO_4}\\downarrow + 2\\mathrm{HCl}', caption: 'Test for sulfate ions: white BaSO₄ precipitate' },
+      { type: 'heading', text: 'Glossary' },
+      {
+        type: 'list',
+        items: [
+          'volatile (挥发性): Readily turning into a gas; the HCl gas given off by concentrated hydrochloric acid forms a white mist at the bottle mouth.',
+          'hygroscopic (吸水性): Able to absorb moisture from the air, which is why concentrated sulfuric acid is used as a drying agent for gases.',
+          'dilution (稀释): Always adding the concentrated acid slowly to water with stirring — "acid into water" — to prevent violent boiling and spitting.',
+          'precipitate (沉淀): An insoluble solid formed in a solution reaction, such as white AgCl and BaSO₄.',
+          'general properties of acids (酸的通性): The similar chemical behaviour caused by H⁺ — reactions with indicators, reactive metals, metal oxides, bases and certain salts.',
+        ],
+      },
     ],
   },
   quiz: [
@@ -173,4 +213,56 @@ export const chemAcidbase002: KnowledgePoint = {
       },
     },
   ],
+  examPractice: [
+    {
+      id: 'ab2-ep1',
+      syllabus: ['0620/7.1.1'],
+      tier: 'core',
+      commandWord: 'Describe',
+      marks: 3,
+      stem: 'Describe what you would observe, and name the products, when dilute sulfuric acid is added to solid magnesium carbonate.',
+      markScheme: [
+        { text: 'Effervescence / bubbles of gas, and the solid gradually dissolves', marks: 1 },
+        { text: 'The gas given off is carbon dioxide', marks: 1 },
+        { text: 'The products are magnesium sulfate, water and carbon dioxide', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '酸 + 碳酸盐 → 盐 + 水 + 二氧化碳；盐的名称由所用的酸决定——硫酸生成硫酸盐。只写"有气泡"而不指出气体是 CO₂，第二分拿不到。',
+        en: 'Acid + carbonate → salt + water + carbon dioxide, with the salt named after the acid — sulfuric gives a sulfate. Writing just "bubbles" without identifying the gas as CO₂ misses the second mark.',
+      },
+    },
+    {
+      id: 'ab2-ep2',
+      syllabus: ['0620/12.5.1'],
+      tier: 'core',
+      commandWord: 'Describe',
+      marks: 2,
+      stem: 'A solution is thought to contain sulfate ions. Describe a test you would carry out to confirm this, and state the result you would expect.',
+      markScheme: [
+        { text: 'Acidify with dilute nitric acid, then add aqueous barium nitrate (or barium chloride)', marks: 1 },
+        { text: 'A white precipitate (of barium sulfate) forms', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '先加稀硝酸是为了排除碳酸根的干扰——碳酸钡也是白色沉淀。漏掉"酸化"这一步，白色沉淀就什么也证明不了。',
+        en: 'The dilute nitric acid comes first to rule out carbonate ions — barium carbonate is a white precipitate too. Without the acidifying step, a white precipitate proves nothing.',
+      },
+    },
+    {
+      id: 'ab2-ep3',
+      syllabus: ['0620/7.1.1'],
+      tier: 'core',
+      commandWord: 'Explain',
+      marks: 2,
+      stem: 'Dilute hydrochloric acid can be used to remove rust, which is mainly iron(III) oxide, from an iron object. Explain why the object must not be left in the acid for too long.',
+      markScheme: [
+        { text: 'The acid first reacts with the rust: acid + metal oxide → salt + water (Fe₂O₃ + 6HCl → 2FeCl₃ + 3H₂O)', marks: 1 },
+        { text: 'Once the rust has gone, the exposed iron is above hydrogen in the reactivity series and reacts with the acid (Fe + 2HCl → FeCl₂ + H₂), corroding the object', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '得分关键是写出"两个"反应：除锈是金属氧化物与酸，腐蚀是金属与酸。只说"酸会腐蚀铁"没有指出铁排在氢前这一依据，解释不完整。',
+        en: 'The key is naming both reactions: rust removal is metal oxide + acid, corrosion is metal + acid. Just saying "the acid corrodes iron" without invoking iron being above hydrogen is an incomplete explanation.',
+      },
+    },
+  ],
+  related: ['igcse-0620-7-1-acids-bases', 'igcse-0620-12-5-tests', 'chem-acidbase-001', 'chem-acidbase-003'],
 };

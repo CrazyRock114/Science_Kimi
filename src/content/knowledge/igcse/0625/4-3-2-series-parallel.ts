@@ -77,8 +77,32 @@ export const kp432SeriesParallel: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "串联：电流相同，电压分配"
+      },
+      {
         "type": "paragraph",
-        "text": "在串联与并联之间切换，观察电荷流动的变化。电流规律、电压规律与总电阻，都在同一张电路图上。"
+        "text": "电流在各处都相同。两个电阻读到的电流一样。这就是为什么电流表放在串联回路的任何位置读数都相同。"
+      },
+      {
+        "type": "paragraph",
+        "text": "但电压不同。四十欧的电阻分到八伏，二十欧的分到四伏。电阻加倍，分压加倍——两者相加正好等于电源的十二伏。"
+      },
+      {
+        "type": "formula",
+        "latex": "V_1 + V_2 = \\text{e.m.f.}"
+      },
+      {
+        "type": "heading",
+        "text": "电表怎么接"
+      },
+      {
+        "type": "paragraph",
+        "text": "电流表串联接在导线里，被测电流要穿过它。电压表并联接在元件两端，测量两点间的电压而不分走电流。"
+      },
+      {
+        "type": "paragraph",
+        "text": "接反了电路就不能工作。电压表串联时电阻极大，几乎没有电流能通过。"
       },
       {
         "type": "formula",
@@ -132,8 +156,32 @@ export const kp432SeriesParallel: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Series: current same, p.d. shares"
+      },
+      {
         "type": "paragraph",
-        "text": "Switch a circuit between series and parallel and watch the charge flow change. Current rules, p.d. rules and combined resistance, all on one diagram."
+        "text": "The current is the same at every point. Both resistors read the same amps. That is why an ammeter can go anywhere in a series loop and give the same answer."
+      },
+      {
+        "type": "paragraph",
+        "text": "But the p.d. does not. The forty-ohm resistor takes eight volts and the twenty-ohm resistor takes four. Twice the resistance, twice the share — and together they add up to the full twelve volts of the supply."
+      },
+      {
+        "type": "formula",
+        "latex": "V_1 + V_2 = \\text{e.m.f.}"
+      },
+      {
+        "type": "heading",
+        "text": "Where the meters go"
+      },
+      {
+        "type": "paragraph",
+        "text": "An ammeter goes in series, in the wire, so the current it measures passes through it. A voltmeter goes in parallel, across the component, so it samples the p.d. between two points without taking the current."
+      },
+      {
+        "type": "paragraph",
+        "text": "Swap them by mistake and the circuit breaks. A voltmeter in series has such a high resistance that almost no current flows at all."
       },
       {
         "type": "formula",

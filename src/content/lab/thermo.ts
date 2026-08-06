@@ -11,6 +11,11 @@ import type { LabExperiment } from "./types";
 export const thermoExperiments: LabExperiment[] = [
   {
     slug: "solubility-measurement",
+    related: ["chem-acidbase-004", "igcse-0620-7-3-salts"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch2"],
+      igcse: ["0620/7.3", "0620/12.4"],
+    },
     title: { zh: "硝酸钾溶解度测定", en: "Measuring the Solubility of Potassium Nitrate" },
     description: {
       zh: "在不同温度下测定硝酸钾溶解度并绘制溶解度曲线，探究温度对溶解度的影响。",
@@ -34,6 +39,11 @@ export const thermoExperiments: LabExperiment[] = [
   },
   {
     slug: "dissolution-heat",
+    related: ["chem-energetics-001", "igcse-0620-5-1-energetics"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch2"],
+      igcse: ["0620/5.1"],
+    },
     title: { zh: "溶解过程的吸热与放热", en: "Endothermic and Exothermic Dissolving" },
     description: {
       zh: "对比氢氧化钠、硝酸铵、氯化钠溶于水时的温度变化，认识溶解热效应。",
@@ -57,6 +67,11 @@ export const thermoExperiments: LabExperiment[] = [
   },
   {
     slug: "neutralization-enthalpy",
+    related: ["chem-energetics-001", "chem-acidbase-001", "igcse-0620-5-1-energetics"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch3", "pep-che-s2/ch2"],
+      igcse: ["0620/5.1", "0620/7.1"],
+    },
     title: { zh: "中和反应反应热测定", en: "Measuring the Enthalpy Change of Neutralisation" },
     description: {
       zh: "测定强酸强碱中和反应的反应热，理解放热反应与能量守恒。",
@@ -81,6 +96,11 @@ export const thermoExperiments: LabExperiment[] = [
   },
   {
     slug: "endothermic-reaction",
+    related: ["chem-energetics-001", "igcse-0620-5-1-energetics"],
+    syllabus: {
+      pep: ["pep-che-s2/ch2"],
+      igcse: ["0620/5.1"],
+    },
     title: { zh: "吸热反应探究", en: "Investigating an Endothermic Reaction" },
     description: {
       zh: "氢氧化钡晶体与氯化铵固体混合反应温度骤降，认识典型吸热反应。",
@@ -105,6 +125,11 @@ export const thermoExperiments: LabExperiment[] = [
   },
   {
     slug: "reaction-rate-temperature",
+    related: ["chem-energetics-002", "igcse-0620-6-2-rate-of-reaction"],
+    syllabus: {
+      pep: ["pep-che-s2/ch2"],
+      igcse: ["0620/6.2"],
+    },
     title: { zh: "温度对反应速率的影响", en: "The Effect of Temperature on the Rate of Reaction" },
     description: {
       zh: "对比不同温度下硫代硫酸钠与稀硫酸反应出现浑浊的时间，探究温度对速率的影响。",
@@ -128,6 +153,11 @@ export const thermoExperiments: LabExperiment[] = [
   },
   {
     slug: "concentration-rate",
+    related: ["chem-energetics-002", "igcse-0620-6-2-rate-of-reaction", "chem-metal-002"],
+    syllabus: {
+      pep: ["pep-che-s2/ch2"],
+      igcse: ["0620/6.2"],
+    },
     title: { zh: "浓度对反应速率的影响", en: "The Effect of Concentration on the Rate of Reaction" },
     description: {
       zh: "对比不同浓度盐酸与同样大小镁条反应产气快慢，定量认识浓度对速率的影响。",
@@ -152,6 +182,11 @@ export const thermoExperiments: LabExperiment[] = [
   },
   {
     slug: "catalyst-rate",
+    related: ["chem-energetics-002", "chem-gas-001", "igcse-0620-6-2-rate-of-reaction"],
+    syllabus: {
+      pep: ["pep-che-j9a/ch2", "pep-che-s2/ch2"],
+      igcse: ["0620/6.2"],
+    },
     title: { zh: "催化剂对反应速率的影响", en: "The Effect of a Catalyst on the Rate of Reaction" },
     description: {
       zh: "对比有无二氧化锰时过氧化氢分解产氧速率，认识催化剂显著加快反应。",
@@ -176,6 +211,11 @@ export const thermoExperiments: LabExperiment[] = [
   },
   {
     slug: "surface-area-rate",
+    related: ["chem-energetics-002", "chem-gas-002", "igcse-0620-6-2-rate-of-reaction"],
+    syllabus: {
+      pep: ["pep-che-s2/ch2"],
+      igcse: ["0620/6.2"],
+    },
     title: { zh: "接触面积对反应速率的影响", en: "The Effect of Surface Area on the Rate of Reaction" },
     description: {
       zh: "对比块状与粉末状碳酸钙与盐酸反应的快慢，认识反应物接触面积的影响。",
@@ -200,6 +240,11 @@ export const thermoExperiments: LabExperiment[] = [
   },
   {
     slug: "chemical-equilibrium-temp",
+    related: ["chem-energetics-003", "igcse-0620-6-3-equilibrium"],
+    syllabus: {
+      pep: ["pep-che-s2/ch2"],
+      igcse: ["0620/6.3"],
+    },
     title: { zh: "温度对化学平衡的影响", en: "The Effect of Temperature on Chemical Equilibrium" },
     description: {
       zh: "通过二氧化氮与四氧化二氮平衡体系在冷热水中的颜色变化，认识温度对平衡的影响。",
@@ -223,6 +268,11 @@ export const thermoExperiments: LabExperiment[] = [
   },
   {
     slug: "instant-cold-pack",
+    related: ["chem-energetics-001", "igcse-0620-5-1-energetics"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch2", "pep-che-s2/ch2"],
+      igcse: ["0620/5.1"],
+    },
     title: { zh: "化学冷热袋原理", en: "The Principle of Chemical Hot and Cold Packs" },
     description: {
       zh: "利用硝酸铵溶解吸热制作简易冷敷袋，联系溶解热在生活中的应用。",

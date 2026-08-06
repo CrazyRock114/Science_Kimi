@@ -77,8 +77,40 @@ export const kp32Lenses: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "矫正视力"
+      },
+      {
         "type": "paragraph",
-        "text": "把物体移过焦点，像就从实像倒立翻转为虚像正立。四项描述全都由这一个距离决定。"
+        "text": "近视眼把远处物体成像在视网膜之前而不是其上——眼球太长，或晶状体屈光力太强。凹透镜在光线进入之前先把它稍微发散，焦点便后移到视网膜上。"
+      },
+      {
+        "type": "paragraph",
+        "text": "远视眼正好相反：近处物体成像在视网膜之后，因为眼球太短或晶状体无法变得足够厚。凸透镜使光线提前会聚，把焦点前移到视网膜上。"
+      },
+      {
+        "type": "paragraph",
+        "text": "分清两者的办法是问：焦点需要往哪个方向移动，哪种透镜能把它往那个方向移。近视是聚焦得太早，因此需要能推迟聚焦的透镜——凹透镜。"
+      },
+      {
+        "type": "heading",
+        "text": "把白光分开"
+      },
+      {
+        "type": "paragraph",
+        "text": "让一束细白光通过三棱镜，射出时会展开成一条彩色的光带。这就是色散，其原因是玻璃对每种颜色的折射程度略有不同。"
+      },
+      {
+        "type": "paragraph",
+        "text": "红光折射最少，紫光最多，因此紫色在光谱的一端、红色在另一端。顺序是红、橙、黄、绿、蓝、靛、紫——值得记住哪一端是哪种颜色，因为题目会问。"
+      },
+      {
+        "type": "paragraph",
+        "text": "因此白光根本不是一种颜色——它是所有颜色的混合，棱镜并没有添加任何东西。它只是把原本就在其中的成分分开，彩虹用雨滴做的正是同一件事。"
+      },
+      {
+        "type": "paragraph",
+        "text": "单一频率的光称为单色光。激光接近单色；滤光片则通过吸收其余成分来接近它。单色光经过棱镜不会发生色散，因为没有什么可以分开。"
       },
       {
         "type": "formula",
@@ -124,8 +156,40 @@ export const kp32Lenses: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Correcting an eye"
+      },
+      {
         "type": "paragraph",
-        "text": "Walk the object across the principal focus and the image flips from real and inverted to virtual and upright. All four descriptions follow from that one distance."
+        "text": "A short-sighted eye focuses distant objects in front of the retina rather than on it — the eyeball is too long, or the lens too strong. A diverging lens spreads the light out a little before it enters, so the focus moves back onto the retina."
+      },
+      {
+        "type": "paragraph",
+        "text": "A long-sighted eye is the opposite: near objects focus behind the retina, because the eyeball is too short or the lens cannot become fat enough. A converging lens brings the light together a little sooner, moving the focus forward onto the retina."
+      },
+      {
+        "type": "paragraph",
+        "text": "The way to keep them straight is to ask which way the focus needs to move and which lens moves it that way. Short sight focuses too early, so you need the lens that delays the focus — the diverging one."
+      },
+      {
+        "type": "heading",
+        "text": "Splitting white light"
+      },
+      {
+        "type": "paragraph",
+        "text": "Send a narrow beam of white light through a triangular glass prism and it emerges spread into a band of colours. That is dispersion, and it happens because the glass refracts each colour by a slightly different amount."
+      },
+      {
+        "type": "paragraph",
+        "text": "Red is refracted least and violet most, so violet ends up at the bottom of the spectrum and red at the top. The order is red, orange, yellow, green, blue, indigo, violet — and it is worth knowing which end is which, because questions ask."
+      },
+      {
+        "type": "paragraph",
+        "text": "White light is therefore not a colour at all — it is all of them together, and the prism does not add anything. It only separates what was already there, which is what a rainbow does with raindrops."
+      },
+      {
+        "type": "paragraph",
+        "text": "And light of a single frequency is called monochromatic. A laser is close to it; a filter gets partway there by absorbing the rest. Monochromatic light is not dispersed by a prism, because there is nothing to separate."
       },
       {
         "type": "formula",

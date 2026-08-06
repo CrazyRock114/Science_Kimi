@@ -19,6 +19,15 @@ export const phyForce002: KnowledgePoint = {
   },
   theory: {
     zh: [
+      { type: 'heading', text: '学习目标' },
+      {
+        type: 'list',
+        items: [
+          '说明物体在不受合力时保持静止或匀速直线运动，理解力是改变运动状态的原因。',
+          '说出惯性的含义，知道惯性大小只由质量决定。',
+          '用惯性解释生活中的现象，并列举利用与防范惯性的实例。',
+        ],
+      },
       { type: 'heading', text: '从亚里士多德到伽利略' },
       {
         type: 'paragraph',
@@ -51,8 +60,28 @@ export const phyForce002: KnowledgePoint = {
         ],
       },
       { type: 'formula', latex: '\\sum F = 0 \\implies v = \\text{常量}', caption: '合力为零时速度保持不变（静止是 v = 0 的特例）' },
+      { type: 'heading', text: '术语表' },
+      {
+        type: 'list',
+        items: [
+          'Newton’s first law（牛顿第一定律）：物体在不受合力时保持静止或匀速直线运动状态，又称惯性定律。',
+          'resultant force（合力）：与物体所受各力共同作用效果相同的那个单一的力。',
+          'balanced forces（平衡力）：合力为零的一组力，其效果与不受力相同。',
+          'inertia（惯性）：物体保持原来运动状态不变的性质，大小只由质量决定。',
+          'uniform motion（匀速运动）：速度保持不变的运动，即合力为零时的运动状态。',
+        ],
+      },
     ],
     en: [
+      { type: 'heading', text: 'Learning objectives' },
+      {
+        type: 'list',
+        items: [
+          'State that an object stays at rest or in uniform straight-line motion without a resultant force, and that a force is what changes motion.',
+          'State what inertia is, and that it depends only on mass.',
+          'Use inertia to explain everyday phenomena, with examples of using it and guarding against it.',
+        ],
+      },
       { type: 'heading', text: 'From Aristotle to Galileo' },
       {
         type: 'paragraph',
@@ -85,6 +114,17 @@ export const phyForce002: KnowledgePoint = {
         ],
       },
       { type: 'formula', latex: '\\sum F = 0 \\implies v = \\text{constant}', caption: 'With zero resultant force the velocity stays constant (rest is the special case v = 0)' },
+      { type: 'heading', text: 'Glossary' },
+      {
+        type: 'list',
+        items: [
+          'Newton’s first law (牛顿第一定律): Without a resultant force an object stays at rest or keeps moving in a straight line at constant speed — also called the law of inertia.',
+          'resultant force (合力): The single force that has the same effect as all the forces acting together.',
+          'balanced forces (平衡力): A set of forces whose resultant is zero, with the same effect as no force at all.',
+          'inertia (惯性): The tendency of an object to keep its state of motion; it depends only on mass.',
+          'uniform motion (匀速运动): Motion at constant velocity — the state of motion when the resultant force is zero.',
+        ],
+      },
     ],
   },
   quiz: [
@@ -162,4 +202,52 @@ export const phyForce002: KnowledgePoint = {
       },
     },
   ],
+  examPractice: [
+    {
+      id: 'force002-ep1',
+      syllabus: ['0625/1.5.1.4'],
+      tier: 'core',
+      commandWord: 'Explain',
+      marks: 2,
+      stem: 'A train travels along a straight, level track at a constant 30 m/s. Explain what this tells you about the forces acting on the train.',
+      markScheme: [
+        { text: 'The resultant force on the train is zero', marks: 1 },
+        {
+          text: 'because at constant velocity the driving force is balanced by the resistive forces of friction and air resistance',
+          marks: 1,
+        },
+      ],
+      examinerNote: {
+        zh: '匀速意味着合力为零，而不是没有力——牵引力和阻力都存在，只是相互抵消了。',
+        en: 'Constant velocity means zero resultant force, not no forces — the driving force and resistive forces are both there, they just cancel.',
+      },
+    },
+    {
+      id: 'force002-ep2',
+      syllabus: ['0625/1.5.1.4', '0625/1.5.1.5'],
+      tier: 'core',
+      commandWord: 'Explain',
+      marks: 3,
+      stem: 'A car brakes suddenly. Explain, in terms of forces, why a passenger who is not wearing a seat belt continues to move forwards, and why wearing a seat belt reduces injury.',
+      markScheme: [
+        {
+          text: 'The braking force acts on the car, not directly on the passenger, so without a resultant force the passenger keeps moving at the original speed',
+          marks: 1,
+        },
+        {
+          text: 'A resultant force is needed to change the passenger’s state of motion — to slow the passenger down with the car',
+          marks: 1,
+        },
+        {
+          text: 'The seat belt provides that force on the upper body, so the passenger decelerates with the car instead of hitting the windscreen or dashboard',
+          marks: 1,
+        },
+      ],
+      examinerNote: {
+        zh: '不要说乘客“受到向前的力”——没有任何东西向前推他，是他保持原速而车在减速。这正是“惯性”的考试化表述。',
+        en: 'Do not say the passenger "is pushed forwards" — nothing pushes him; he keeps his speed while the car slows. That is the exam-ready way to talk about inertia.',
+      },
+    },
+  ],
+  related: ['igcse-0625-1-5-forces', 'phy-force-001', 'phy-force-003'],
 };

@@ -19,6 +19,16 @@ export const chemStoich002: KnowledgePoint = {
   },
   theory: {
     zh: [
+      { type: 'heading', text: '学习目标' },
+      {
+        type: 'list',
+        items: [
+          '说明化学方程式在质的方面与量的方面分别提供的信息。',
+          '依据两条书写原则，按"写—配—注—查"的步骤书写化学方程式。',
+          '用最小公倍数法配平简单的化学方程式，只改系数、不改化学式。',
+          '正确标注反应条件与"↑""↓"符号。',
+        ],
+      },
       { type: 'heading', text: '化学方程式及其意义' },
       {
         type: 'paragraph',
@@ -53,8 +63,28 @@ export const chemStoich002: KnowledgePoint = {
         type: 'paragraph',
         text: '如果反应物中没有气体而生成物中有气体，在该气体物质的化学式右边注"↑"，如过氧化氢分解制氧气；如果反应在溶液中进行，生成物中有不溶性固体（沉淀），在其化学式右边注"↓"，如硫酸铜溶液与氢氧化钠溶液反应生成氢氧化铜。若反应物中已有气体，则生成的气体不再注"↑"。',
       },
+      { type: 'heading', text: '术语表' },
+      {
+        type: 'list',
+        items: [
+          'chemical equation（化学方程式）：用化学式表示化学反应的式子。',
+          'word equation（文字方程式）：只用名称写出反应物与生成物的方程式，不写化学式。',
+          'coefficient（化学计量数/系数）：配平时加在化学式前面的数字，绝不能改动化学式内的下标。',
+          'state symbol（状态符号）：标明物质状态的符号，如 (s)、(l)、(g)、(aq)；初中阶段用"↑""↓"标注气体与沉淀。',
+        ],
+      },
     ],
     en: [
+      { type: 'heading', text: 'Learning objectives' },
+      {
+        type: 'list',
+        items: [
+          'State the qualitative and quantitative information a chemical equation provides.',
+          'Write chemical equations following the two rules and the four steps: write, balance, annotate, check.',
+          'Balance simple equations using the lowest common multiple method, changing coefficients only.',
+          'Add reaction conditions and the symbols ↑ and ↓ correctly.',
+        ],
+      },
       { type: 'heading', text: 'Chemical equations and what they tell us' },
       {
         type: 'paragraph',
@@ -88,6 +118,16 @@ export const chemStoich002: KnowledgePoint = {
       {
         type: 'paragraph',
         text: 'If no gas appears among the reactants but a gas is produced, mark that gas with ↑ — for example the decomposition of hydrogen peroxide. If the reaction happens in solution and an insoluble solid (precipitate) forms, mark it with ↓ — for example copper(II) hydroxide from copper(II) sulfate and sodium hydroxide. If a gas is already a reactant, the gaseous product is not marked with ↑.',
+      },
+      { type: 'heading', text: 'Glossary' },
+      {
+        type: 'list',
+        items: [
+          'chemical equation（化学方程式）: an equation that uses chemical formulae to represent a reaction.',
+          'word equation（文字方程式）: an equation using only the names of reactants and products, without formulae.',
+          'coefficient（化学计量数/系数）: the number placed in front of a formula when balancing; the subscripts inside a formula must never be changed.',
+          'state symbol（状态符号）: a symbol showing the physical state, such as (s), (l), (g) or (aq); the symbols ↑ and ↓ mark a gas or a precipitate.',
+        ],
       },
     ],
   },
@@ -151,4 +191,56 @@ export const chemStoich002: KnowledgePoint = {
       },
     },
   ],
+  examPractice: [
+    {
+      id: 'chem-stoich-002-cp1',
+      syllabus: ['0620/3.1.4'],
+      tier: 'core',
+      commandWord: 'Give',
+      marks: 3,
+      stem: 'Zinc reacts with oxygen to form zinc oxide, ZnO. Give the word equation for this reaction and the balanced symbol equation.',
+      markScheme: [
+        { text: 'zinc + oxygen → zinc oxide', marks: 1 },
+        { text: 'Zn + O₂ → ZnO with correct formulae', marks: 1 },
+        { text: 'Balanced as 2Zn + O₂ → 2ZnO', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '氧气作为单质是 O₂ 而不是 O——把 O₂ 写成 O，在配平之前就先丢了化学式那一分。配平只能改系数，绝不能把 ZnO 改写成别的化学式。',
+        en: 'Oxygen as an element is O₂, not O — writing a single O loses the formula mark before balancing even begins. And balance with coefficients only: never rewrite ZnO as a different formula to make the atoms match.',
+      },
+    },
+    {
+      id: 'chem-stoich-002-cp2',
+      syllabus: ['0620/3.1.4'],
+      tier: 'core',
+      commandWord: 'Balance',
+      marks: 2,
+      stem: 'Balance the equation: __Fe + __Cl₂ → __FeCl₃.',
+      markScheme: [
+        { text: 'Chlorine balanced: 3Cl₂ for 2FeCl₃ (6 Cl atoms on each side)', marks: 1 },
+        { text: 'Fully balanced: 2Fe + 3Cl₂ → 2FeCl₃', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '先配出现次数最复杂的元素。两边氯原子数 2 和 3 的最小公倍数是 6，所以 Cl₂ 前配 3、FeCl₃ 前配 2，再回头配铁。',
+        en: 'Start with the most awkward element. The LCM of the chlorine counts, 2 and 3, is 6, so use 3Cl₂ and 2FeCl₃, then go back and balance the iron.',
+      },
+    },
+    {
+      id: 'chem-stoich-002-cp3',
+      syllabus: ['0620/3.1.8'],
+      tier: 'supplement',
+      commandWord: 'Deduce',
+      marks: 2,
+      stem: 'Solid calcium carbonate, CaCO₃, decomposes on heating to give solid calcium oxide and carbon dioxide gas. Deduce the balanced symbol equation, including state symbols.',
+      markScheme: [
+        { text: 'CaCO₃ → CaO + CO₂ with correct formulae', marks: 1 },
+        { text: 'CaCO₃(s) → CaO(s) + CO₂(g), already balanced, with state symbols', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '有些方程式本身就是配平的。要核对，而不要以为非得在某处加系数——多余的系数反而让方程式变错。',
+        en: 'Some equations balance as written. Check rather than assuming a coefficient must be added somewhere — an unnecessary one makes the equation wrong.',
+      },
+    },
+  ],
+  related: ['igcse-0620-3-1-formulae-equations', 'chem-stoich-001', 'chem-stoich-004', 'chem-bonding-003'],
 };

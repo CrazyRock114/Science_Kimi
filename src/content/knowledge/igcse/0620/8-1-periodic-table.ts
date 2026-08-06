@@ -70,8 +70,36 @@ export const kp81PeriodicTable: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "横跨一个周期"
+      },
+      {
         "type": "paragraph",
-        "text": "它不是用来查阅的表格，而是一幅电子排布图。周期数是电子层数，族数是最外层电子数。"
+        "text": "沿第 3 周期从左往右走。钠、镁、铝——金属，在左侧。然后是硅，处在分界线上。再往后是磷、硫、氯——非金属，在右侧。"
+      },
+      {
+        "type": "paragraph",
+        "text": "横跨周期时金属性逐渐减弱。注意这是渐变而不是突变——硅介于两者之间，兼有双方的一些性质。答题时说\"有一条明确的分界线\"就说过头了。"
+      },
+      {
+        "type": "heading",
+        "text": "两个特殊的区"
+      },
+      {
+        "type": "paragraph",
+        "text": "每个周期的末尾都是稀有气体：氦、氖、氩、氪。它们的最外层全都填满了。失去、得到或共用电子都无利可图，所以它们不反应。它们甚至不成对——以单原子形式存在。"
+      },
+      {
+        "type": "paragraph",
+        "text": "而在第 4 周期中间，是那一块十个元素。从钪到锌——过渡元素。铁、铜、镍、铬：你真正拿在手里过的那些金属。"
+      },
+      {
+        "type": "paragraph",
+        "text": "关于它们要记住四点：密度大、硬度高、熔点高；形成有色化合物——硫酸铜是蓝色，高锰酸钾是紫色；具有可变氧化数，所以铁可以是 +2 也可以是 +3；而且是良好的催化剂。"
+      },
+      {
+        "type": "paragraph",
+        "text": "把这些和第 I 主族金属对比：后者软到能用小刀切开，而且只形成白色化合物。这四点差别就是任何\"比较过渡元素与第 I 主族金属\"题目的答案。"
       },
       {
         "type": "formula",
@@ -121,8 +149,36 @@ export const kp81PeriodicTable: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Across a period"
+      },
+      {
         "type": "paragraph",
-        "text": "Not a chart to look things up in — a picture of how electrons are arranged. Period is the number of shells, group is the number of outer electrons."
+        "text": "Move along Period 3 from left to right. Sodium, magnesium, aluminium — metals, on the left. Then silicon, on the borderline. Then phosphorus, sulfur, chlorine — non-metals, on the right."
+      },
+      {
+        "type": "paragraph",
+        "text": "Metallic character falls as you cross a period. And notice it is a gradual change, not a line — silicon sits between the two and has some properties of each. Any exam answer that says \"there is a line\" is overstating it."
+      },
+      {
+        "type": "heading",
+        "text": "The two special blocks"
+      },
+      {
+        "type": "paragraph",
+        "text": "Right at the end of every period sit the noble gases: helium, neon, argon, krypton. Full outer shells, all of them. There is nothing to be gained by losing, gaining or sharing an electron, so they do not react. They do not even pair up — they exist as single atoms."
+      },
+      {
+        "type": "paragraph",
+        "text": "And in the middle of Period 4, that block of ten. Scandium through zinc — the transition elements. Iron, copper, nickel, chromium: the metals you have actually held."
+      },
+      {
+        "type": "paragraph",
+        "text": "Four things to remember about them. Dense and hard, with high melting points. They form coloured compounds — copper sulfate is blue, potassium manganate purple. They have variable oxidation numbers, so iron can be two-plus or three-plus. And they make good catalysts."
+      },
+      {
+        "type": "paragraph",
+        "text": "Compare that with a Group I metal, which is soft enough to cut with a knife and forms only white compounds. Those four differences are the answer to any \"compare a transition element with a Group I metal\" question."
       },
       {
         "type": "formula",

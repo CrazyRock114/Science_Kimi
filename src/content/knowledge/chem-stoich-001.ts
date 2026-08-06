@@ -19,6 +19,16 @@ export const chemStoich001: KnowledgePoint = {
   },
   theory: {
     zh: [
+      { type: 'heading', text: '学习目标' },
+      {
+        type: 'list',
+        items: [
+          '说出质量守恒定律的内容，理解"参加反应"这一关键词的含义。',
+          '从原子的种类、数目、质量不变，解释化学反应前后质量守恒的原因。',
+          '用质量守恒定律解释反应中"质量增加或减少"的实验现象。',
+          '根据质量守恒定律计算反应中未知物质的质量。',
+        ],
+      },
       { type: 'heading', text: '什么是质量守恒定律？' },
       {
         type: 'paragraph',
@@ -47,8 +57,28 @@ export const chemStoich001: KnowledgePoint = {
         type: 'paragraph',
         text: '在密闭容器中做红磷燃烧实验，或把铁钉放入硫酸铜溶液中（Fe + CuSO₄ ═ FeSO₄ + Cu），反应前后天平保持平衡，直接验证了质量守恒。有些反应看似"不守恒"：镁条燃烧后固体质量增加，是因为有氧气参加反应；碳酸钠与盐酸在敞口容器中反应后质量减小，是因为生成的二氧化碳气体逸散到空气中。把参加或生成的气体都计入，质量依然守恒。',
       },
+      { type: 'heading', text: '术语表' },
+      {
+        type: 'list',
+        items: [
+          'law of conservation of mass（质量守恒定律）：参加化学反应的各物质的质量总和，等于反应后生成的各物质的质量总和。',
+          'reactant（反应物）：在反应中被消耗的物质，写在方程式等号左边。',
+          'product（生成物）：在反应中生成的物质，写在方程式等号右边。',
+          'closed system（密闭体系）：与外界没有物质交换的反应体系，验证质量守恒时气体无法逸出。',
+        ],
+      },
     ],
     en: [
+      { type: 'heading', text: 'Learning objectives' },
+      {
+        type: 'list',
+        items: [
+          'State the law of conservation of mass and explain what the words "take part in" mean.',
+          'Explain why mass is conserved, in terms of the types, numbers and masses of atoms staying the same.',
+          'Use the law to explain why a reaction can appear to gain or lose mass.',
+          'Calculate unknown reacting masses using the law of conservation of mass.',
+        ],
+      },
       { type: 'heading', text: 'What is the law of conservation of mass?' },
       {
         type: 'paragraph',
@@ -76,6 +106,16 @@ export const chemStoich001: KnowledgePoint = {
       {
         type: 'paragraph',
         text: 'Burning red phosphorus in a closed container, or placing an iron nail in copper(II) sulfate solution (Fe + CuSO₄ ═ FeSO₄ + Cu), keeps the balance unchanged — direct evidence for the law. Some reactions only appear to break it: magnesium gains mass when it burns because oxygen from the air joins in; sodium carbonate and hydrochloric acid seem to lose mass in an open container because the carbon dioxide escapes. Count all the gases involved, and mass is still conserved.',
+      },
+      { type: 'heading', text: 'Glossary' },
+      {
+        type: 'list',
+        items: [
+          'law of conservation of mass（质量守恒定律）: the total mass of the reactants that take part in a reaction equals the total mass of the products formed.',
+          'reactant（反应物）: a substance used up in a reaction, written on the left of the equation.',
+          'product（生成物）: a substance formed in a reaction, written on the right of the equation.',
+          'closed system（密闭体系）: a reaction system that exchanges no matter with its surroundings, so gases cannot escape.',
+        ],
       },
     ],
   },
@@ -191,4 +231,56 @@ export const chemStoich001: KnowledgePoint = {
       },
     ],
   },
+  examPractice: [
+    {
+      id: 'chem-stoich-001-cp1',
+      syllabus: ['0620/3.2.3'],
+      tier: 'core',
+      commandWord: 'Calculate',
+      marks: 2,
+      stem: '6.4 g of copper is heated strongly in a stream of oxygen until it is completely converted into copper(II) oxide. The mass of the solid product is 8.0 g. Calculate the mass of oxygen that reacted with the copper.',
+      markScheme: [
+        { text: 'Mass of oxygen = 8.0 − 6.4 (mass gained by the solid)', marks: 1 },
+        { text: '= 1.6 g', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '固体增加的质量就是参加反应的氧气的质量——这是质量守恒定律的直接应用。不要把生成物的 8.0 g 当成氧气的质量。',
+        en: 'The mass gained by the solid is exactly the mass of oxygen that reacted — a direct use of conservation of mass. Do not treat the 8.0 g of product as the mass of oxygen.',
+      },
+    },
+    {
+      id: 'chem-stoich-001-cp2',
+      syllabus: ['0620/3.1.4'],
+      tier: 'core',
+      commandWord: 'Explain',
+      marks: 3,
+      stem: 'A student burns a strip of magnesium in an open crucible. The white solid produced has a greater mass than the original magnesium strip. Explain, in terms of atoms and the law of conservation of mass, why the mass increases and why this does not break the law.',
+      markScheme: [
+        { text: 'Oxygen from the air also takes part in the reaction / combines with the magnesium', marks: 1 },
+        { text: 'Mass of magnesium oxide = mass of magnesium + mass of oxygen that reacted', marks: 1 },
+        { text: 'In a reaction atoms are only rearranged — no atoms are created or destroyed — so the total mass stays the same', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '只说"氧气参加了反应"只能拿第一分；必须把"增加的质量等于参加反应的氧气的质量"和"原子只是重新排列、不生不灭"两点都答全。',
+        en: 'Saying only "oxygen joins in" earns just the first mark; full credit needs both the mass balance (the gain equals the oxygen that reacted) and the atomic explanation (atoms are rearranged, never created or destroyed).',
+      },
+    },
+    {
+      id: 'chem-stoich-001-cp3',
+      syllabus: ['0620/3.2.3'],
+      tier: 'core',
+      commandWord: 'Calculate',
+      marks: 2,
+      stem: 'When 10.0 g of calcium carbonate is heated until it fully decomposes, CaCO₃ → CaO + CO₂, 4.4 g of carbon dioxide gas escapes. Calculate the mass of calcium oxide left behind.',
+      markScheme: [
+        { text: 'By conservation of mass: mass of CaO = 10.0 − 4.4', marks: 1 },
+        { text: '= 5.6 g', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '生成的二氧化碳逸出，所以剩余的固体变轻——这并不是"质量消失了"。把逸出的气体计入，总质量依然守恒。',
+        en: 'The escaping carbon dioxide makes the remaining solid lighter — the mass has not vanished. Count the gas that left and the total mass is still conserved.',
+      },
+    },
+  ],
+  related: ['igcse-0620-3-1-formulae-equations', 'chem-stoich-002', 'chem-stoich-004'],
 };

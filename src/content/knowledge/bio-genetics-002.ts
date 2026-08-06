@@ -20,6 +20,16 @@ export const bioGenetics002: KnowledgePoint = {
   },
   theory: {
     zh: [
+      { type: 'heading', text: '学习目标' },
+      {
+        type: 'list',
+        items: [
+          '区分基因型与表现型，正确使用显性/隐性、纯合/杂合等术语。',
+          '用遗传图解和棋盘法预测单因子杂交的结果，说出 3:1 与 1:1 两个特征比例。',
+          '解释测交如何检验未知基因型。',
+          '理解 3:1 是统计规律，样本太小时实际比例会偏离理论值。',
+        ],
+      },
       { type: 'heading', text: '一对相对性状的杂交实验' },
       {
         type: 'paragraph',
@@ -46,8 +56,31 @@ export const bioGenetics002: KnowledgePoint = {
           '判断显隐性的常用方法：具有一对相对性状的纯合亲本杂交，F₁ 表现出来的性状为显性性状。',
         ],
       },
+      { type: 'heading', text: '术语表' },
+      {
+        type: 'list',
+        items: [
+          'allele（等位基因）：基因的不同形式，如控制高茎的 D 和控制矮茎的 d。',
+          'genotype（基因型）：生物体所携带的等位基因组合，如 DD、Dd、dd。',
+          'phenotype（表现型）：生物体可观察到的性状表现，如高茎或矮茎。',
+          'homozygous（纯合子）：同一基因的两个等位基因相同，如 DD 或 dd，能稳定遗传。',
+          'heterozygous（杂合子）：同一基因的两个等位基因不同，如 Dd，自交后代会发生性状分离。',
+          'dominant（显性）：只要存在就会表达的等位基因；recessive（隐性）：只有没有显性等位基因时才表达。',
+          'test cross（测交）：让待测个体与隐性纯合子杂交，用以判断其基因型。',
+        ],
+      },
     ],
     en: [
+      { type: 'heading', text: 'Learning objectives' },
+      {
+        type: 'list',
+        items: [
+          'Distinguish genotype from phenotype, and use dominant/recessive and homozygous/heterozygous correctly.',
+          'Predict the results of monohybrid crosses with genetic diagrams and Punnett squares, quoting the 3:1 and 1:1 ratios.',
+          'Explain how a test cross identifies an unknown genotype.',
+          'Understand that 3:1 is a statistical ratio, so small samples may deviate from theory.',
+        ],
+      },
       { type: 'heading', text: 'Mendel’s monohybrid cross' },
       {
         type: 'paragraph',
@@ -72,6 +105,19 @@ export const bioGenetics002: KnowledgePoint = {
           'Homozygous individuals (AA or aa) breed true; self-crossing a heterozygote (Aa) produces a mixture of phenotypes.',
           'The 3:1 and 1:1 ratios are statistical expectations over large samples; with few offspring the observed ratio may deviate noticeably.',
           'To find which form is dominant, cross pure-breeding parents with contrasting characteristics — the form shown by all the F₁ is dominant.',
+        ],
+      },
+      { type: 'heading', text: 'Glossary' },
+      {
+        type: 'list',
+        items: [
+          'allele（等位基因）: an alternative form of a gene, e.g. D for tall and d for dwarf stems.',
+          'genotype（基因型）: the alleles an organism carries, such as DD, Dd or dd.',
+          'phenotype（表现型）: the observable characteristics of an organism, such as tall or dwarf.',
+          'homozygous（纯合子）: having two identical alleles of a gene (DD or dd); such individuals breed true.',
+          'heterozygous（杂合子）: having two different alleles of a gene (Dd); self-crossing gives mixed offspring.',
+          'dominant / recessive（显性 / 隐性）: a dominant allele is expressed whenever present; a recessive allele only shows without a dominant allele.',
+          'test cross（测交）: crossing an individual with a homozygous recessive to reveal its genotype.',
         ],
       },
     ],
@@ -218,6 +264,59 @@ export const bioGenetics002: KnowledgePoint = {
       },
     },
   ],
+  examPractice: [
+    {
+      id: 'gen002-ex1',
+      syllabus: ['0610/17.4.11', '0610/17.4.12'],
+      tier: 'core',
+      commandWord: 'Predict',
+      marks: 4,
+      stem: 'In pea plants, round seeds (R) are dominant to wrinkled seeds (r). Two heterozygous round-seeded plants are crossed. Use a genetic diagram to predict the offspring genotypes, and state the expected phenotypic ratio.',
+      markScheme: [
+        { text: 'Parental genotypes Rr × Rr, with gametes R and r from each parent', marks: 1 },
+        { text: 'Completed Punnett square giving RR, Rr, Rr, rr', marks: 1 },
+        { text: 'Phenotypes identified: RR and Rr round, rr wrinkled', marks: 1 },
+        { text: 'Ratio 3 round : 1 wrinkled', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '分数是给推导过程的。只写一个“3:1”而没有遗传图解，无论多正确都会丢掉四分中的三分。',
+        en: 'Marks are for the working. A bare “3 : 1” with no diagram throws away three of the four marks, however right it is.',
+      },
+    },
+    {
+      id: 'gen002-ex2',
+      syllabus: ['0610/17.4.4', '0610/17.4.6'],
+      tier: 'core',
+      commandWord: 'Define',
+      marks: 2,
+      stem: 'Define the terms homozygous and heterozygous, using alleles of a single gene in your answer.',
+      markScheme: [
+        { text: 'Homozygous: having two identical alleles of a gene', marks: 1, alternatives: ['e.g. AA or aa'] },
+        { text: 'Heterozygous: having two different alleles of a gene', marks: 1, alternatives: ['e.g. Aa'] },
+      ],
+      examinerNote: {
+        zh: '两个术语必须围绕“同一个基因的两个等位基因”来定义。把杂合说成“有两种性状”是常见错误——那说的是表现型，不是等位基因。',
+        en: 'Both definitions must refer to the two alleles of one gene. Saying heterozygous means “has two characteristics” is a common error — that describes phenotypes, not alleles.',
+      },
+    },
+    {
+      id: 'gen002-ex3',
+      syllabus: ['0610/17.4.13'],
+      tier: 'supplement',
+      commandWord: 'Describe',
+      marks: 3,
+      stem: 'A tall pea plant may be homozygous (TT) or heterozygous (Tt). Describe how a test cross could be used to find out which, and state how each possible result would be interpreted.',
+      markScheme: [
+        { text: 'Cross the plant with a homozygous recessive (tt, dwarf) plant', marks: 1 },
+        { text: 'If all offspring are tall, the unknown plant is TT', marks: 1 },
+        { text: 'If about half the offspring are dwarf (1 : 1 ratio), the unknown plant is Tt', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '必须与纯合隐性个体杂交。与另一株高茎杂交毫无用处，因为任一亲本提供的显性等位基因都会掩盖结果。',
+        en: 'It must be the homozygous recessive. Crossing with another tall plant tells you nothing, because a dominant allele from either parent would hide the result.',
+      },
+    },
+  ],
   kernels: {
     mendel: mendelKernel,
   },
@@ -325,6 +424,7 @@ export const bioGenetics002: KnowledgePoint = {
       },
     ],
   },
+  related: ['igcse-0610-17-1-inheritance', 'bio-genetics-001', 'bio-genetics-003', 'bio-genetics-004'],
 };
 
 export default bioGenetics002;

@@ -102,8 +102,92 @@ export const kp161Reproduction: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "花就是生殖器官"
+      },
+      {
         "type": "paragraph",
-        "text": "排卵是在下一次月经的前十四天，而不是上一次月经之后的第十四天。把周期调长，看它如何移动。"
+        "text": "雄性部分是雄蕊：产生花粉的花药，由花丝托起。雌性部分是心皮：接受花粉的柱头、支撑它的花柱，以及含有胚珠的子房。围绕它们的是吸引昆虫的花瓣，以及曾保护花蕾的萼片。"
+      },
+      {
+        "type": "paragraph",
+        "text": "传粉是花粉由花药转移到柱头。它不是受精——受精发生在之后，当花粉的核与胚珠中的核融合时。把这两个词弄反，是试卷上最常见的错误之一。"
+      },
+      {
+        "type": "paragraph",
+        "text": "虫媒花在\"做广告\"：花瓣大而鲜艳、有香气、有花蜜，花药和柱头藏在里面，昆虫必须擦身而过。它的花粉黏或带刺、数量少，以便附着在昆虫身上。"
+      },
+      {
+        "type": "paragraph",
+        "text": "风媒花完全不做这些。花瓣小而暗淡甚至没有，无香气、无花蜜。花药悬垂在外承接气流，柱头大而呈羽毛状以捕捉飘过的花粉。它产生大量细小、光滑、轻盈的花粉——因为风不会瞄准。"
+      },
+      {
+        "type": "paragraph",
+        "text": "自花传粉是花粉落到同一植株的柱头上；异花传粉则是落到同种的另一植株上。自花传粉可靠——不需要传粉者——但产生的变异较少，因而种群适应得更慢。异花传粉正好相反。"
+      },
+      {
+        "type": "paragraph",
+        "text": "花粉落定后，花粉管沿花柱向下生长至子房，把雄性细胞核带入胚珠。种子萌发需要三个条件——水、氧气和适宜的温度。不需要光：大多数种子是在地下的黑暗中萌发的。"
+      },
+      {
+        "type": "heading",
+        "text": "为相反任务而生的两种细胞"
+      },
+      {
+        "type": "paragraph",
+        "text": "精子必须移动。因此它很小，有一条用来游动的尾，中段密布线粒体以释放游动所需的能量。顶端是顶体，内含能消化卵细胞外层的酶。"
+      },
+      {
+        "type": "paragraph",
+        "text": "卵细胞必须\"供养\"。因此它大得多，充满细胞质，其中含有胚胎在植入前赖以生存的养料贮备。一旦有一个精子进入，它的胶质层立即改变，第二个精子便无法进入——否则合子将成为三倍体。"
+      },
+      {
+        "type": "paragraph",
+        "text": "数量上也相反：精子数以百万计，一同释放且能自主移动；卵子每月一个，单独排出，由纤毛沿输卵管推送。受精是两个细胞核的融合，发生在输卵管中，而不是子宫里。"
+      },
+      {
+        "type": "paragraph",
+        "text": "合子一边向子宫移动一边分裂，到达时已是一团细胞，即胚胎，随后植入子宫内膜。接下来它需要营养，这正是胎盘的作用。"
+      },
+      {
+        "type": "heading",
+        "text": "两套永不相接的循环"
+      },
+      {
+        "type": "paragraph",
+        "text": "胎盘是母体血液与胎儿血液极为靠近、通过扩散交换物质的地方。氧气、葡萄糖、氨基酸和抗体进入胎儿；二氧化碳和尿素返回母体。"
+      },
+      {
+        "type": "paragraph",
+        "text": "虽然靠得很近，却从不混合，这一点很重要。两者的血型可能不同，而母体血液的压力高得多——足以损伤胎儿的血管。脐带负责在胎儿与胎盘之间输送血液。"
+      },
+      {
+        "type": "paragraph",
+        "text": "胎儿周围是羊膜囊，内含羊水，可以缓冲外来撞击并支撑胎儿的重量，使其能够均匀生长。"
+      },
+      {
+        "type": "paragraph",
+        "text": "但胎盘是筛子，不是墙。有些病原体能够穿过它——风疹病毒、HIV——毒素也能，包括尼古丁、酒精和许多药物。这就是孕妇摄入的东西同样会到达胎儿的原因。"
+      },
+      {
+        "type": "heading",
+        "text": "经由这一途径传播的感染"
+      },
+      {
+        "type": "paragraph",
+        "text": "性传播感染是通过性接触传播的感染。HIV 是引起这类感染的病原体，未经治疗的 HIV 感染最终可能发展为艾滋病。"
+      },
+      {
+        "type": "paragraph",
+        "text": "HIV 通过体液传播：无保护的性接触；血液——共用针具或输入被感染的血液；以及母亲经胎盘、分娩过程或母乳传给孩子。"
+      },
+      {
+        "type": "paragraph",
+        "text": "控制的关键在于切断这些途径：使用安全套、输血前筛查血液、使用一次性针具、对感染者进行检测与治疗，以及向公众普及真正的传播方式。"
+      },
+      {
+        "type": "paragraph",
+        "text": "HIV 攻击淋巴细胞——正是产生抗体的那类细胞。因此危害并非病毒直接造成，而在于免疫系统再也无法应对其他任何病原体。艾滋病，是其他感染对一个已无力自卫的身体所造成的后果。"
       },
       {
         "type": "heading",
@@ -141,8 +225,92 @@ export const kp161Reproduction: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "A flower is a reproductive organ"
+      },
+      {
         "type": "paragraph",
-        "text": "Ovulation is fourteen days before the next period, not fourteen days after the last one. Lengthen the cycle and watch it move."
+        "text": "The male parts are the stamens: an anther, which makes pollen, held up by a filament. The female parts are the carpel: a stigma that catches pollen, a style holding it up, and an ovary containing ovules. Around them, petals to attract insects and sepals that protected the bud."
+      },
+      {
+        "type": "paragraph",
+        "text": "Pollination is the transfer of pollen from an anther to a stigma. It is not fertilisation — that comes later, when a pollen nucleus fuses with a nucleus in an ovule. Getting those two words the wrong way round is one of the commonest errors in the paper."
+      },
+      {
+        "type": "paragraph",
+        "text": "An insect-pollinated flower advertises: large bright petals, scent, nectar, and anthers and stigma tucked inside where an insect must brush past them. Its pollen is sticky or spiky, in small amounts, so it clings to the insect."
+      },
+      {
+        "type": "paragraph",
+        "text": "A wind-pollinated flower does none of that. Small dull petals or none, no scent, no nectar. Anthers dangle outside in the airflow and stigmas are large and feathery to catch what drifts by. And it makes enormous quantities of small, smooth, light pollen — because the wind is not aiming."
+      },
+      {
+        "type": "paragraph",
+        "text": "Self-pollination is pollen reaching a stigma of the same plant; cross-pollination is pollen reaching a different plant of the same species. Self-pollination is reliable — no pollinator needed — but it produces less variation, so the population adapts more slowly. Cross-pollination is the opposite trade."
+      },
+      {
+        "type": "paragraph",
+        "text": "Once pollen lands, a pollen tube grows down through the style to the ovary, carrying the male nucleus with it into the ovule. And a seed needs three things to germinate — water, oxygen and a suitable temperature. Not light: most seeds germinate underground in the dark."
+      },
+      {
+        "type": "heading",
+        "text": "Two cells built for opposite jobs"
+      },
+      {
+        "type": "paragraph",
+        "text": "A sperm has to travel. So it is small, it has a tail to swim with, and a middle section packed with mitochondria to release the energy for swimming. At its tip is an acrosome, holding enzymes that digest a way through the egg’s outer layers."
+      },
+      {
+        "type": "paragraph",
+        "text": "An egg has to supply. So it is very much larger, full of cytoplasm containing the food store the embryo will live on before it implants. Its jelly coat changes the moment one sperm gets in, so no second one can — otherwise the zygote would be triploid."
+      },
+      {
+        "type": "paragraph",
+        "text": "And the numbers are opposite too: millions of sperm, released together and mobile; one egg a month, released alone and moved along the oviduct by cilia. Fertilisation is the fusion of the two nuclei, and it happens in the oviduct, not in the uterus."
+      },
+      {
+        "type": "paragraph",
+        "text": "The zygote divides as it travels down to the uterus and arrives as a ball of cells, an embryo, which implants in the uterus lining. And then it needs feeding, which is what the placenta is for."
+      },
+      {
+        "type": "heading",
+        "text": "Two circulations that never touch"
+      },
+      {
+        "type": "paragraph",
+        "text": "The placenta is where the mother’s blood and the fetus’s blood come very close together and exchange materials by diffusion. Oxygen, glucose, amino acids and antibodies cross to the fetus; carbon dioxide and urea cross back."
+      },
+      {
+        "type": "paragraph",
+        "text": "Close together, but never mixed, and that matters. The two may have different blood groups, and the mother’s blood is at a much higher pressure — enough to damage the fetus’s vessels. The umbilical cord carries the blood between fetus and placenta."
+      },
+      {
+        "type": "paragraph",
+        "text": "Around the fetus, the amniotic sac holds amniotic fluid, which cushions it against knocks and supports its weight so it can grow evenly."
+      },
+      {
+        "type": "paragraph",
+        "text": "But the placenta is a filter, not a wall. Some pathogens cross it — rubella, HIV — and so do toxins including nicotine, alcohol and many drugs. That is why what a pregnant woman takes in reaches the fetus too."
+      },
+      {
+        "type": "heading",
+        "text": "Infections that travel this way"
+      },
+      {
+        "type": "paragraph",
+        "text": "A sexually transmitted infection is one passed on through sexual contact. HIV is a pathogen that causes one, and an untreated HIV infection may eventually lead to AIDS."
+      },
+      {
+        "type": "paragraph",
+        "text": "HIV is transmitted in body fluids: through unprotected sexual contact, through blood — sharing needles, or transfusion of infected blood — and from a mother to her child across the placenta, during birth, or in breast milk."
+      },
+      {
+        "type": "paragraph",
+        "text": "Control is about breaking those routes. Condoms, screening blood before transfusion, single-use needles, testing and treating people who are infected, and educating people about how transmission actually happens."
+      },
+      {
+        "type": "paragraph",
+        "text": "HIV attacks lymphocytes — the very cells that make antibodies. So the damage is not what the virus does directly; it is that the immune system stops being able to deal with anything else. AIDS is what other infections do to a body that can no longer defend itself."
       },
       {
         "type": "heading",

@@ -139,4 +139,5 @@ export const phyMachine002: KnowledgePoint = {
       },
     },
   ],
+  related: ['phy-machine-003', 'phy-machine-004', 'igcse-0625-1-7-energy'],
 };

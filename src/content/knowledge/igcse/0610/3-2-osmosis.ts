@@ -69,8 +69,16 @@ export const kp32Osmosis: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "动物细胞没有细胞壁"
+      },
+      {
         "type": "paragraph",
-        "text": "直线穿过零点之处，就是细胞内部的浓度——你通过找到\"什么都没发生\"的那一点，测出了一个你从未接触到的量。"
+        "text": "以上一切都依赖细胞壁。动物细胞没有细胞壁，因此没有什么能阻止水进入——它会膨胀，最终胀破。把红细胞放进纯水中，正是如此。"
+      },
+      {
+        "type": "paragraph",
+        "text": "而在浓溶液中，动物细胞会皱缩变形，而不是发生质壁分离，因为根本没有细胞壁供细胞膜脱离。这就是为什么血液的水势受到如此严格的调控——同样是渗透，只是没有细胞壁来救你。"
       },
       {
         "type": "formula",
@@ -110,8 +118,16 @@ export const kp32Osmosis: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "An animal cell has no wall"
+      },
+      {
         "type": "paragraph",
-        "text": "Where the line crosses zero is the concentration inside the cell — you measure something you never get access to, by finding the point where nothing happens."
+        "text": "Everything above depended on the cell wall. An animal cell has none, so nothing stops water entering — it swells and eventually bursts. A red blood cell put into pure water does exactly that."
+      },
+      {
+        "type": "paragraph",
+        "text": "And in a concentrated solution an animal cell shrinks and crinkles instead of plasmolysing, because there is no wall for the membrane to pull away from. That is why the water potential of your blood is controlled so carefully — it is the same osmosis, with no wall to save you."
       },
       {
         "type": "formula",

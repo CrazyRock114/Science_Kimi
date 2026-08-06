@@ -83,8 +83,68 @@ export const kp62Universe: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "这个斜率有名字"
+      },
+      {
         "type": "paragraph",
-        "text": "作出退行速度–距离图，测出斜率，再取倒数估算宇宙的年龄。"
+        "text": "这条直线就是哈勃定律。它的斜率是哈勃常数——星系退行速度与其距离之比。"
+      },
+      {
+        "type": "formula",
+        "latex": "H_0 = \\frac{v}{d}"
+      },
+      {
+        "type": "paragraph",
+        "text": "精彩之处在于：把这个常数取倒数，得到的是一段时间——膨胀持续至今的估计时长，约一百四十亿年。"
+      },
+      {
+        "type": "formula",
+        "latex": "\\text{age} \\approx \\frac{1}{H_0}"
+      },
+      {
+        "type": "paragraph",
+        "text": "调高哈勃常数，看年龄下降。膨胀越快，达到今天所见的宇宙所需的时间就越短。"
+      },
+      {
+        "type": "heading",
+        "text": "两个数是怎么测的"
+      },
+      {
+        "type": "paragraph",
+        "text": "速度来自红移：测出波长被拉长了多少，就得到退行速度。距离更难——天文学家用该星系中超新星的亮度来推算。"
+      },
+      {
+        "type": "paragraph",
+        "text": "距离是不确定性的主要来源，所以数据点会散落在直线周围。把散布调大，趋势依然清晰可辨，尽管没有一个点正好落在线上。"
+      },
+      {
+        "type": "heading",
+        "text": "两条证据"
+      },
+      {
+        "type": "paragraph",
+        "text": "如果现在一切都在飞散，那么过去一切都更靠近。回溯得足够远，整个宇宙曾集中于一处。这就是大爆炸理论，红移是它的第一条证据。"
+      },
+      {
+        "type": "paragraph",
+        "text": "第二条是宇宙微波背景辐射——来自天空各个方向的微弱微波。它产生于宇宙形成后不久，此后被膨胀不断拉长，直到落入微波波段。"
+      },
+      {
+        "type": "heading",
+        "text": "尺度与恒星的一生"
+      },
+      {
+        "type": "paragraph",
+        "text": "先说尺度。太阳是一颗中等大小的恒星，是银河系数千亿颗恒星之一；银河系直径约十万光年——而银河系只是数千亿个星系中的一个。"
+      },
+      {
+        "type": "paragraph",
+        "text": "恒星由引力聚拢的气体尘埃云形成。当向内的引力与炽热核心向外的压力平衡时，原恒星成为稳定恒星，核心处氢正聚变为氦。"
+      },
+      {
+        "type": "paragraph",
+        "text": "氢耗尽后，恒星膨胀成红巨星。像太阳这样的恒星会抛出行星状星云，留下白矮星；质量大得多的恒星则爆发为超新星，留下中子星或黑洞。"
       },
       {
         "type": "formula",
@@ -135,8 +195,68 @@ export const kp62Universe: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "The gradient has a name"
+      },
+      {
         "type": "paragraph",
-        "text": "Plot recession speed against distance, measure the gradient, and turn it upside down to estimate the age of the Universe."
+        "text": "That straight line is Hubble’s law. Its gradient is the Hubble constant — the ratio of a galaxy’s recession speed to its distance from us."
+      },
+      {
+        "type": "formula",
+        "latex": "H_0 = \\frac{v}{d}"
+      },
+      {
+        "type": "paragraph",
+        "text": "And here is the remarkable part. Turn that constant upside down and you get a time — an estimate of how long the expansion has been going on. About fourteen thousand million years."
+      },
+      {
+        "type": "formula",
+        "latex": "\\text{age} \\approx \\frac{1}{H_0}"
+      },
+      {
+        "type": "paragraph",
+        "text": "Raise the Hubble constant and watch the age fall. A faster expansion means less time was needed to reach the Universe we see today."
+      },
+      {
+        "type": "heading",
+        "text": "How the two numbers are found"
+      },
+      {
+        "type": "paragraph",
+        "text": "The speed comes from the redshift: measure how much the wavelength has stretched and you have the recession speed. The distance is harder — astronomers use the brightness of a supernova in that galaxy."
+      },
+      {
+        "type": "paragraph",
+        "text": "Distances are the uncertain part, which is why the points scatter about the line. Turn the scatter up and the trend is still unmistakable, even though no single point sits exactly on the line."
+      },
+      {
+        "type": "heading",
+        "text": "Two pieces of evidence"
+      },
+      {
+        "type": "paragraph",
+        "text": "If everything is flying apart now, then in the past everything was closer together. Run it far enough back and the whole Universe was concentrated in one place. That is the Big Bang theory, and redshift is the first piece of evidence for it."
+      },
+      {
+        "type": "paragraph",
+        "text": "The second is the cosmic microwave background — faint microwave radiation coming from every direction in the sky. It was produced shortly after the Universe formed, and has been stretched into the microwave region by the expansion ever since."
+      },
+      {
+        "type": "heading",
+        "text": "Scale, and the life of a star"
+      },
+      {
+        "type": "paragraph",
+        "text": "Some scale first. The Sun is a medium-sized star, one of many billions in the Milky Way, which is about a hundred thousand light-years across — and the Milky Way is one of many billions of galaxies."
+      },
+      {
+        "type": "paragraph",
+        "text": "Stars form from clouds of gas and dust pulled together by gravity. A protostar becomes stable when the inward pull of gravity is balanced by the outward push from its hot centre, where hydrogen is fusing into helium."
+      },
+      {
+        "type": "paragraph",
+        "text": "When the hydrogen runs out, the star swells into a red giant. A star like the Sun then sheds a planetary nebula and leaves a white dwarf. A much more massive star explodes as a supernova, leaving a neutron star or a black hole."
       },
       {
         "type": "formula",

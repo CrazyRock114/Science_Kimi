@@ -67,8 +67,36 @@ export const kp111HomologousSeries: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "改变链的末端"
+      },
+      {
         "type": "paragraph",
-        "text": "数百万种有机物，只问两个问题：碳链有多长，末端接了什么？"
+        "text": "现在把碳链固定在两个碳，改变末端。这是乙烯：两个碳共用两对电子而不是一对，所以有一个双键，氢也少了两个。通式变成 CₙH₂ₙ。"
+      },
+      {
+        "type": "paragraph",
+        "text": "乙醇。一个 –OH 取代了一个氢，名字以 \"-ol\" 结尾。同样是两个碳，但看沸点：乙烷 −89，乙醇 78。官能团改变了一切。"
+      },
+      {
+        "type": "paragraph",
+        "text": "乙酸——食醋中的酸。一个 –COOH 官能团：一个氧与碳双键相连，另一个在 O–H 中。正是这个基团让它成为酸，也让沸点又高了一截。"
+      },
+      {
+        "type": "paragraph",
+        "text": "青色的键就是官能团：决定化学性质的那部分原子。灰色的部分只是碳链。官能团相同的两种化合物，不管链多长，反应方式都相同。"
+      },
+      {
+        "type": "heading",
+        "text": "读懂名字"
+      },
+      {
+        "type": "paragraph",
+        "text": "有机物的名字分两半。词干表示碳数——meth- 一、eth- 二、prop- 三、but- 四。词尾表示类别：-ane、-ene、-ol、-oic acid。"
+      },
+      {
+        "type": "paragraph",
+        "text": "所以 propan-1-ol 一定是三个碳带一个 –OH，即使没见过也能画出来。中间的数字告诉你官能团在第几个碳上。"
       },
       {
         "type": "formula",
@@ -112,8 +140,36 @@ export const kp111HomologousSeries: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Change the end of the chain"
+      },
+      {
         "type": "paragraph",
-        "text": "Millions of organic compounds, two questions. How long is the carbon chain, and what is on the end of it?"
+        "text": "Now hold the chain at two carbons and change what is on the end. This is ethene: the two carbons share two pairs of electrons instead of one, so there is a double bond and two fewer hydrogens. The general formula drops to CₙH₂ₙ."
+      },
+      {
+        "type": "paragraph",
+        "text": "Ethanol. An –OH group in place of one hydrogen, and the name ends in \"-ol\". Same two carbons, but look at the boiling point: minus eighty-nine for ethane, seventy-eight for ethanol. The group changed everything."
+      },
+      {
+        "type": "paragraph",
+        "text": "Ethanoic acid — the acid in vinegar. A –COOH group: one oxygen double-bonded to the carbon, one in an O–H. That group is what makes it an acid, and it is the reason the boiling point is higher again."
+      },
+      {
+        "type": "paragraph",
+        "text": "The teal bonds are the functional group: the atoms that decide the chemical properties. Everything in grey is just chain. Two compounds with the same functional group react in the same way, however long their chains."
+      },
+      {
+        "type": "heading",
+        "text": "Reading the name"
+      },
+      {
+        "type": "paragraph",
+        "text": "Organic names are built in two halves. The stem counts the carbons — meth- one, eth- two, prop- three, but- four. The ending gives the family: -ane, -ene, -ol, -oic acid."
+      },
+      {
+        "type": "paragraph",
+        "text": "So propan-1-ol has to be three carbons with an –OH, and you can draw it without ever having seen it. The number tells you which carbon the group is on."
       },
       {
         "type": "formula",

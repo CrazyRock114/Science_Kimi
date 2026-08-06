@@ -73,8 +73,68 @@ export const kp31Waves: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "横波还是纵波"
+      },
+      {
         "type": "paragraph",
-        "text": "看波如何传递能量而不传递物质，区分横波与纵波，并在频率与波长互换时验证 v = fλ。"
+        "text": "横波中粒子的振动方向与波的传播方向垂直。光、水波和地震 S 波都是这样。"
+      },
+      {
+        "type": "paragraph",
+        "text": "现在切换到纵波。粒子改为沿传播方向振动，挤在一起形成密部，散开形成疏部。声波和地震 P 波就是这样。"
+      },
+      {
+        "type": "paragraph",
+        "text": "注意下方的图像看起来完全一样。这一点最容易骗人：位移图像永远不能告诉你这是哪种波，只有题目文字才能。"
+      },
+      {
+        "type": "heading",
+        "text": "波速公式"
+      },
+      {
+        "type": "paragraph",
+        "text": "波速等于频率乘波长。看我把频率加倍时的波速读数——波明显跑得更快了。"
+      },
+      {
+        "type": "formula",
+        "latex": "v = f\\lambda"
+      },
+      {
+        "type": "paragraph",
+        "text": "现在我把波长也减半。频率加倍、波长减半——波速又回到了原值。在给定介质中波速是固定的，所以频率与波长总是此消彼长。"
+      },
+      {
+        "type": "heading",
+        "text": "波在边界处会做的三件事"
+      },
+      {
+        "type": "paragraph",
+        "text": "波盘是观察这一切的标准方法。振动棒在浅水中产生平直的波前，上方的灯把它们的影子投在桌面上，你还可以在水中放置障碍物。"
+      },
+      {
+        "type": "paragraph",
+        "text": "放入一块平直挡板，波会发生反射：反射角等于入射角，而波长、频率和波速都不变。反射只改变方向。"
+      },
+      {
+        "type": "paragraph",
+        "text": "在池底放一块平板玻璃形成浅水区，波会发生折射。浅水中波速变慢，因此波长变短——若波以某个角度到达边界，方向也会改变。但频率不变，因为波源的振动频率没有变。"
+      },
+      {
+        "type": "paragraph",
+        "text": "这一点值得说两遍，因为它是本章最常见的错误。折射改变波速和波长，但绝不改变频率。频率由产生波的源决定，边界对此无能为力。"
+      },
+      {
+        "type": "paragraph",
+        "text": "再放一块带缝的挡板，波通过后会散开。这就是衍射；与前两者不同，波本身完全没有变化——波速、波长、频率都不变。变的只是波前的形状。"
+      },
+      {
+        "type": "paragraph",
+        "text": "散开的程度取决于缝宽与波长的比较。缝很宽时几乎不弯折：大部分波直行通过，只有边缘略微卷曲。把缝收窄到接近波长，散开就明显增强；当缝宽与波长相当时，波几乎以半圆形的弧面射出。"
+      },
+      {
+        "type": "paragraph",
+        "text": "在单个障碍物的边缘也是同样的道理：波会绕到它后面，波长越长绕得越多。这就是为什么你能听见拐角处的人说话却看不见他——声波波长约一米，能绕过墙壁衍射，而光的波长不足一微米，做不到。"
       },
       {
         "type": "formula",
@@ -121,8 +181,68 @@ export const kp31Waves: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Transverse or longitudinal"
+      },
+      {
         "type": "paragraph",
-        "text": "See a wave carry energy without carrying matter, tell transverse from longitudinal, and watch v = fλ hold as you trade frequency against wavelength."
+        "text": "In a transverse wave the particles vibrate at right angles to the direction the wave travels. Light, water waves and seismic S-waves all behave this way."
+      },
+      {
+        "type": "paragraph",
+        "text": "Now switch to longitudinal. The particles vibrate along the direction of travel instead, bunching into compressions and spreading into rarefactions. Sound and seismic P-waves do this."
+      },
+      {
+        "type": "paragraph",
+        "text": "Notice the graph underneath looks identical. That catches people out: a displacement graph never tells you which type of wave it is. Only the question text does."
+      },
+      {
+        "type": "heading",
+        "text": "The wave equation"
+      },
+      {
+        "type": "paragraph",
+        "text": "Wave speed is frequency times wavelength. Watch the speed readout as I double the frequency — the wave visibly moves faster."
+      },
+      {
+        "type": "formula",
+        "latex": "v = f\\lambda"
+      },
+      {
+        "type": "paragraph",
+        "text": "Now I halve the wavelength as well. Frequency doubled, wavelength halved — and the speed is back where it started. In a given medium the speed is fixed, so f and lambda always trade off against each other."
+      },
+      {
+        "type": "heading",
+        "text": "Three things a wave does at a boundary"
+      },
+      {
+        "type": "paragraph",
+        "text": "A ripple tank is the standard way to see all of this. A vibrating bar makes straight wavefronts on shallow water, a lamp above casts their shadow on the bench, and you can put obstacles in the way."
+      },
+      {
+        "type": "paragraph",
+        "text": "Put a straight barrier in and the waves reflect: the angle of reflection equals the angle of incidence, and the wavelength, frequency and speed are all unchanged. Reflection changes only the direction."
+      },
+      {
+        "type": "paragraph",
+        "text": "Put a flat sheet of glass on the bottom to make a shallow region and the waves refract. In shallower water they travel more slowly, so the wavelength shortens — and if they meet the boundary at an angle they change direction. But the frequency does not change, because the source is still vibrating at the same rate."
+      },
+      {
+        "type": "paragraph",
+        "text": "That is worth saying twice, because it is the most common error in the topic. Refraction changes speed and wavelength. It never changes frequency. The frequency is set by whatever is making the wave, and the boundary has no say in it."
+      },
+      {
+        "type": "paragraph",
+        "text": "And put a barrier with a gap in it, and the waves spread out after passing through. That is diffraction, and unlike the other two nothing about the wave changes at all — not the speed, not the wavelength, not the frequency. Only the shape of the wavefronts."
+      },
+      {
+        "type": "paragraph",
+        "text": "How much they spread depends on the gap compared with the wavelength. A wide gap barely bends them: most of the wave carries straight on and only the edges curl. Narrow the gap towards the wavelength and the spreading grows, until at a gap about equal to the wavelength the waves emerge as almost semicircular arcs."
+      },
+      {
+        "type": "paragraph",
+        "text": "At the edge of a single obstacle it is the same story: waves bend round it, and the longer the wavelength the more they bend. Which is why you can hear someone round a corner but not see them — sound has a wavelength of about a metre and diffracts round the wall, while light at a fraction of a micrometre does not."
       },
       {
         "type": "formula",

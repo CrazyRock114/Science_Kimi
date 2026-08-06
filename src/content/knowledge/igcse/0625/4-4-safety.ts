@@ -67,10 +67,6 @@ export const kp44Safety: KnowledgePoint = {
         ]
       },
       {
-        "type": "paragraph",
-        "text": "额定值低于工作电流的保险丝什么也保护不了——它只会让电器无法工作。额定值远高于工作电流，它则会在电缆过热时无动于衷。"
-      },
-      {
         "type": "formula",
         "latex": "\\dfrac{V_1}{V_2} = \\dfrac{R_1}{R_2}",
         "caption": "两者流过相同的电流，因此由 V = IR，分得的电压与阻值成正比。而两个电压之和必须等于电源电压——核对这一点能查出大多数错误。"
@@ -109,10 +105,6 @@ export const kp44Safety: KnowledgePoint = {
           "Know the live, neutral and earth wires, and why switches and fuses go in the live wire.",
           "Explain trip switches and fuses, choose appropriate ratings, and explain double insulation and earthing."
         ]
-      },
-      {
-        "type": "paragraph",
-        "text": "A fuse rated below the working current protects nothing — it just stops the appliance working. Rated far above it, it sits there while the cable overheats."
       },
       {
         "type": "formula",

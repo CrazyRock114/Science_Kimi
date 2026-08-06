@@ -171,4 +171,5 @@ export const chemEnergetics003: KnowledgePoint = {
       },
     },
   ],
+  related: ['igcse-0620-6-3-equilibrium', 'chem-energetics-002', 'chem-energetics-001'],
 };

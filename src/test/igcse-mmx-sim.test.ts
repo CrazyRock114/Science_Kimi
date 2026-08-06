@@ -5,36 +5,24 @@
  * 与每个预设参数下调用，断言返回合法的 SimResult——读数非 NaN、series/bodies/links
  * 等结构合法。另对代表性基元做 jsdom 渲染冒烟，验证移植的基元层真的能画出来。
  */
-import { cleanup, render } from '@testing-library/react';
-import { afterEach, describe, expect, it } from 'vitest';
+import { cleanup, render, waitFor } from '@testing-library/react';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import { createElement } from 'react';
+import { MemoryRouter } from 'react-router-dom';
 import { igcse0625KnowledgePoints } from '../content/knowledge/igcse/0625';
+import type { KnowledgePoint } from '../content/types';
+import { KnowledgePointPage } from '../components/knowledge/KnowledgePointPage';
 import MmxStage from '../simulations/mmx/MmxStage';
-import type { MmxSimulation, SimResult } from '../simulations/mmx/types';
+import {
+  IMPLEMENTED_PRIMITIVES,
+  SIM_PRIMITIVES,
+  type MmxSimulation,
+  type SimResult,
+} from '../simulations/mmx/types';
 
-const KNOWN_PRIMITIVES = new Set([
-  'plot2d',
-  'atom',
-  'molecule',
-  'balance',
-  'bonding',
-  'chromatogram',
-  'giant',
-  'ladder',
-  'lattice',
-  'periodictable',
-  'sort',
-  'match',
-  'punnett',
-  'pyramid',
-  'beam',
-  'vectors',
-  'particles',
-  'waves',
-  'raytrace',
-  'circuit',
-  'field2d',
-]);
+// 已移植基元清单派生自单一来源（content/sim-spec.ts，经 mmx/types re-export），
+// 不再在此另维护一份
+const KNOWN_PRIMITIVES = new Set<string>(IMPLEMENTED_PRIMITIVES);
 
 function defaultParams(mmx: MmxSimulation): Record<string, number> {
   return Object.fromEntries(mmx.spec.params.map((p) => [p.key, p.default]));
@@ -173,4 +161,65 @@ describe('mmx 基元渲染冒烟', () => {
       expect(container.querySelectorAll('dd').length).toBe(mmx.spec.readouts.length);
     });
   }
+});
+
+// --- 基元清单单一来源（SIM_PRIMITIVES / IMPLEMENTED_PRIMITIVES）---
+
+describe('mmx 基元清单', () => {
+  it('IMPLEMENTED_PRIMITIVES 是 SIM_PRIMITIVES 的子集，且两者均无重复', () => {
+    expect(new Set(SIM_PRIMITIVES).size).toBe(SIM_PRIMITIVES.length);
+    expect(new Set(IMPLEMENTED_PRIMITIVES).size).toBe(IMPLEMENTED_PRIMITIVES.length);
+    for (const p of IMPLEMENTED_PRIMITIVES) {
+      expect(SIM_PRIMITIVES, `IMPLEMENTED 中的 ${p} 不在 SIM_PRIMITIVES`).toContain(p);
+    }
+    // 未实现的基元（走 SimStage fallback）仍保留在类型联合中
+    expect(SIM_PRIMITIVES.length).toBeGreaterThan(IMPLEMENTED_PRIMITIVES.length);
+  });
+});
+
+// --- 内核单次计算：result prop 复用 ---
+
+describe('mmx 内核单次计算', () => {
+  afterEach(cleanup);
+
+  const kp = igcse0625KnowledgePoints[0];
+
+  it('MmxStage：传入 result 时不再调用内核，未传时自行计算一次', () => {
+    const mmx = kp.simulation!.mmx!;
+    const kernel = vi.fn(mmx.kernel);
+    const spyMmx: MmxSimulation = { spec: mmx.spec, kernel };
+    const params = defaultParams(mmx);
+    const result = mmx.kernel(params);
+
+    const { unmount } = render(createElement(MmxStage, { params, mmx: spyMmx, result }));
+    expect(kernel, '传入 result 后不应再跑内核').not.toHaveBeenCalled();
+    unmount();
+
+    render(createElement(MmxStage, { params, mmx: spyMmx }));
+    expect(kernel, '未传 result 时内部自行计算一次').toHaveBeenCalledTimes(1);
+  });
+
+  it('知识点页：liveFormulas 与 MmxStage 共享同一次内核计算', async () => {
+    const withFormulas = igcse0625KnowledgePoints.find(
+      (k) => (k.simulation?.liveFormulas?.length ?? 0) > 0,
+    );
+    expect(withFormulas, '测试数据中应存在带 liveFormulas 的 mmx 课程').toBeDefined();
+    const mmx = withFormulas!.simulation!.mmx!;
+    const kernel = vi.fn(mmx.kernel);
+    const kpSpy: KnowledgePoint = {
+      ...withFormulas!,
+      simulation: { ...withFormulas!.simulation!, mmx: { spec: mmx.spec, kernel } },
+    };
+
+    const { container } = render(
+      createElement(
+        MemoryRouter,
+        { initialEntries: ['/zh'] },
+        createElement(KnowledgePointPage, { kp: kpSpy, lang: 'zh' as const }),
+      ),
+    );
+    // MmxStage 经 React.lazy 加载：等画布真正挂载后再断言总调用次数
+    await waitFor(() => expect(container.querySelector('svg')).not.toBeNull());
+    expect(kernel, '内核应只计算一次').toHaveBeenCalledTimes(1);
+  });
 });

@@ -72,8 +72,44 @@ export const kp51AtomNucleus: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "人们是怎么知道的"
+      },
+      {
         "type": "paragraph",
-        "text": "质子决定它是什么，中子决定它是哪种同位素，电子决定它的电荷。三个看似可以互换、实则完全不同的滑块。"
+        "text": "这些都不是显而易见的，确立它们的那个实验值得细致了解。用α粒子——带正电、质量相对较大——轰击金箔，并把探测器绕金箔移动，统计各个方向上到达的粒子数目。"
+      },
+      {
+        "type": "paragraph",
+        "text": "有三个结果。绝大多数α粒子径直穿过，完全没有偏转。少数被偏转了明显的角度。而极少数——大约八千分之一——被弹回到源的方向。"
+      },
+      {
+        "type": "paragraph",
+        "text": "现在把每个结果都当作证据来读。大多数径直穿过，说明原子内部大部分是空的。有些被偏转，说明其中有带正电的东西在排斥它们。而少数几乎原路返回——这就要求那些正电荷集中在极小的体积内，并且质量大到不会被撞开。"
+      },
+      {
+        "type": "paragraph",
+        "text": "最后这一条是决定性的结果，也是答题时应当引用的。被它推翻的那个模型认为正电荷均匀分布在整个原子中，而分散的电荷无法把高速α粒子掉转回来。只有一个微小、致密、质量大且带正电的核才能做到。弹回现象之稀少，本身就衡量了原子核有多小。"
+      },
+      {
+        "type": "heading",
+        "text": "分裂与结合"
+      },
+      {
+        "type": "paragraph",
+        "text": "核裂变是大核分裂成两个较小的核。铀-235 核吸收一个慢中子后变得不稳定并裂开——放出能量，而且关键是放出两三个中子，这些中子又能继续使别的核裂变。这就是反应堆加以控制、而炸弹不加控制的链式反应。"
+      },
+      {
+        "type": "paragraph",
+        "text": "一个典型方程：铀-235 加一个中子，生成钡-141、氪-92 和 3 个中子。按考官的方式核对一下。核子数：235 + 1 = 236，而 141 + 92 + 3 = 236。质子数：92 + 0 = 92，而 56 + 36 + 0 = 92。两边都平衡，也都必须平衡。"
+      },
+      {
+        "type": "paragraph",
+        "text": "核聚变则相反：两个很轻的核结合成一个较重的核。氢的两种同位素氘和氚聚变生成氦-4 和一个中子。核子数：2 + 3 = 5，4 + 1 = 5。质子数：1 + 1 = 2，2 + 0 = 2。每次都是同样的核对方法。"
+      },
+      {
+        "type": "paragraph",
+        "text": "聚变是太阳的能量来源，它需要极高的温度和压强——因为两个原子核都带正电、彼此强烈排斥，必须以足够大的力量撞到一起才能克服排斥。裂变不需要这样的条件，这正是我们已有裂变电站而仍在努力建造聚变电站的原因。"
       },
       {
         "type": "formula",
@@ -119,8 +155,44 @@ export const kp51AtomNucleus: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "How anyone knew"
+      },
+      {
         "type": "paragraph",
-        "text": "Protons decide what it is, neutrons decide which isotope of it, electrons decide its charge. Three sliders that look interchangeable and are not."
+        "text": "None of that is obvious, and the experiment that established it is worth knowing in detail. A thin gold foil was bombarded with alpha particles — which are positively charged and comparatively heavy — and a detector was moved around the foil to count how many arrived in each direction."
+      },
+      {
+        "type": "paragraph",
+        "text": "Three results. The great majority of alpha particles went straight through with no deflection at all. A small number were deflected through noticeable angles. And a very few — about one in eight thousand — came back towards the source."
+      },
+      {
+        "type": "paragraph",
+        "text": "Now read each result as evidence. Most went straight through, so the atom must be mostly empty space. Some were deflected, so there is something positively charged in there repelling them. And a few came almost straight back — which needs that positive charge to be concentrated in a tiny volume and to be massive enough not to be shoved aside."
+      },
+      {
+        "type": "paragraph",
+        "text": "That last one is the decisive result, and it is the one to quote in an answer. The model it replaced had the positive charge spread evenly through the atom, and spread-out charge cannot turn a fast alpha particle round. Only a tiny, dense, massive, positively charged nucleus can. The rarity of the bounce-back is itself the measure of how small the nucleus is."
+      },
+      {
+        "type": "heading",
+        "text": "Splitting and joining"
+      },
+      {
+        "type": "paragraph",
+        "text": "Nuclear fission is a large nucleus splitting into two smaller ones. A uranium-235 nucleus absorbs a slow neutron, becomes unstable, and breaks apart — releasing energy and, crucially, two or three more neutrons, which can go on to split further nuclei. That is the chain reaction a reactor controls and a bomb does not."
+      },
+      {
+        "type": "paragraph",
+        "text": "A typical equation: uranium-235 plus a neutron gives barium-141, krypton-92 and three neutrons. Check it the way an examiner will. Nucleon numbers: 235 plus 1 is 236, and 141 plus 92 plus 3 is also 236. Proton numbers: 92 plus 0 is 92, and 56 plus 36 plus 0 is 92. Both sides balance, and both must."
+      },
+      {
+        "type": "paragraph",
+        "text": "Nuclear fusion is the opposite: two very light nuclei joining to make a heavier one. Two isotopes of hydrogen, deuterium and tritium, fuse to give helium-4 and a neutron. Nucleon numbers, 2 plus 3 is 5, and 4 plus 1 is 5. Proton numbers, 1 plus 1 is 2, and 2 plus 0 is 2. Same check, every time."
+      },
+      {
+        "type": "paragraph",
+        "text": "Fusion is what powers the Sun, and it needs enormous temperatures and pressures — because two nuclei are both positive and repel each other fiercely, and they have to be thrown together hard enough to overcome that. Fission needs no such conditions, which is why we have fission power stations and are still trying to build a fusion one."
       },
       {
         "type": "formula",

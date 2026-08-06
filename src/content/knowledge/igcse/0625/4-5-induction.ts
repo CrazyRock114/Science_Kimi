@@ -65,8 +65,24 @@ export const kp45Induction: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "什么会让它变大"
+      },
+      {
         "type": "paragraph",
-        "text": "静止在线圈里的磁铁不产生任何感应。产生感应的是\"变化\"——这也解释了为何在穿过线圈的磁感线最多的那一瞬间，发电机反而不产生电动势。"
+        "text": "三个因素会增大感应电动势：更强的磁场、更多的线圈匝数、更快的相对运动。三者都在滑块上——逐一试试。"
+      },
+      {
+        "type": "paragraph",
+        "text": "现在把转速调到零。磁场还在，匝数也还在，而电动势完全变成零。速度不只是三个因素中的一个——没有运动，另外两个都要乘以零。"
+      },
+      {
+        "type": "paragraph",
+        "text": "还有一条方向规律，它其实是关于能量的。感应电流的方向总是阻碍产生它的那个变化。把 N 极推入线圈，线圈靠近的那一端就变成 N 极，把磁铁往外推。"
+      },
+      {
+        "type": "paragraph",
+        "text": "只能是这样。如果线圈反而把磁铁吸进去，磁铁就会自行加速，产生更多电流，吸得更紧——凭空得到能量。正是这种阻碍，才使得发电必须做功。"
       },
       {
         "type": "formula",
@@ -105,8 +121,24 @@ export const kp45Induction: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "What makes it bigger"
+      },
+      {
         "type": "paragraph",
-        "text": "A magnet held still inside a coil induces nothing at all. It is the change that induces — which is also why a generator produces no e.m.f. at the very instant the most field lines pass through its coil."
+        "text": "Three things increase the size of the induced e.m.f.: a stronger magnetic field, more turns on the coil, and faster relative movement. All three are on the sliders — try each one."
+      },
+      {
+        "type": "paragraph",
+        "text": "Now set the rotation speed to zero. The field is still there and the turns are still there, and the e.m.f. drops to nothing at all. Speed is not just one factor among three — without movement, the other two multiply by zero."
+      },
+      {
+        "type": "paragraph",
+        "text": "There is also a direction rule, and it is a statement about energy. An induced current always flows in the direction that opposes the change producing it. Push a north pole into a coil and the coil turns into a north pole facing it, pushing back."
+      },
+      {
+        "type": "paragraph",
+        "text": "It has to be that way round. If the coil pulled the magnet in instead, the magnet would accelerate on its own, generating more current, pulling harder — free energy out of nothing. The opposition is exactly why you have to do work to generate electricity."
       },
       {
         "type": "formula",

@@ -42,6 +42,8 @@ export default {
       quiz: 'Quiz',
       examPractice: 'Exam Practice',
       syllabusTags: 'Syllabus & Textbook',
+      relatedLessons: 'Related lessons',
+      relatedExperiments: 'Related experiments',
     },
     exam: {
       check: 'Check answer',
@@ -51,6 +53,9 @@ export default {
       alsoAccept: 'also accept',
       examinerNote: 'Examiner note',
       marks: '{{count}} marks',
+      selfAssessPrompt: 'Self-assess against the mark scheme:',
+      selfCorrect: 'I got it right',
+      selfWrong: 'I got it wrong',
       tier: {
         core: 'Core',
         supplement: 'Supplement',
@@ -79,6 +84,7 @@ export default {
       experimentCount: '{{count}} experiments',
       minutes: '≈ {{minutes}} min',
       backToList: 'Back to experiment list',
+      relatedKnowledgePoints: 'Related knowledge points',
       reagents: 'Reagent Rack',
       apparatus: 'Apparatus',
       objectives: 'Objectives',

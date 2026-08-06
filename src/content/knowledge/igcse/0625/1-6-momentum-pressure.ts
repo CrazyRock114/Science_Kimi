@@ -66,8 +66,24 @@ export const kp16MomentumPressure: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "同样的力，分布不同"
+      },
+      {
         "type": "paragraph",
-        "text": "溃缩区并不吸收动量——它办不到，动量是固定的。它拉长了失去动量的时间，力便按比例下降。"
+        "text": "压强是单位面积上的力：p = F/A，单位为帕斯卡，1 帕即 1 牛每平方米。力是相同的，改变的是它如何分布。"
+      },
+      {
+        "type": "paragraph",
+        "text": "这就是图钉一端尖、一端有宽头的原因：同样的按压，在尖端下产生巨大的压强，在你拇指下则舒适得多。也是拖拉机用宽轮胎、刀有薄刃的原因。"
+      },
+      {
+        "type": "paragraph",
+        "text": "液体也会产生压强，而且越深压强越大——因为你上方的液体更多，正是这些液体的重量在施压。同样深度下，密度更大的液体压强更大，原因相同。"
+      },
+      {
+        "type": "paragraph",
+        "text": "公式是 Δp = ρgΔh：压强的变化等于密度乘以重力场强度乘以深度的变化。注意其中没有什么——容器的形状，以及液体的总量。只有深度起作用，这常令人意外，值得记住。"
       },
       {
         "type": "formula",
@@ -116,8 +132,24 @@ export const kp16MomentumPressure: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "The same force, spread differently"
+      },
+      {
         "type": "paragraph",
-        "text": "A crumple zone does not absorb the momentum — it cannot, that is fixed. It extends the time over which the momentum is lost, and the force falls in proportion."
+        "text": "Pressure is force per unit area: p equals F over A, in pascals, where one pascal is one newton per square metre. The force is the same; what changes is how it is spread."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which is why a drawing pin has a sharp point and a broad head: the same push gives an enormous pressure under the point and a comfortable one under your thumb. And why a tractor has wide tyres and a knife has a thin blade."
+      },
+      {
+        "type": "paragraph",
+        "text": "A liquid presses too, and the deeper you go the greater the pressure — because there is more liquid above you, and its weight is what does the pressing. A denser liquid presses harder at the same depth, for the same reason."
+      },
+      {
+        "type": "paragraph",
+        "text": "The equation is delta p equals rho g delta h: the change in pressure is the density times the gravitational field strength times the change in depth. Notice what is not in it — the shape of the container, and the total amount of liquid. Only the depth matters, which surprises people and is worth remembering."
       },
       {
         "type": "formula",

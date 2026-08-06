@@ -244,4 +244,57 @@ export const phyElectric004: KnowledgePoint = {
       expected: { rEq: 4, i1: 3, i2: 3, iTotal: 6, p: 144 },
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '关掉卧室的灯，冰箱照样制冷；拔掉电视，路由器还在跑。家里的电器为什么能各干各的、互不拖累？因为它们并联。这节课我们就来看看并联电路的脾气。',
+          en: 'Switch off the bedroom lamp and the fridge keeps humming; unplug the TV and the router carries on. Why can the appliances at home each mind their own business? Because they\'re wired in parallel. This lesson explores the character of parallel circuits.',
+        },
+      },
+      {
+        id: 'concept-connection',
+        kind: 'concept',
+        text: {
+          zh: '把元件并列地接在两个公共点之间，就是并联。电流一下子有了好几条路：电源到分支点之间的部分是干路，分支之后的各条路径是支路。一条支路断开，其他支路照常工作——这就是并联和串联最大的不同。',
+          en: 'Connect components side by side between the same two points, and that\'s a parallel circuit. The current suddenly has several roads to take: the part from the source to the junction is the main circuit, and each path beyond the junction is a branch. Break one branch and the others keep working — that\'s the biggest difference from series.',
+        },
+      },
+      {
+        id: 'concept-rules',
+        kind: 'concept',
+        text: {
+          zh: '并联的规律几乎和串联反着来：各支路电压相等，都等于电源电压；干路电流等于各支路电流之和；等效电阻的倒数等于各支路电阻倒数之和。由欧姆定律，电压相同，电流就按电阻反着分——电阻越小，分走的电流越多。并联的总电阻比任何一条支路都小，越并越小。',
+          en: 'The rules of parallel are almost the mirror image of series: every branch has the same voltage, equal to the supply; the main current equals the sum of the branch currents; and the reciprocals of the resistances add up to the reciprocal of the total. By Ohm\'s law, with the voltage fixed, current divides in inverse proportion to resistance — the smaller the resistor, the bigger its share. The total resistance is smaller than any branch, and shrinks as you add more.',
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '打开仿真，记得把电路类型拨到并联（1）。6 V 电源接 10 Ω 和 20 Ω：I₁ 是 0.6 A，I₂ 是 0.3 A，干路 0.9 A——电流之比 2:1，正好是电阻的反比。点“等阻并联分流”：两个 12 Ω，总电阻只剩 6 Ω，各支路电流相等。再看“多支路大电流”：4 Ω 和 8 Ω 并联在 24 V 上，干路电流冲到 9 A——这就是为什么一个插座上不能插满大功率电器。你也可以把 R₂ 拖小，看干路电流怎么越涨越高。',
+          en: 'Open the simulation, and remember to switch the circuit type to parallel (1). A 6 V supply across 10 Ω and 20 Ω: I₁ is 0.6 A, I₂ is 0.3 A, and the main current is 0.9 A — a 2:1 ratio, exactly the inverse of the resistances. Tap "equal resistors in parallel": two 12 Ω resistors give a total of just 6 Ω with equal branch currents. Then look at "high-current branches": 4 Ω and 8 Ω in parallel on 24 V pushes the main current to 9 A — which is why you shouldn\'t load one socket with big appliances. Try dragging R₂ smaller and watch the main current climb.',
+        },
+      },
+      {
+        id: 'concept-mains',
+        kind: 'concept',
+        text: {
+          zh: '家庭电路全部采用并联，原因有两条：每个用电器都能拿到完整的 220 V 额定电压；而且各自独立，关掉电视不影响电灯。代价是支路越多，干路电流越大，导线可能过载发热——所以家里要装保险丝和空气开关。',
+          en: 'Household wiring is all in parallel, for two reasons: every appliance receives the full 220 V it\'s rated for, and each works independently — switching off the TV doesn\'t affect the lamps. The price is that more branches mean a bigger main current, which can overload and heat the wires — that\'s why homes have fuses and circuit breakers.',
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '回顾一下：并联多条路径，电压处处相等，电流按电阻反比分配，总电阻越并越小。把它和上一课的串联合在一起对比着记，这两套规律就是电学计算的看家本领。去做小测检验一下吧。',
+          en: 'To recap: parallel means multiple paths, the same voltage across every branch, current dividing in inverse proportion to resistance, and a total resistance that shrinks as you add branches. Memorise these rules side by side with the series rules from the last lesson — together they\'re your core toolkit for circuit calculations. Check yourself with the quiz.',
+        },
+      },
+    ],
+  },
+  related: ['phy-electric-003', 'igcse-0625-4-3-2-series-parallel', 'igcse-0625-4-4-safety'],
 };

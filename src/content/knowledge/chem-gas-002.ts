@@ -157,4 +157,5 @@ export const chemGas002: KnowledgePoint = {
       },
     },
   ],
+  related: ['igcse-0620-12-5-tests', 'chem-gas-001', 'chem-acidbase-003', 'chem-acidbase-004'],
 };

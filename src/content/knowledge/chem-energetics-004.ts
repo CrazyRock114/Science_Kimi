@@ -189,4 +189,5 @@ export const chemEnergetics004: KnowledgePoint = {
       },
     },
   ],
+  related: ['igcse-0620-11-3-fuels', 'igcse-0620-5-1-energetics', 'chem-energetics-001', 'chem-gas-001'],
 };

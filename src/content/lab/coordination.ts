@@ -11,6 +11,11 @@ import type { LabExperiment } from "./types";
 export const coordinationExperiments: LabExperiment[] = [
   {
     slug: "fe3-scn-coloring",
+    related: ["igcse-0620-12-5-tests", "chem-metal-001"],
+    syllabus: {
+      pep: ["pep-che-s1/ch3"],
+      igcse: ["0620/12.5"],
+    },
     title: { zh: "铁(III)离子的硫氰酸盐检验", en: "The Thiocyanate Test for Iron(III) Ions" },
     description: {
       zh: "向氯化铁溶液滴加硫氰酸钾，溶液变血红色，掌握铁(III)的灵敏检验方法。",
@@ -35,6 +40,11 @@ export const coordinationExperiments: LabExperiment[] = [
   },
   {
     slug: "copper-ammonia-complex",
+    related: ["igcse-0620-12-5-tests", "igcse-0620-8-2-groups"],
+    syllabus: {
+      pep: ["pep-che-s1/ch3"],
+      igcse: ["0620/8.4", "0620/12.5"],
+    },
     title: { zh: "铜氨配离子的形成", en: "Formation of the Tetraamminecopper(II) Complex Ion" },
     description: {
       zh: "向硫酸铜溶液中逐滴加入氨水，先生成蓝色沉淀后溶解为深蓝色铜氨溶液。",
@@ -59,6 +69,11 @@ export const coordinationExperiments: LabExperiment[] = [
   },
   {
     slug: "fe3-equilibrium-shift",
+    related: ["chem-energetics-003", "igcse-0620-6-3-equilibrium"],
+    syllabus: {
+      pep: ["pep-che-s2/ch2"],
+      igcse: ["0620/6.3"],
+    },
     title: { zh: "铁硫氰配合物平衡移动", en: "Shifting the Equilibrium of the Iron(III) Thiocyanate Complex" },
     description: {
       zh: "在血红色铁硫氰溶液中改变铁离子或硫氰根浓度，观察颜色深浅变化，验证平衡移动。",
@@ -83,6 +98,11 @@ export const coordinationExperiments: LabExperiment[] = [
   },
   {
     slug: "phenol-fecl3-coloring",
+    related: ["igcse-0620-12-5-tests", "igcse-0620-11-6-alcohols-acids"],
+    syllabus: {
+      pep: ["pep-che-s2/ch3"],
+      igcse: ["0620/12.5", "0620/11.6"],
+    },
     title: { zh: "苯酚的显色检验", en: "The Colour Test for Phenol" },
     description: {
       zh: "向苯酚溶液中加入氯化铁，溶液显紫色，掌握酚羟基的特征检验。",
@@ -107,6 +127,11 @@ export const coordinationExperiments: LabExperiment[] = [
   },
   {
     slug: "silver-ammonia-prep",
+    related: ["igcse-0620-12-5-tests", "igcse-0620-11-6-alcohols-acids"],
+    syllabus: {
+      pep: ["pep-che-s2/ch3"],
+      igcse: ["0620/12.5"],
+    },
     title: { zh: "银氨溶液的配制", en: "Preparing Tollens' Reagent" },
     description: {
       zh: "向硝酸银中滴加氨水至沉淀恰好溶解，制备银氨溶液（多伦试剂）用于醛基检验。",
@@ -130,6 +155,11 @@ export const coordinationExperiments: LabExperiment[] = [
   },
   {
     slug: "diammine-silver-test",
+    related: ["igcse-0620-10-1-water", "igcse-0620-3-3-moles"],
+    syllabus: {
+      pep: ["pep-che-j9a/ch4"],
+      igcse: ["0620/10.1", "0620/12.1"],
+    },
     title: { zh: "硬水中钙镁离子的配位滴定", en: "Complexometric Titration of Calcium and Magnesium Ions in Hard Water" },
     description: {
       zh: "用 EDTA 配位滴定法测定水样硬度，以铬黑 T 为指示剂判断终点。",
@@ -153,6 +183,11 @@ export const coordinationExperiments: LabExperiment[] = [
   },
   {
     slug: "cobalt-chloride-equilibrium",
+    related: ["chem-energetics-003", "igcse-0620-6-3-equilibrium"],
+    syllabus: {
+      pep: ["pep-che-s2/ch2"],
+      igcse: ["0620/6.3"],
+    },
     title: { zh: "氯化钴显色平衡", en: "The Colour Equilibrium of Cobalt(II) Chloride" },
     description: {
       zh: "观察氯化钴溶液在加水稀释与加热时粉红与蓝色间的转变，认识配位平衡移动。",
@@ -176,6 +211,11 @@ export const coordinationExperiments: LabExperiment[] = [
   },
   {
     slug: "prussian-blue",
+    related: ["igcse-0620-12-5-tests", "igcse-0620-6-4-redox"],
+    syllabus: {
+      pep: ["pep-che-s1/ch3"],
+      igcse: ["0620/12.5"],
+    },
     title: { zh: "普鲁士蓝的生成", en: "Formation of Prussian Blue" },
     description: {
       zh: "亚铁离子与铁氰化钾反应生成蓝色沉淀，认识经典颜料普鲁士蓝并用于铁离子检验。",

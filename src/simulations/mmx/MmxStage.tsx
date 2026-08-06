@@ -9,6 +9,10 @@
  * （draggable）与时钟驱动（animate）与滑块写参走的是同一条通道；预设按钮复用本站
  * PresetBar（数据在 kp.presets），故这里不向 ParamPanel 传 presets。
  *
+ * 内核结果：KnowledgePointPage 还需 readouts 做 liveFormulas 代入，故内核在外层算一次
+ * 后经 result prop 传入（避免同一参数下内核跑两次）；独立使用/测试不传 result 时
+ * 本组件自行计算。
+ *
  * 本模块只经 React.lazy 加载（见 simulations/registry.ts 的 'mmx' 条目与
  * KnowledgePointPage 的 mmx 分支），不进首屏主 chunk。
  */
@@ -19,7 +23,7 @@ import { ReadoutPanel } from './ReadoutPanel';
 import { T } from './T';
 import { ui } from './lib/ui-strings';
 import { advanceLooping, useAnimationFrame } from './lib/useAnimationFrame';
-import type { MmxSimulation } from './types';
+import type { MmxSimulation, SimResult } from './types';
 
 /** 外部播放控制指令（讲解 action 驱动）：nonce 变化时执行一次 */
 export interface MmxClockCommand {
@@ -36,15 +40,22 @@ export interface MmxStageProps {
   onParamChange?: (key: string, value: number) => void;
   /** 动画时钟的外部控制（讲解 action 的 play/pause）；无 animate 的仿真忽略 */
   clockCommand?: MmxClockCommand;
+  /** 外层已算好的内核结果（与 liveFormulas 共享一次计算）；缺省时内部自行计算 */
+  result?: SimResult | null;
 }
 
-function MmxStage({ params, mmx, onParamChange, clockCommand }: MmxStageProps) {
+function MmxStage({ params, mmx, onParamChange, clockCommand, result: externalResult }: MmxStageProps) {
   const setParam = useCallback(
     (key: string, value: number) => onParamChange?.(key, value),
     [onParamChange],
   );
 
-  const result = useMemo(() => (mmx ? mmx.kernel(params) : null), [mmx, params]);
+  // 外部传入 result 时直接复用（同一参数不再重算内核）；否则自行计算
+  const ownResult = useMemo(
+    () => (mmx && !externalResult ? mmx.kernel(params) : null),
+    [mmx, params, externalResult],
+  );
+  const result = externalResult ?? ownResult;
 
   // 动画时钟每帧需要最新的参数值；用 ref 避免每帧重建回调
   const paramsRef = useRef(params);

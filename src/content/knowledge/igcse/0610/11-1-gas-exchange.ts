@@ -101,8 +101,28 @@ export const kp111GasExchange: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "空气究竟是怎么进出的"
+      },
+      {
         "type": "paragraph",
-        "text": "为什么停下来之后还在喘？因为跑步结束了，债还没还完。"
+        "text": "肺本身没有肌肉。吸气时：肋间外肌收缩，把肋骨向上向外拉；膈肌收缩并向下变平。胸腔容积增大，内部压力降到低于大气压，空气便流入。"
+      },
+      {
+        "type": "paragraph",
+        "text": "静息时呼气基本是被动的：这些肌肉舒张，肋骨下落，膈重新拱起，容积减小，压力升高，空气流出。只有用力呼气时，肋间内肌才会收缩，主动把肋骨拉下。"
+      },
+      {
+        "type": "paragraph",
+        "text": "先有容积变化，压力随之而变。写\"肺把空气吸进来\"是本末倒置——没有什么在\"吸\"，是因为内部压力下降，大气把空气压了进来。"
+      },
+      {
+        "type": "paragraph",
+        "text": "比较吸入与呼出的空气，有三点变化。氧气减少——约从 21% 降到 16%。二氧化碳增多——从 0.04% 升到约 4%，增加了一百倍。此外水蒸气更多、温度更高。氮气不变，因为没有生物利用它。"
+      },
+      {
+        "type": "paragraph",
+        "text": "可以用石灰水显示二氧化碳：通过管子把气呼入石灰水，它会变浑浊，而且比从室内抽入的空气快得多。这三项变化的原因都是血液供应另一端、细胞里的呼吸作用。"
       },
       {
         "type": "formula",
@@ -156,8 +176,28 @@ export const kp111GasExchange: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "How the air actually moves"
+      },
+      {
         "type": "paragraph",
-        "text": "Why do you keep panting after you have stopped running? Because the running is over and the debt is not."
+        "text": "Lungs have no muscle of their own. Breathing in: the external intercostal muscles contract and pull the ribs up and out, the diaphragm contracts and flattens downwards. The volume of the chest increases, so the pressure inside falls below atmospheric, and air flows in."
+      },
+      {
+        "type": "paragraph",
+        "text": "Breathing out at rest is mostly passive: those muscles relax, the ribs drop, the diaphragm domes back up, volume falls, pressure rises, air flows out. Only when you breathe out forcefully do the internal intercostals contract to pull the ribs actively down."
+      },
+      {
+        "type": "paragraph",
+        "text": "Volume changes first and pressure follows. Answers that say \"the lungs suck air in\" have it backwards — nothing sucks, the air is pushed in by the atmosphere because the pressure inside has dropped."
+      },
+      {
+        "type": "paragraph",
+        "text": "Compare inspired and expired air and three things have changed. Less oxygen — about 21 per cent down to 16. More carbon dioxide — 0.04 per cent up to about 4, a hundredfold increase. And more water vapour, and warmer. The nitrogen is unchanged, because nothing uses it."
+      },
+      {
+        "type": "paragraph",
+        "text": "You can show the carbon dioxide with limewater: breathe out through a tube into limewater and it turns milky, and much faster than air drawn in from the room does. And the reason for all three changes is respiration in the cells, at the other end of the blood supply."
       },
       {
         "type": "formula",

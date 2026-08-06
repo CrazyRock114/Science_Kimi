@@ -275,4 +275,57 @@ export const bioHuman001: KnowledgePoint = {
       expected: { rate: 0.022794180883612347, tempFactor: 0.022794180883612347, phFactor: 1, denatured: 1 },
     },
   ],
+  narration: {
+    sections: [
+      {
+        id: 'intro',
+        kind: 'intro',
+        text: {
+          zh: '馒头本身并不甜，可细细嚼一会儿，甜味就出来了。是谁在你嘴里偷偷把淀粉变成了糖？答案是一种叫做“酶”的生物催化剂。这节课我们就来看看，消化酶是怎么分解食物的，以及它们有多“挑环境”。',
+          en: 'A plain steamed bun isn’t sweet — yet chew it for a while and a sweet taste appears. Who quietly turned the starch into sugar inside your mouth? The answer is a biological catalyst called an enzyme. In this lesson we’ll see how digestive enzymes break food down, and just how fussy they are about their surroundings.',
+        },
+      },
+      {
+        id: 'concept-enzyme',
+        kind: 'concept',
+        text: {
+          zh: '酶是活细胞产生的催化剂，绝大多数是蛋白质。它的本领是降低反应所需的活化能，让分解反应飞快进行，自己却毫发无损。而且酶非常专一：淀粉酶只管淀粉，蛋白酶只管蛋白质。可以用“锁和钥匙”来理解——底物必须正好嵌入酶的活性部位，形状不合，一切免谈。',
+          en: 'Enzymes are catalysts made by living cells, and almost all of them are proteins. Their trick is lowering the activation energy so that breakdown reactions run at full speed, while the enzyme itself comes out unchanged. Enzymes are also highly specific: amylase handles starch, protease handles protein. Think lock and key — the substrate must fit the enzyme’s active site exactly, or nothing happens.',
+        },
+      },
+      {
+        id: 'concept-conditions',
+        kind: 'concept',
+        text: {
+          zh: '酶干活很挑条件。温度方面，人体内大约 37 度是黄金温度；放冰箱里它只是“犯懒”，回暖还能恢复，可一旦温度太高，酶的空间结构被彻底破坏，就永久变性失活了，再也救不回来。酸碱度也一样挑剔：唾液淀粉酶喜欢接近中性的 pH 7，胃蛋白酶却在 pH 2 的强酸里如鱼得水——所以唾液淀粉酶进了胃，基本就罢工了。',
+          en: 'Enzymes are picky about conditions. For temperature, about 37 degrees is the sweet spot in the human body. Chilling only makes the enzyme sluggish — it recovers on warming — but too much heat wrecks its shape for good: the enzyme is denatured, permanently. pH matters just as much: salivary amylase loves a near-neutral pH 7, while pepsin thrives in the strongly acidic pH 2 of the stomach — which is why salivary amylase all but stops working once it reaches the stomach.',
+        },
+      },
+      {
+        id: 'try-it',
+        kind: 'interaction',
+        text: {
+          zh: '轮到你了。先在仿真里选唾液淀粉酶，固定 pH 7，把温度从 0 慢慢拉到 80：看速率先升后降，37 度登顶，70 度附近几乎归零——那就是变性。再把酶切成胃蛋白酶，把 pH 拖到 2，看看它的最适环境有多酸。想省事就直接点三个预设：“口腔环境”“胃环境”和“高温失活”，对比三种处境下酶的活性差别。',
+          en: 'Now it’s your turn. In the simulation, select salivary amylase, hold pH at 7 and drag the temperature from 0 up to 80: watch the rate rise, peak at 37 degrees, then crash to almost nothing near 70 — that’s denaturation. Then switch to pepsin and slide the pH down to 2 to see just how acidic its happy place is. If you’d rather skip the sliders, tap the three presets — “Mouth conditions”, “Stomach conditions” and “High-temperature denaturation” — and compare how active the enzyme is in each situation.',
+        },
+      },
+      {
+        id: 'concept-digestion',
+        kind: 'concept',
+        text: {
+          zh: '放大到整条消化道：唾液淀粉酶在口腔里把淀粉初步分解成麦芽糖；胃里的盐酸配上胃蛋白酶，开始拆解蛋白质；胆汁虽然不含酶，却能把脂肪乳化成小颗粒，帮脂肪酶开路——这属于物理性消化；最后胰液和肠液里的各种酶在小肠完成主力消化，小分子营养穿过小肠绒毛进入血液。',
+          en: 'Zoom out to the whole digestive tract: salivary amylase starts starch digestion in the mouth, turning it into maltose; in the stomach, hydrochloric acid teams up with pepsin to attack proteins; bile contains no enzymes but emulsifies fats into tiny droplets, clearing the way for lipase — that’s mechanical digestion; finally, enzymes from the pancreas and intestinal wall finish the job in the small intestine, where the small products are absorbed through the villi into the blood.',
+        },
+      },
+      {
+        id: 'summary',
+        kind: 'summary',
+        text: {
+          zh: '总结一下：酶是高效的生物催化剂，专一、怕热、挑酸碱；低温只是抑制，高温和过酸过碱会让它永久变性。口腔、胃、小肠各司其职，胆汁负责乳化助攻。记住“最适温度”和“最适 pH”这两条曲线，消化与吸收的考题就难不倒你了。接下来试试小测吧！',
+          en: 'To sum up: enzymes are efficient biological catalysts — specific, heat-sensitive and pH-picky. Low temperature only slows them down, but high temperature and extreme pH denature them for good. Mouth, stomach and small intestine each play their part, with bile helping by emulsifying fats. Keep the two curves — optimum temperature and optimum pH — in mind, and digestion questions will hold no fear for you. Now try the quiz!',
+        },
+      },
+    ],
+  },
+  related: ['igcse-0610-5-1-enzymes', 'igcse-0610-7-1-nutrition', 'bio-human-002'],
 };

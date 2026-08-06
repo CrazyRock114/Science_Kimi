@@ -86,8 +86,52 @@ export const kp17Energy: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "两个公式解决大部分问题"
+      },
+      {
         "type": "paragraph",
-        "text": "让物体下落，看势能变成动能而总能量保持水平。加上空气阻力，水平线开始倾斜——那个缺口就是损耗的能量。"
+        "text": "势能等于质量乘重力场强度乘高度。动能等于二分之一乘质量乘速度的平方。注意那个平方——速度加倍，能量变四倍。"
+      },
+      {
+        "type": "formula",
+        "latex": "E_p = mg\\Delta h, \\qquad E_k = \\tfrac{1}{2}mv^2"
+      },
+      {
+        "type": "paragraph",
+        "text": "令两者相等，质量就约掉了。这就是重球和轻球落地速度相同的原因——改变质量，看撞击速度保持不变。"
+      },
+      {
+        "type": "heading",
+        "text": "功与功率"
+      },
+      {
+        "type": "paragraph",
+        "text": "做功就是能量转移。把这个物体重新举上去，所需的功正好等于它在顶端的势能——力乘距离。"
+      },
+      {
+        "type": "formula",
+        "latex": "W = Fd = \\Delta E"
+      },
+      {
+        "type": "paragraph",
+        "text": "功率是做功的快慢。同样的功用一半时间完成，就需要两倍的功率。改变提升时间，观察功率读数——功不变，只有功率在变。"
+      },
+      {
+        "type": "formula",
+        "latex": "P = \\frac{W}{t} = \\frac{E}{t}"
+      },
+      {
+        "type": "heading",
+        "text": "我们的能源从哪来"
+      },
+      {
+        "type": "paragraph",
+        "text": "几乎所有能源都可以追溯到太阳。化石燃料是植物储存的远古阳光；风来自太阳不均匀加热；水电站的水由太阳驱动的蒸发抬升。"
+      },
+      {
+        "type": "paragraph",
+        "text": "只有三种例外：地热、核能和潮汐。这是常考点。而太阳本身的能量来自氢聚变为氦的核聚变。"
       },
       {
         "type": "formula",
@@ -150,8 +194,52 @@ export const kp17Energy: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Two equations do most of the work"
+      },
+      {
         "type": "paragraph",
-        "text": "Drop an object and watch potential turn into kinetic while the total stays flat. Add air resistance and the flat line tilts — that gap is the wasted energy."
+        "text": "Potential energy is mass times gravitational field strength times height. Kinetic energy is a half times mass times speed squared. Notice the square — double the speed and you quadruple the energy."
+      },
+      {
+        "type": "formula",
+        "latex": "E_p = mg\\Delta h, \\qquad E_k = \\tfrac{1}{2}mv^2"
+      },
+      {
+        "type": "paragraph",
+        "text": "Set them equal and the mass cancels. That is why a heavy ball and a light ball hit the ground at the same speed — change the mass and watch the impact speed stay put."
+      },
+      {
+        "type": "heading",
+        "text": "Work and power"
+      },
+      {
+        "type": "paragraph",
+        "text": "Work done is simply energy transferred. Lifting this object back up takes exactly the potential energy it had at the top — force times distance."
+      },
+      {
+        "type": "formula",
+        "latex": "W = Fd = \\Delta E"
+      },
+      {
+        "type": "paragraph",
+        "text": "Power is how fast you do it. The same work in half the time needs twice the power. Change the lifting time and watch the power readout — the work never changes, only the power."
+      },
+      {
+        "type": "formula",
+        "latex": "P = \\frac{W}{t} = \\frac{E}{t}"
+      },
+      {
+        "type": "heading",
+        "text": "Where our energy comes from"
+      },
+      {
+        "type": "paragraph",
+        "text": "Almost every energy resource traces back to the Sun. Fossil fuels are ancient sunlight stored by plants; wind comes from uneven solar heating; hydroelectric water was lifted by solar-driven evaporation."
+      },
+      {
+        "type": "paragraph",
+        "text": "Only three do not: geothermal, nuclear, and tidal. That is a favourite exam question, and the Sun itself is powered by nuclear fusion of hydrogen into helium."
       },
       {
         "type": "formula",

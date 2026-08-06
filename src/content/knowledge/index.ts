@@ -23,6 +23,13 @@ export function getKnowledgePointMetasBySubject(subject: Subject): KnowledgePoin
   return knowledgePointMetas.filter((meta) => meta.subject === subject);
 }
 
+const metaById = new Map(knowledgePointMetas.map((meta) => [meta.id, meta]));
+
+/** 按 id 查轻量元数据（相关课程互链等只需标题/学科的场景，不加载正文） */
+export function getKnowledgePointMeta(id: string): KnowledgePointMeta | undefined {
+  return metaById.get(id);
+}
+
 /** 从完整知识点提取元数据（extract-handwritten-metas.ts 用同一套字段；测试校验两者一致） */
 export function toMeta(kp: KnowledgePoint): KnowledgePointMeta {
   return {

@@ -63,10 +63,6 @@ export const kp125Tests: KnowledgePoint = {
         ]
       },
       {
-        "type": "paragraph",
-        "text": "有三种阳离子与氢氧化钠都生成白色沉淀。只说颜色是不够的——区分它们的是继续加下去会发生什么。"
-      },
-      {
         "type": "formula",
         "latex": "\\text{titre} = V_{\\text{final}} - V_{\\text{initial}}",
         "caption": "滴定管放出的体积是两次读数之差，而不是从刻度上直接读出的一个数。两次读数都要记入表格。"
@@ -100,10 +96,6 @@ export const kp125Tests: KnowledgePoint = {
           "Describe the tests used to identify the common gases.",
           "Describe the use of flame tests to identify cations."
         ]
-      },
-      {
-        "type": "paragraph",
-        "text": "Three cations give a white precipitate with sodium hydroxide. Naming the colour is not enough — what separates them is what happens when you keep adding."
       },
       {
         "type": "formula",

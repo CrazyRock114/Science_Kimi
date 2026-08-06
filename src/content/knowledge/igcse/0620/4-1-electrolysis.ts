@@ -71,8 +71,20 @@ export const kp41Electrolysis: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "把它反过来运行"
+      },
+      {
         "type": "paragraph",
-        "text": "\"阴极得金属\"只对熔融化合物成立。溶解后，氯化钠给出的是氢——水会来竞争，而由活动性顺序决定胜负。"
+        "text": "电解是用电把水分解成氢和氧。氢氧燃料电池则相反：它让氢和氧结合并产生电，唯一的产物是水。"
+      },
+      {
+        "type": "paragraph",
+        "text": "优点是实实在在的。排放的只有水——没有二氧化碳、没有氮氧化物、没有颗粒物。它比汽油发动机效率更高，因为不必先烧燃料产生热。而且只要持续供氢就能持续工作，不需要几小时的充电。"
+      },
+      {
+        "type": "paragraph",
+        "text": "缺点同样实在，题目若两方面都问就要写出来。氢是气体，安全储存和运输困难且昂贵，而且极易燃。加氢站极少。此外氢本身还得先制取——通常来自化石燃料，或者用电解制取而电本身可能来自化石燃料，那样只是把排放转移了，而不是消除了。"
       },
       {
         "type": "formula",
@@ -117,8 +129,20 @@ export const kp41Electrolysis: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Running it backwards"
+      },
+      {
         "type": "paragraph",
-        "text": "\"Metal at the cathode\" is only true for a molten compound. Dissolve it and sodium chloride gives hydrogen instead — the water competes, and the reactivity series decides."
+        "text": "Electrolysis uses electricity to split water into hydrogen and oxygen. A hydrogen–oxygen fuel cell does the reverse: it combines hydrogen and oxygen and produces electricity, with water as the only product."
+      },
+      {
+        "type": "paragraph",
+        "text": "The advantages are real. Nothing comes out of the exhaust but water — no carbon dioxide, no nitrogen oxides, no particulates. It is more efficient than a petrol engine, because it is not limited by burning fuel to make heat first. And it keeps working as long as hydrogen is supplied, rather than needing hours to recharge."
+      },
+      {
+        "type": "paragraph",
+        "text": "The disadvantages are equally real, and a question asking for both expects them. Hydrogen is a gas that is difficult and expensive to store and transport safely, and it is highly flammable. There are very few filling stations. And the hydrogen has to be made in the first place — usually from fossil fuels or by electrolysis using electricity that may itself have come from fossil fuels, in which case the emissions have been moved rather than removed."
       },
       {
         "type": "formula",

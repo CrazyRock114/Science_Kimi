@@ -93,7 +93,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     },
     "hasSimulation": true,
     "hasExamPractice": false,
-    "hasNarration": false,
+    "hasNarration": true,
     "hasExtras": false
   },
   {
@@ -139,7 +139,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     },
     "hasSimulation": true,
     "hasExamPractice": false,
-    "hasNarration": false,
+    "hasNarration": true,
     "hasExtras": false
   },
   {
@@ -277,7 +277,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     },
     "hasSimulation": true,
     "hasExamPractice": false,
-    "hasNarration": false,
+    "hasNarration": true,
     "hasExtras": false
   },
   {
@@ -420,7 +420,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
       ]
     },
     "hasSimulation": false,
-    "hasExamPractice": false,
+    "hasExamPractice": true,
     "hasNarration": false,
     "hasExtras": false
   },
@@ -470,7 +470,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
       ]
     },
     "hasSimulation": true,
-    "hasExamPractice": false,
+    "hasExamPractice": true,
     "hasNarration": true,
     "hasExtras": false
   },
@@ -517,8 +517,8 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
       ]
     },
     "hasSimulation": true,
-    "hasExamPractice": false,
-    "hasNarration": false,
+    "hasExamPractice": true,
+    "hasNarration": true,
     "hasExtras": false
   },
   {
@@ -565,7 +565,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
       ]
     },
     "hasSimulation": false,
-    "hasExamPractice": false,
+    "hasExamPractice": true,
     "hasNarration": false,
     "hasExtras": false
   },
@@ -622,7 +622,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     },
     "hasSimulation": true,
     "hasExamPractice": false,
-    "hasNarration": false,
+    "hasNarration": true,
     "hasExtras": false
   },
   {
@@ -1012,7 +1012,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
       ]
     },
     "hasSimulation": false,
-    "hasExamPractice": false,
+    "hasExamPractice": true,
     "hasNarration": true,
     "hasExtras": false
   },
@@ -1056,7 +1056,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
       ]
     },
     "hasSimulation": false,
-    "hasExamPractice": false,
+    "hasExamPractice": true,
     "hasNarration": false,
     "hasExtras": false
   },
@@ -1101,7 +1101,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
       ]
     },
     "hasSimulation": false,
-    "hasExamPractice": false,
+    "hasExamPractice": true,
     "hasNarration": false,
     "hasExtras": false
   },
@@ -1146,7 +1146,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
       ]
     },
     "hasSimulation": false,
-    "hasExamPractice": false,
+    "hasExamPractice": true,
     "hasNarration": false,
     "hasExtras": false
   },
@@ -1953,7 +1953,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
       ]
     },
     "hasSimulation": false,
-    "hasExamPractice": false,
+    "hasExamPractice": true,
     "hasNarration": true,
     "hasExtras": false
   },
@@ -1996,7 +1996,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
       ]
     },
     "hasSimulation": false,
-    "hasExamPractice": false,
+    "hasExamPractice": true,
     "hasNarration": false,
     "hasExtras": false
   },
@@ -2037,7 +2037,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
       ]
     },
     "hasSimulation": false,
-    "hasExamPractice": false,
+    "hasExamPractice": true,
     "hasNarration": false,
     "hasExtras": false
   },
@@ -2081,7 +2081,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
       ]
     },
     "hasSimulation": false,
-    "hasExamPractice": false,
+    "hasExamPractice": true,
     "hasNarration": false,
     "hasExtras": false
   },
@@ -2136,7 +2136,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
       ]
     },
     "hasSimulation": false,
-    "hasExamPractice": false,
+    "hasExamPractice": true,
     "hasNarration": false,
     "hasExtras": false
   },
@@ -2184,7 +2184,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
       ]
     },
     "hasSimulation": true,
-    "hasExamPractice": false,
+    "hasExamPractice": true,
     "hasNarration": true,
     "hasExtras": false
   },
@@ -2230,7 +2230,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     },
     "hasSimulation": true,
     "hasExamPractice": false,
-    "hasNarration": false,
+    "hasNarration": true,
     "hasExtras": false
   },
   {
@@ -2277,7 +2277,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     },
     "hasSimulation": true,
     "hasExamPractice": false,
-    "hasNarration": false,
+    "hasNarration": true,
     "hasExtras": false
   },
   {
@@ -2325,7 +2325,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
       ]
     },
     "hasSimulation": false,
-    "hasExamPractice": false,
+    "hasExamPractice": true,
     "hasNarration": false,
     "hasExtras": false
   },
@@ -2369,7 +2369,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
       ]
     },
     "hasSimulation": false,
-    "hasExamPractice": false,
+    "hasExamPractice": true,
     "hasNarration": false,
     "hasExtras": false
   },
@@ -2413,8 +2413,8 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
       ]
     },
     "hasSimulation": true,
-    "hasExamPractice": false,
-    "hasNarration": false,
+    "hasExamPractice": true,
+    "hasNarration": true,
     "hasExtras": false
   },
   {
@@ -2459,8 +2459,8 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
       ]
     },
     "hasSimulation": true,
-    "hasExamPractice": false,
-    "hasNarration": false,
+    "hasExamPractice": true,
+    "hasNarration": true,
     "hasExtras": false
   },
   {
@@ -2504,7 +2504,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     },
     "hasSimulation": true,
     "hasExamPractice": false,
-    "hasNarration": false,
+    "hasNarration": true,
     "hasExtras": false
   },
   {
@@ -2636,7 +2636,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     },
     "hasSimulation": true,
     "hasExamPractice": false,
-    "hasNarration": false,
+    "hasNarration": true,
     "hasExtras": false
   },
   {
@@ -2683,7 +2683,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     },
     "hasSimulation": true,
     "hasExamPractice": false,
-    "hasNarration": false,
+    "hasNarration": true,
     "hasExtras": false
   },
   {
@@ -2774,7 +2774,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     },
     "hasSimulation": true,
     "hasExamPractice": false,
-    "hasNarration": false,
+    "hasNarration": true,
     "hasExtras": false
   },
   {
@@ -2819,7 +2819,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     },
     "hasSimulation": true,
     "hasExamPractice": false,
-    "hasNarration": false,
+    "hasNarration": true,
     "hasExtras": false
   },
   {
@@ -2866,7 +2866,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     },
     "hasSimulation": true,
     "hasExamPractice": false,
-    "hasNarration": false,
+    "hasNarration": true,
     "hasExtras": false
   },
   {
@@ -2913,7 +2913,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     },
     "hasSimulation": true,
     "hasExamPractice": false,
-    "hasNarration": false,
+    "hasNarration": true,
     "hasExtras": false
   },
   {
@@ -2964,7 +2964,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     },
     "hasSimulation": true,
     "hasExamPractice": false,
-    "hasNarration": false,
+    "hasNarration": true,
     "hasExtras": false
   },
   {
@@ -3136,7 +3136,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     },
     "hasSimulation": true,
     "hasExamPractice": false,
-    "hasNarration": false,
+    "hasNarration": true,
     "hasExtras": false
   },
   {
@@ -3228,7 +3228,7 @@ export const handwrittenMetas: KnowledgePointMeta[] = [
     },
     "hasSimulation": true,
     "hasExamPractice": false,
-    "hasNarration": false,
+    "hasNarration": true,
     "hasExtras": false
   }
 ];

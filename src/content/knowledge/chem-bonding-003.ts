@@ -153,4 +153,5 @@ export const chemBonding003: KnowledgePoint = {
       },
     },
   ],
+  related: ['igcse-0620-3-1-formulae-equations', 'chem-bonding-001', 'chem-bonding-002', 'chem-stoich-003'],
 };

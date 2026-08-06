@@ -137,4 +137,5 @@ export const chemAtomic004: KnowledgePoint = {
       },
     },
   ],
+  related: ['igcse-0620-8-1-periodic-table', 'igcse-0620-8-2-groups', 'chem-atomic-003'],
 };

@@ -79,8 +79,32 @@ export const kp34Sound: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "音调与响度"
+      },
+      {
         "type": "paragraph",
-        "text": "看粒子挤成密部，切换介质时波长改变而频率不变——再把回声里那个 2 弄对。"
+        "text": "两个性质，两个成因，彼此独立。频率决定音调——频率越高，音越高。振幅决定响度——振幅越大，声音越响。"
+      },
+      {
+        "type": "paragraph",
+        "text": "健康的年轻人能听到约二十赫兹到两万赫兹。超过这个上限就是超声波——我们听不见，但蝙蝠、海豚和医学扫描仪都在使用它。"
+      },
+      {
+        "type": "heading",
+        "text": "回声与那个 2"
+      },
+      {
+        "type": "paragraph",
+        "text": "回声就是被反射的声音。对着一百米外的峭壁喊，声音要过去再回来——总共两百米，不是一百米。"
+      },
+      {
+        "type": "paragraph",
+        "text": "这个 2 正是本主题几乎所有失分的来源。声呐和超声扫描用的是同一原理：测出时间，除以二，再乘声速。"
+      },
+      {
+        "type": "formula",
+        "latex": "d = \\frac{v\\,t}{2}"
       },
       {
         "type": "formula",
@@ -131,8 +155,32 @@ export const kp34Sound: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Pitch and loudness"
+      },
+      {
         "type": "paragraph",
-        "text": "Watch particles bunch into compressions, switch the medium and see the wavelength change while the frequency holds — then get the echo factor of two right."
+        "text": "Two properties, two causes, and they are independent. Frequency sets the pitch — higher frequency, higher note. Amplitude sets the loudness — bigger amplitude, louder sound."
+      },
+      {
+        "type": "paragraph",
+        "text": "A healthy young person hears from about twenty hertz up to twenty thousand hertz. Above that limit is ultrasound — inaudible to us, but bats, dolphins and medical scanners all use it."
+      },
+      {
+        "type": "heading",
+        "text": "Echoes and the factor of two"
+      },
+      {
+        "type": "paragraph",
+        "text": "An echo is simply reflected sound. Shout at a cliff a hundred metres away and the sound has to get there and come back — two hundred metres in total, not one hundred."
+      },
+      {
+        "type": "paragraph",
+        "text": "That factor of two is where nearly every lost mark in this topic comes from. The same idea powers sonar and ultrasound scans: measure the time, halve it, multiply by the speed."
+      },
+      {
+        "type": "formula",
+        "latex": "d = \\frac{v\\,t}{2}"
       },
       {
         "type": "formula",

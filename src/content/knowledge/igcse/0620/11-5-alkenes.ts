@@ -70,8 +70,36 @@ export const kp115Alkenes: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "三种可以加成到 C=C 上的物质"
+      },
+      {
         "type": "paragraph",
-        "text": "把同一种试剂分别加给饱和分子与不饱和分子。前者毫无反应，后者打开双键把试剂整个吞下。"
+        "text": "氢气也能加成上去，用镍作催化剂、约 150 °C。看产物——又变回烷烃了。给不饱和分子加氢就是使其饱和，人造黄油正是这样由植物油制得的。"
+      },
+      {
+        "type": "paragraph",
+        "text": "水蒸气以 H 和 OH 的形式加成，生成醇。乙烯加水蒸气生成乙醇，条件是催化剂、约 300 °C、60 atm。工业乙醇大多是这样制得的。"
+      },
+      {
+        "type": "paragraph",
+        "text": "这三个反应中，双键都变成了单键，而且产物都只有一种。看读数里的产物分子数——始终是 1。"
+      },
+      {
+        "type": "heading",
+        "text": "烯烃从哪里来"
+      },
+      {
+        "type": "paragraph",
+        "text": "原油中长链烷烃远多于市场所需，短链烷烃却远远不够。汽油供不应求，沥青却堆在罐里。"
+      },
+      {
+        "type": "paragraph",
+        "text": "于是把长分子裂化：在催化剂存在下加热到约 600 °C，把它们断成较短的分子。一个十碳烷烃可能裂化成一个八碳烷烃和乙烯。"
+      },
+      {
+        "type": "paragraph",
+        "text": "这样做有两个原因，考题通常两个都要。一是把过剩的长链馏分转化为紧缺的汽油。二是它是烯烃的来源，而烯烃是制醇和所有加聚物的起点。"
       },
       {
         "type": "formula",
@@ -122,8 +150,36 @@ export const kp115Alkenes: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Three things that add across a C=C"
+      },
+      {
         "type": "paragraph",
-        "text": "Put the same reagent to a saturated molecule and an unsaturated one. One does nothing; the other opens its double bond and swallows the reagent whole."
+        "text": "Hydrogen adds across it too, over a nickel catalyst at about a hundred and fifty degrees. Look at the product — that is the alkane again. Adding hydrogen to an unsaturated molecule saturates it, which is exactly how margarine is made from vegetable oil."
+      },
+      {
+        "type": "paragraph",
+        "text": "Steam adds as H and OH, giving an alcohol. Ethene plus steam gives ethanol, over a catalyst at about three hundred degrees and sixty atmospheres. This is how most industrial ethanol is made."
+      },
+      {
+        "type": "paragraph",
+        "text": "In every one of those, the double bond became a single bond and there was exactly one product. Count the product molecules in the readings — always one."
+      },
+      {
+        "type": "heading",
+        "text": "Where alkenes come from"
+      },
+      {
+        "type": "paragraph",
+        "text": "Crude oil gives us far more long-chain alkanes than anyone wants, and far fewer short ones than everyone needs. Petrol sells; bitumen sits in the tank."
+      },
+      {
+        "type": "paragraph",
+        "text": "So the long molecules are cracked: heated to about six hundred degrees over a catalyst, which breaks them into shorter ones. A ten-carbon alkane might crack into an eight-carbon alkane and ethene."
+      },
+      {
+        "type": "paragraph",
+        "text": "Two reasons to do it, and an exam question usually wants both. It converts surplus long-chain fractions into petrol, which is in demand. And it is the source of alkenes, which are the starting point for alcohols and for every addition polymer."
       },
       {
         "type": "formula",

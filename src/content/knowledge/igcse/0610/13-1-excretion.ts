@@ -66,8 +66,20 @@ export const kp131Excretion: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "这一切发生在哪里"
+      },
+      {
         "type": "paragraph",
-        "text": "肾不是滤器。它先把血液中几乎所有的小分子挤出去，再把大部分收回来，逐一决定留下什么。"
+        "text": "泌尿系统：两个肾，各连一条输尿管把尿液送到膀胱贮存，再由尿道排出。两条输尿管、一条尿道——英文拼写几乎一样，但分数可不一样。"
+      },
+      {
+        "type": "paragraph",
+        "text": "把肾横切开，可见两个区域：外层的皮质和内层的髓质。肾小球和肾小囊都在皮质中；肾小管的袢向下深入髓质，大部分水正是在那里被回收的。"
+      },
+      {
+        "type": "paragraph",
+        "text": "每个肾单位都有自己的血管全程伴行——这是必须的，因为被重吸收的一切都要回到血液中，而且必须沿肾小管全程收集，而不是在某一点收集。"
       },
       {
         "type": "heading",
@@ -100,8 +112,20 @@ export const kp131Excretion: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Where all this happens"
+      },
+      {
         "type": "paragraph",
-        "text": "A kidney is not a filter. It forces almost everything out of the blood and then takes most of it back, deciding substance by substance what to keep."
+        "text": "The urinary system: two kidneys, a ureter from each carrying urine down to the bladder, which stores it, and the urethra carrying it out. Two ureters, one urethra — the spelling is nearly the same and the marks are not."
+      },
+      {
+        "type": "paragraph",
+        "text": "Cut a kidney across and there are two regions: an outer cortex and an inner medulla. The glomeruli and capsules are all in the cortex; the loops of the tubules run down into the medulla, which is where most of the water is reclaimed."
+      },
+      {
+        "type": "paragraph",
+        "text": "And each nephron has its own blood supply running alongside it the whole way — which it must, because everything reabsorbed has to go back into the blood, and it has to be collected all along the tubule rather than at one point."
       },
       {
         "type": "heading",

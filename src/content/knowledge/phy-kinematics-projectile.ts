@@ -302,4 +302,5 @@ export const phyKinematicsProjectile: KnowledgePoint = {
       },
     ],
   },
+  related: ['igcse-0625-1-2-motion', 'phy-kinematics-freefall', 'phy-motion-001'],
 };

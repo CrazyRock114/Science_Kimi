@@ -143,4 +143,5 @@ export const phyThermal001: KnowledgePoint = {
       },
     },
   ],
+  related: ['phy-thermal-002', 'igcse-0625-2-2-thermal-properties', 'igcse-0625-2-3-heat-transfer'],
 };

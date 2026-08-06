@@ -76,8 +76,36 @@ export const kp81TransportPlants: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "从根部进入"
+      },
+      {
         "type": "paragraph",
-        "text": "让水出去的孔，正是让二氧化碳进来的孔。关上它，植物保住了水却会挨饿；打开它，植物能进食却会失水。"
+        "text": "水通过根毛细胞进入。每个根毛都是单个细胞延伸成的细长突起，数量极多——这提供了非常大的吸收表面积。这与绒毛和肺泡用的是同一招。"
+      },
+      {
+        "type": "paragraph",
+        "text": "水通过渗透进入，沿水势梯度移动。矿质离子则不同：它们在根内的浓度往往高于土壤，因此必须通过主动运输逆浓度梯度吸收，消耗呼吸作用提供的能量。"
+      },
+      {
+        "type": "paragraph",
+        "text": "之后的路径是：根毛、根皮层、木质部、沿茎上行、进入叶片、进入叶肉细胞。把白花或芹菜梗插入染液，过后横切开来就能看到——只有木质部被染上颜色，其余部分都没有。"
+      },
+      {
+        "type": "heading",
+        "text": "糖的运输是双向的"
+      },
+      {
+        "type": "paragraph",
+        "text": "有机物运输是指蔗糖和氨基酸经韧皮部的移动。与木质部不同，它不是单向的；也与木质部不同，其细胞是活的。"
+      },
+      {
+        "type": "paragraph",
+        "text": "源是把蔗糖释放进韧皮部的部位；库是把蔗糖取走并利用或贮存的部位。蔗糖由源流向库——方向之所以会变，原因就在这里。"
+      },
+      {
+        "type": "paragraph",
+        "text": "同一个器官在不同时期可以扮演不同角色。夏天的马铃薯块茎是库：叶片进行光合作用，把糖送下来贮存为淀粉。到了第二年春天，在长出叶片之前，同一个块茎则成了源——把糖向上送去长出新芽。"
       },
       {
         "type": "heading",
@@ -112,8 +140,36 @@ export const kp81TransportPlants: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "In at the roots"
+      },
+      {
         "type": "paragraph",
-        "text": "The holes that let water out are the holes that let carbon dioxide in. Close them and the plant keeps its water and starves; open them and it feeds and dries out."
+        "text": "Water enters through root hair cells. Each one is a single cell drawn out into a long thin projection, and there are enormous numbers of them — which gives a very large surface area for absorption. It is the same trick as villi and alveoli."
+      },
+      {
+        "type": "paragraph",
+        "text": "Water enters by osmosis, down a water potential gradient. Mineral ions are different: they are often more concentrated inside the root than in the soil, so they have to be taken in by active transport, against the gradient, using energy from respiration."
+      },
+      {
+        "type": "paragraph",
+        "text": "From there the path is: root hair, root cortex, xylem, up the stem, into the leaf, into the mesophyll cells. You can see it by standing a white flower or a stick of celery in dye and cutting it across afterwards — the xylem is stained and nothing else is."
+      },
+      {
+        "type": "heading",
+        "text": "Sugar goes both ways"
+      },
+      {
+        "type": "paragraph",
+        "text": "Translocation is the movement of sucrose and amino acids through the phloem. Unlike the xylem it is not one-way, and unlike the xylem the cells are alive."
+      },
+      {
+        "type": "paragraph",
+        "text": "A source is a part that releases sucrose into the phloem. A sink is a part that takes it out and uses or stores it. Sucrose moves from source to sink — which is why the direction changes."
+      },
+      {
+        "type": "paragraph",
+        "text": "And the same organ can be either at different times. A potato tuber in summer is a sink: the leaves are photosynthesising and sending sugar down to be stored as starch. The following spring, before there are any leaves, that same tuber is the source — sending sugar up to grow the new shoot."
       },
       {
         "type": "heading",

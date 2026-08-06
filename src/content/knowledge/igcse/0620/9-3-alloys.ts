@@ -61,8 +61,32 @@ export const kp93Alloys: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "合金是混合物"
+      },
+      {
         "type": "paragraph",
-        "text": "相同原子构成的层可以轻易相互滑动。塞进一个大小不同的原子，它们就卡住了——这就是合金更硬的全部原因。"
+        "text": "注意什么*没有*发生。没有键断裂、没有新物质生成、没有发生反应。铜还是铜，锌还是锌——它们只是在原子尺度上混合在一起。"
+      },
+      {
+        "type": "paragraph",
+        "text": "所以合金是混合物，不是化合物。这就是它没有化学式、没有固定组成的原因——黄铜里锌多一点少一点，仍然是黄铜。"
+      },
+      {
+        "type": "paragraph",
+        "text": "这也是在图中识别合金的方法。纯金属是同样大小的圆排成规则的行。合金有两种大小的圆，而且行被那些\"异类\"挤得不齐。"
+      },
+      {
+        "type": "heading",
+        "text": "按用途选择合金"
+      },
+      {
+        "type": "paragraph",
+        "text": "一旦能让金属变硬，就可以按所需性质来选择。钢用于钢梁和工具，因为强度最重要。黄铜用于门把手和乐器，因为它既硬又耐腐蚀。"
+      },
+      {
+        "type": "paragraph",
+        "text": "不锈钢中加入了铬，铬原子比铁原子大。它既硬又不生锈——所以用于餐具、水槽和手术器械。而当你需要相反的性质时就用纯金属：铜导线故意做得柔软，以便绕过转角。"
       },
       {
         "type": "formula",
@@ -99,8 +123,32 @@ export const kp93Alloys: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "An alloy is a mixture"
+      },
+      {
         "type": "paragraph",
-        "text": "Layers of identical atoms slide over each other easily. Put an atom of a different size in the way and they catch — which is the whole of why an alloy is harder."
+        "text": "Notice what has not happened. No bonds broke, no new substance formed, no reaction took place. The copper is still copper and the zinc is still zinc — they are simply mixed at the atomic scale."
+      },
+      {
+        "type": "paragraph",
+        "text": "So an alloy is a mixture, not a compound. That is why it has no formula and no fixed composition — you can make brass with more zinc or less, and it is still brass."
+      },
+      {
+        "type": "paragraph",
+        "text": "And that is how you spot one in a diagram. A pure metal is circles of one size in regular rows. An alloy is circles of two sizes, and the rows are pushed out of line by the odd ones."
+      },
+      {
+        "type": "heading",
+        "text": "Choosing an alloy for a job"
+      },
+      {
+        "type": "paragraph",
+        "text": "Once you can make a metal harder, you choose the property you need. Steel for girders and tools, because strength is everything. Brass for door handles and instruments, because it is hard and resists corrosion."
+      },
+      {
+        "type": "paragraph",
+        "text": "Stainless steel adds chromium, whose atoms are larger than iron’s. Hard, and it does not rust — so cutlery, sinks and surgical instruments. And where you want the opposite, you use the pure metal: copper wiring is soft on purpose, so it bends round corners."
       },
       {
         "type": "formula",

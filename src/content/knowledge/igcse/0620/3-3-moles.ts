@@ -66,8 +66,24 @@ export const kp33Moles: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "化学家为什么要发明一个新单位"
+      },
+      {
         "type": "paragraph",
-        "text": "不断加镁，产量上升，然后突然停住。那个拐点就是氧耗尽的地方——限量反应物在这里不再是一条规则，而成了看得见的事实。"
+        "text": "配平的方程式数的是粒子：2 个镁原子与 1 个氧分子反应。但没有人能数原子，也没有人能称量单个原子。摩尔架起了这座桥——它是物质的量的单位，1 摩尔含有 6.02 × 10²³ 个粒子。"
+      },
+      {
+        "type": "paragraph",
+        "text": "这个数目的选取使得任何物质 1 摩尔的质量恰好是它的 Ar 或 Mr 以克为单位的数值。1 摩尔镁是 24 g。1 摩尔水是 18 g。因此称量就能知道有多少个粒子，而这正是方程式想知道的。"
+      },
+      {
+        "type": "paragraph",
+        "text": "一个关系式贯穿整个主题：物质的量 = 质量 ÷ 摩尔质量。按题目需要变形即可。对于室温常压下的气体还有第二个：无论什么气体，1 摩尔都占 24 立方分米。"
+      },
+      {
+        "type": "paragraph",
+        "text": "浓度有两种单位，两者的区别正是得分点。克每立方分米是单位体积内的质量；摩尔每立方分米是单位体积内的物质的量。用同一个关系式换算，并记住 1 立方分米等于 1000 立方厘米。"
       },
       {
         "type": "formula",
@@ -116,8 +132,24 @@ export const kp33Moles: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Why chemists invented a new unit"
+      },
+      {
         "type": "paragraph",
-        "text": "Add more and more magnesium and the yield climbs, then stops dead. The corner is where the oxygen ran out — and where the limiting reactant stops being a rule and becomes a thing you can see."
+        "text": "A balanced equation counts particles: two magnesium atoms react with one oxygen molecule. But nobody can count atoms, and nobody can weigh one. The mole bridges the gap — it is the unit of amount of substance, and one mole contains 6.02 times ten to the twenty-three particles."
+      },
+      {
+        "type": "paragraph",
+        "text": "The number is chosen so that one mole of any substance weighs its Ar or Mr in grams. One mole of magnesium is 24 g. One mole of water is 18 g. So weighing something tells you how many particles you have, which is exactly what the equation wanted to know."
+      },
+      {
+        "type": "paragraph",
+        "text": "One relationship carries the whole topic: amount in moles equals mass divided by molar mass. Rearrange it whichever way the question needs. And for gases at room temperature and pressure there is a second: one mole occupies 24 cubic decimetres, whatever the gas."
+      },
+      {
+        "type": "paragraph",
+        "text": "Concentration comes in two units and the difference is where marks go. Grams per cubic decimetre is a mass in a volume; moles per cubic decimetre is an amount in a volume. Convert with the same relationship, and remember a cubic decimetre is a thousand cubic centimetres."
       },
       {
         "type": "formula",

@@ -66,10 +66,6 @@ export const kp13MassDensity: KnowledgePoint = {
         ]
       },
       {
-        "type": "paragraph",
-        "text": "把物体带到月球，一条线降到六分之一，另一条纹丝不动。嘴上说\"质量不变\"很容易；把它放在一条确实在变的线旁边看，就不一样了。"
-      },
-      {
         "type": "formula",
         "latex": "W = mg",
         "caption": "重力是以牛顿为单位的力，质量以千克为单位。变形后 g = W / m 就是重力场强度——单位质量所受的力。"
@@ -108,10 +104,6 @@ export const kp13MassDensity: KnowledgePoint = {
           "Determine the density of a liquid, a regular solid and an irregular solid.",
           "Decide from density data whether an object floats, and whether one liquid floats on another. (Extended)"
         ]
-      },
-      {
-        "type": "paragraph",
-        "text": "Take the object to the Moon and one line drops to a sixth while the other does not move at all. Saying \"mass does not change\" is easy; seeing it beside a line that does is not."
       },
       {
         "type": "formula",

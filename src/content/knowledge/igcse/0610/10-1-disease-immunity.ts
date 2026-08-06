@@ -83,8 +83,40 @@ export const kp101DiseaseImmunity: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "毒素究竟做了什么"
+      },
+      {
         "type": "paragraph",
-        "text": "免疫并不意味着你不会被感染，而是记忆细胞已经就位，你在察觉之前就把它解决了。"
+        "text": "霍乱是一种细菌性疾病，经被感染者粪便污染的水传播。与其说它是医学问题，不如说它是卫生设施的问题。"
+      },
+      {
+        "type": "paragraph",
+        "text": "这种细菌产生一种毒素，使小肠上皮细胞把氯离子分泌到肠腔中。这使肠内容物的水势低于细胞的水势——于是水通过渗透随之而去，从身体流入肠道。"
+      },
+      {
+        "type": "paragraph",
+        "text": "这就是腹泻的由来，也是霍乱致死如此之快的原因：致命的不是细菌本身，而是水和离子的流失。这同样解释了为何治疗如此简单——口服补液盐，含适当盐分和一些葡萄糖的水，把流失的补回去。"
+      },
+      {
+        "type": "heading",
+        "text": "抗生素，以及它们为何会失效"
+      },
+      {
+        "type": "paragraph",
+        "text": "药物是进入体内、改变或影响体内化学反应的任何物质。抗生素是其中能杀死细菌的一类——它们攻击细菌有而你的细胞没有的结构，例如细胞壁。"
+      },
+      {
+        "type": "paragraph",
+        "text": "这正是抗生素对病毒毫无作用的原因。病毒没有细胞壁、没有自己的核糖体、没有可被毒害的代谢——它只是蛋白质外壳里的遗传物质，在你的细胞内复制。那里没有任何东西供抗生素攻击。"
+      },
+      {
+        "type": "paragraph",
+        "text": "抗生素耐药性就是自然选择，只不过发生在医院而不是森林里。在任何庞大的细菌种群中，总有少数携带能使其在药物下存活的突变。用了抗生素，没有该突变的死去，而这少数存活并繁殖。"
+      },
+      {
+        "type": "paragraph",
+        "text": "于是整个种群变得耐药——不是因为个别细菌发生了改变，而是因为只剩下耐药的那些还能繁殖。每一次不必要的抗生素疗程都会把这个选择过程再跑一遍，这就是为什么只有真正需要时才开抗生素。"
       },
       {
         "type": "heading",
@@ -120,8 +152,40 @@ export const kp101DiseaseImmunity: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "What a toxin actually does"
+      },
+      {
         "type": "paragraph",
-        "text": "Being immune does not mean you cannot be infected. It means the memory cells are already there, so you deal with it before you notice."
+        "text": "Cholera is a bacterial disease, transmitted in water contaminated with faeces from an infected person. It is a disease of sanitation more than of medicine."
+      },
+      {
+        "type": "paragraph",
+        "text": "The bacterium produces a toxin that makes the cells lining the small intestine secrete chloride ions into the gut. That lowers the water potential of the gut contents below that of the cells — so water follows by osmosis, out of the body and into the intestine."
+      },
+      {
+        "type": "paragraph",
+        "text": "That is the diarrhoea, and it is why cholera kills so quickly: not the bacterium itself but the loss of water and ions. Which is also why the treatment is so simple — rehydration solution, water with the right salts and some glucose, replacing what is being lost."
+      },
+      {
+        "type": "heading",
+        "text": "Antibiotics, and why they stop working"
+      },
+      {
+        "type": "paragraph",
+        "text": "A drug is any substance taken into the body that modifies or affects chemical reactions in it. Antibiotics are the ones that kill bacteria — by attacking structures a bacterium has and your cells do not, such as its cell wall."
+      },
+      {
+        "type": "paragraph",
+        "text": "Which is exactly why antibiotics do nothing to a virus. A virus has no cell wall, no ribosomes of its own, no metabolism to poison — it is genetic material in a protein coat, reproducing inside your cells. There is nothing there for an antibiotic to attack."
+      },
+      {
+        "type": "paragraph",
+        "text": "Antibiotic resistance is natural selection, running in a hospital instead of a forest. In any large population of bacteria a few carry a mutation that lets them survive the drug. Give the antibiotic, and the ones without it die while those few survive and reproduce."
+      },
+      {
+        "type": "paragraph",
+        "text": "So the population becomes resistant — not because individual bacteria changed, but because the resistant ones were the only ones left to breed. Every unnecessary course of antibiotics runs that selection once more, which is why they are prescribed only when they are really needed."
       },
       {
         "type": "heading",

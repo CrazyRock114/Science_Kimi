@@ -11,6 +11,11 @@ import type { LabExperiment } from "./types";
 export const precipitationExperiments: LabExperiment[] = [
   {
     slug: "agcl-precipitation",
+    related: ["chem-acidbase-004", "igcse-0620-12-5-tests"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch4"],
+      igcse: ["0620/12.5", "0620/7.3"],
+    },
     title: { zh: "氯离子的检验", en: "Test for Chloride Ions" },
     description: {
       zh: "向氯化钠溶液滴加硝酸银，生成不溶于稀硝酸的白色沉淀，确认氯离子。",
@@ -35,6 +40,11 @@ export const precipitationExperiments: LabExperiment[] = [
   },
   {
     slug: "baso4-precipitation",
+    related: ["chem-acidbase-004", "igcse-0620-12-5-tests"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch4"],
+      igcse: ["0620/12.5"],
+    },
     title: { zh: "硫酸根离子的检验", en: "Test for Sulfate Ions" },
     description: {
       zh: "用氯化钡溶液检验硫酸钠中的硫酸根，生成不溶于酸的白色硫酸钡沉淀。",
@@ -59,6 +69,11 @@ export const precipitationExperiments: LabExperiment[] = [
   },
   {
     slug: "cuoh2-precipitation",
+    related: ["chem-acidbase-003", "chem-acidbase-004", "igcse-0620-12-5-tests"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch4"],
+      igcse: ["0620/12.5", "0620/7.3"],
+    },
     title: { zh: "氢氧化铜的制取", en: "Preparing Copper(II) Hydroxide" },
     description: {
       zh: "硫酸铜溶液与氢氧化钠反应生成蓝色氢氧化铜沉淀，观察絮状沉淀特征。",
@@ -83,6 +98,11 @@ export const precipitationExperiments: LabExperiment[] = [
   },
   {
     slug: "feoh3-precipitation",
+    related: ["chem-acidbase-003", "chem-acidbase-004", "igcse-0620-12-5-tests"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch4", "pep-che-s1/ch3"],
+      igcse: ["0620/12.5"],
+    },
     title: { zh: "氢氧化铁的制取", en: "Preparing Iron(III) Hydroxide" },
     description: {
       zh: "氯化铁溶液与氢氧化钠反应生成红褐色氢氧化铁沉淀，认识铁(III)的特征。",
@@ -107,6 +127,11 @@ export const precipitationExperiments: LabExperiment[] = [
   },
   {
     slug: "caco3-precipitation",
+    related: ["chem-acidbase-004", "igcse-0620-7-3-salts"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch4"],
+      igcse: ["0620/7.3"],
+    },
     title: { zh: "碳酸钙的生成", en: "Formation of Calcium Carbonate" },
     description: {
       zh: "碳酸钠溶液与氯化钙反应生成白色碳酸钙沉淀，理解微溶物的转化。",
@@ -131,6 +156,11 @@ export const precipitationExperiments: LabExperiment[] = [
   },
   {
     slug: "mgoh2-precipitation",
+    related: ["chem-acidbase-003", "chem-acidbase-004"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch4"],
+      igcse: ["0620/7.3"],
+    },
     title: { zh: "氢氧化镁的制取", en: "Preparing Magnesium Hydroxide" },
     description: {
       zh: "氯化镁与氢氧化钠反应生成白色氢氧化镁沉淀，认识难溶碱的制备。",
@@ -155,6 +185,11 @@ export const precipitationExperiments: LabExperiment[] = [
   },
   {
     slug: "agi-precipitation",
+    related: ["igcse-0620-8-2-groups", "chem-acidbase-004"],
+    syllabus: {
+      pep: ["pep-che-s1/ch2"],
+      igcse: ["0620/8.3", "0620/12.5"],
+    },
     title: { zh: "碘化银沉淀与人工降雨", en: "Silver Iodide Precipitate and Cloud Seeding" },
     description: {
       zh: "硝酸银与碘化钾反应生成黄色碘化银沉淀，了解其在人工降雨中的应用。",
@@ -179,6 +214,11 @@ export const precipitationExperiments: LabExperiment[] = [
   },
   {
     slug: "agbr-precipitation",
+    related: ["igcse-0620-8-2-groups", "chem-acidbase-004"],
+    syllabus: {
+      pep: ["pep-che-s1/ch2"],
+      igcse: ["0620/8.3"],
+    },
     title: { zh: "溴化银沉淀与感光材料", en: "Silver Bromide Precipitate and Photosensitive Materials" },
     description: {
       zh: "硝酸银与溴化钾反应生成浅黄色溴化银沉淀，认识其感光性与照相原理。",
@@ -203,6 +243,11 @@ export const precipitationExperiments: LabExperiment[] = [
   },
   {
     slug: "precipitation-conversion",
+    related: ["chem-acidbase-004", "igcse-0620-6-3-equilibrium", "chem-energetics-003"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch4"],
+      igcse: ["0620/6.3", "0620/7.3"],
+    },
     title: { zh: "沉淀的转化", en: "Conversion of Precipitates" },
     description: {
       zh: "向氢氧化镁沉淀中加入氯化铁溶液，观察白色沉淀转化为红褐色，理解溶度积。",
@@ -227,6 +272,11 @@ export const precipitationExperiments: LabExperiment[] = [
   },
   {
     slug: "hard-water-softening",
+    related: ["chem-acidbase-004", "igcse-0620-10-1-water"],
+    syllabus: {
+      pep: ["pep-che-j9a/ch4"],
+      igcse: ["0620/10.1"],
+    },
     title: { zh: "硬水的软化", en: "Softening Hard Water" },
     description: {
       zh: "向硬水中加入碳酸钠使钙镁离子沉淀，认识硬水危害与软化方法。",
@@ -251,6 +301,11 @@ export const precipitationExperiments: LabExperiment[] = [
   },
   {
     slug: "baso4-gravimetric",
+    related: ["chem-acidbase-004", "chem-stoich-004", "igcse-0620-3-3-moles"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch4"],
+      igcse: ["0620/12.5", "0620/3.3"],
+    },
     title: { zh: "硫酸钡重量法测硫含量", en: "Gravimetric Determination of Sulfur Content as Barium Sulfate" },
     description: {
       zh: "用氯化钡沉淀硫酸根，经过滤、洗涤、灼烧、称量测定样品中硫酸盐含量。",
@@ -275,6 +330,11 @@ export const precipitationExperiments: LabExperiment[] = [
   },
   {
     slug: "double-decomposition-rule",
+    related: ["chem-acidbase-004", "igcse-0620-7-3-salts"],
+    syllabus: {
+      pep: ["pep-che-j9b/ch4"],
+      igcse: ["0620/7.3"],
+    },
     title: { zh: "复分解反应发生条件", en: "Conditions for Double Decomposition Reactions" },
     description: {
       zh: "通过多组盐与碱、盐与盐反应，归纳复分解反应需生成沉淀、气体或水的条件。",

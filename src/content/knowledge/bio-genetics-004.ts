@@ -19,6 +19,16 @@ export const bioGenetics004: KnowledgePoint = {
   },
   theory: {
     zh: [
+      { type: 'heading', text: '学习目标' },
+      {
+        type: 'list',
+        items: [
+          '按规范书写遗传图解：亲本基因型 → 配子 → 子代基因型、表现型及比例。',
+          '用棋盘法（庞尼特方格）数格子求各类基因型的概率。',
+          '用分支法把多对独立遗传的基因拆开算，运用乘法原理与加法原理。',
+          '理解概率是对每个后代独立而言的，与已出生兄弟姐妹的表现型无关。',
+        ],
+      },
       { type: 'heading', text: '规范的遗传图解' },
       {
         type: 'paragraph',
@@ -46,8 +56,29 @@ export const bioGenetics004: KnowledgePoint = {
           '理论概率只有在后代数量足够多时，才与实际统计比例接近。',
         ],
       },
+      { type: 'heading', text: '术语表' },
+      {
+        type: 'list',
+        items: [
+          'genetic diagram（遗传图解）：按“亲本 → 配子 → 子代”书写的杂交分析图，须写全配子种类并标注比例。',
+          'Punnett square（棋盘格/庞尼特方格）：把雌雄配子排在顶端和左侧、逐格填入子代基因型的方格图，每格概率相等。',
+          'branch method（分支法）：对每对基因单独求概率再相乘的快捷方法，适用于独立遗传的多对基因。',
+          'multiplication rule（乘法原理）：独立事件同时发生的概率等于各自概率的乘积。',
+          'addition rule（加法原理）：同一结果有多条基因型途径时，总概率等于各途径概率之和。',
+        ],
+      },
     ],
     en: [
+      { type: 'heading', text: 'Learning objectives' },
+      {
+        type: 'list',
+        items: [
+          'Draw genetic diagrams in the standard layout: parental genotypes → gametes → offspring genotypes, phenotypes and ratios.',
+          'Use a Punnett square to count cells and find the probability of each genotype.',
+          'Use the branch method for independently assorting genes, applying the multiplication and addition rules.',
+          'Understand that a probability applies independently to each offspring, whatever the phenotypes of earlier children.',
+        ],
+      },
       { type: 'heading', text: 'Drawing a proper genetic diagram' },
       {
         type: 'paragraph',
@@ -73,6 +104,17 @@ export const bioGenetics004: KnowledgePoint = {
           'Addition rule: when several genotypes give the same phenotype, add their probabilities, e.g. P(dominant) = P(AA) + P(Aa).',
           'A probability applies to each individual offspring; it does not depend on the phenotypes of brothers or sisters already born.',
           'Theoretical ratios only match observed ratios when the number of offspring is large.',
+        ],
+      },
+      { type: 'heading', text: 'Glossary' },
+      {
+        type: 'list',
+        items: [
+          'genetic diagram（遗传图解）: a cross analysis laid out as parents → gametes → offspring, showing every gamete type and the resulting ratios.',
+          'Punnett square（棋盘格/庞尼特方格）: a grid with one parent’s gametes across the top and the other’s down the side; every cell is equally likely.',
+          'branch method（分支法）: a shortcut that finds each single-gene probability separately and then multiplies, for independently assorting genes.',
+          'multiplication rule（乘法原理）: the probability of independent events occurring together is the product of their separate probabilities.',
+          'addition rule（加法原理）: when several genotypes give the same outcome, their probabilities are added together.',
         ],
       },
     ],
@@ -127,6 +169,61 @@ export const bioGenetics004: KnowledgePoint = {
       },
     },
   ],
+  examPractice: [
+    {
+      id: 'gen004-ex1',
+      syllabus: ['0610/17.4.11', '0610/17.4.12'],
+      tier: 'core',
+      commandWord: 'Predict',
+      marks: 4,
+      stem: 'Cystic fibrosis is caused by a recessive allele (f); the normal allele is F. Two parents who are both carriers have a child. Use a genetic diagram to predict the probability that the child has cystic fibrosis, and the probability that the child is a carrier.',
+      markScheme: [
+        { text: 'Parental genotypes Ff × Ff, with gametes F and f from each parent', marks: 1 },
+        { text: 'Completed Punnett square giving FF, Ff, Ff, ff', marks: 1 },
+        { text: 'P(affected, ff) = 1/4', marks: 1 },
+        { text: 'P(carrier, Ff) = 2/4 = 1/2', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '“携带者”指杂合子 Ff——表现正常但带有致病等位基因。把携带者答成 3/4 是把它和“表现正常”混在一起了；正常（FF 或 Ff）才是 3/4。',
+        en: 'A carrier is the heterozygote Ff — unaffected but carrying the allele. Answering 3/4 confuses carriers with all unaffected children; unaffected (FF or Ff) is 3/4, carriers are 1/2.',
+      },
+    },
+    {
+      id: 'gen004-ex2',
+      syllabus: ['0610/17.4.11'],
+      tier: 'core',
+      commandWord: 'Explain',
+      marks: 2,
+      stem: 'A couple who are both carriers (Ff) already have one child with cystic fibrosis. They state: "Our next child cannot have the condition, because we have already had an affected child." Explain why this statement is wrong.',
+      markScheme: [
+        { text: 'Each fertilisation is an independent event — earlier children do not affect the next one', marks: 1 },
+        { text: 'The probability of an affected child (ff) is 1/4 for every pregnancy', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '这是“赌徒谬误”的生物学版本。概率不会“补偿”已经发生的结果；每次怀孕独立地掷一次 1/4 的骰子。',
+        en: 'This is the gambler’s fallacy in biological dress. Probabilities do not “compensate” for what has already happened; every pregnancy is an independent 1/4 roll.',
+      },
+    },
+    {
+      id: 'gen004-ex3',
+      syllabus: ['0610/17.4.14', '0610/17.4.18'],
+      tier: 'supplement',
+      commandWord: 'Explain',
+      marks: 4,
+      stem: 'In snapdragons, flower colour shows codominance: RR plants have red flowers, Rr plants have pink flowers and rr plants have white flowers. Two pink-flowered plants are crossed. Explain the expected genotypes and phenotypes of the offspring, giving the probability of each.',
+      markScheme: [
+        { text: 'Both parents are Rr, and each produces R and r gametes', marks: 1 },
+        { text: 'Offspring genotypes: 1/4 RR, 2/4 Rr, 1/4 rr', marks: 1 },
+        { text: 'Because the alleles are codominant, the heterozygote Rr has its own pink phenotype, distinct from both homozygotes', marks: 1 },
+        { text: 'Phenotypic ratio is 1 red : 2 pink : 1 white', marks: 1 },
+      ],
+      examinerNote: {
+        zh: '基因型和任何杂合杂交一样都是 1:2:1。共显性改变的是三者在表型上都不同，因此表现型比是 1:2:1 而不是 3:1。',
+        en: 'The genotypes are the same 1:2:1 as any heterozygous cross. What codominance changes is that all three look different, so the phenotypic ratio is 1:2:1, not 3:1.',
+      },
+    },
+  ],
+  related: ['igcse-0610-17-1-inheritance', 'bio-genetics-002', 'bio-genetics-003'],
 };
 
 export default bioGenetics004;

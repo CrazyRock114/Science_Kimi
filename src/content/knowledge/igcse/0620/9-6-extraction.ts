@@ -70,8 +70,40 @@ export const kp96Extraction: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "高炉内部"
+      },
+      {
         "type": "paragraph",
-        "text": "如何把金属从矿石中取出？一种金属能否保护另一种？两个问题都由同一张表回答，只是线画在不同位置。"
+        "text": "铁矿石是赤铁矿，也就是氧化铁（III）。从炉顶加入三样东西：矿石、焦炭和石灰石。热空气从底部鼓入。"
+      },
+      {
+        "type": "paragraph",
+        "text": "焦炭在鼓入的空气中燃烧，生成二氧化碳并把炉温升到约 1500 °C。二氧化碳上升时穿过更多热焦炭，被还原为一氧化碳。"
+      },
+      {
+        "type": "paragraph",
+        "text": "真正起作用的还原剂是一氧化碳。它从氧化铁中夺走氧，留下熔融的铁流到炉底被放出。"
+      },
+      {
+        "type": "paragraph",
+        "text": "那石灰石做什么？矿石中混有砂子，也就是二氧化硅。石灰石分解生成氧化钙，与砂子反应生成炉渣。炉渣浮在铁水上，单独排出。"
+      },
+      {
+        "type": "heading",
+        "text": "生锈需要两样东西"
+      },
+      {
+        "type": "paragraph",
+        "text": "费尽力气把铁从氧化物中取出来，它却立刻开始变回去。生锈就是铁重新变成氧化铁——但必须同时有水和氧气。去掉任何一样，生锈就停止。"
+      },
+      {
+        "type": "paragraph",
+        "text": "这就是经典实验：三支试管各放一枚铁钉。一支用煮沸过的水并在上面覆一层油——没有氧气，不生锈。一支放氯化钙使空气干燥——没有水，不生锈。一支两者都有——生锈。"
+      },
+      {
+        "type": "paragraph",
+        "text": "所以最简单的防护就是隔离层：油漆、油脂、塑料，或者镀上另一种金属。让水和氧接触不到表面，就什么都不会发生。但隔离层只在完好时有效。"
       },
       {
         "type": "formula",
@@ -132,8 +164,40 @@ export const kp96Extraction: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "Inside the blast furnace"
+      },
+      {
         "type": "paragraph",
-        "text": "How do you get a metal out of its ore, and will one metal protect another? Both questions are answered by the same ladder, with the line drawn in a different place."
+        "text": "Iron ore is haematite, iron(III) oxide. Into the top of the furnace go three things: the ore, coke, and limestone. Hot air is blasted in at the bottom."
+      },
+      {
+        "type": "paragraph",
+        "text": "The coke burns in the blast of air, which makes carbon dioxide and gets the furnace up to about fifteen hundred degrees. That carbon dioxide then rises through more hot coke and is reduced to carbon monoxide."
+      },
+      {
+        "type": "paragraph",
+        "text": "Carbon monoxide is the reducing agent that actually does the job. It takes the oxygen from the iron oxide, leaving molten iron that runs to the bottom of the furnace and is tapped off."
+      },
+      {
+        "type": "paragraph",
+        "text": "And the limestone? The ore is contaminated with sand — silicon dioxide. Limestone decomposes to calcium oxide, which reacts with the sand to make slag. Slag floats on the iron and is drained separately."
+      },
+      {
+        "type": "heading",
+        "text": "Rusting needs two things"
+      },
+      {
+        "type": "paragraph",
+        "text": "Having gone to all that trouble to get iron out of its oxide, it immediately starts turning back. Rusting is iron returning to iron oxide — but it needs both water and oxygen. Remove either one and it stops."
+      },
+      {
+        "type": "paragraph",
+        "text": "That is the classic experiment: three test tubes with a nail in each. One with boiled water and a layer of oil on top — no oxygen, no rust. One with calcium chloride to dry the air — no water, no rust. One with both — rust."
+      },
+      {
+        "type": "paragraph",
+        "text": "So the simplest defence is a barrier: paint, grease, plastic, or a coating of another metal. Keep the water and oxygen off the surface and nothing can happen. But a barrier only works while it is intact."
       },
       {
         "type": "formula",

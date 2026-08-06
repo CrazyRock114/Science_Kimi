@@ -73,8 +73,60 @@ export const kp33EmSpectrum: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "那条水平线"
+      },
+      {
         "type": "paragraph",
-        "text": "七个波段，波长跨越十六个数量级——而一条水平线表明它们的速度完全相同。"
+        "text": "这就是最重要的一张图。横轴是波长，用对数刻度以容纳整个波谱。纵轴是频率乘波长——它是完全水平的。"
+      },
+      {
+        "type": "formula",
+        "latex": "c = f\\lambda = 3.0 \\times 10^{8}\\ \\text{m/s}"
+      },
+      {
+        "type": "paragraph",
+        "text": "每个波段给出相同答案：3 × 10⁸ 米每秒。无线电波与 γ 射线波长差异悬殊，但在真空中速度完全相同。"
+      },
+      {
+        "type": "paragraph",
+        "text": "切换到频率图，你会从另一个角度看到同一事实。对数频率沿一条斜率为 −1 的直线下降——因为波长每增大十倍，频率就减小十倍。"
+      },
+      {
+        "type": "heading",
+        "text": "各波段为何用在那里"
+      },
+      {
+        "type": "paragraph",
+        "text": "用途源于物理性质。微波能穿墙且只需短天线，所以用于手机信号。无线电波能穿墙但会衰减，适合短距离的蓝牙。"
+      },
+      {
+        "type": "paragraph",
+        "text": "玻璃对可见光和短波红外透明，而它们能承载极高的数据速率——所以光纤用于有线电视和高速宽带。"
+      },
+      {
+        "type": "paragraph",
+        "text": "卫星通信使用微波。有些卫星电话用低轨卫星；卫星电视和部分电话用地球同步卫星，它们始终位于地面同一点上方。"
+      },
+      {
+        "type": "heading",
+        "text": "波长越短，危害越大"
+      },
+      {
+        "type": "paragraph",
+        "text": "危害也遵循同一顺序。微波使体内细胞受热；红外线灼伤皮肤；紫外线损伤表层细胞和眼睛并致皮肤癌；X 射线和 γ 射线具有电离性，会使细胞突变或死亡。"
+      },
+      {
+        "type": "heading",
+        "text": "数字优于模拟"
+      },
+      {
+        "type": "paragraph",
+        "text": "还有一点。模拟信号连续变化；数字信号只有一串 1 和 0。声音两种方式都能传输。"
+      },
+      {
+        "type": "paragraph",
+        "text": "数字胜出有两个原因：每秒承载的数据更多；而且接收端只需分辨 1 和 0，信号可以被干净地再生并传得更远，噪声不会不断累积。"
       },
       {
         "type": "formula",
@@ -117,8 +169,60 @@ export const kp33EmSpectrum: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "The flat line"
+      },
+      {
         "type": "paragraph",
-        "text": "Seven regions spanning sixteen powers of ten in wavelength — and one flat line showing they all travel at exactly the same speed."
+        "text": "Here is the graph that matters. Along the bottom is wavelength, on a log scale so the whole spectrum fits. Up the side is frequency times wavelength — and it is perfectly flat."
+      },
+      {
+        "type": "formula",
+        "latex": "c = f\\lambda = 3.0 \\times 10^{8}\\ \\text{m/s}"
+      },
+      {
+        "type": "paragraph",
+        "text": "Every region gives the same answer: three times ten to the eight metres per second. Radio waves and gamma rays are wildly different in wavelength, yet they travel at exactly the same speed in a vacuum."
+      },
+      {
+        "type": "paragraph",
+        "text": "Switch to the frequency plot and you see the same fact the other way round. Log frequency falls in a perfectly straight line with a gradient of minus one — because whenever wavelength goes up by a factor of ten, frequency goes down by the same factor."
+      },
+      {
+        "type": "heading",
+        "text": "Why each one is used where it is"
+      },
+      {
+        "type": "paragraph",
+        "text": "The uses follow from the physics. Microwaves penetrate walls and need only a short aerial, so they carry mobile phone signals. Radio waves pass through walls but weaken, which suits Bluetooth over short ranges."
+      },
+      {
+        "type": "paragraph",
+        "text": "Glass is transparent to visible light and short-wavelength infrared, and those can carry very high data rates — which is why optical fibres run cable television and high-speed broadband."
+      },
+      {
+        "type": "paragraph",
+        "text": "Satellite communication uses microwaves. Some satellite phones use low orbit satellites; satellite television and some phones use geostationary ones, which stay above the same point on the Earth."
+      },
+      {
+        "type": "heading",
+        "text": "Shorter wavelength, greater hazard"
+      },
+      {
+        "type": "paragraph",
+        "text": "The dangers follow the same order. Microwaves heat body cells internally. Infrared burns the skin. Ultraviolet damages surface cells and eyes and causes skin cancer. X-rays and gamma rays are ionising and mutate or kill cells."
+      },
+      {
+        "type": "heading",
+        "text": "Digital beats analogue"
+      },
+      {
+        "type": "paragraph",
+        "text": "One more idea. An analogue signal varies continuously; a digital one is only ever a series of ones and zeros. Sound can be sent either way."
+      },
+      {
+        "type": "paragraph",
+        "text": "Digital wins for two reasons: it carries more data per second, and because a receiver only has to tell a one from a zero, the signal can be regenerated cleanly and sent much further without the noise building up."
       },
       {
         "type": "formula",

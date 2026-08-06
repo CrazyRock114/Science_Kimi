@@ -84,8 +84,44 @@ export const kp143Homeostasis: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "同一个回路，不同的量"
+      },
+      {
         "type": "paragraph",
-        "text": "稳态并不是把数值\"保持\"在设定点上，而是在\"追赶\"它——永远在校正已经发生的偏离。这正是曲线总在波动、而不是变平的原因。"
+        "text": "体温调节是同一个思路，只是机制不同。设定点是 37 °C，由脑中的下丘脑监测——它检测流经自身的血液温度。"
+      },
+      {
+        "type": "paragraph",
+        "text": "过热时会发生两件事。真皮中的汗腺把汗液排到皮肤表面，汗液蒸发时带走身体的热量。同时供应体表毛细血管的小动脉舒张——血管舒张——使更多血液流经浅表，辐射出更多热量。"
+      },
+      {
+        "type": "paragraph",
+        "text": "血管舒张这一点要小心：毛细血管本身不会移动，也没有肌肉。舒张或收缩的是通向它们的小动脉。写\"毛细血管移向皮肤表面\"是常见答案，但它是错的。"
+      },
+      {
+        "type": "paragraph",
+        "text": "过冷时则反过来。血管收缩使这些小动脉变窄，流到体表的血液减少。出汗停止。毛发竖起，以滞留一层静止的空气。同时开始寒战——肌肉快速而不自主地收缩，其中的呼吸作用把能量以热的形式释放出来。"
+      },
+      {
+        "type": "heading",
+        "text": "植物没有神经，如何反应"
+      },
+      {
+        "type": "paragraph",
+        "text": "植物完全没有神经系统，却依然能对环境作出反应——通过生长。向性就是一种生长反应，其生长方向取决于刺激的方向。"
+      },
+      {
+        "type": "paragraph",
+        "text": "向光性是对光的反应。茎朝向光生长，因为它们需要光来进行光合作用。向重力性是对重力的反应。根朝向重力生长，从而深入土壤，去获取水分与固着；茎则背离重力生长。"
+      },
+      {
+        "type": "paragraph",
+        "text": "其机制是化学性的。生长素是在茎尖产生的植物激素。光使它向背光的一侧移动，因此背光侧的生长素比向光侧多。"
+      },
+      {
+        "type": "paragraph",
+        "text": "生长素使茎的细胞伸长。于是背光侧比向光侧长得更长，而一侧比另一侧长的茎就会弯曲——朝向光源。植物并没有在\"转向\"，它只是长得不均匀，而不均匀的生长看起来就是弯曲。"
       },
       {
         "type": "formula",
@@ -133,8 +169,44 @@ export const kp143Homeostasis: KnowledgePoint = {
         ]
       },
       {
+        "type": "heading",
+        "text": "The same loop, a different quantity"
+      },
+      {
         "type": "paragraph",
-        "text": "Homeostasis does not hold a value at the set point. It chases one — always correcting something that has already happened, which is why the graph wobbles instead of going flat."
+        "text": "Temperature control is the same idea with different machinery. The set point is thirty-seven degrees, and it is monitored by the hypothalamus in the brain, which checks the temperature of the blood flowing through it."
+      },
+      {
+        "type": "paragraph",
+        "text": "Too hot, and two things happen. Sweat glands in the dermis release sweat onto the skin, and as it evaporates it takes energy from the body with it. And the arterioles supplying the surface capillaries widen — vasodilation — so more blood flows near the surface and more energy is radiated away."
+      },
+      {
+        "type": "paragraph",
+        "text": "Be careful with vasodilation: the capillaries themselves do not move and do not have muscle. It is the arterioles leading to them that widen or narrow. Saying \"the capillaries move closer to the surface\" is a common answer and a wrong one."
+      },
+      {
+        "type": "paragraph",
+        "text": "Too cold, and it runs in reverse. Vasoconstriction narrows those arterioles so less blood reaches the surface. Sweating stops. Hairs are pulled upright to trap a layer of still air. And shivering begins — muscles contracting rapidly and involuntarily, and respiration in them releases energy as heat."
+      },
+      {
+        "type": "heading",
+        "text": "How a plant responds without nerves"
+      },
+      {
+        "type": "paragraph",
+        "text": "A plant has no nervous system at all, and it still responds to its surroundings — by growing. A tropism is a growth response in which the direction of growth depends on the direction of the stimulus."
+      },
+      {
+        "type": "paragraph",
+        "text": "Phototropism is the response to light. Shoots grow towards it, because they need light to photosynthesise. Gravitropism is the response to gravity. Roots grow towards it, which takes them down into the soil, towards water and anchorage; shoots grow away from it."
+      },
+      {
+        "type": "paragraph",
+        "text": "The mechanism is chemical. Auxin is a plant hormone made at the tip of a shoot. Light causes it to move to the shaded side, so the shaded side ends up with more auxin than the lit side."
+      },
+      {
+        "type": "paragraph",
+        "text": "Auxin makes the cells of a shoot elongate. So the shaded side grows longer than the lit side, and a shoot that is longer on one side than the other bends — towards the light. The plant is not steering. It is growing unevenly, and bending is what uneven growth looks like."
       },
       {
         "type": "formula",

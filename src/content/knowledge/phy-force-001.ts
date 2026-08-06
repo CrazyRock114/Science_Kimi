@@ -19,6 +19,15 @@ export const phyForce001: KnowledgePoint = {
   },
   theory: {
     zh: [
+      { type: 'heading', text: '学习目标' },
+      {
+        type: 'list',
+        items: [
+          '说出力是物体对物体的作用，列举力的两类作用效果，并用力的示意图表示力。',
+          '说明重力的成因与方向，并用 G = mg 计算物体的重量。',
+          '区分质量与重量，说明天平和弹簧测力计各自测量的是什么。',
+        ],
+      },
       { type: 'heading', text: '什么是力' },
       {
         type: 'paragraph',
@@ -51,8 +60,28 @@ export const phyForce001: KnowledgePoint = {
           '质量可以用天平测量，重量用弹簧测力计测量。',
         ],
       },
+      { type: 'heading', text: '术语表' },
+      {
+        type: 'list',
+        items: [
+          'force（力）：一个物体对另一个物体的推或拉，单位是牛顿（N）；力可以改变物体的运动状态或形状。',
+          'weight（重量/重力）：引力作用在物体质量上的力，W = mg，方向竖直向下，单位是 N。',
+          'mass（质量）：物体所含物质的多少，单位 kg，不随地点改变。',
+          'gravitational field strength（重力场强度）：单位质量所受的重力，g = W/m，地面附近约 9.8 N/kg。',
+          'centre of gravity（重心）：可以认为物体全部重力集中作用的那一点。',
+        ],
+      },
     ],
     en: [
+      { type: 'heading', text: 'Learning objectives' },
+      {
+        type: 'list',
+        items: [
+          'State that a force is a push or pull between objects, list its effects, and draw force diagrams.',
+          'State the origin and direction of weight, and calculate it using W = mg.',
+          'Distinguish mass from weight, and state what a balance and a newton meter each measure.',
+        ],
+      },
       { type: 'heading', text: 'What is a force?' },
       {
         type: 'paragraph',
@@ -83,6 +112,17 @@ export const phyForce001: KnowledgePoint = {
           'Mass m is the amount of matter in an object, measured in kg; it is the same everywhere.',
           'Weight W is a force, measured in N; it depends on g. On the Moon an object weighs about 1/6 of its weight on Earth, but its mass is unchanged.',
           'Mass is measured with a balance; weight is measured with a newton meter (spring balance).',
+        ],
+      },
+      { type: 'heading', text: 'Glossary' },
+      {
+        type: 'list',
+        items: [
+          'force (力): A push or a pull between objects, measured in newtons (N); it can change an object’s motion or shape.',
+          'weight (重量): The gravitational force acting on a mass, W = mg, acting vertically downwards, measured in N.',
+          'mass (质量): The quantity of matter in an object, measured in kg; it is the same everywhere.',
+          'gravitational field strength (重力场强度): The gravitational force per unit mass, g = W/m, about 9.8 N/kg near the Earth’s surface.',
+          'centre of gravity (重心): The point at which the whole weight of an object may be taken to act.',
         ],
       },
     ],
@@ -157,4 +197,78 @@ export const phyForce001: KnowledgePoint = {
       },
     },
   ],
+  examPractice: [
+    {
+      id: 'force001-ep1',
+      syllabus: ['0625/1.3.1', '0625/1.3.2', '0625/1.3.3'],
+      tier: 'core',
+      commandWord: 'Explain',
+      marks: 3,
+      stem: 'A student takes a 4.0 kg suitcase to the Moon, where the gravitational field strength is 1.6 N/kg. State what happens to the mass of the suitcase, and calculate its weight on the Moon.',
+      markScheme: [
+        {
+          text: 'The mass stays at 4.0 kg, because mass is the quantity of matter in an object and does not depend on where it is',
+          marks: 1,
+        },
+        { text: 'W = mg = 4.0 × 1.6', marks: 1 },
+        {
+          text: '= 6.4 N, which is less than on Earth because the Moon’s gravitational field strength is smaller',
+          marks: 1,
+        },
+      ],
+      examinerNote: {
+        zh: '质量和重量都要答到：质量不变，重量变小。注意重量的单位是牛顿——答“6.4 kg”就自相矛盾了。',
+        en: 'Address both quantities: the mass is unchanged and the weight is reduced. And weight is in newtons — an answer of "6.4 kg" contradicts itself.',
+      },
+    },
+    {
+      id: 'force001-ep2',
+      syllabus: ['0625/1.3.4'],
+      tier: 'core',
+      commandWord: 'Suggest',
+      marks: 2,
+      stem: 'A beam balance and a newton meter (spring balance) both read correctly on Earth. Suggest what each instrument would read for the same object on the Moon, and explain the difference.',
+      markScheme: [
+        {
+          text: 'The beam balance reads the same, because it compares two masses and the weaker gravity acts equally on both sides, cancelling out',
+          marks: 1,
+        },
+        {
+          text: 'The newton meter reads about one sixth, because it measures the gravitational force on the object, which is smaller on the Moon',
+          marks: 1,
+        },
+      ],
+      examinerNote: {
+        zh: '仪器决定你测的是哪个量：天平比较的是质量，弹簧测力计测的是重力。把两者混为一谈是最常见的失分点。',
+        en: 'The instrument decides which quantity you measure: a balance compares masses, a spring balance measures weight. Confusing the two is the classic lost mark.',
+      },
+    },
+    {
+      id: 'force001-ep3',
+      syllabus: ['0625/1.5.3.2'],
+      tier: 'core',
+      commandWord: 'Describe',
+      marks: 3,
+      stem: 'Describe an experiment to find the centre of gravity of an irregularly shaped piece of cardboard.',
+      markScheme: [
+        {
+          text: 'Make a hole near the edge and hang the card from a pin so that it can swing freely',
+          marks: 1,
+        },
+        {
+          text: 'Hang a plumb line from the same pin and draw a line on the card along the string',
+          marks: 1,
+        },
+        {
+          text: 'Repeat from a different hole; the centre of gravity is where the lines cross',
+          marks: 1,
+        },
+      ],
+      examinerNote: {
+        zh: '纸板必须能自由摆动，静止时重心正好位于悬点正下方。再画第三条线作检验是好习惯，值得写上。',
+        en: 'The card must swing freely so that it settles with its centre of gravity directly below the pin. A third line drawn as a check is good practice and worth mentioning.',
+      },
+    },
+  ],
+  related: ['igcse-0625-1-3-mass-density', 'igcse-0625-1-5-forces', 'phy-force-002'],
 };
